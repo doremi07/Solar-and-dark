@@ -36,6 +36,7 @@ namespace SolarDark.Combat
         int facing = -1, phase = -1, casts;
         Coroutine brain;
         BossSkill forced;
+        int requestedPhase = -1;
 
         public Team Team => Team.Enemy;
         public Hurtbox Target => target != null && (target.Health == null || !target.Health.Dead) ? target : (target = Hurtbox.Nearest(Team.Player, transform.position));
@@ -87,6 +88,7 @@ namespace SolarDark.Combat
             if (definition == null || index < 0 || index >= definition.phases.Count) return;
             health.current = Mathf.Min(health.current, definition.phases[index].enterAtHp * health.max - 0.01f);
             if (index == 0) health.current = health.max;
+            requestedPhase = index;
             health.onChanged.Invoke(health.Fraction);
         }
 
@@ -96,10 +98,12 @@ namespace SolarDark.Combat
             yield return new WaitForSeconds(0.6f);
             while (!health.Dead)
             {
-                int want = definition.PhaseFor(health.Fraction);
+                // phases only move forward (a heal never undoes one); a debug jump may go back
+                int want = requestedPhase >= 0 ? requestedPhase : Mathf.Max(definition.PhaseFor(health.Fraction), phase);
+                requestedPhase = -1;
                 if (want != phase)
                 {
-                    bool deeper = want > phase;   // healing or a debug jump back skips the entry skill
+                    bool deeper = want > phase;   // a debug jump back skips the entry skill
                     EnterPhase(want);
                     var entry = CurrentPhase.entrySkill;
                     if (deeper && entry != null)
