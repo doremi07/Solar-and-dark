@@ -1,0 +1,7 @@
+{
+    "name": "PixelFx.Editor",
+    "rootNamespace": "PixelFx.Editor",
+    "references": ["PixelFx.Runtime"],
+    "includePlatforms": ["Editor"],
+    "autoReferenced": true
+}

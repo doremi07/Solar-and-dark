@@ -1,0 +1,29 @@
+# Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+*.unityproj
+.vs/
+.idea/
+.DS_Store
+
+# pixelfx working output (contact sheets, previews); shipped sheets live in Assets/PixelFx/Sheets
+third_party/pixelfx/records/
+third_party/pixelfx/sheets/
+third_party/pixelfx/node_modules/
+third_party/pixelfx/dist/
+
+# verify tool build output
+tools/pixelfx/verify/**/bin/
+tools/pixelfx/verify/**/obj/

@@ -1,0 +1,6 @@
+{
+    "name": "PixelFx.Runtime",
+    "rootNamespace": "PixelFx",
+    "references": [],
+    "autoReferenced": true
+}

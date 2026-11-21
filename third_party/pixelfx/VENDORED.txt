@@ -1,0 +1,4 @@
+pixelfx 0.3.1 @ 5294518ce7c72e48b6100a744596e0acf57f2826
+https://github.com/patch-gg/pixelfx
+Vendored by tools/pixelfx/vendor.sh. Do not edit upstream files; effects authored here go in src/fx/<category>/ as new files (vendor.sh keeps them).
+Excluded: gallery/ (Patch Pixel font, not MIT), docs/readme, .github, build-gallery.mjs, serve.mjs.
