@@ -13,6 +13,18 @@
 
 ![boss fx sheets](fx-sheets.png)
 
+## 실행 영상 (Unity 없이)
+
+`tools/arena-sim/run.sh [serena|child|all]`: 게임의 실제 C# 스크립트(BossLibrary, BossArenaScene, 보스 AI, 스킬 러너,
+판정, pixelfx 재생)를 작은 Unity 대체 런타임(`tools/arena-sim/UnityShim.cs`)에서 돌려 영상으로 렌더링한다. 플레이어
+대역은 보스 앞에 서 있고, 페이즈 순서대로 각 스킬을 한 번씩 강제 시전한다. 물리·Animator·OnGUI는 없으니 최종 확인은
+Unity에서.
+
+- [세레나](arena-serena.mp4) · [움켜쥔 아이](arena-hidden-child.mp4)
+
+![serena storyboard](arena-serena-storyboard.png)
+![hidden child storyboard](arena-hidden-child-storyboard.png)
+
 ## 시스템
 
 | 부분 | 파일 | 하는 일 |

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Runs the game's real Unity scripts on a small headless stand-in for UnityEngine (UnityShim.cs). -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><LangVersion>latest</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems><Nullable>disable</Nullable><NoWarn>CS0108;CS0114;CS0618;CS0660;CS0661</NoWarn>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/PixelFx/Runtime/*.cs" />
+    <Compile Include="../../Assets/Game/Combat/Runtime/*.cs" />
+    <Compile Include="../../Assets/Game/Combat/Editor/BossLibrary.cs;../../Assets/Game/Combat/Editor/BossArenaScene.cs" />
+    <Compile Include="UnityShim.cs;EditorShim.cs;Program.cs" />
+    <PackageReference Include="StbImageSharp" Version="2.30.16" />
+  </ItemGroup>
+</Project>

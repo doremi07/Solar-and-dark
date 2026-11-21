@@ -10,4 +10,5 @@ Unity game. Pixel art VFX come from **pixelfx** (pinned, vendored in `third_part
 - Never add the Patch Pixel font (not MIT). Third-party credits: `THIRD_PARTY_NOTICES.md`.
 - Boss skills (Serena, the Hidden Child): data in `Assets/Game/Combat/Editor/BossLibrary.cs`, runtime in
   `Assets/Game/Combat/Runtime`, sheets from `tools/pixelfx/boss-fx.json` via `tools/pixelfx/export-set.mjs`.
-  Overview: `docs/bosses/README.md`. Check without Unity: `tools/pixelfx/verify/run.sh` (compile + logic tests).
+  Overview: `docs/bosses/README.md`. Check without Unity: `tools/pixelfx/verify/run.sh` (compile + logic tests);
+  see it running: `tools/arena-sim/run.sh` (real scripts on a headless Unity stand-in → MP4 + storyboard).

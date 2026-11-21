@@ -236,9 +236,10 @@ namespace SolarDark.Combat.Editor
                 "She locks on and fires a shadow beam at where the target stood.",
                 new SkillCue
                 {
+                    // arcane-beam fires from the hand (HX 15, HY -24 px) and is L = 168 px long: rotate round the hand
                     label = "beam", sheet = S("child-shadow-beam"), anchor = CueAnchor.Self, offset = new Vector2(0.6f, 1.6f), aim = CueAim.RotateToTarget,
-                    loopDuration = 1.8f, followCaster = true, sortingOrder = 24,
-                    hit = Box(14f, 0.9f, 7.2f, 0, 0.05f, 4, active: 1.7f, tick: 0.2f, knockback: 2), telegraphLead = 0.9f,
+                    effectAnchor = new Vector2(15 / 16f, 24 / 16f), loopDuration = 1.8f, followCaster = true, sortingOrder = 24,
+                    hit = Box(10.5f, 0.9f, 5.25f, 0, 0.05f, 4, active: 1.7f, tick: 0.2f, knockback: 2), telegraphLead = 0.9f,
                 });
 
             var explosion = Skill(B, "child.shadow-explosion", "그림자 폭발", 0.5f, 0.8f, 8f, 1.5f, 0, 99,
@@ -295,9 +296,15 @@ namespace SolarDark.Combat.Editor
                 "She drinks the light: everything is pulled in, she heals, and it bursts out of her.",
                 new SkillCue
                 {
+                    // implosion: SUCK until 0.8 s, still at 1.02 s, then it blows out
                     label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f), followCaster = true,
-                    hit = Circle(2.6f, 0, 0, 1.02f, 18, knockback: 11, hitStop: 0.15f, shake: 0.3f, pull: 5f, pullRadius: 8f, active: 0.05f), telegraphLead = 1.0f,
+                    hit = Circle(2.6f, 0, 0, 1.02f, 18, knockback: 11, hitStop: 0.15f, shake: 0.3f), telegraphLead = 1.0f,
                     action = CueAction.HealSelf, actionValue = 0.04f,
+                },
+                new SkillCue
+                {
+                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f), telegraph = false,
+                    hit = Circle(0.1f, 0, 0, 0, 0, active: 0.95f, pull: 5f, pullRadius: 8f),
                 });
 
             var infinite = Skill(B, "child.infinite-light", "무한한 빛", 0.6f, 1.2f, 13f, 1f, 0, 99,
@@ -320,8 +327,13 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f),
-                    hit = Circle(3f, 0, 0, 1.02f, 10, knockback: 12, shake: 0.3f, pull: 6f, pullRadius: 9f, active: 0.05f), telegraphLead = 1.0f,
+                    hit = Circle(3f, 0, 0, 1.02f, 10, knockback: 12, shake: 0.3f), telegraphLead = 1.0f,
                     action = CueAction.HealSelf, actionValue = 0.02f,
+                },
+                new SkillCue
+                {
+                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f), telegraph = false,
+                    hit = Circle(0.1f, 0, 0, 0, 0, active: 0.95f, pull: 6f, pullRadius: 9f),
                 });
 
             var halo = S("child-halo");

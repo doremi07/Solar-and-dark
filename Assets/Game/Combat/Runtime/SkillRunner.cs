@@ -154,14 +154,25 @@ namespace SolarDark.Combat
             Transform parent = cue.followCaster ? caster.transform : cue.followTarget && caster.Target != null ? caster.Target.transform : null;
             GameObject root;
             PixelFxPlayer fx = null;
-            if (cue.sheet != null)
+            bool anchored = cue.effectAnchor != Vector2.zero;
+            if (cue.sheet != null && !anchored)
             {
                 fx = PixelFxPlayer.Spawn(cue.sheet, plan.pos, plan.facing < 0, null);
                 root = fx.gameObject;
-                root.GetComponent<SpriteRenderer>().sortingOrder = cue.sortingOrder;
-                if (cue.loopDuration > 0) fx.loopMode = PixelFxPlayer.LoopMode.Loop;
             }
             else root = new GameObject(cue.label.Length > 0 ? cue.label : "cue");
+            if (cue.sheet != null && anchored)
+            {
+                // the effect hangs off the root so that its anchor point sits on the root: the root is what rotates and hits
+                fx = PixelFxPlayer.Spawn(cue.sheet, plan.pos, plan.facing < 0, root.transform);
+                fx.transform.localPosition = new Vector3(-cue.effectAnchor.x * plan.facing, -cue.effectAnchor.y, 0);
+                fx.destroyOnFinish = false;
+            }
+            if (fx != null)
+            {
+                fx.GetComponent<SpriteRenderer>().sortingOrder = cue.sortingOrder;
+                if (cue.loopDuration > 0) fx.loopMode = PixelFxPlayer.LoopMode.Loop;
+            }
             root.name = $"{skill.id}:{(cue.label.Length > 0 ? cue.label : "cue")}";
             root.transform.position = plan.pos;
             root.transform.rotation = Quaternion.Euler(0, 0, plan.angle * Mathf.Rad2Deg);
@@ -181,7 +192,7 @@ namespace SolarDark.Combat
                     cue.projectileSpeed, cue.projectileRange, cue.impactSheet, caster.Team);
                 life = Mathf.Max(life, cue.projectileRange / cue.projectileSpeed + 0.1f);
             }
-            if (fx == null || cue.loopDuration > 0 || cue.projectileSpeed > 0) Object.Destroy(root, Mathf.Max(0.1f, life));
+            if (fx == null || anchored || cue.loopDuration > 0 || cue.projectileSpeed > 0) Object.Destroy(root, Mathf.Max(0.1f, life));
             else if (fx != null && fx.Looping) Object.Destroy(root, Mathf.Max(0.1f, life));
 
             switch (cue.action)
@@ -252,7 +263,14 @@ namespace SolarDark.Combat
             }
         }
 
-        public bool Live => t >= hit.delay && t <= hit.delay + Mathf.Max(hit.active, 0.0001f);
+        bool singleDone;
+
+        /// <summary>An area that only drags (no damage, root or knockback) never counts as a hit, so it costs no i-frames.</summary>
+        bool PullOnly => hit.damage <= 0 && hit.root <= 0 && hit.knockback <= 0 && hit.pull > 0;
+
+        /// <summary>A lasting area is live from delay to delay + active. A single hit (active 0) is live on exactly one
+        /// frame: the first one at or after its delay, whatever the frame rate.</summary>
+        public bool Live => hit.active > 0 ? t >= hit.delay && t <= hit.delay + hit.active : t >= hit.delay && !singleDone;
 
         void Update()
         {
@@ -267,11 +285,12 @@ namespace SolarDark.Combat
                 if (hb == null || hb.team == team) continue;
                 if (hit.pull > 0 && hb.Status != null && (hb.Center - c).magnitude <= Mathf.Max(hit.pullRadius, 0.01f))
                     hb.Status.Pull(c, hit.pull, Time.deltaTime);
-                if (!Overlaps(hb, c, ang)) continue;
+                if (PullOnly || !Overlaps(hb, c, ang)) continue;
                 if (lastHit.TryGetValue(hb, out var at) && (hit.tick <= 0 || t - at < hit.tick)) continue;
                 lastHit[hb] = t;
                 Deal(hb, c);
             }
+            if (hit.active <= 0) singleDone = true;
         }
 
         bool Overlaps(Hurtbox hb, Vector2 c, float ang)

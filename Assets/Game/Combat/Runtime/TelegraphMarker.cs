@@ -64,7 +64,7 @@ namespace SolarDark.Combat
             // the fill grows from the centre and thickens; the outline pulses faster as the hit nears
             float pulse = 0.55f + 0.45f * Mathf.Sin(t * Mathf.Lerp(8f, 26f, u));
             outline.color = flash ? Color.white : new Color(c.r, c.g, c.b, Mathf.Lerp(0.5f, 1f, u) * pulse + 0.2f);
-            fill.color = flash ? new Color(1, 1, 1, 0.6f) : new Color(c.r, c.g, c.b, Mathf.Lerp(0.08f, 0.32f, u));
+            fill.color = flash ? new Color(1, 1, 1, 0.35f) : new Color(c.r, c.g, c.b, Mathf.Lerp(0.12f, 0.4f, u));
             float s = flash ? 1f : Mathf.Lerp(0.15f, 1f, Mathf.SmoothStep(0, 1, u));
             fill.transform.localScale = shape == HitShape.Box ? new Vector3(1, s, 1) : new Vector3(s, s, 1);
         }
@@ -100,7 +100,8 @@ namespace SolarDark.Combat
                         edge = x == 0 || y == 0 || x == w - 1 || y == h - 1;
                     }
                     byte a = 0;
-                    if (filled) a = inside && ((x + y) % 2 == 0 || (x % 4 == 0 && y % 4 == 0)) ? (byte)255 : (byte)0;
+                    // a sparse diagonal dither (1 px in 4), so the effects stay readable through the mark
+                    if (filled) a = inside && y % 2 == 0 && (x + y / 2) % 2 == 0 ? (byte)255 : (byte)0;
                     else a = edge ? (byte)255 : (byte)0;
                     px[y * w + x] = new Color32(255, 255, 255, a);
                 }

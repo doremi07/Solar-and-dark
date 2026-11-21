@@ -84,6 +84,9 @@ namespace SolarDark.Combat
         public PixelFxSheet sheet;
         public CueAnchor anchor = CueAnchor.Self;
         public Vector2 offset;
+        [Tooltip("The point of the effect (units from its pivot, facing right) that goes on the planned position and that it " +
+                 "rotates round, e.g. the hand a beam fires from. Hit offsets are measured from this point.")]
+        public Vector2 effectAnchor;
         [Min(1)] public int count = 1;
         [Tooltip("Seconds between instances.")]
         public float interval;

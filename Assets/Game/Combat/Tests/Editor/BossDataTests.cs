@@ -46,6 +46,7 @@ public class BossDataTests
                 foreach (var c in s.cues)
                 {
                     if (c.action == CueAction.SpawnIllusions) { Assert.NotNull(c.subSkill, s.id); continue; }
+                    if (c.sheet == null && c.hit.damage <= 0 && c.hit.pull > 0) continue;   // an invisible pull area under another cue's effect
                     Assert.NotNull(c.sheet, $"{s.id}/{c.label} sheet");
                     if (c.hit.shape == HitShape.None) continue;
                     float len = c.loopDuration > 0 ? c.loopDuration : c.sheet.data.TotalSeconds;
