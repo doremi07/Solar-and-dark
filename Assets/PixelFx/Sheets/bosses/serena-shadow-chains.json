@@ -1,0 +1,2337 @@
+{
+ "frames": [
+  {
+   "filename": "shadow-chains 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 1",
+   "frame": {
+    "x": 176,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 2",
+   "frame": {
+    "x": 352,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 3",
+   "frame": {
+    "x": 528,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 4",
+   "frame": {
+    "x": 704,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 5",
+   "frame": {
+    "x": 880,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 6",
+   "frame": {
+    "x": 1056,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 7",
+   "frame": {
+    "x": 1232,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 8",
+   "frame": {
+    "x": 1408,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 9",
+   "frame": {
+    "x": 0,
+    "y": 120,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 10",
+   "frame": {
+    "x": 176,
+    "y": 120,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 11",
+   "frame": {
+    "x": 352,
+    "y": 120,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 12",
+   "frame": {
+    "x": 528,
+    "y": 120,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 13",
+   "frame": {
+    "x": 704,
+    "y": 120,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 14",
+   "frame": {
+    "x": 880,
+    "y": 120,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 15",
+   "frame": {
+    "x": 1056,
+    "y": 120,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 16",
+   "frame": {
+    "x": 1232,
+    "y": 120,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 17",
+   "frame": {
+    "x": 1408,
+    "y": 120,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 18",
+   "frame": {
+    "x": 0,
+    "y": 240,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 19",
+   "frame": {
+    "x": 176,
+    "y": 240,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 20",
+   "frame": {
+    "x": 352,
+    "y": 240,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 21",
+   "frame": {
+    "x": 528,
+    "y": 240,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 22",
+   "frame": {
+    "x": 704,
+    "y": 240,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 23",
+   "frame": {
+    "x": 880,
+    "y": 240,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 24",
+   "frame": {
+    "x": 1056,
+    "y": 240,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 25",
+   "frame": {
+    "x": 1232,
+    "y": 240,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 26",
+   "frame": {
+    "x": 1408,
+    "y": 240,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 27",
+   "frame": {
+    "x": 0,
+    "y": 360,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 28",
+   "frame": {
+    "x": 176,
+    "y": 360,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 29",
+   "frame": {
+    "x": 352,
+    "y": 360,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 30",
+   "frame": {
+    "x": 528,
+    "y": 360,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 31",
+   "frame": {
+    "x": 704,
+    "y": 360,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 32",
+   "frame": {
+    "x": 880,
+    "y": 360,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 33",
+   "frame": {
+    "x": 1056,
+    "y": 360,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 34",
+   "frame": {
+    "x": 1232,
+    "y": 360,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 35",
+   "frame": {
+    "x": 1408,
+    "y": 360,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 36",
+   "frame": {
+    "x": 0,
+    "y": 480,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 37",
+   "frame": {
+    "x": 176,
+    "y": 480,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 38",
+   "frame": {
+    "x": 352,
+    "y": 480,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 39",
+   "frame": {
+    "x": 528,
+    "y": 480,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 40",
+   "frame": {
+    "x": 704,
+    "y": 480,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 41",
+   "frame": {
+    "x": 880,
+    "y": 480,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 42",
+   "frame": {
+    "x": 1056,
+    "y": 480,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 43",
+   "frame": {
+    "x": 1232,
+    "y": 480,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 44",
+   "frame": {
+    "x": 1408,
+    "y": 480,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 45",
+   "frame": {
+    "x": 0,
+    "y": 600,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 46",
+   "frame": {
+    "x": 176,
+    "y": 600,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 47",
+   "frame": {
+    "x": 352,
+    "y": 600,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 48",
+   "frame": {
+    "x": 528,
+    "y": 600,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 49",
+   "frame": {
+    "x": 704,
+    "y": 600,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 50",
+   "frame": {
+    "x": 880,
+    "y": 600,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 51",
+   "frame": {
+    "x": 1056,
+    "y": 600,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 52",
+   "frame": {
+    "x": 1232,
+    "y": 600,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 53",
+   "frame": {
+    "x": 1408,
+    "y": 600,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 54",
+   "frame": {
+    "x": 0,
+    "y": 720,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 55",
+   "frame": {
+    "x": 176,
+    "y": 720,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 56",
+   "frame": {
+    "x": 352,
+    "y": 720,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 57",
+   "frame": {
+    "x": 528,
+    "y": 720,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 58",
+   "frame": {
+    "x": 704,
+    "y": 720,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 59",
+   "frame": {
+    "x": 880,
+    "y": 720,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 60",
+   "frame": {
+    "x": 1056,
+    "y": 720,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 61",
+   "frame": {
+    "x": 1232,
+    "y": 720,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 62",
+   "frame": {
+    "x": 1408,
+    "y": 720,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 63",
+   "frame": {
+    "x": 0,
+    "y": 840,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 64",
+   "frame": {
+    "x": 176,
+    "y": 840,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 65",
+   "frame": {
+    "x": 352,
+    "y": 840,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 66",
+   "frame": {
+    "x": 528,
+    "y": 840,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 67",
+   "frame": {
+    "x": 704,
+    "y": 840,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 68",
+   "frame": {
+    "x": 880,
+    "y": 840,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 69",
+   "frame": {
+    "x": 1056,
+    "y": 840,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 70",
+   "frame": {
+    "x": 1232,
+    "y": 840,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 71",
+   "frame": {
+    "x": 1408,
+    "y": 840,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 72",
+   "frame": {
+    "x": 0,
+    "y": 960,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 73",
+   "frame": {
+    "x": 176,
+    "y": 960,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 74",
+   "frame": {
+    "x": 352,
+    "y": 960,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 75",
+   "frame": {
+    "x": 528,
+    "y": 960,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 76",
+   "frame": {
+    "x": 704,
+    "y": 960,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 77",
+   "frame": {
+    "x": 880,
+    "y": 960,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 78",
+   "frame": {
+    "x": 1056,
+    "y": 960,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 79",
+   "frame": {
+    "x": 1232,
+    "y": 960,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 80",
+   "frame": {
+    "x": 1408,
+    "y": 960,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 81",
+   "frame": {
+    "x": 0,
+    "y": 1080,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 82",
+   "frame": {
+    "x": 176,
+    "y": 1080,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 83",
+   "frame": {
+    "x": 352,
+    "y": 1080,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 84",
+   "frame": {
+    "x": 528,
+    "y": 1080,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 85",
+   "frame": {
+    "x": 704,
+    "y": 1080,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 86",
+   "frame": {
+    "x": 880,
+    "y": 1080,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 87",
+   "frame": {
+    "x": 1056,
+    "y": 1080,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 88",
+   "frame": {
+    "x": 1232,
+    "y": 1080,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 89",
+   "frame": {
+    "x": 1408,
+    "y": 1080,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 90",
+   "frame": {
+    "x": 0,
+    "y": 1200,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 91",
+   "frame": {
+    "x": 176,
+    "y": 1200,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 92",
+   "frame": {
+    "x": 352,
+    "y": 1200,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 93",
+   "frame": {
+    "x": 528,
+    "y": 1200,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 94",
+   "frame": {
+    "x": 704,
+    "y": 1200,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 95",
+   "frame": {
+    "x": 880,
+    "y": 1200,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  },
+  {
+   "filename": "shadow-chains 96",
+   "frame": {
+    "x": 1056,
+    "y": 1200,
+    "w": 176,
+    "h": 120
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 120
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 120
+   },
+   "duration": 33
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "serena-shadow-chains.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 1584,
+   "h": 1320
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "shadow-chains",
+    "from": 0,
+    "to": 96,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "shadow/shadow-chains",
+   "name": "Shadow chains",
+   "fps": 30,
+   "loop": false,
+   "frames": 97,
+   "frameSize": [
+    176,
+    120
+   ],
+   "pivot": [
+    88,
+    100
+   ],
+   "columns": 9,
+   "act": {
+    "windup": 0.2,
+    "recovery": 0,
+    "onBody": false,
+    "targets": [],
+    "hits": [],
+    "poses": [
+     {
+      "t": -0.2,
+      "how": "smooth",
+      "pose": {
+       "crouch": 3,
+       "fx": 11,
+       "fy": -21,
+       "bx": 9,
+       "by": -21,
+       "ffx": -2,
+       "fbx": 3
+      }
+     },
+     {
+      "t": 0.4,
+      "how": "smooth",
+      "pose": {
+       "turn": 0.9,
+       "lean": -1,
+       "crouch": 1,
+       "fx": -9,
+       "fy": -22,
+       "bx": 10,
+       "by": -22,
+       "ffx": -2,
+       "fbx": 3
+      }
+     },
+     {
+      "t": 0.78,
+      "how": "snap",
+      "pose": {
+       "turn": 0.9,
+       "crouch": 3,
+       "fx": -6,
+       "fy": -18,
+       "bx": 7,
+       "by": -18,
+       "ffx": -2,
+       "fbx": 3
+      }
+     },
+     {
+      "t": 1.05,
+      "how": "smooth",
+      "pose": {
+       "turn": 0.9,
+       "crouch": 3,
+       "fx": -6,
+       "fy": -18,
+       "bx": 7,
+       "by": -18,
+       "ffx": -2,
+       "fbx": 3,
+       "lean": -3
+      }
+     },
+     {
+      "t": 1.35,
+      "how": "smooth",
+      "pose": {
+       "turn": 0.9,
+       "crouch": 3,
+       "fx": -6,
+       "fy": -18,
+       "bx": 7,
+       "by": -18,
+       "ffx": -2,
+       "fbx": 3,
+       "lean": 3
+      }
+     },
+     {
+      "t": 1.65,
+      "how": "smooth",
+      "pose": {
+       "turn": 0.9,
+       "crouch": 3,
+       "fx": -6,
+       "fy": -18,
+       "bx": 7,
+       "by": -18,
+       "ffx": -2,
+       "fbx": 3,
+       "lean": -3
+      }
+     },
+     {
+      "t": 1.9,
+      "how": "smooth",
+      "pose": {
+       "turn": 0.9,
+       "crouch": 6,
+       "fx": -6,
+       "fy": -18,
+       "bx": 7,
+       "by": -18,
+       "ffx": -2,
+       "fbx": 3
+      }
+     },
+     {
+      "t": 2,
+      "how": "snap",
+      "pose": {
+       "turn": 1.1,
+       "crouch": -1,
+       "y": -2,
+       "fx": -14,
+       "fy": -34,
+       "bx": 15,
+       "by": -34,
+       "ffx": -3,
+       "fbx": 4
+      }
+     },
+     {
+      "t": 2.3,
+      "how": "smooth",
+      "pose": {
+       "crouch": 4,
+       "fx": 11,
+       "fy": -21,
+       "bx": 9,
+       "by": -21,
+       "ffx": 7,
+       "fbx": -7
+      }
+     },
+     {
+      "t": 3.2,
+      "how": "smooth",
+      "pose": {
+       "crouch": 3,
+       "fx": 11,
+       "fy": -21,
+       "bx": 9,
+       "by": -21,
+       "ffx": -2,
+       "fbx": 3
+      }
+     }
+    ]
+   },
+   "version": "0.3.1",
+   "options": {
+    "palette": [
+     "#0b0712",
+     "#1a1028",
+     "#2c1c44",
+     "#45306a",
+     "#6a4f9a",
+     "#9a82c8",
+     "#d2c4ee",
+     "#fbf6ff"
+    ]
+   }
+  }
+ }
+}

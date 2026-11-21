@@ -1,0 +1,6 @@
+{
+    "name": "SolarDark.Combat",
+    "rootNamespace": "SolarDark.Combat",
+    "references": ["PixelFx.Runtime"],
+    "autoReferenced": true
+}

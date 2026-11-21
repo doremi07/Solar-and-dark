@@ -21,6 +21,10 @@ compatibility: Node 18 or newer. ffmpeg is optional (GIF and MP4 previews). This
 > - In game: drop the prefab in, or `PixelFxPlayer.Spawn(sheet, position, flipLeft)`. The pivot is the effect's
 >   origin (feet / impact point). Act hits come through `PixelFxPlayer.onHit` (freeze seconds for hit-stop).
 > - Recolors and variants are separate sheets: `--name blue-torch --opts '{"palette":[...]}'`.
+> - Sets of named, recoloured sheets live in a manifest: `tools/pixelfx/boss-fx.json` (boss skills; palettes DUSK,
+>   HALO, CRYSTAL from the concept art). `node tools/pixelfx/export-set.mjs tools/pixelfx/boss-fx.json [filter]`. Add
+>   new boss effects there, then wire them into a skill in `Assets/Game/Combat/Editor/BossLibrary.cs` (hit `delay` =
+>   the effect's own contact constant). See `docs/bosses/README.md`.
 > - Verify an export: the sheet asset's frame count/fps, **Tools > pixelfx > Create Demo Scene**, Play; and the
 >   EditMode tests in `Assets/PixelFx/Tests`. In a cloud session without Unity, open the exported PNG and contact
 >   sheet with your image tool instead.

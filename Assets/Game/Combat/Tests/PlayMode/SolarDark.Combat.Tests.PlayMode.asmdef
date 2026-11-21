@@ -1,0 +1,9 @@
+{
+    "name": "SolarDark.Combat.Tests.PlayMode",
+    "references": ["SolarDark.Combat", "PixelFx.Runtime", "UnityEngine.TestRunner"],
+    "optionalUnityReferences": [],
+    "overrideReferences": true,
+    "precompiledReferences": ["nunit.framework.dll"],
+    "defineConstraints": ["UNITY_INCLUDE_TESTS"],
+    "autoReferenced": false
+}

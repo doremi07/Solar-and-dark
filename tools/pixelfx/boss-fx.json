@@ -1,0 +1,36 @@
+{
+  "_comment": "Sprite sheets for the boss skills (Serena, the Hidden Child). node tools/pixelfx/export-set.mjs tools/pixelfx/boss-fx.json renders them all into Assets/PixelFx/Sheets/bosses/. Palettes come from the concept sheets: DUSK = shadow violet, HALO = Serena's gold light, CRYSTAL = the child's lavender light.",
+  "dest": "Assets/PixelFx/Sheets/bosses",
+  "palettes": {
+    "DUSK": ["#0b0712", "#1a1028", "#2c1c44", "#45306a", "#6a4f9a", "#9a82c8", "#d2c4ee", "#fbf6ff"],
+    "HALO": ["#1a1020", "#3d2a3a", "#7a5640", "#c0905a", "#e8c08a", "#f8e2b8", "#fff6e4", "#ffffff"],
+    "CRYSTAL": ["#120c22", "#261a46", "#43307a", "#6a52b0", "#9a86dc", "#c8baf4", "#ece6ff", "#ffffff"]
+  },
+  "sheets": [
+    { "name": "serena-halo", "id": "holy/thorn-halo", "palette": "HALO" },
+    { "name": "serena-shadow-fall", "id": "shadow/shadow-tendrils", "palette": "DUSK" },
+    { "name": "serena-shadow-slash", "id": "melee/scythe-reap", "palette": "DUSK" },
+    { "name": "serena-wide-slash", "id": "melee/spear-sweep", "palette": "DUSK" },
+    { "name": "serena-holy-domain", "id": "arcane/rune-circle", "palette": "HALO" },
+    { "name": "serena-holy-domain-burst", "id": "arcane/magic-circle-cast", "palette": "HALO" },
+    { "name": "serena-shadow-chains", "id": "shadow/shadow-chains", "palette": "DUSK" },
+    { "name": "serena-rift", "id": "ice/ice-spikes", "palette": "DUSK" },
+    { "name": "serena-judgment-mark", "id": "holy/sunburst", "palette": "HALO" },
+    { "name": "serena-judgment", "id": "holy/smite", "palette": "HALO" },
+    { "name": "serena-shadow-pillar", "id": "arcane/magic-circle-cast", "palette": "DUSK", "opts": { "seed": 4 } },
+
+    { "name": "child-halo", "id": "holy/thorn-halo", "palette": "CRYSTAL" },
+    { "name": "child-light-fall", "id": "arcane/star-fall", "palette": "CRYSTAL" },
+    { "name": "child-shadow-explosion", "id": "shadow/dark-explosion", "palette": "DUSK" },
+    { "name": "child-crystal", "id": "ice/ice-crystal", "palette": "CRYSTAL" },
+    { "name": "child-crystal-lance", "id": "ice/ice-lance", "palette": "CRYSTAL" },
+    { "name": "child-sparkle", "id": "impacts/hit-spark", "palette": "CRYSTAL" },
+    { "name": "child-shadow-dash", "id": "melee/thrust", "palette": "DUSK", "opts": { "sparks": ["#fbf6ff", "#d2c4ee", "#9a82c8", "#6a4f9a"] } },
+    { "name": "child-despair", "id": "shadow/black-hole", "palette": "DUSK" },
+    { "name": "child-light-absorb", "id": "explosions/implosion", "palette": "CRYSTAL" },
+    { "name": "child-light-burst", "id": "arcane/mana-burst", "palette": "HALO" },
+    { "name": "child-shadow-beam", "id": "arcane/arcane-beam", "palette": "DUSK" },
+    { "name": "child-gravity", "id": "shadow/void-orb", "palette": "DUSK" },
+    { "name": "child-infinite-light", "id": "holy/holy-pillar", "palette": "CRYSTAL" }
+  ]
+}

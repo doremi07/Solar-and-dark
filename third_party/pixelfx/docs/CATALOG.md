@@ -1,6 +1,6 @@
 # Catalog
 
-244 effects in 21 categories. Every one is a file in
+246 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -242,6 +242,7 @@ heals, halos, pillars of light.
 | Resurrection | `holy/resurrection` | one-shot 4.8s | 192×160 | Light pours down on the fallen and life climbs back up the body; wings of light unfold, a halo forms, one great wingbeat, then the wings scatter into feathers. |
 | Smite | `holy/smite` | one-shot 2.8s | 224×176 | A glint marks the spot, then a bolt of light drops like a hammer: a white flash, a shockwave over the floor, stone chips flying and cracks that glow and cool. |
 | Sunburst | `holy/sunburst` | loop 4s | 128×128 | A white-hot core in a gold corona; long and short rays turn slowly round it, breathing, with glints running out along them that wink at the tips. |
+| Thorn halo | `holy/thorn-halo` | loop 4s | 96×100 | A front-facing crown of light behind the head: a double ring studded with thorns, four long compass rays and four short ones, breathing, with a glint running round it. |
 
 ## shadow
 
@@ -257,6 +258,7 @@ curses, voids, tendrils, souls.
 | Hex sigil | `shadow/hex-sigil` | one-shot 4.2s | 168×128 | A burning pen traces a cursed sigil in the air, its glyphs pop in one by one, then it flares white and crumbles into falling embers. |
 | Life steal | `shadow/life-steal` | one-shot 2.2s | 184×100 | A target on the right is struck and bleeds red orbs; they hang a moment, then whip home as comet streaks and flood the caster crimson. |
 | Necro skulls | `shadow/necro-skulls` | loop 3s | 136×116 | Spectral skulls circle a cold green flame on a tilted orbit, passing behind and before it, eyes lit, trailing curls of ghost smoke. |
+| Shadow chains | `shadow/shadow-chains` | one-shot 3.2s | 176×120 | A sigil burns into the floor; four dark chains lash up out of it and wrap the body twice, cinch with a flash, rattle as it strains, then shatter into shards and motes. |
 | Shadow flames | `shadow/shadow-flames` | loop 2.4s | 104×112 | Inside-out fire on the floor: a black heart wrapped in violet flame with pale skin and tips, shedding embers and dark smoke. |
 | Shadow tendrils | `shadow/shadow-tendrils` | one-shot 3.2s | 208×130 | A dark pool opens on the floor; tentacles with lit rims and hooked tips lash up out of it with a splash, writhe, and sink back as it closes. |
 | Soul drain | `shadow/soul-drain` | loop 3.2s | 208×120 | Pale souls are torn loose on the right and dragged down a funnel of streaks into a black crystal vessel, which flares violet as each one lands. |

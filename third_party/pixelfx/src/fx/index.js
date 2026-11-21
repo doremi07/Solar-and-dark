@@ -149,6 +149,7 @@ import * as holy_holy_pillar from "./holy/holy-pillar.js";
 import * as holy_resurrection from "./holy/resurrection.js";
 import * as holy_smite from "./holy/smite.js";
 import * as holy_sunburst from "./holy/sunburst.js";
+import * as holy_thorn_halo from "./holy/thorn-halo.js";
 import * as shadow_black_hole from "./shadow/black-hole.js";
 import * as shadow_curse from "./shadow/curse.js";
 import * as shadow_dark_explosion from "./shadow/dark-explosion.js";
@@ -157,6 +158,7 @@ import * as shadow_grasping_hands from "./shadow/grasping-hands.js";
 import * as shadow_hex_sigil from "./shadow/hex-sigil.js";
 import * as shadow_life_steal from "./shadow/life-steal.js";
 import * as shadow_necro_skulls from "./shadow/necro-skulls.js";
+import * as shadow_shadow_chains from "./shadow/shadow-chains.js";
 import * as shadow_shadow_flames from "./shadow/shadow-flames.js";
 import * as shadow_shadow_tendrils from "./shadow/shadow-tendrils.js";
 import * as shadow_soul_drain from "./shadow/soul-drain.js";
@@ -397,6 +399,7 @@ export const effects = {
   "holy/resurrection": holy_resurrection,
   "holy/smite": holy_smite,
   "holy/sunburst": holy_sunburst,
+  "holy/thorn-halo": holy_thorn_halo,
   "shadow/black-hole": shadow_black_hole,
   "shadow/curse": shadow_curse,
   "shadow/dark-explosion": shadow_dark_explosion,
@@ -405,6 +408,7 @@ export const effects = {
   "shadow/hex-sigil": shadow_hex_sigil,
   "shadow/life-steal": shadow_life_steal,
   "shadow/necro-skulls": shadow_necro_skulls,
+  "shadow/shadow-chains": shadow_shadow_chains,
   "shadow/shadow-flames": shadow_shadow_flames,
   "shadow/shadow-tendrils": shadow_shadow_tendrils,
   "shadow/soul-drain": shadow_soul_drain,

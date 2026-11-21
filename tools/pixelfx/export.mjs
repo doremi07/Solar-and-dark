@@ -9,6 +9,7 @@
 //   node tools/pixelfx/export.mjs ice                              every effect in a category
 //
 // Options: --name NAME (one id only) --opts JSON --seed N --fps N --act --dest DIR (default Assets/PixelFx/Sheets)
+// --flat (write straight into DIR, no category folder)
 
 import { spawnSync } from "node:child_process";
 import { mkdtempSync, readdirSync, readFileSync, writeFileSync, copyFileSync, mkdirSync, rmSync, existsSync } from "node:fs";
@@ -23,6 +24,7 @@ for (let i = 0; i < args.length; i++) {
   const a = args[i];
   if (!a.startsWith("--")) ids.push(a);
   else if (a === "--act") flags.act = true;
+  else if (a === "--flat") flags.flat = true;
   else flags[a.slice(2)] = args[++i];
 }
 if (!ids.length) { console.error("usage: node tools/pixelfx/export.mjs <id|category> [--name N] [--opts JSON] [--seed N] [--fps N] [--act]"); process.exit(1); }
@@ -60,7 +62,7 @@ try {
   if (flags.name && produced.length !== 1) { console.error("--name works with exactly one effect"); process.exit(1); }
 
   for (const p of produced) {
-    const [cat, name] = p.id.split("/"), out = flags.name ?? name + p.suffix, dir = join(dest, cat);
+    const [cat, name] = p.id.split("/"), out = flags.name ?? name + p.suffix, dir = flags.flat ? dest : join(dest, cat);
     mkdirSync(dir, { recursive: true });
     const json = JSON.parse(readFileSync(p.json, "utf8"));
     json.meta.image = out + ".png";

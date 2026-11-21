@@ -8,3 +8,6 @@ Unity game. Pixel art VFX come from **pixelfx** (pinned, vendored in `third_part
   `Assets/PixelFx/Sheets/<category>/` (the editor auto-imports to a `PixelFxSheet` + prefab).
 - Upgrade pixelfx only by editing `tools/pixelfx/PIXELFX_VERSION` and running `tools/pixelfx/vendor.sh`.
 - Never add the Patch Pixel font (not MIT). Third-party credits: `THIRD_PARTY_NOTICES.md`.
+- Boss skills (Serena, the Hidden Child): data in `Assets/Game/Combat/Editor/BossLibrary.cs`, runtime in
+  `Assets/Game/Combat/Runtime`, sheets from `tools/pixelfx/boss-fx.json` via `tools/pixelfx/export-set.mjs`.
+  Overview: `docs/bosses/README.md`. Check without Unity: `tools/pixelfx/verify/run.sh` (compile + logic tests).

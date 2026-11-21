@@ -23,5 +23,7 @@ cp "$TMP/docs/AUTHORING.md" "$DEST/docs/" && cp "$TMP/docs/CATALOG.md" "$DEST/do
 rm -f "$DEST/tools/build-gallery.mjs" "$DEST/tools/serve.mjs"
 mkdir -p "$DEST/upstream-skill" && cp "$TMP/skills/pixelfx/SKILL.md" "$DEST/upstream-skill/SKILL.md"
 printf 'pixelfx %s @ %s\nhttps://github.com/patch-gg/pixelfx\nVendored by tools/pixelfx/vendor.sh. Do not edit upstream files; effects authored here go in src/fx/<category>/ as new files (vendor.sh keeps them).\nExcluded: gallery/ (Patch Pixel font, not MIT), docs/readme, .github, build-gallery.mjs, serve.mjs.\n' "$VERSION" "$COMMIT" > "$DEST/VENDORED.txt"
+# re-register effects authored here in the registry and catalog
+(cd "$DEST" && node tools/index.mjs >/dev/null)
 if grep -rqi "PatchPixel\|woff2" "$DEST"; then echo "Patch Pixel font reference found in vendored files" >&2; exit 1; fi
 echo "vendored pixelfx $VERSION ($COMMIT) -> third_party/pixelfx"

@@ -17,3 +17,4 @@ fi
 dotnet build "$HERE/compile/compile.csproj" -nologo -v q -p:UNITY_LIB="$CACHE/lib" -o "$WORK/c" | grep -E "error|warning|Build succeeded" | sort -u
 dotnet run --project "$HERE/sim/sim.csproj" -v q -- "$JSON" "$WORK/ticks.txt"
 python3 -I "$HERE/scene.py" "${JSON%.json}.png" "$WORK/ticks.txt" "$OUT" >/dev/null && echo "scene: $OUT-strip.png $OUT.gif"
+dotnet run --project "$HERE/combat/combat.csproj" -v q

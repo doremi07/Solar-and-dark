@@ -1,0 +1,7 @@
+{
+    "name": "SolarDark.Combat.Editor",
+    "rootNamespace": "SolarDark.Combat.Editor",
+    "references": ["SolarDark.Combat", "PixelFx.Runtime", "PixelFx.Editor"],
+    "includePlatforms": ["Editor"],
+    "autoReferenced": true
+}
