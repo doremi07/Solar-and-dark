@@ -50,6 +50,12 @@ public class BossDataTests
                 {
                     if (c.action == CueAction.SpawnIllusions) { Assert.NotNull(c.subSkill, s.id); continue; }
                     if (c.sheet == null && c.hit.damage <= 0 && c.hit.pull > 0) continue;   // an invisible pull area under another cue's effect
+                    // a further hit segment of a sibling cue's effect (the rift's stepped boxes): same place, no sheet of its own
+                    if (c.sheet == null && s.cues.Exists(o => o.sheet != null && o.anchor == c.anchor && o.offset == c.offset && o.aim == c.aim))
+                    {
+                        Assert.Greater(c.hit.size.x * c.hit.size.y, 0, $"{s.id}/{c.label}");
+                        continue;
+                    }
                     Assert.NotNull(c.sheet, $"{s.id}/{c.label} sheet");
                     if (c.hit.shape == HitShape.None) continue;
                     float len = c.loopDuration > 0 ? c.loopDuration : c.sheet.data.TotalSeconds;

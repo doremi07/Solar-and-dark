@@ -83,6 +83,12 @@
       "palette": "DUSK"
     },
     {
+      "name": "serena-rift-short",
+      "id": "sd/serena-rift-short",
+      "from": "ice/ice-spikes",
+      "palette": "DUSK"
+    },
+    {
       "name": "serena-judgment-mark",
       "id": "sd/serena-judgment-mark",
       "from": "holy/sunburst",

@@ -68,6 +68,13 @@ export const SKILLS = {
     shards: [{ t: 1.42, x: 90, y: -20, n: 14, speed: [70, 180], w: 60, g: 320, size: 4 }],
     scorch: [{ t: 0.3, x: 86, r: 84, sy: 0.08, life: 2.2 }],
   },
+  "serena-rift-short": {
+    // the two-way rift: each side runs 7 units instead of 10.75, so there is floor to escape to past either end
+    base: "ice/ice-spikes", palette: DUSK, opts: { reach: 112, height: 50 }, name: "Rift of light and shadow (short)", grow: [18, 0, 0, 0],
+    bursts: [28, 80].map((x) => ({ t: 0.04 + 0.44 * (x / 112), x, y: -2, n: 4, dir: UP, spread: 1.0, speed: [80, 150], g: 320 })),
+    shards: [{ t: 1.42, x: 60, y: -18, n: 10, speed: [70, 170], w: 40, g: 320, size: 4 }],
+    scorch: [{ t: 0.3, x: 56, r: 56, sy: 0.08, life: 2.2 }],
+  },
   "serena-judgment-mark": {
     base: "holy/sunburst", palette: HALO, name: "Mark of judgment",
     glints: [{ rate: 2.5, x: [-44, 44], y: [-44, 44], size: [2, 3] }],

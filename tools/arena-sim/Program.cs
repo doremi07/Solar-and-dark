@@ -149,6 +149,7 @@ static class Program
             float ppu = sp.pixelsPerUnit, w = sp.rect.width, h = sp.rect.height;
             // the sprite's quad in its own local units
             float x0 = -sp.pivot.x / ppu, x1 = (w - sp.pivot.x) / ppu, y0 = -sp.pivot.y / ppu, y1 = (h - sp.pivot.y) / ppu;
+            if (r.flipX) { float t0 = -x1; x1 = -x0; x0 = t0; }   // flipX mirrors about the pivot: bound the mirrored quad
             float minX = float.MaxValue, minY = float.MaxValue, maxX = float.MinValue, maxY = float.MinValue;
             foreach (var (lx, ly) in new[] { (x0, y0), (x1, y0), (x0, y1), (x1, y1) })
             {

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.IO;
 using PixelFx;
 using PixelFx.Editor;
@@ -88,26 +89,17 @@ namespace SolarDark.Combat.Editor
                     hit = Circle(1.3f, 0, 1.2f, 0.78f, 6, root: 1.2f, hitStop: 0.08f),
                 });
 
+            // the rift's hit follows its spikes: stepped segments, as tall as the blades there, live as the crack reaches them
             var rift = Skill(B, "serena.rift", "빛과 그림자의 균열", 0.7f, 0.7f, 8f, 1.5f, 0, 12,
                 "A crack races along the floor towards the target and shadow spikes burst up behind it.",
-                new SkillCue
-                {
-                    label = "rift", sheet = S("serena-rift"), anchor = CueAnchor.Self, offset = new Vector2(0.6f, 0), aim = CueAim.FaceTarget,
-                    hit = Box(10.75f, 3f, 5.4f, 1.5f, 0.18f, 14, active: 0.35f, knockback: 5, hitStop: 0.08f, shake: 0.12f),
-                });
+                RiftCues("rift", S("serena-rift"), 172, 56, new Vector2(0.6f, 0), CueAim.FaceTarget, CueAnchor.Self));
 
+            // both ways at once, each side shorter (7 units) so the floor past either end is safe, and so is the
+            // pocket at her feet where no spikes come up
             var riftTwin = Skill(B, "serena.rift-twin", "빛과 그림자의 균열 (양방향)", 0.8f, 0.8f, 9f, 1.5f, 0, 99,
                 "Phase 2+: the rift tears both ways at once.",
-                new SkillCue
-                {
-                    label = "front", sheet = S("serena-rift"), offset = new Vector2(0.6f, 0), aim = CueAim.FaceTarget,
-                    hit = Box(10.75f, 3f, 5.4f, 1.5f, 0.18f, 14, active: 0.35f, knockback: 5, hitStop: 0.08f),
-                },
-                new SkillCue
-                {
-                    label = "back", sheet = S("serena-rift"), offset = new Vector2(-0.6f, 0), aim = CueAim.AwayFromTarget,
-                    hit = Box(10.75f, 3f, 5.4f, 1.5f, 0.18f, 14, active: 0.35f, knockback: 5),
-                });
+                RiftCues("front", S("serena-rift-short"), 112, 50, new Vector2(0.6f, 0), CueAim.FaceTarget, CueAnchor.Self)
+                    .Concat(RiftCues("back", S("serena-rift-short"), 112, 50, new Vector2(-0.6f, 0), CueAim.AwayFromTarget, CueAnchor.Self)).ToArray());
 
             var pillar = Skill(B, "serena.shadow-pillar", "그림자 기둥", 0.4f, 0.8f, 10f, 1.2f, 0, 99,
                 "Circles draw themselves round the target; a column of shadow fires up out of each.",
@@ -356,6 +348,35 @@ namespace SolarDark.Combat.Editor
         }
 
         // ---------------------------------------------------------------- helpers
+
+        /// <summary>
+        /// The hit areas of an ice-spikes rift (reach and height in px, as the sheet's options): the line split into
+        /// four boxes, each as tall as the tallest blade in it (the effect's height envelope) and live from when the
+        /// crack's front reaches it (the effect's own START 0.04 s, RUN 0.44 s, ease 1.7) until the blades are up.
+        /// The first cue plays the sheet; the rest only hit.
+        /// </summary>
+        static SkillCue[] RiftCues(string label, PixelFxSheet sheet, float reachPx, float heightPx, Vector2 offset, CueAim aim, CueAnchor anchor)
+        {
+            const float Start = 0.04f, Run = 0.44f, Ppu = 16f;
+            float ReachedAt(float x) => Start + Run * (1 - Mathf.Pow(1 - Mathf.Clamp01(x / reachPx), 1 / 1.7f));
+            float Env(float q) => 0.28f + 0.72f * Mathf.Exp(-Mathf.Pow((q - 0.64f) / 0.3f, 2));
+            const int N = 4;
+            float x0 = 6, x1 = reachPx + 6;   // first blade at 10 px (its back blade leans a little behind), tips lean past the end
+            var cues = new SkillCue[N];
+            for (int i = 0; i < N; i++)
+            {
+                float a = x0 + (x1 - x0) * i / N, b = x0 + (x1 - x0) * (i + 1) / N, top = 0;
+                for (float x = a; x <= b; x += 1) top = Mathf.Max(top, Env(x / reachPx));
+                float h = Mathf.Max(1.2f, heightPx * top * 1.06f / Ppu + 0.3f), from = ReachedAt(Mathf.Max(0, a));
+                cues[i] = new SkillCue
+                {
+                    label = $"{label}{i + 1}", sheet = i == 0 ? sheet : null, anchor = anchor, offset = offset, aim = aim,
+                    hit = Box((b - a) / Ppu, h, (a + b) / 2 / Ppu, h / 2, from + 0.03f, 14, active: ReachedAt(b) - from + 0.22f,
+                        knockback: 5, hitStop: i == 0 ? 0.08f : 0, shake: i == 0 ? 0.12f : 0),
+                };
+            }
+            return cues;
+        }
 
         static PixelFxSheet S(string name)
         {

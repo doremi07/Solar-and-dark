@@ -265,6 +265,7 @@ import * as sd_serena_holy_domain_burst from "./sd/serena-holy-domain-burst.js";
 import * as sd_serena_judgment from "./sd/serena-judgment.js";
 import * as sd_serena_judgment_mark from "./sd/serena-judgment-mark.js";
 import * as sd_serena_rift from "./sd/serena-rift.js";
+import * as sd_serena_rift_short from "./sd/serena-rift-short.js";
 import * as sd_serena_shadow_chains from "./sd/serena-shadow-chains.js";
 import * as sd_serena_shadow_fall from "./sd/serena-shadow-fall.js";
 import * as sd_serena_shadow_pillar from "./sd/serena-shadow-pillar.js";
@@ -539,6 +540,7 @@ export const effects = {
   "sd/serena-judgment": sd_serena_judgment,
   "sd/serena-judgment-mark": sd_serena_judgment_mark,
   "sd/serena-rift": sd_serena_rift,
+  "sd/serena-rift-short": sd_serena_rift_short,
   "sd/serena-shadow-chains": sd_serena_shadow_chains,
   "sd/serena-shadow-fall": sd_serena_shadow_fall,
   "sd/serena-shadow-pillar": sd_serena_shadow_pillar,
