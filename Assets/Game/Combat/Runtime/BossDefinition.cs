@@ -15,10 +15,6 @@ namespace SolarDark.Combat
         [Tooltip("Cast once on entering the phase (while invulnerable).")]
         public BossSkill entrySkill;
         public PixelFxSheet halo;
-        [Tooltip("The body's idle loop for this phase (pixelfx character sheet). Needs a BossBody on the body.")]
-        public PixelFxSheet idleSheet;
-        [Tooltip("The body's cast animation; its release frame is timed to each skill's wind-up.")]
-        public PixelFxSheet castSheet;
         public Color haloTint = Color.white;
         public Color bodyTint = Color.white;
         [Tooltip("Seconds between attacks: random in this range.")]

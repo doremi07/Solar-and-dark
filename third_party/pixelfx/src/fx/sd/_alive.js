@@ -37,7 +37,7 @@ function build(cfg, D, loop, seed) {
   const clampLife = (ts, life) => (loop ? life : Math.max(0.05, Math.min(life, D - 0.04 - ts)));
   const emit = (list, kind, defaults) => {
     for (const e of list ?? []) {
-      const [t0, t1] = span(e), n = Math.max(1, Math.round((e.rate ?? 10) * (cfg.density ?? 1.8) * (t1 - t0)));
+      const [t0, t1] = span(e), n = Math.max(1, Math.round((e.rate ?? 10) * (cfg.density ?? 1) * (t1 - t0)));
       for (let i = 0; i < n; i++) {
         const ts = t0 + ((i + R.range(0.05, 0.95)) / n) * (t1 - t0);
         const q = {
@@ -58,7 +58,7 @@ function build(cfg, D, loop, seed) {
   emit(cfg.glints, "glint", { vx: 0, vy: 0, k: 1, g: 0, size: [2.5, 5], life: [0.3, 0.55] });
   emit(cfg.wisps, "wisp", { vx: [-5, 5], vy: [-14, -6], k: 0.6, g: 0, size: [3, 6], life: [0.8, 1.4] });
   for (const b of cfg.bursts ?? []) {
-    for (let i = 0; i < Math.round((b.n ?? 16) * (cfg.density ?? 1.8) * 0.8); i++) {
+    for (let i = 0; i < Math.round((b.n ?? 16) * (cfg.density ?? 1) * 0.8); i++) {
       const a0 = b.dir ?? -Math.PI / 2, sp = b.spread ?? TAU, a = a0 + R.range(-sp / 2, sp / 2), s = pickRange(R, b.speed, R.range(80, 200));
       const ts = b.t + R.range(0, b.jitter ?? 0.02);
       parts.push({ kind: "spark", ts, x: (b.x ?? 0) + R.range(-(b.w ?? 2), b.w ?? 2), y: b.y ?? 0, vx: Math.cos(a) * s, vy: Math.sin(a) * s, k: b.drag ?? 3, g: b.g ?? 260, size: 1, hot: R.chance(0.45), life: clampLife(ts, R.range(0.35, b.life ?? 0.85)), ph: 0 });

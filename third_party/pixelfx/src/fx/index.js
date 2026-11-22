@@ -246,8 +246,6 @@ import * as critters_jellyfish from "./critters/jellyfish.js";
 import * as critters_slime from "./critters/slime.js";
 import * as critters_snake from "./critters/snake.js";
 import * as critters_wisp from "./critters/wisp.js";
-import * as sd_child_body from "./sd/child-body.js";
-import * as sd_child_cast from "./sd/child-cast.js";
 import * as sd_child_crystal from "./sd/child-crystal.js";
 import * as sd_child_crystal_lance from "./sd/child-crystal-lance.js";
 import * as sd_child_despair from "./sd/child-despair.js";
@@ -261,8 +259,6 @@ import * as sd_child_shadow_beam from "./sd/child-shadow-beam.js";
 import * as sd_child_shadow_dash from "./sd/child-shadow-dash.js";
 import * as sd_child_shadow_explosion from "./sd/child-shadow-explosion.js";
 import * as sd_child_sparkle from "./sd/child-sparkle.js";
-import * as sd_serena_body from "./sd/serena-body.js";
-import * as sd_serena_cast from "./sd/serena-cast.js";
 import * as sd_serena_halo from "./sd/serena-halo.js";
 import * as sd_serena_holy_domain from "./sd/serena-holy-domain.js";
 import * as sd_serena_holy_domain_burst from "./sd/serena-holy-domain-burst.js";
@@ -524,8 +520,6 @@ export const effects = {
   "critters/slime": critters_slime,
   "critters/snake": critters_snake,
   "critters/wisp": critters_wisp,
-  "sd/child-body": sd_child_body,
-  "sd/child-cast": sd_child_cast,
   "sd/child-crystal": sd_child_crystal,
   "sd/child-crystal-lance": sd_child_crystal_lance,
   "sd/child-despair": sd_child_despair,
@@ -539,8 +533,6 @@ export const effects = {
   "sd/child-shadow-dash": sd_child_shadow_dash,
   "sd/child-shadow-explosion": sd_child_shadow_explosion,
   "sd/child-sparkle": sd_child_sparkle,
-  "sd/serena-body": sd_serena_body,
-  "sd/serena-cast": sd_serena_cast,
   "sd/serena-halo": sd_serena_halo,
   "sd/serena-holy-domain": sd_serena_holy_domain,
   "sd/serena-holy-domain-burst": sd_serena_holy_domain_burst,

@@ -10,8 +10,8 @@ Unity game. Pixel art VFX come from **pixelfx** (pinned, vendored in `third_part
 - Never add the Patch Pixel font (not MIT). Third-party credits: `THIRD_PARTY_NOTICES.md`.
 - Boss skills (Serena, the Hidden Child): data in `Assets/Game/Combat/Editor/BossLibrary.cs`, runtime in
   `Assets/Game/Combat/Runtime`, sheets from `tools/pixelfx/boss-fx.json` via `tools/pixelfx/export-set.mjs`.
-  Effects are `sd/*` (library effect + flourishes tuned in `sd/_skills.js`); phase characters are `sd/serena-*`,
-  `sd/child-*` (`tools/pixelfx/boss-characters.json`), played by `BossBody`.
+  Effects are `sd/*` (library effect + at most three flourishes, tuned in `sd/_skills.js`; keep them restrained).
+  The bosses' bodies are placeholder sprites (no character sheets).
   Overview: `docs/bosses/README.md`. Check without Unity: `tools/pixelfx/verify/run.sh` (compile + logic tests);
   see it running: `tools/arena-sim/run.sh` (real scripts on a headless Unity stand-in → MP4 + storyboard).
 - Hand-editing effects: `python3 tools/pixelfx/to-aseprite.py <sheet.json|dir> [--manifest ...]` makes .aseprite

@@ -13,23 +13,14 @@
 
 ![boss fx sheets](fx-sheets.png)
 
-## 생동감 레이어와 캐릭터
+## 이펙트 레이어
 
 - 각 스킬 이펙트는 `third_party/pixelfx/src/fx/sd/<시트 이름>.js`: 라이브러리 이펙트(컨셉 팔레트)에 그 이펙트의 박자에 맞춘
-  2차 움직임을 얹은 것. 방출 전에 빨려드는 기운, 접촉 순간의 불꽃·2중 충격파·섬광, 튀는 파편, 떠오르는 룬 문양,
-  빛줄기, 바닥에 남는 그을음, 남아서 깜빡이는 반짝임, 피어오르는 티끌과 불씨, 어두운 연기. 조정은 `sd/_skills.js` 한 곳에서 (도우미: `sd/_alive.js`, 모두 t의 순수 함수라 루프 이음새 없음).
-  ![before / after](lively-shadow-slash.png)
-  ![detail](detail-judgment.png)
-- 보스 캐릭터: `sd/_serena.js`, `sd/_child.js`에서 코드로 그린 도트. 세레나 약 120 px, 아이 약 80 px로 컨셉 시트의 디테일
-  (윤기 링이 있는 머리와 웨이브 가닥, 애니메 눈, 금장 필리그리·벨트 보석, 갈라진 겉치마와 흰 속치마, 날홈·말린 가드의 장검,
-  리본·프릴 레이스, 소용돌이 구슬, 면이 진 결정, 리본형 촉수)을 따른다.
-  페이즈마다 대기(2초 루프)와 시전(1초, 0.35초에 베기/폭발, 대기 자세로 시작·끝) 시트 →
-  `tools/pixelfx/boss-characters.json` → `Assets/PixelFx/Sheets/characters/`. Unity에서는 `BossBody`가 페이즈의 시트를 재생하고,
-  시전은 베는 프레임이 스킬 선딜 끝에 맞도록 속도를 맞춘다.
-  얼굴과 손은 픽셀 도안(`grid()`)으로 한 칸씩 찍는다: 3/4 얼굴형, 속눈썹·홍채 단계·하이라이트, 페이즈별 눈(감음/반쯤/뜸, 빛나는 눈),
-  주먹 쥔 손과 손가락이 보이는 손.
-  ![characters](characters.png)
-  ![faces and hands](faces-hands.png)
+  2차 움직임을 얹은 것. 조정은 `sd/_skills.js` 한 곳에서 (도우미: `sd/_alive.js`, 모두 t의 순수 함수라 루프 이음새 없음).
+- 절제 원칙: 이펙트 본체가 스킬을 보여 준다. 그 위에 얹는 것은 최대 3가지, 각자 할 일이 하나씩:
+  접촉 순간의 박자(불꽃 또는 파편), 남는 것 하나(티끌 또는 연기, 드문드문), 맞은 자리의 바닥 자국.
+  섬광·충격파·룬·빛줄기를 겹겹이 쌓지 않는다.
+  ![before / after](restraint-before-after.png)
 
 ## 실행 영상 (Unity 없이)
 
@@ -100,6 +91,6 @@ Unity에서.
 
 ## 남은 일
 
-- 캐릭터는 코드로 그린 첫 버전. 손그림으로 바꾸려면 `.aseprite`로 변환해 고친 뒤 같은 위치에 시트를 내보내면 된다
-  (`docs/pixelfx-aseprite.md`). 스킬 시작 시 `BossController.onSkill`과 애니메이터 트리거(`animTrigger`)도 나간다.
+- 보스 몸은 자리표시 도트(24×38 px). 실제 캐릭터 아트는 `BossController.body`의 SpriteRenderer에 넣으면 되고,
+  스킬 시작 시 `BossController.onSkill`과 애니메이터 트리거(`animTrigger`)가 나간다.
 - 수치(피해·쿨다운·범위)는 첫 버전. 아레나에서 N 키로 스킬을 하나씩 확인하며 에셋에서 조정.

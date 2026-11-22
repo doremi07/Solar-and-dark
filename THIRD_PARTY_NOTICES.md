@@ -47,8 +47,7 @@ pixelfx in turn adapts the following MIT-licensed work (from its `NOTICE.md`):
 
 ### Solar and Dark's own work on top of pixelfx
 
-`third_party/pixelfx/src/fx/sd/` (the boss effects' flourishes, `shadow/shadow-chains`, `holy/thorn-halo`, and the
-Serena / Hidden Child character drawings) is this project's own code. It imports and renders pixelfx's MIT-licensed
+`third_party/pixelfx/src/fx/sd/` (the boss effects' flourishes, `shadow/shadow-chains`, and `holy/thorn-halo`) is this project's own code. It imports and renders pixelfx's MIT-licensed
 core and effects, so the sheets rendered from it carry the pixelfx credit above.
 
 ### Not included

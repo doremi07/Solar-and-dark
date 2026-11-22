@@ -12,7 +12,7 @@ namespace SolarDark.Combat
         public float speed = 5f;
         public float dashDistance = 3f;
         public float strikeDamage = 40f;
-        public float strikeRange = 3f;
+        public float strikeRange = 2.2f;
         public float arenaHalfWidth = 11f;
 
         StatusReceiver status;

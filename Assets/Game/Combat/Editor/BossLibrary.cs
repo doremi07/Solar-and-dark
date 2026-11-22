@@ -177,20 +177,20 @@ namespace SolarDark.Combat.Editor
                 });
 
             var halo = S("serena-halo");
-            var def = Boss("Serena", "serena", "세레나", "그림자가 된 수호자", "\"…네가, 여기 있었구나.\"", 1400, 4.5f, new Vector2(0.62f, 6.75f),
+            var def = Boss("Serena", "serena", "세레나", "그림자가 된 수호자", "\"…네가, 여기 있었구나.\"", 1400, 4.5f,
                 new BossPhase
                 {
-                    name = "그림자", enterAtHp = 1f, halo = halo, haloTint = new Color(0.55f, 0.45f, 0.65f, 0.75f), bodyTint = Color.white, idleSheet = C("serena-p1-idle"), castSheet = C("serena-p1-cast"),
+                    name = "그림자", enterAtHp = 1f, halo = halo, haloTint = new Color(0.55f, 0.45f, 0.65f, 0.75f), bodyTint = Color.white,
                     skills = { shadowSlash, shadowFall, chains, wideSlash }, idleTime = new Vector2(0.9f, 1.5f), moveSpeed = 2.4f,
                 },
                 new BossPhase
                 {
-                    name = "융합", enterAtHp = 0.66f, halo = halo, haloTint = new Color(0.85f, 0.75f, 0.85f, 0.9f), bodyTint = Color.white, idleSheet = C("serena-p2-idle"), castSheet = C("serena-p2-cast"),
+                    name = "융합", enterAtHp = 0.66f, halo = halo, haloTint = new Color(0.85f, 0.75f, 0.85f, 0.9f), bodyTint = Color.white,
                     entrySkill = fuse, skills = { shadowSlash, wideSlash, shadowFall, chains, rift, riftTwin, pillar }, idleTime = new Vector2(0.7f, 1.2f), moveSpeed = 2.8f,
                 },
                 new BossPhase
                 {
-                    name = "정화", enterAtHp = 0.33f, halo = halo, haloTint = Color.white, bodyTint = Color.white, idleSheet = C("serena-p3-idle"), castSheet = C("serena-p3-cast"),
+                    name = "정화", enterAtHp = 0.33f, halo = halo, haloTint = Color.white, bodyTint = Color.white,
                     entrySkill = awaken, skills = { shadowSlash, riftTwin, pillar, domain, judgment, judgmentTriple, chains }, idleTime = new Vector2(0.5f, 1f), moveSpeed = 3.2f,
                 });
             return def;
@@ -337,36 +337,25 @@ namespace SolarDark.Combat.Editor
                 });
 
             var halo = S("child-halo");
-            return Boss("HiddenChild", "hidden-child", "움켜쥔 아이", "최종 보스 — 빛을 잔뜩 삼킨, 열 살의 슬라", "\"…모두, 다 내 거야.\"", 2000, 6f, new Vector2(0.19f, 4.25f),
+            return Boss("HiddenChild", "hidden-child", "움켜쥔 아이", "최종 보스 — 빛을 잔뜩 삼킨, 열 살의 슬라", "\"…모두, 다 내 거야.\"", 2000, 6f,
                 new BossPhase
                 {
-                    name = "억눌린 빛", enterAtHp = 1f, halo = halo, haloTint = new Color(0.9f, 0.85f, 1f, 0.85f), bodyTint = Color.white, idleSheet = C("child-p1-idle"), castSheet = C("child-p1-cast"),
+                    name = "억눌린 빛", enterAtHp = 1f, halo = halo, haloTint = new Color(0.9f, 0.85f, 1f, 0.85f), bodyTint = Color.white,
                     skills = { lightFall, crystals, lightBurst, beam }, idleTime = new Vector2(0.9f, 1.4f), moveSpeed = 2f,
                 },
                 new BossPhase
                 {
-                    name = "폭주", enterAtHp = 0.6f, halo = halo, haloTint = new Color(0.8f, 0.65f, 1f, 1f), bodyTint = Color.white, idleSheet = C("child-p2-idle"), castSheet = C("child-p2-cast"),
+                    name = "폭주", enterAtHp = 0.6f, halo = halo, haloTint = new Color(0.8f, 0.65f, 1f, 1f), bodyTint = Color.white,
                     entrySkill = berserk, skills = { lightFall, crystals, beam, explosion, dash, gravity, illusions }, idleTime = new Vector2(0.6f, 1.1f), moveSpeed = 2.8f,
                 },
                 new BossPhase
                 {
-                    name = "완전한 그림자", enterAtHp = 0.25f, halo = halo, haloTint = new Color(0.55f, 0.4f, 0.8f, 1f), bodyTint = Color.white, idleSheet = C("child-p3-idle"), castSheet = C("child-p3-cast"),
+                    name = "완전한 그림자", enterAtHp = 0.25f, halo = halo, haloTint = new Color(0.55f, 0.4f, 0.8f, 1f), bodyTint = Color.white,
                     entrySkill = shadowForm, skills = { explosion, dash, gravity, illusions, despair, absorb, infinite, beam }, idleTime = new Vector2(0.4f, 0.9f), moveSpeed = 3.4f,
                 });
         }
 
         // ---------------------------------------------------------------- helpers
-
-        public const string CharactersDir = "Assets/PixelFx/Sheets/characters";
-
-        /// <summary>A character sheet (tools/pixelfx/boss-characters.json).</summary>
-        static PixelFxSheet C(string name)
-        {
-            var path = $"{CharactersDir}/{name}.asset";
-            var s = AssetDatabase.LoadAssetAtPath<PixelFxSheet>(path);
-            if (s == null) Debug.LogWarning($"Solar and Dark: missing character sheet {path}. Run node tools/pixelfx/export-set.mjs tools/pixelfx/boss-characters.json.");
-            return s;
-        }
 
         static PixelFxSheet S(string name)
         {
@@ -411,7 +400,7 @@ namespace SolarDark.Combat.Editor
             return Save(s, $"{OutDir}/{boss}/Skills/{id.Substring(id.IndexOf('.') + 1)}.asset");
         }
 
-        static BossDefinition Boss(string folder, string id, string name, string title, string quote, float hp, float range, Vector2 haloOffset, params BossPhase[] phases)
+        static BossDefinition Boss(string folder, string id, string name, string title, string quote, float hp, float range, params BossPhase[] phases)
         {
             var d = ScriptableObject.CreateInstance<BossDefinition>();
             d.id = id;
@@ -420,10 +409,6 @@ namespace SolarDark.Combat.Editor
             d.quote = quote;
             d.maxHp = hp;
             d.preferredRange = range;
-            d.haloOffset = haloOffset;
-            // hurtbox over the drawn body: the head's height tells the size (Serena ~7.4 units tall, the child ~4.4)
-            d.hurtRadius = haloOffset.y > 5 ? 1.5f : 1.1f;
-            d.hurtOffset = new Vector2(haloOffset.x * 0.8f, haloOffset.y * 0.5f);
             d.phases = new List<BossPhase>(phases);
             return Save(d, $"{OutDir}/{folder}/{folder}.asset");
         }
