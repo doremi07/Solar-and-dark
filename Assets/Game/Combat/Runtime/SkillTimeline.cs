@@ -13,7 +13,7 @@ namespace SolarDark.Combat
 
         public struct CueTiming
         {
-            public float time, interval, hitDelay, telegraphLead;
+            public float time, interval, hitDelay;
             public int count;
             public bool hasHit, telegraph;
         }
@@ -38,8 +38,9 @@ namespace SolarDark.Combat
                     list.Add(new Event { t = spawn, kind = Kind.Spawn, cue = c, instance = i });
                     if (q.telegraph && q.hasHit)
                     {
-                        float live = spawn + q.hitDelay;
-                        list.Add(new Event { t = Math.Max(0, live - q.telegraphLead), kind = Kind.Telegraph, cue = c, instance = i });
+                        // every mark shows as the pattern starts: the player sees the whole attack and has the full
+                        // wind-up (and the time until each hit) to get out of it
+                        list.Add(new Event { t = 0, kind = Kind.Telegraph, cue = c, instance = i });
                     }
                 }
             }

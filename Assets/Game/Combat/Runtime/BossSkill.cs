@@ -106,10 +106,9 @@ namespace SolarDark.Combat
         [Tooltip("Played where a projectile hits something or runs out.")]
         public PixelFxSheet impactSheet;
         public SkillHit hit = new SkillHit();
-        [Tooltip("Mark the hit area on the floor before it goes live.")]
+        [Tooltip("Mark the hit area from the moment the pattern starts (the wind-up) until it goes live, so it can be dodged. " +
+                 "Dashes mark their path, projectiles their lane; areas that stay live keep an outline while they hurt.")]
         public bool telegraph = true;
-        [Tooltip("How long before the hit goes live the mark appears (clamped to the cast start).")]
-        public float telegraphLead = 0.8f;
         public CueAction action = CueAction.None;
         public float actionValue;
         public float actionDuration;

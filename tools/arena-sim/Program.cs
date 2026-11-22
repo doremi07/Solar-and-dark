@@ -31,6 +31,16 @@ static class Program
         // the real data and the real scene builder
         var (serena, child) = BossLibrary.Build();
         var def = which == "child" ? child : serena;
+        if (Environment.GetEnvironmentVariable("SIM_AUDIT") == "1")
+        {
+            // how long each damaging hit is marked before it lands (marks show from the start of the wind-up)
+            foreach (var d in new[] { serena, child })
+                foreach (var sk in d.phases.SelectMany(p => p.skills.Append(p.entrySkill)).Where(x => x != null).Distinct())
+                    foreach (var c in sk.cues)
+                        if (c.hit.shape != HitShape.None && (c.hit.damage > 0 || c.hit.root > 0))
+                            Console.Error.WriteLine($"{d.displayName}\t{sk.displayName}\t{c.label}\twarn {sk.windup + c.time + c.hit.delay:F2}s\tmark {c.telegraph}");
+            return 0;
+        }
         BossArenaScene.Build(def, which == "child" ? PlaceholderBody.Kind.HiddenChild : PlaceholderBody.Kind.Serena);
         Engine.EnterPlayMode();
 

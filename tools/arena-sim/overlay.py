@@ -11,6 +11,7 @@ ff = None
 W = H = 0
 src = sys.stdin.buffer
 best = {}      # skill -> (score, image)
+start = {}     # skill -> (frames seen, image ~0.4 s in: the marks before anything lands)
 order = []
 n = 0
 
@@ -54,6 +55,8 @@ while True:
             order.append(key)
         if key not in best or score > best[key][0]:
             best[key] = (score, img.copy())
+        seen = start.get(key, (0, None))[0] + 1
+        start[key] = (seen, img.copy() if seen == 12 else start.get(key, (0, None))[1])
     n += 1
 
 ff.stdin.close()
@@ -68,4 +71,9 @@ if thumbs:
     for i, t in enumerate(thumbs):
         sb.paste(t, ((i % cols) * (tw + 4), (i // cols) * (th + 4)))
     sb.save(OUT + "-storyboard.png")
+    marks = [(start[k][1] or best[k][1]).resize((W * K // 2, H * K // 2), Image.LANCZOS) for k in order]
+    sb = Image.new("RGB", sb.size, (0, 0, 0))
+    for i, t in enumerate(marks):
+        sb.paste(t, ((i % cols) * (tw + 4), (i // cols) * (th + 4)))
+    sb.save(OUT + "-telegraphs.png")
 print(f"{n} frames -> {OUT}.mp4, {len(thumbs)} skills -> {OUT}-storyboard.png")

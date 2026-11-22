@@ -22,6 +22,17 @@
   섬광·충격파·룬·빛줄기를 겹겹이 쌓지 않는다.
   ![before / after](restraint-before-after.png)
 
+## 피격 범위 표시 (텔레그래프)
+
+- 공격 패턴이 시작되는 순간(선딜 시작) 그 패턴의 피해 판정 범위가 모두 붉은 표시로 깔린다. 채움이 차오르며 맞는 순간
+  하얗게 번쩍인다. 색은 보스 이펙트에 없는 붉은 주황(`TelegraphMarker.DangerColor`)이라 이펙트와 섞이지 않는다.
+- 돌진은 지나갈 경로 전체, 투사체는 날아올 길(목표 지점 조금 너머까지), 바닥 원은 바닥 위 반원으로 표시한다.
+  플레이어를 따라오는 표시(심판의 빛)는 공격이 생성되는 순간 그 자리에 멈춘다.
+  오래 남는 판정(영역·기둥 등)은 살아 있는 동안 윤곽선이 남는다. 피해 없는 끌어당김·장식 큐는 표시하지 않는다.
+- 가장 짧은 경고 시간은 0.6초(그림자 베기)이며, 대부분 0.8~2초다. `tools/arena-sim`에 `SIM_AUDIT=1`을 주면 전부 출력된다.
+  ![telegraphs](arena-serena-telegraphs.png)
+  ![telegraphs](arena-hidden-child-telegraphs.png)
+
 ## 실행 영상 (Unity 없이)
 
 `tools/arena-sim/run.sh [serena|child|all]`: 게임의 실제 C# 스크립트(BossLibrary, BossArenaScene, 보스 AI, 스킬 러너,

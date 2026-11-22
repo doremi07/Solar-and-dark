@@ -32,8 +32,8 @@ namespace SolarDark.Combat
         public float maxHp = 1000;
         [Tooltip("Horizontal distance the boss tries to keep from the target between attacks.")]
         public float preferredRange = 5;
-        [Tooltip("Halo position from the feet, facing right (the head's centre); mirrored when the boss faces left.")]
-        public Vector2 haloOffset = new Vector2(0, 2.1f);
+        [Tooltip("Halo centre from the feet, facing right; mirrored when the boss faces left. Default: the ring floats just over a 38 px body's head.")]
+        public Vector2 haloOffset = new Vector2(0, 3.5f);
         [Tooltip("The boss's hurtbox: radius and centre from the feet (applied to its Hurtbox on Awake).")]
         public float hurtRadius = 0.8f;
         public Vector2 hurtOffset = new Vector2(0, 1.2f);

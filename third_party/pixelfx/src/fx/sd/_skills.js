@@ -39,7 +39,7 @@ export const SKILLS = {
     motes: [{ t0: 0.18, t1: 0.9, rate: 8, x: [-56, 54], y: [-34, -10], vx: [-6, 6], vy: [-20, -6], life: [0.4, 0.8] }],
   },
   "serena-wide-slash": {
-    base: "melee/spear-sweep", palette: DUSK, name: "Wide slash", grow: [0, 0, 20, 0],
+    base: "melee/spear-sweep", palette: DUSK, opts: { sparks: ["#fbf6ff", "#d2c4ee", "#9a82c8", "#6a4f9a"] }, name: "Wide slash", grow: [0, 0, 20, 0],
     bursts: [{ t: 0.1, x: 86, y: -10, n: 9, dir: RIGHT, spread: 0.7, speed: [110, 210], g: 300, drag: 4.5 }],
     scorch: [{ t: 0.12, x: 40, r: 46, sy: 0.1, life: 1.0 }],
     embers: [{ t0: 0.1, t1: 0.6, rate: 12, x: [-40, 100], y: [-5, -1], vx: [10, 36], vy: [-18, -4], life: [0.3, 0.55] }],

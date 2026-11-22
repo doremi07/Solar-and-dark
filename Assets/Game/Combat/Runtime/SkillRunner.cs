@@ -51,7 +51,7 @@ namespace SolarDark.Combat
                 timings.Add(new SkillTimeline.CueTiming
                 {
                     time = cue.time, interval = cue.interval, count = cue.count, hitDelay = cue.hit.delay,
-                    telegraphLead = cue.telegraphLead, telegraph = cue.telegraph, hasHit = cue.hit.shape != HitShape.None,
+                    telegraph = cue.telegraph, hasHit = cue.hit.shape != HitShape.None && (cue.hit.damage > 0 || cue.hit.root > 0),
                 });
             }
             var events = SkillTimeline.Plan(skill.windup, timings);
@@ -71,8 +71,8 @@ namespace SolarDark.Combat
                     var plan = plans[e.cue][e.instance];
                     if (e.kind == SkillTimeline.Kind.Telegraph)
                     {
-                        float live = skill.windup + cue.time + e.instance * cue.interval + cue.hit.delay;
-                        Telegraph(cue, plan, Mathf.Max(0.05f, live - e.t), plan.live ? target : null);
+                        float spawnAt = skill.windup + cue.time + e.instance * cue.interval;
+                        Telegraph(cue, plan, spawnAt - e.t, cue.hit.delay, plan.live ? target : null, aimAt);
                     }
                     else
                     {
@@ -142,11 +142,39 @@ namespace SolarDark.Combat
             return p;
         }
 
-        static void Telegraph(SkillCue cue, Planned plan, float seconds, Hurtbox follow)
+        /// <summary>
+        /// Mark where an instance will hurt, from now until it goes live (<paramref name="untilSpawn"/> + hit delay),
+        /// then keep an outline while it stays live. A mark on a live-tracked target follows them until the instance
+        /// spawns, then stays where the blow will land. Dashes mark the path, projectiles their lane.
+        /// </summary>
+        static void Telegraph(SkillCue cue, Planned plan, float untilSpawn, float hitDelay, Hurtbox follow, Vector2 aimAt)
         {
             var h = cue.hit;
+            float warn = Mathf.Max(0.05f, untilSpawn + hitDelay);
             SkillGeometry.Place(h.offset.x, h.offset.y, plan.facing, plan.angle, out var ox, out var oy);
-            TelegraphMarker.Show(h.shape, plan.pos + new Vector2(ox, oy), h.size, plan.angle, seconds, follow, new Vector2(ox, oy));
+            Vector2 at = plan.pos + new Vector2(ox, oy);
+            float thick = h.shape == HitShape.Circle ? h.size.x * 2 : h.size.y;
+
+            if (cue.action == CueAction.Dash && cue.actionValue > 0)
+            {
+                // the body sweeps its hit area along the floor: mark the whole stretch it covers
+                float len = cue.actionValue + thick;
+                var c = at + new Vector2(plan.facing * cue.actionValue / 2, 0);
+                TelegraphMarker.Show(HitShape.Box, c, new Vector2(len, thick), 0, warn, null, default, 0);
+                return;
+            }
+            if (cue.projectileSpeed > 0)
+            {
+                // the lane it flies down, from where it leaves to the end of its range
+                var dir = new Vector2(Mathf.Cos(plan.angle), Mathf.Sin(plan.angle)) * (plan.facing < 0 && cue.aim != CueAim.RotateToTarget ? -1 : 1);
+                // as far as the target and a little past: the lance keeps flying, but that is the stretch that matters
+                float len = Mathf.Min(cue.projectileRange, (aimAt + new Vector2(0, 1.2f) - at).magnitude + 2.5f);
+                var c = at + dir * (len / 2);
+                TelegraphMarker.Show(HitShape.Box, c, new Vector2(len, thick), Mathf.Atan2(dir.y, dir.x), warn, null, default, 0);
+                return;
+            }
+            float hold = h.active > 0.3f && !cue.followCaster ? h.active : 0;   // lingering areas stay outlined while they hurt
+            TelegraphMarker.Show(h.shape, at, h.size, plan.angle, warn, follow, new Vector2(ox, oy), hold, follow != null ? untilSpawn : 0);
         }
 
         static void Spawn(BossSkill skill, SkillCue cue, Planned plan, ISkillCaster caster, Vector2 aimAt)
@@ -198,7 +226,7 @@ namespace SolarDark.Combat
             switch (cue.action)
             {
                 case CueAction.Dash:
-                    if (caster is MonoBehaviour mb) mb.StartCoroutine(Dash(caster, aimAt, cue.actionValue, Mathf.Max(0.05f, cue.actionDuration)));
+                    if (caster is MonoBehaviour mb) mb.StartCoroutine(Dash(caster, plan.facing, cue.actionValue, Mathf.Max(0.05f, cue.actionDuration)));
                     break;
                 case CueAction.HealSelf:
                     if (caster.Health != null) caster.Health.Heal(caster.Health.max * cue.actionValue);
@@ -209,12 +237,12 @@ namespace SolarDark.Combat
             }
         }
 
-        static IEnumerator Dash(ISkillCaster caster, Vector2 towards, float distance, float duration)
+        static IEnumerator Dash(ISkillCaster caster, int facing, float distance, float duration)
         {
             var tr = caster.transform;
             Vector2 start = tr.position;
-            float dir = Mathf.Sign(towards.x - start.x);
-            if (dir == 0) dir = caster.Facing;
+            float dir = facing < 0 ? -1 : 1;   // the direction planned (and marked) when the pattern started
+            caster.Facing = facing;
             Vector2 end = start + new Vector2(dir * distance, 0);
             float t = 0, ghost = 0;
             while (t < duration && tr != null)

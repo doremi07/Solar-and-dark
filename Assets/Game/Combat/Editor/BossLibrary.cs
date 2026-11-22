@@ -51,12 +51,12 @@ namespace SolarDark.Combat.Editor
         {
             const string B = "Serena";
 
-            var shadowSlash = Skill(B, "serena.shadow-slash", "그림자 베기", 0.45f, 0.5f, 3.5f, 3f, 0, 4.5f,
+            var shadowSlash = Skill(B, "serena.shadow-slash", "그림자 베기", 0.56f, 0.5f, 3.5f, 3f, 0, 4.5f,
                 "A dark crescent reaps the space in front of her.",
                 new SkillCue
                 {
                     label = "slash", sheet = S("serena-shadow-slash"), anchor = CueAnchor.Self, offset = new Vector2(0.4f, 0), aim = CueAim.FaceTarget,
-                    hit = Box(5f, 3f, 2.2f, 1.5f, 0.14f, 12, knockback: 7, hitStop: 0.12f, shake: 0.15f), telegraphLead = 0.45f,
+                    hit = Box(5f, 3f, 2.2f, 1.5f, 0.14f, 12, knockback: 7, hitStop: 0.12f, shake: 0.15f),
                 });
 
             var wideSlash = Skill(B, "serena.wide-slash", "광역 슬래시", 0.65f, 0.6f, 6f, 2f, 0, 7f,
@@ -64,12 +64,12 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "front", sheet = S("serena-wide-slash"), aim = CueAim.FaceTarget,
-                    hit = Box(11f, 1.4f, 1f, 0.6f, 0.1f, 10, knockback: 6, hitStop: 0.1f), telegraphLead = 0.65f,
+                    hit = Box(11f, 1.4f, 1f, 0.6f, 0.1f, 10, knockback: 6, hitStop: 0.1f),
                 },
                 new SkillCue
                 {
                     label = "back", time = 0.5f, sheet = S("serena-wide-slash"), aim = CueAim.AwayFromTarget,
-                    hit = Box(11f, 1.4f, 1f, 0.6f, 0.1f, 10, knockback: 6, hitStop: 0.1f), telegraphLead = 0.4f,
+                    hit = Box(11f, 1.4f, 1f, 0.6f, 0.1f, 10, knockback: 6, hitStop: 0.1f),
                 });
 
             var shadowFall = Skill(B, "serena.shadow-fall", "그림자 낙하", 0.6f, 0.7f, 7f, 2f, 0, 99,
@@ -77,7 +77,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "pool", sheet = S("serena-shadow-fall"), anchor = CueAnchor.RandomNearTarget, spread = 3f, count = 3, interval = 0.4f,
-                    hit = Circle(2f, 0, 1.4f, 0.32f, 8, active: 1.1f, tick: 0.45f, knockback: 3), telegraphLead = 0.75f,
+                    hit = Circle(2f, 0, 1.4f, 0.32f, 8, active: 1.1f, tick: 0.45f, knockback: 3),
                 });
 
             var chains = Skill(B, "serena.shadow-chains", "그림자 사슬 · 속박", 0.5f, 0.6f, 10f, 1.5f, 0, 99,
@@ -85,7 +85,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "chains", sheet = S("serena-shadow-chains"), anchor = CueAnchor.Target, sortingOrder = 25,
-                    hit = Circle(1.3f, 0, 1.2f, 0.78f, 6, root: 1.2f, hitStop: 0.08f), telegraphLead = 0.9f,
+                    hit = Circle(1.3f, 0, 1.2f, 0.78f, 6, root: 1.2f, hitStop: 0.08f),
                 });
 
             var rift = Skill(B, "serena.rift", "빛과 그림자의 균열", 0.7f, 0.7f, 8f, 1.5f, 0, 12,
@@ -93,7 +93,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "rift", sheet = S("serena-rift"), anchor = CueAnchor.Self, offset = new Vector2(0.6f, 0), aim = CueAim.FaceTarget,
-                    hit = Box(10.75f, 3f, 5.4f, 1.5f, 0.18f, 14, active: 0.35f, knockback: 5, hitStop: 0.08f, shake: 0.12f), telegraphLead = 0.7f,
+                    hit = Box(10.75f, 3f, 5.4f, 1.5f, 0.18f, 14, active: 0.35f, knockback: 5, hitStop: 0.08f, shake: 0.12f),
                 });
 
             var riftTwin = Skill(B, "serena.rift-twin", "빛과 그림자의 균열 (양방향)", 0.8f, 0.8f, 9f, 1.5f, 0, 99,
@@ -101,12 +101,12 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "front", sheet = S("serena-rift"), offset = new Vector2(0.6f, 0), aim = CueAim.FaceTarget,
-                    hit = Box(10.75f, 3f, 5.4f, 1.5f, 0.18f, 14, active: 0.35f, knockback: 5, hitStop: 0.08f), telegraphLead = 0.8f,
+                    hit = Box(10.75f, 3f, 5.4f, 1.5f, 0.18f, 14, active: 0.35f, knockback: 5, hitStop: 0.08f),
                 },
                 new SkillCue
                 {
                     label = "back", sheet = S("serena-rift"), offset = new Vector2(-0.6f, 0), aim = CueAim.AwayFromTarget,
-                    hit = Box(10.75f, 3f, 5.4f, 1.5f, 0.18f, 14, active: 0.35f, knockback: 5), telegraphLead = 0.8f,
+                    hit = Box(10.75f, 3f, 5.4f, 1.5f, 0.18f, 14, active: 0.35f, knockback: 5),
                 });
 
             var pillar = Skill(B, "serena.shadow-pillar", "그림자 기둥", 0.4f, 0.8f, 10f, 1.2f, 0, 99,
@@ -114,7 +114,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "pillar", sheet = S("serena-shadow-pillar"), anchor = CueAnchor.LineAtTarget, spread = 5f, count = 3, interval = 0.35f,
-                    hit = Box(1.6f, 12f, 0, 6f, 1.52f, 12, active: 0.9f, tick: 0.3f, knockback: 4, shake: 0.12f), telegraphLead = 1.5f,
+                    hit = Box(1.6f, 12f, 0, 6f, 1.52f, 12, active: 0.9f, tick: 0.3f, knockback: 4, shake: 0.12f),
                 });
 
             var domain = Skill(B, "serena.holy-domain", "신성의 영역 · 영역 장악", 0.8f, 1.0f, 14f, 1f, 0, 99,
@@ -122,25 +122,25 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "domain", sheet = S("serena-holy-domain"), anchor = CueAnchor.Target, loopDuration = 3.2f, followCaster = false, sortingOrder = 2,   // she claims the floor under you
-                    hit = Circle(3.6f, 0, 0.6f, 0.3f, 3, active: 2.9f, tick: 0.5f), telegraph = false,
+                    hit = Circle(3.6f, 0, 0.6f, 0.3f, 3, active: 2.9f, tick: 0.5f),
                 },
                 new SkillCue
                 {
                     label = "burst", time = 3.0f, sheet = S("serena-holy-domain-burst"), anchor = CueAnchor.Target,
-                    hit = Circle(3.6f, 0, 1.2f, 1.52f, 22, knockback: 9, hitStop: 0.15f, shake: 0.3f), telegraphLead = 1.5f,
+                    hit = Circle(3.6f, 0, 1.2f, 1.52f, 22, knockback: 9, hitStop: 0.15f, shake: 0.3f),
                 });
 
             var judgment = Skill(B, "serena.judgment", "심판의 빛", 0.5f, 0.8f, 9f, 1.2f, 0, 99,
                 "A star of judgment hangs over the target and follows them, then a bolt of light drops on where they are.",
                 new SkillCue
                 {
-                    label = "mark", sheet = S("serena-judgment-mark"), anchor = CueAnchor.TargetLive, offset = new Vector2(0, 4.2f), loopDuration = 1.1f, followTarget = true, telegraph = false, sortingOrder = 30,
+                    label = "mark", sheet = S("serena-judgment-mark"), anchor = CueAnchor.TargetLive, offset = new Vector2(0, 4.2f), loopDuration = 1.1f, followTarget = true, sortingOrder = 30,
                     hit = new SkillHit(),
                 },
                 new SkillCue
                 {
                     label = "smite", time = 1.1f, sheet = S("serena-judgment"), anchor = CueAnchor.TargetLive,
-                    hit = Circle(1.5f, 0, 1f, 0.54f, 22, knockback: 6, hitStop: 0.15f, shake: 0.25f), telegraphLead = 0.54f,
+                    hit = Circle(1.5f, 0, 1f, 0.54f, 22, knockback: 6, hitStop: 0.15f, shake: 0.25f),
                 });
 
             var judgmentTriple = Skill(B, "serena.judgment-triple", "심판의 빛 (연속)", 0.5f, 1.0f, 12f, 1f, 0, 99,
@@ -148,11 +148,11 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "smite", sheet = S("serena-judgment"), anchor = CueAnchor.TargetLive, count = 3, interval = 0.7f,
-                    hit = Circle(1.5f, 0, 1f, 0.54f, 18, knockback: 5, hitStop: 0.12f, shake: 0.2f), telegraphLead = 0.54f,
+                    hit = Circle(1.5f, 0, 1f, 0.54f, 18, knockback: 5, hitStop: 0.12f, shake: 0.2f),
                 },
                 new SkillCue
                 {
-                    label = "mark", sheet = S("serena-judgment-mark"), anchor = CueAnchor.TargetLive, offset = new Vector2(0, 4.2f), loopDuration = 2.2f, followTarget = true, telegraph = false, sortingOrder = 30,
+                    label = "mark", sheet = S("serena-judgment-mark"), anchor = CueAnchor.TargetLive, offset = new Vector2(0, 4.2f), loopDuration = 2.2f, followTarget = true, sortingOrder = 30,
                     hit = new SkillHit(),
                 });
 
@@ -161,19 +161,19 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "burst", sheet = S("serena-holy-domain-burst"), anchor = CueAnchor.Self,
-                    hit = Circle(3f, 0, 1.2f, 1.52f, 8, knockback: 12, shake: 0.3f), telegraphLead = 1.5f,
+                    hit = Circle(3f, 0, 1.2f, 1.52f, 8, knockback: 12, shake: 0.3f),
                 });
             var fuse = Skill(B, "serena.phase-fuse", "융합", 0.2f, 0.6f, 0, 0, 0, 99,
                 "Phase entry: shadow pillars either side of her.",
                 new SkillCue
                 {
                     label = "front", sheet = S("serena-shadow-pillar"), anchor = CueAnchor.Self, offset = new Vector2(3f, 0),
-                    hit = Box(1.6f, 12f, 0, 6f, 1.52f, 10, active: 0.6f, knockback: 8), telegraphLead = 1.5f,
+                    hit = Box(1.6f, 12f, 0, 6f, 1.52f, 10, active: 0.6f, knockback: 8),
                 },
                 new SkillCue
                 {
                     label = "back", time = 0.15f, sheet = S("serena-shadow-pillar"), anchor = CueAnchor.Self, offset = new Vector2(-3f, 0),
-                    hit = Box(1.6f, 12f, 0, 6f, 1.52f, 10, active: 0.6f, knockback: 8), telegraphLead = 1.5f,
+                    hit = Box(1.6f, 12f, 0, 6f, 1.52f, 10, active: 0.6f, knockback: 8),
                 });
 
             var halo = S("serena-halo");
@@ -207,7 +207,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "rain", sheet = S("child-light-fall"), anchor = CueAnchor.RandomNearTarget, spread = 4f, count = 2, interval = 0.5f,
-                    hit = Circle(2.9f, 0, 0.8f, 0.4f, 6, active: 1.1f, tick: 0.35f), telegraphLead = 0.7f,
+                    hit = Circle(2.9f, 0, 0.8f, 0.4f, 6, active: 1.1f, tick: 0.35f),
                 });
 
             var crystals = Skill(B, "child.countless-crystals", "무수한 결정", 0.4f, 0.8f, 8f, 1.5f, 0, 99,
@@ -215,13 +215,13 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "crystals", sheet = S("child-crystal"), anchor = CueAnchor.RingAroundSelf, spread = 2.2f, offset = new Vector2(0, 1.2f), count = 6, interval = 0.08f,
-                    loopDuration = 1.3f, telegraph = false, hit = new SkillHit(), sortingOrder = 22,
+                    loopDuration = 1.3f, hit = new SkillHit(), sortingOrder = 22,
                 },
                 new SkillCue
                 {
                     label = "lances", time = 1.3f, sheet = S("child-crystal-lance"), anchor = CueAnchor.RingAroundSelf, spread = 2.2f, offset = new Vector2(0, 1.5f), count = 6, interval = 0.12f,
                     aim = CueAim.RotateToTarget, loopDuration = 1.2f, projectileSpeed = 14f, projectileRange = 16f, impactSheet = S("child-sparkle"),
-                    hit = Circle(0.45f, 0, 0, 0, 6, active: 1.2f, knockback: 3), telegraph = false,
+                    hit = Circle(0.45f, 0, 0, 0, 6, active: 1.2f, knockback: 3),
                 });
 
             var lightBurst = Skill(B, "child.light-burst", "빛의 폭발", 0.7f, 0.6f, 5f, 1.5f, 0, 4.5f,
@@ -229,7 +229,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "burst", sheet = S("child-light-burst"), anchor = CueAnchor.Self,
-                    hit = Circle(3f, 0, 1.75f, 0.22f, 14, knockback: 9, hitStop: 0.1f, shake: 0.2f), telegraphLead = 0.9f,
+                    hit = Circle(3f, 0, 1.75f, 0.22f, 14, knockback: 9, hitStop: 0.1f, shake: 0.2f),
                 });
 
             var beam = Skill(B, "child.shadow-beam", "그림자 광선", 0.9f, 0.9f, 8f, 1.5f, 3f, 99,
@@ -239,7 +239,7 @@ namespace SolarDark.Combat.Editor
                     // arcane-beam fires from the hand (HX 15, HY -24 px) and is L = 168 px long: rotate round the hand
                     label = "beam", sheet = S("child-shadow-beam"), anchor = CueAnchor.Self, offset = new Vector2(0.6f, 1.6f), aim = CueAim.RotateToTarget,
                     effectAnchor = new Vector2(15 / 16f, 24 / 16f), loopDuration = 1.8f, followCaster = true, sortingOrder = 24,
-                    hit = Box(10.5f, 0.9f, 5.25f, 0, 0.05f, 4, active: 1.7f, tick: 0.2f, knockback: 2), telegraphLead = 0.9f,
+                    hit = Box(10.5f, 0.9f, 5.25f, 0, 0.05f, 4, active: 1.7f, tick: 0.2f, knockback: 2),
                 });
 
             var explosion = Skill(B, "child.shadow-explosion", "그림자 폭발", 0.5f, 0.8f, 8f, 1.5f, 0, 99,
@@ -247,16 +247,16 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "blast", sheet = S("child-shadow-explosion"), anchor = CueAnchor.Target,
-                    hit = Circle(3f, 0, 2.6f, 0.52f, 20, knockback: 10, hitStop: 0.15f, shake: 0.35f), telegraphLead = 1.0f,
+                    hit = Circle(3f, 0, 2.6f, 0.52f, 20, knockback: 10, hitStop: 0.15f, shake: 0.35f),
                 });
 
-            var dash = Skill(B, "child.shadow-dash", "그림자 돌진", 0.55f, 0.7f, 6f, 1.5f, 2f, 9f,
+            var dash = Skill(B, "child.shadow-dash", "그림자 돌진", 0.7f, 0.7f, 6f, 1.5f, 2f, 9f,
                 "She blurs across the floor through the target, leaving after-images.",
                 new SkillCue
                 {
                     label = "dash", sheet = S("child-shadow-dash"), anchor = CueAnchor.Self, offset = new Vector2(0.3f, 0), aim = CueAim.FaceTarget, followCaster = true,
                     action = CueAction.Dash, actionValue = 8f, actionDuration = 0.35f,
-                    hit = Circle(1.1f, 0.4f, 1.2f, 0, 14, active: 0.4f, knockback: 8, hitStop: 0.1f), telegraph = false,
+                    hit = Circle(1.1f, 0.4f, 1.2f, 0, 14, active: 0.4f, knockback: 8, hitStop: 0.1f),
                 });
 
             var gravity = Skill(B, "child.gravity", "중력 조작", 0.6f, 0.8f, 11f, 1.2f, 0, 99,
@@ -264,7 +264,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "well", sheet = S("child-gravity"), anchor = CueAnchor.Target, offset = new Vector2(0, -2.0f), loopDuration = 3f, sortingOrder = 18,
-                    hit = Circle(1.6f, 0, 4.7f, 0.2f, 4, active: 2.7f, tick: 0.4f, pull: 2.6f, pullRadius: 7f), telegraphLead = 0.8f,
+                    hit = Circle(1.6f, 0, 4.7f, 0.2f, 4, active: 2.7f, tick: 0.4f, pull: 2.6f, pullRadius: 7f),
                 });
 
             var illusionLance = Skill(B, "child.illusion-lance", "환영의 결정", 0.35f, 0.2f, 0, 1, 0, 99,
@@ -273,7 +273,7 @@ namespace SolarDark.Combat.Editor
                 {
                     label = "lance", sheet = S("child-crystal-lance"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.4f), aim = CueAim.RotateToTarget,
                     loopDuration = 1.2f, projectileSpeed = 12f, projectileRange = 14f, impactSheet = S("child-sparkle"),
-                    hit = Circle(0.45f, 0, 0, 0, 6, active: 1.2f, knockback: 3), telegraph = false,
+                    hit = Circle(0.45f, 0, 0, 0, 6, active: 1.2f, knockback: 3),
                 });
 
             var illusions = Skill(B, "child.illusions", "수많은 환영", 0.5f, 1.2f, 12f, 1f, 0, 99,
@@ -281,7 +281,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "illusions", anchor = CueAnchor.Self, action = CueAction.SpawnIllusions, actionValue = 4, spread = 3.2f,
-                    subSkill = illusionLance, impactSheet = S("child-sparkle"), actionDuration = 1.6f, hit = new SkillHit(), telegraph = false,
+                    subSkill = illusionLance, impactSheet = S("child-sparkle"), actionDuration = 1.6f, hit = new SkillHit(),
                 });
 
             var despair = Skill(B, "child.despair", "절망의 영역", 0.8f, 0.8f, 14f, 1f, 0, 99,
@@ -289,7 +289,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "field", sheet = S("child-despair"), anchor = CueAnchor.Target, loopDuration = 5f, sortingOrder = 3,
-                    hit = Circle(3.2f, 0, 1f, 0.3f, 3, active: 4.6f, tick: 0.4f, pull: 1.2f, pullRadius: 4.5f), telegraphLead = 0.8f,
+                    hit = Circle(3.2f, 0, 1f, 0.3f, 3, active: 4.6f, tick: 0.4f, pull: 1.2f, pullRadius: 4.5f),
                 });
 
             var absorb = Skill(B, "child.light-absorb", "빛의 흡수", 0.5f, 1.0f, 15f, 1f, 0, 99,
@@ -298,12 +298,12 @@ namespace SolarDark.Combat.Editor
                 {
                     // implosion: SUCK until 0.8 s, still at 1.02 s, then it blows out
                     label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f), followCaster = true,
-                    hit = Circle(2.6f, 0, 0, 1.02f, 18, knockback: 11, hitStop: 0.15f, shake: 0.3f), telegraphLead = 1.0f,
+                    hit = Circle(2.6f, 0, 0, 1.02f, 18, knockback: 11, hitStop: 0.15f, shake: 0.3f),
                     action = CueAction.HealSelf, actionValue = 0.04f,
                 },
                 new SkillCue
                 {
-                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f), telegraph = false,
+                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f),
                     hit = Circle(0.1f, 0, 0, 0, 0, active: 0.95f, pull: 5f, pullRadius: 8f),
                 });
 
@@ -312,27 +312,27 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "pillars", sheet = S("child-infinite-light"), anchor = CueAnchor.LineAtTarget, spread = 12f, count = 5, interval = 0.22f,
-                    hit = Box(1.4f, 12f, 0, 6f, 0.66f, 9, active: 1.3f, tick: 0.35f, knockback: 3, shake: 0.08f), telegraphLead = 0.9f,
+                    hit = Box(1.4f, 12f, 0, 6f, 0.66f, 9, active: 1.3f, tick: 0.35f, knockback: 3, shake: 0.08f),
                 });
 
-            var berserk = Skill(B, "child.phase-berserk", "폭주", 0.2f, 0.8f, 0, 0, 0, 99,
+            var berserk = Skill(B, "child.phase-berserk", "폭주", 0.5f, 0.8f, 0, 0, 0, 99,
                 "Phase entry: a burst of light that throws everything back.",
                 new SkillCue
                 {
                     label = "burst", sheet = S("child-light-burst"), anchor = CueAnchor.Self,
-                    hit = Circle(4f, 0, 1.75f, 0.22f, 8, knockback: 14, shake: 0.3f), telegraphLead = 0.4f,
+                    hit = Circle(4f, 0, 1.75f, 0.22f, 8, knockback: 14, shake: 0.3f),
                 });
             var shadowForm = Skill(B, "child.phase-shadow", "완전한 그림자", 0.3f, 1.0f, 0, 0, 0, 99,
                 "Phase entry: she drinks the light round her.",
                 new SkillCue
                 {
                     label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f),
-                    hit = Circle(3f, 0, 0, 1.02f, 10, knockback: 12, shake: 0.3f), telegraphLead = 1.0f,
+                    hit = Circle(3f, 0, 0, 1.02f, 10, knockback: 12, shake: 0.3f),
                     action = CueAction.HealSelf, actionValue = 0.02f,
                 },
                 new SkillCue
                 {
-                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f), telegraph = false,
+                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f),
                     hit = Circle(0.1f, 0, 0, 0, 0, active: 0.95f, pull: 6f, pullRadius: 9f),
                 });
 
