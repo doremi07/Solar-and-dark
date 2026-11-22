@@ -5,130 +5,130 @@
    "frame": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 1",
    "frame": {
-    "x": 188,
+    "x": 200,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 2",
    "frame": {
-    "x": 376,
+    "x": 400,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 3",
    "frame": {
-    "x": 564,
+    "x": 600,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 4",
    "frame": {
-    "x": 752,
+    "x": 800,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 5",
    "frame": {
-    "x": 940,
+    "x": 1000,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
@@ -136,131 +136,131 @@
    "filename": "serena-cast 6",
    "frame": {
     "x": 0,
-    "y": 158,
-    "w": 188,
-    "h": 158
+    "y": 182,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 7",
    "frame": {
-    "x": 188,
-    "y": 158,
-    "w": 188,
-    "h": 158
+    "x": 200,
+    "y": 182,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 8",
    "frame": {
-    "x": 376,
-    "y": 158,
-    "w": 188,
-    "h": 158
+    "x": 400,
+    "y": 182,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 9",
    "frame": {
-    "x": 564,
-    "y": 158,
-    "w": 188,
-    "h": 158
+    "x": 600,
+    "y": 182,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 10",
    "frame": {
-    "x": 752,
-    "y": 158,
-    "w": 188,
-    "h": 158
+    "x": 800,
+    "y": 182,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 11",
    "frame": {
-    "x": 940,
-    "y": 158,
-    "w": 188,
-    "h": 158
+    "x": 1000,
+    "y": 182,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
@@ -268,131 +268,131 @@
    "filename": "serena-cast 12",
    "frame": {
     "x": 0,
-    "y": 316,
-    "w": 188,
-    "h": 158
+    "y": 364,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 13",
    "frame": {
-    "x": 188,
-    "y": 316,
-    "w": 188,
-    "h": 158
+    "x": 200,
+    "y": 364,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 14",
    "frame": {
-    "x": 376,
-    "y": 316,
-    "w": 188,
-    "h": 158
+    "x": 400,
+    "y": 364,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 15",
    "frame": {
-    "x": 564,
-    "y": 316,
-    "w": 188,
-    "h": 158
+    "x": 600,
+    "y": 364,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 16",
    "frame": {
-    "x": 752,
-    "y": 316,
-    "w": 188,
-    "h": 158
+    "x": 800,
+    "y": 364,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 17",
    "frame": {
-    "x": 940,
-    "y": 316,
-    "w": 188,
-    "h": 158
+    "x": 1000,
+    "y": 364,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
@@ -400,131 +400,131 @@
    "filename": "serena-cast 18",
    "frame": {
     "x": 0,
-    "y": 474,
-    "w": 188,
-    "h": 158
+    "y": 546,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 19",
    "frame": {
-    "x": 188,
-    "y": 474,
-    "w": 188,
-    "h": 158
+    "x": 200,
+    "y": 546,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 20",
    "frame": {
-    "x": 376,
-    "y": 474,
-    "w": 188,
-    "h": 158
+    "x": 400,
+    "y": 546,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 21",
    "frame": {
-    "x": 564,
-    "y": 474,
-    "w": 188,
-    "h": 158
+    "x": 600,
+    "y": 546,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 22",
    "frame": {
-    "x": 752,
-    "y": 474,
-    "w": 188,
-    "h": 158
+    "x": 800,
+    "y": 546,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 23",
    "frame": {
-    "x": 940,
-    "y": 474,
-    "w": 188,
-    "h": 158
+    "x": 1000,
+    "y": 546,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
@@ -532,131 +532,131 @@
    "filename": "serena-cast 24",
    "frame": {
     "x": 0,
-    "y": 632,
-    "w": 188,
-    "h": 158
+    "y": 728,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 25",
    "frame": {
-    "x": 188,
-    "y": 632,
-    "w": 188,
-    "h": 158
+    "x": 200,
+    "y": 728,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 26",
    "frame": {
-    "x": 376,
-    "y": 632,
-    "w": 188,
-    "h": 158
+    "x": 400,
+    "y": 728,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 27",
    "frame": {
-    "x": 564,
-    "y": 632,
-    "w": 188,
-    "h": 158
+    "x": 600,
+    "y": 728,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 28",
    "frame": {
-    "x": 752,
-    "y": 632,
-    "w": 188,
-    "h": 158
+    "x": 800,
+    "y": 728,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   },
   {
    "filename": "serena-cast 29",
    "frame": {
-    "x": 940,
-    "y": 632,
-    "w": 188,
-    "h": 158
+    "x": 1000,
+    "y": 728,
+    "w": 200,
+    "h": 182
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "sourceSize": {
-    "w": 188,
-    "h": 158
+    "w": 200,
+    "h": 182
    },
    "duration": 33
   }
@@ -667,8 +667,8 @@
   "image": "serena-p2-cast.png",
   "format": "RGBA8888",
   "size": {
-   "w": 1128,
-   "h": 790
+   "w": 1200,
+   "h": 910
   },
   "scale": "1",
   "frameTags": [
@@ -686,12 +686,12 @@
    "loop": true,
    "frames": 30,
    "frameSize": [
-    188,
-    158
+    200,
+    182
    ],
    "pivot": [
-    74,
-    150
+    86,
+    174
    ],
    "columns": 6,
    "version": "0.3.1",

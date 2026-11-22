@@ -5,7 +5,7 @@
 //   2 폭주 (runaway): hair lifting wild, eyes glowing, hem torn dark, arms flung open, tendrils, more crystals
 //   3 완전한 그림자 (full shadow): her body gone to shadow with a pale rim, white eyes, great tendrils behind
 import { TAU, clamp, ease, lerp, sparkle, WHITE } from "../../core/index.js";
-import { Raster, lit, tl, H, curve, strand } from "./_figure.js";
+import { Raster, lit, tl, H, curve, strand, grid } from "./_figure.js";
 import { INK } from "./_serena.js";
 
 const PHASES = {
@@ -40,14 +40,14 @@ export function drawChild(p, t, o, anim, D) {
   let raise = 0;
   if (anim === "cast") raise = t < CAST_RELEASE ? ease.inOutCubic(clamp(t / CAST_RELEASE)) : 1 - ease.inOutCubic(clamp((t - CAST_RELEASE - 0.08) / (D - CAST_RELEASE - 0.08)));
   const at = (x, y) => [x, y + Y];
-  const R = new Raster(-70, -140, 70, 8);
+  const R = new Raster(-82, -140, 82, 8);
   p.glow(2, -40 + Y, 54, P.aura, o.phase === 3 ? 0.3 : 0.18);
 
   // ---------------------------------------------------------------- crystals (far half of the orbit first)
   const crystals = [];
   for (let i = 0; i < P.crystals; i++) {
-    const a = ph * TAU + (i * TAU) / P.crystals, depth = Math.sin(a);
-    crystals.push({ x: Math.cos(a) * 30 + 2, y: -48 + Y + Math.sin(a * 2 + i) * 6 - depth * 4 - (i % 2) * 8, depth, s: i % 2 ? 1 : 1.35, spin: Math.cos(a * 2 + i) });
+    const a = ph * TAU + (i * TAU) / P.crystals + Math.PI / 4, depth = Math.sin(a);
+    crystals.push({ x: Math.cos(a) * 30 + 2, y: -46 + Y + depth * (depth > 0 ? 28 : 8) + Math.sin(a * 2 + i) * 3 - (i % 2) * 5, depth, s: (i % 2 ? 1 : 1.35) * (1 + depth * 0.15), spin: Math.cos(a * 2 + i) });   // a tilted orbit: the front pass goes low past her skirt, never across her face
   }
   const drawCrystal = (c) => {
     const h = 7 * c.s, w = 3.4 * c.s * (0.6 + 0.4 * Math.abs(c.spin)), dim = c.depth < 0 ? -0.2 : 0;
@@ -117,10 +117,12 @@ export function drawChild(p, t, o, anim, D) {
   // the black ribbon bow at the collar
   R.poly([at(2, -48), at(-3, -51), at(-3.5, -46)], (x, y, u, v) => lit(P.ribbon, 0.6 - u * 0.4));
   R.poly([at(2, -48), at(7, -51), at(7.5, -46)], (x, y, u, v) => lit(P.ribbon, 0.7 - u * 0.4));
-  R.poly([at(1.5, -47.5), at(-2.5, -43), at(-1, -42.5)], P.ribbon[1]); R.poly([at(2.5, -47.5), at(6.5, -43), at(5, -42.5)], P.ribbon[1]);   // tails flaring out
+  R.stroke([at(1.5, -47.5), at(0.5, -44), at(0, -40.5)], 1.6, P.ribbon[1]); R.stroke([at(2.5, -47.5), at(3.5, -44), at(4.5, -40.5)], 1.6, P.ribbon[1]);   // tails hanging
+  R.set(-0.5, -40 + Y, P.ribbon[0]); R.set(5, -40 + Y, P.ribbon[0]);
   R.ellipse(2, -48 + Y, 1.3, 1.2, P.ribbon[2]);
 
   // ---------------------------------------------------------------- arms
+  const hm = { l: P.skin[2], s: P.skin[1], d: P.skin[0] };
   const poses = {
     orb: { l: [[-6, -45], [-5, -38], [-1, -34]], r: [[10, -45], [11, -38], [7, -34]] },
     open: { l: [[-6, -45], [-12, -42], [-18, -46]], r: [[10, -45], [16, -42], [22, -46]] },
@@ -130,6 +132,10 @@ export function drawChild(p, t, o, anim, D) {
   const la = lift(poses.l, -1), ra = lift(poses.r, 1);
   R.stroke(la, 2.8, (u, b, d) => strand(P.skin, b, d, -0.1));
   R.stroke(ra, 2.8, (u, b, d) => strand(P.skin, b, d, 0.05));
+  if (P.arms === "open") for (const [a, flip] of [[la, true], [ra, false]]) {
+    const [hx, hy] = a[2];
+    grid(R, ["l.l.l", "sssss", ".sss.", "..d.."], Math.round(hx - 2), Math.round(hy - 3), hm, { flip });   // fingers spread
+  }
   if (o.phase === 3) for (const a of [la, ra]) { const [hx, hy] = a[2]; for (const dx of [-1.5, 0, 1.5]) R.line(hx + dx, hy, hx + dx * 1.6, hy + 3.5, P.tendril[4]); }
 
   // ---------------------------------------------------------------- the orb (phase 1): a black sphere swirling with violet light
@@ -142,28 +148,49 @@ export function drawChild(p, t, o, anim, D) {
       return swirl > 0.6 && rr > 0.3 ? P.orbC[3] : swirl > 0.1 ? P.orbC[2] : P.orbC[rr < 0.45 ? 0 : 1];
     }, 2);
     R.set(orb.x - orb.r * 0.45, orb.y - orb.r * 0.45, WHITE, 2);
+    // small hands cupping it from below on either side
+    grid(R, [".ls", "lss", "sd.", ".d."], Math.round(orb.x - orb.r - 1), Math.round(orb.y), hm);
+    grid(R, [".ls", "lss", "sd.", ".d."], Math.round(orb.x + orb.r - 2), Math.round(orb.y - 1), hm, { flip: true });
   }
 
   // ---------------------------------------------------------------- head: face, big eyes, bangs, side locks
-  const face = [at(-6, -68), at(12, -68), at(12.5, -60), at(10, -54.5), at(6, -52), at(2, -52), at(-3, -54.5), at(-6, -60)];
-  R.poly(face, (x, y, u, v) => lit(P.skin, 0.95 - u * 0.25 - v * 0.3));
-  const eye = (cx, cy, w) => {
-    R.line(cx - w - 0.5, cy - 3, cx + w + 0.5, cy - 3, P.ribbon[0]);   // upper lash
-    R.set(cx + w + 1, cy - 3.5, P.ribbon[0]);
-    for (let yy = -2; yy <= 1; yy++) for (let xx = -w; xx <= w; xx++) R.set(cx + xx, cy + yy, yy <= -1 ? P.eye[0] : yy === 0 ? P.eye[1] : P.eye[2], P.glowEyes ? 2 : 1);
-    R.set(cx - w + 0.5, cy - 1.5, WHITE, 2); R.set(cx + w - 0.5, cy + 0.5, P.eye[2], 2);
-    R.line(cx - w, cy + 2, cx + w, cy + 2, P.skin[0]);   // lower lid
-  };
-  eye(7.5, -58 + Y, 1.5); eye(0, -58 + Y, 1.2);
-  if (!P.glowEyes) { R.line(4.5, -53.6 + Y, 5.5, -53.6 + Y, P.skin[0]); R.set(9.5, -55.5 + Y, H(["#e8b8c8"])[0]); R.set(-1.5, -55.5 + Y, H(["#e8b8c8"])[0]); }
+  // the face, pixel by pixel: a round chibi face turned a little to the right, big eyes, small mouth
+  const FACE = [
+    "...lllllllllllll...",
+    "..lllllllllllllll..",
+    ".lllllllllllllllll.",
+    ".llllllllllllllllll",
+    "dllllllllllllllllll",
+    "dllllllllllllllllll",
+    "dllllllllllllllllll",
+    "dllllllllllllllllll",
+    "dllllllllllllllllll",
+    "dsllllllllllllllll.",
+    ".dsbblllllllllbbll.",
+    ".dsssllllmmllllll..",
+    "..ddsssllllllllo...",
+    "...dddsslllllo.....",
+    ".....dddddsoo......",
+  ];
+  const blush = o.phase === 3 ? P.skin[1] : H(["#eab4c8"])[0];
+  const fy = Math.round(-68 + Y);
+  grid(R, FACE, -7, fy, { l: P.skin[2], s: P.skin[1], d: P.skin[0], b: blush, m: P.glowEyes ? P.skin[1] : P.skin[0], o: P.skin[0] });
+  // big eyes: a heavy lash line, the iris dark at the top and light at the bottom, two catchlights
+  const glowTag = P.glowEyes ? 2 : 1;
+  const em = { E: P.ribbon[0], I: { c: P.eye[0], tag: glowTag }, i: { c: P.eye[1], tag: glowTag }, j: { c: P.eye[2], tag: 2 }, h: { c: WHITE, tag: 2 } };
+  grid(R, ["EEEEE", "IhhII", "IhIII", "iiiii", ".jjj."], 5, fy + 5, em);    // near eye
+  grid(R, ["EEEE", "IhII", "IIII", "iiii", ".jj."], -3, fy + 5, em);        // far eye
+  R.set(10, fy + 4, P.ribbon[0]); R.set(-4, fy + 4, P.ribbon[0]);            // lash flicks
+  R.line(5, fy + 2, 8, fy + 2, P.hair[2]); R.line(-3, fy + 2, -1, fy + 2, P.hair[2]);   // brows
   // crown and bangs
   R.ellipse(3, -66 + Y, 12.5, 10, (x, y, dx, dy) => {
     if (dy > 0.2 && x > -5 && x < 12) return undefined;
     const ring = Math.abs(dy + 0.35 + dx * dx * 0.3) < 0.07 && dx > -0.6 && dx < 0.5;
     return ring ? P.hair[5] : lit(P.hair, 0.52 - dx * 0.25 - dy * 0.25 + Math.sin(x * 1.4 - y * 0.4) * 0.07);
   });
+  R.poly([at(-7, -71), at(13, -71), at(13, -66), at(-7, -66)], (x, y, u, v) => lit(P.hair, 0.55 - u * 0.2));   // a base under the bangs: no holes for the outline to find
   for (let k = 0; k < 7; k++) {
-    const x = -5 + k * 2.6, tip = -59 - (k % 2) * 2.5 - (k === 3 ? 1.5 : 0);
+    const x = -5 + k * 2.6, tip = -64.5 - (k % 2) * 1.5 - (k === 3 ? 0.5 : 0) + (k === 0 || k === 6 ? 3 : 0);   // on the brow, longer at the temples
     R.poly([[x - 2, -68 + Y], [x + 2, -68 + Y], [x + 0.8 + Math.sin(ph * TAU + k) * wild, tip + Y]], (xx, yy, u, v) => lit(P.hair, 0.7 - u * 0.2 - v * 0.15 + (k % 2) * 0.05));
   }
   for (const [x0, sh] of [[12.5, 0.1], [-6.5, -0.1]]) {
@@ -179,7 +206,7 @@ export function drawChild(p, t, o, anim, D) {
 
   // ---------------------------------------------------------------- light
   if (P.rim) { p.glow(-4, -66 + Y, 12, P.rim, 0.3); p.glowLine(-12, -60 + Y, -14, -30 + Y, 4, P.rim, 0.15); }
-  if (P.glowEyes) for (const [ex, ey] of [[7.5, -58], [0, -58]]) p.glow(ex, ey + Y, 6, P.eye[1], o.phase === 3 ? 0.8 : 0.5);
+  if (P.glowEyes) for (const [ex, ey] of [[7, -61], [-1.5, -61]]) p.glow(ex, ey + Y, 6, P.eye[1], o.phase === 3 ? 0.8 : 0.5);
   if (orb) { p.glow(orb.x, orb.y, 14 + raise * 8, P.orbC[3], 0.35 + raise * 0.3); }
   for (const c of crystals) p.glow(c.x, c.y, 7, P.crystal[3], c.depth < 0 ? 0.1 : 0.22);
   if (anim === "cast") {

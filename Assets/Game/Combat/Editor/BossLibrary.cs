@@ -118,15 +118,15 @@ namespace SolarDark.Combat.Editor
                 });
 
             var domain = Skill(B, "serena.holy-domain", "신성의 영역 · 영역 장악", 0.8f, 1.0f, 14f, 1f, 0, 99,
-                "She claims the floor round her: standing inside burns, then the whole circle erupts in a column of light.",
+                "She claims the floor where you stand: staying inside burns, then the whole circle erupts in a column of light. Get out.",
                 new SkillCue
                 {
-                    label = "domain", sheet = S("serena-holy-domain"), anchor = CueAnchor.Self, loopDuration = 3.2f, followCaster = false, sortingOrder = 2,
+                    label = "domain", sheet = S("serena-holy-domain"), anchor = CueAnchor.Target, loopDuration = 3.2f, followCaster = false, sortingOrder = 2,   // she claims the floor under you
                     hit = Circle(3.6f, 0, 0.6f, 0.3f, 3, active: 2.9f, tick: 0.5f), telegraph = false,
                 },
                 new SkillCue
                 {
-                    label = "burst", time = 3.0f, sheet = S("serena-holy-domain-burst"), anchor = CueAnchor.Self,
+                    label = "burst", time = 3.0f, sheet = S("serena-holy-domain-burst"), anchor = CueAnchor.Target,
                     hit = Circle(3.6f, 0, 1.2f, 1.52f, 22, knockback: 9, hitStop: 0.15f, shake: 0.3f), telegraphLead = 1.5f,
                 });
 

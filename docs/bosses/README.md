@@ -26,7 +26,10 @@
   페이즈마다 대기(2초 루프)와 시전(1초, 0.35초에 베기/폭발, 대기 자세로 시작·끝) 시트 →
   `tools/pixelfx/boss-characters.json` → `Assets/PixelFx/Sheets/characters/`. Unity에서는 `BossBody`가 페이즈의 시트를 재생하고,
   시전은 베는 프레임이 스킬 선딜 끝에 맞도록 속도를 맞춘다.
+  얼굴과 손은 픽셀 도안(`grid()`)으로 한 칸씩 찍는다: 3/4 얼굴형, 속눈썹·홍채 단계·하이라이트, 페이즈별 눈(감음/반쯤/뜸, 빛나는 눈),
+  주먹 쥔 손과 손가락이 보이는 손.
   ![characters](characters.png)
+  ![faces and hands](faces-hands.png)
 
 ## 실행 영상 (Unity 없이)
 
@@ -70,7 +73,7 @@ Unity에서.
 | 그림자 사슬 · 속박 | **shadow-chains** (신규) | 대상 발밑 문양 → 사슬이 감아 묶음 | 원 r1.3, 0.78 s, 6 + 속박 1.2 s |
 | 빛과 그림자의 균열 | ice-spikes (DUSK) | 바닥을 타고 대상 쪽으로 가시 균열 (2페이즈+ 양방향) | 박스 10.75×3, 14 |
 | 그림자 기둥 | magic-circle-cast (DUSK) | 대상 주변 라인 3곳, 마법진이 그려진 뒤 기둥 | 박스 1.6×12, 1.52 s부터 0.9 s 틱 12 |
-| 신성의 영역 · 영역 장악 | rune-circle → magic-circle-cast (HALO) | 자신 주위 영역 3.2 s 지속 피해 → 영역 전체 빛 기둥 폭발 | 원 r3.6 틱 3 / 폭발 22 + 넉백 |
+| 신성의 영역 · 영역 장악 | rune-circle → magic-circle-cast (HALO) | 대상이 선 바닥을 장악: 3.2 s 지속 피해 → 영역 전체 빛 기둥 폭발 (빠져나가야 함) | 원 r3.6 틱 3 / 폭발 22 + 넉백 |
 | 심판의 빛 | sunburst → smite (HALO) | 대상 머리 위 별이 1.1 s 따라다니다 그 자리에 빛의 낙뢰 (3페이즈 3연속) | 원 r1.5, 22 |
 
 ## 움켜쥔 아이 — 최종 보스 (HP 2000)

@@ -138,3 +138,19 @@ export function strand(ramp, b, d, bias = 0) {
   const k = 0.55 + b * 0.35 - d * d * 0.5 + bias;
   return lit(ramp, Math.max(0, Math.min(0.999, k)));
 }
+
+/**
+ * Stamp a hand-made pixel grid: rows of characters, top-left at (x0, y0); map gives each character a color
+ * (missing or undefined = leave the pixel alone). flip mirrors it left-right. This is how faces and hands are drawn:
+ * at this size a pixel artist places every pixel, so we do too.
+ */
+export function grid(R, rows, x0, y0, map, { flip = false, tag = 1 } = {}) {
+  const w = Math.max(...rows.map((r) => r.length));
+  for (let y = 0; y < rows.length; y++)
+    for (let x = 0; x < rows[y].length; x++) {
+      const c = map[rows[y][x]];
+      if (c === undefined) continue;
+      const t = typeof c === "object" ? c : { c, tag };
+      R.set(x0 + (flip ? w - 1 - x : x), y0 + y, t.c, t.tag ?? tag);
+    }
+}

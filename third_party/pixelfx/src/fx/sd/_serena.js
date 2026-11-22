@@ -5,9 +5,10 @@
 //   2 융합 (fusion): white panel and underskirt showing, fewer tendrils, eyes half open
 //   3 정화 (purified): white and gold, ribbons of light instead of shadow, eyes open and gold
 import { TAU, clamp, ease, lerp, sparkle, WHITE } from "../../core/index.js";
-import { Raster, lit, tl, H, curve, strand } from "./_figure.js";
+import { Raster, lit, tl, H, curve, strand, grid } from "./_figure.js";
 
 export const INK = H(["#0b0712"])[0];
+const mixInk = (c) => c;   // lashes take the hair's darkest tone
 
 const PHASES = {
   1: {
@@ -62,18 +63,18 @@ export function drawSerena(p, t, o, anim, D) {
   const Y = -8 + Math.sin(ph * TAU) * 1.5;
   const q = pose(anim, t, D);
   const at = (x, y) => [x, y + Y];
-  const R = new Raster(-74, -150, 114, 8);
+  const R = new Raster(-86, -174, 114, 8);
 
   p.glow(8, -60 + Y, 70, P.aura, o.phase === 3 ? 0.26 : 0.16);
 
   // ---------------------------------------------------------------- behind her: tendrils / ribbons of light
-  const tendrilSeeds = [[-24, -14, 2.8, 52], [-16, -12, 2.4, 44], [30, -10, 0.35, 46], [-30, -24, 3.1, 40], [-6, -78, 3.5, 40], [-10, -66, 3.2, 46], [26, -12, 0.7, 36], [-20, -30, 3.4, 38]];
+  const tendrilSeeds = [[-24, -16, 3.25, 52], [-14, -12, 3.0, 44], [28, -12, -0.05, 46], [-28, -26, 3.5, 40], [-6, -78, 3.5, 40], [-10, -66, 3.2, 46], [24, -14, -0.35, 36], [-18, -30, 3.7, 38]];   // out to the sides, never down like legs
   for (let i = 0; i < P.tendrils; i++) {
     const [sx, sy, a0, len] = tendrilSeeds[i], ctrl = [];
     let x = sx, y = sy + Y, a = a0;
     for (let k = 0; k <= 6; k++) {
       ctrl.push([x, Math.min(2, y)]);
-      a += Math.sin(ph * TAU * 2 + k * 0.7 + i * 1.7) * 0.42 + (i % 2 ? 0.08 : -0.08);
+      a += Math.sin(ph * TAU * 2 + k * 0.7 + i * 1.7) * 0.42 + (Math.cos(a) < 0 ? 0.1 : -0.1);   // curl upward at the tips
       x += Math.cos(a) * (len / 6); y += Math.sin(a) * (len / 6);
     }
     const pts = curve(ctrl, 5);
@@ -120,7 +121,7 @@ export function drawSerena(p, t, o, anim, D) {
   const farSh = at(2, -84), farEl = at(-2, -74), farHd = at(0, -63);
   R.stroke([farSh, farEl, farHd], (u) => 4 + u * 2.6, (u, b, d) => strand(P.dress, b, d, -0.2));
   R.line(farHd[0] - 3, farHd[1] - 1, farHd[0] + 3, farHd[1] - 1, P.gold[1]);
-  R.ellipse(farHd[0], farHd[1] + 1.5, 1.8, 2, (x, y, dx, dy) => lit(P.skin, 0.4 - dy * 0.2));
+  grid(R, [".ls.", "lssd", "ssd.", "s.s.", "d.d."], Math.round(farHd[0] - 2), Math.round(farHd[1]), { l: P.skin[2], s: P.skin[1], d: P.skin[0] });   // open hand, fingers loose
 
   // ---------------------------------------------------------------- the skirt: outer gown split over the underskirt
   const flare = q.flare;
@@ -163,7 +164,7 @@ export function drawSerena(p, t, o, anim, D) {
   R.ellipse(10, -67.5 + Y, 1.8, 1.8, (x, y, dx, dy) => lit(P.gem, 0.5 - dx * 0.3 - dy * 0.3));
   R.set(9.5, -68.5 + Y, P.gem[2]);
   R.poly([at(5, -92), at(15, -92), at(16, -87), at(4, -87)], (x, y, u, v) => lit(P.dress, tl(u, v, 0.2)));
-  R.line(5, -92 + Y, 15, -92 + Y, P.gold[3]); R.line(4, -87.5 + Y, 16, -87.5 + Y, P.gold[1]);
+  R.line(4, -87.5 + Y, 16, -87.5 + Y, P.gold[1]);   // (no gold on the collar's top edge: it poked out either side of the chin)
   R.ellipse(18, -85 + Y, 3.5, 3, (x, y, dx, dy) => lit(P.dress, 0.62 - dx * 0.2 - dy * 0.25));
   R.ellipse(2, -85 + Y, 3.2, 2.8, (x, y, dx, dy) => lit(P.dress, 0.45 - dx * 0.2 - dy * 0.25));
   R.line(15.5, -87.5 + Y, 21, -84 + Y, P.gold[2]);
@@ -171,33 +172,47 @@ export function drawSerena(p, t, o, anim, D) {
   // ---------------------------------------------------------------- head
   R.poly([at(7, -94), at(13, -94), at(13, -90), at(7, -90)], P.skin[1]);
   R.line(7, -91 + Y, 13, -91 + Y, P.skin[0]);
-  const face = [at(3.5, -106), at(17, -106), at(18, -100), at(17, -95.5), at(13.5, -92.5), at(10.5, -92.5), at(6, -95.5), at(4, -100)];
-  R.poly(face, (x, y, u, v) => lit(P.skin, 0.95 - u * 0.25 - v * 0.35 - (x < 6 ? 0.2 : 0)));
-  const eye = (cx, cy, w) => {
-    if (P.eyes === "closed") {
-      R.line(cx - w, cy, cx + w, cy + 0.5, P.eye[0]); R.set(cx - w - 1, cy - 0.5, P.eye[0]); R.set(cx + w, cy + 1.5, P.eye[0]);
-    } else {
-      const open = P.eyes === "half" ? 1 : 2;
-      R.line(cx - w - 0.5, cy - open, cx + w + 0.5, cy - open, P.eye[0]);
-      for (let yy = 0; yy < open + 1; yy++) for (let xx = -w; xx <= w; xx++) R.set(cx + xx, cy - open + 1 + yy, yy === 0 ? P.eye[0] : P.eye[1]);
-      R.set(cx + w - 0.5, cy - open + 1, WHITE, 2);
-      R.set(cx + w + 1, cy - open - 0.5, P.eye[0]);
-    }
-  };
-  eye(14, -99 + Y, 1.5); eye(7.5, -99 + Y, 1);
-  R.set(16.5, -97 + Y, P.skin[0]);
-  R.line(13, -94.8 + Y, 14.5, -94.8 + Y, P.skin[0]);
-  if (o.phase === 3) { R.set(15.5, -96.5 + Y, H(["#e8b8c8"])[0]); R.set(8, -96.5 + Y, H(["#e8b8c8"])[0]); }
+  // the face, pixel by pixel (three-quarter view to the right: the far cheek shaded, the jaw tapering to the chin)
+  const FACE = [
+    "lllllllllllll..",
+    "llllllllllllll.",
+    "dllllllllllllll",
+    "dllllllllllllll",
+    "dllllllllllllll",
+    "dsllllllllllllL",
+    "dsllllllllllllL",
+    "dsslllllllllllL",
+    "dssslllllllllnL",
+    "ddsbsllllllbll.",
+    ".dssslllllmml..",
+    ".ddssslllllll..",
+    "..ddsssllllo...",
+    "....dddsso.....",
+  ];
+  const blush = o.phase === 3 ? H(["#e8b0c4"])[0] : P.skin[1];
+  grid(R, FACE, 4, Math.round(-106 + Y), { l: P.skin[2], L: P.skin[3], s: P.skin[1], d: P.skin[0], n: P.skin[0], b: blush, m: P.skin[0], o: P.skin[0] });
+  // eyes: closed and downcast (phase 1), half open (2), open and gold (3); the near eye wider than the far one
+  const EYES = {
+    closed: { near: [".....", "E....", ".EEEE"], far: ["...", "E..", ".EE"] },
+    half: { near: ["EEEEE", ".IIIh", "....."], far: ["EEE", "II.", "..."] },
+    open: { near: ["EEEEE", ".IhI.", ".iii.", "..w.."], far: ["EEE", "Ih.", "ii."] },
+  }[P.eyes];
+  const em = { E: mixInk(P.hair[0]), I: P.eye[0], i: P.eye[1], h: { c: WHITE, tag: 2 }, w: P.skin[1] };
+  const ey = Math.round(-101 + Y);
+  grid(R, EYES.near, 12, ey, em); grid(R, EYES.far, 6, ey, em);
+  if (P.eyes !== "closed") { R.set(17, ey - 1, em.E); R.set(5, ey - 1, em.E); }   // lash flicks at the outer corners
+  R.line(12, ey - 2, 15, ey - 2.5, P.hair[1]); R.line(6, ey - 2, 8, ey - 2, P.hair[1]);   // brows, thin, under the bangs
   R.ellipse(9.5, -106 + Y, 10.5, 9.5, (x, y, dx, dy) => {
     if (dy > 0.25 && x > 4 && x < 17) return undefined;
     const ring = Math.abs(dy + 0.4 + dx * dx * 0.3) < 0.07 && dx > -0.65 && dx < 0.55;
     return ring ? P.hair[5] : lit(P.hair, 0.5 - dx * 0.25 - dy * 0.25 + Math.sin(x * 1.5 - y * 0.4) * 0.07);
   });
+  R.poly([at(3, -109), at(18, -109), at(18, -104), at(3, -104)], (x, y, u, v) => lit(P.hair, 0.55 - u * 0.2));   // base under the bangs
   for (let k = 0; k < 6; k++) {
-    const x = 4.5 + k * 2.4, tip = -98.5 - (k % 2) * 2 - (k === 2 ? 1 : 0);
+    const x = 4.5 + k * 2.4, tip = -102.5 - (k % 2) * 1.5 - (k === 2 ? 0.5 : 0) + (k === 0 || k === 5 ? 2.5 : 0);   // ends on the brow; longer at the temples
     R.poly([[x - 1.8, -106 + Y], [x + 1.8, -106 + Y], [x + 0.6, tip + Y]], (xx, yy, u, v) => lit(P.hair, 0.75 - u * 0.25 - v * 0.2 + (k % 2) * 0.05));
   }
-  for (const [x0, len, sh] of [[17.5, 36, 0.12], [15.5, 26, 0.0], [4.5, 22, -0.1]]) {
+  for (const [x0, len, sh] of [[19.5, 36, 0.12], [18.5, 26, 0.0], [3, 22, -0.1]]) {   // framing the face, not over it
     const ctrl = [];
     for (let k = 0; k <= 4; k++) { const u = k / 4; ctrl.push([x0 + Math.sin(u * 2.4) * 2.5 + Math.sin(ph * TAU + u * 3 + x0) * u * 1.4 - q.lift * u * 3, -103 + u * len + Y - q.lift * u * 4]); }
     R.stroke(curve(ctrl, 5), (u) => 4 * (1 - u * 0.75) + 0.5, (u, b, d) => strand(P.hair, b, d, sh));
@@ -217,11 +232,13 @@ export function drawSerena(p, t, o, anim, D) {
   }
   R.ellipse(gx, gy, 1.6, 1.6, (x, y, dx, dy) => lit(P.gem, 0.6 - dx * 0.3 - dy * 0.3));
   for (let k = 1; k <= 7; k++) R.set(hx - ca * k, hy - sa * k, k % 2 ? P.gold[0] : P.dress[3]);
-  R.ellipse(hx - ca * 8.5, hy - sa * 8.5, 1.8, 1.8, (x, y, dx, dy) => lit(P.gem, 0.55 - dx * 0.3 - dy * 0.3));
+  R.ellipse(hx - ca * 8.5, hy - sa * 8.5, 1.3, 1.3, (x, y, dx, dy) => lit(P.gold, 0.6 - dx * 0.3 - dy * 0.3));   // pommel
   const sh = at(18, -84), el = [lerp(sh[0], hx, 0.5) + 4, lerp(sh[1], hy, 0.5) + 2];
   R.stroke([sh, el, [hx - ca * 1, hy - sa * 1]], (u) => 4.4 + u * 1.8, (u, b, d) => strand(P.dress, b, d, 0.05));
   R.stroke([[hx - ca * 2.5 - nx * 3, hy - sa * 2.5 - ny * 3], [hx - ca * 2.5 + nx * 3, hy - sa * 2.5 + ny * 3]], 1.6, P.gold[2]);
-  R.ellipse(hx - ca * 0.5, hy - sa * 0.5, 2, 2, (x, y, dx, dy) => lit(P.skin, 0.65 - dx * 0.2 - dy * 0.3));
+  // the fist round the grip: knuckles catching the light, a finger line, the thumb over the top
+  grid(R, [".ll.", "lsss", "sdsd", ".dd."], Math.round(hx - ca * 0.5 - 2), Math.round(hy - sa * 0.5 - 2), { l: P.skin[2], s: P.skin[1], d: P.skin[0] });
+  R.set(Math.round(hx - ca * 0.5 + 1), Math.round(hy - sa * 0.5 - 3), P.skin[2]);
 
   R.outline(INK, o.phase === 3 ? 0.42 : 0.3);
   R.stamp(p);
