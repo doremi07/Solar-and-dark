@@ -12,3 +12,5 @@ Unity game. Pixel art VFX come from **pixelfx** (pinned, vendored in `third_part
   `Assets/Game/Combat/Runtime`, sheets from `tools/pixelfx/boss-fx.json` via `tools/pixelfx/export-set.mjs`.
   Overview: `docs/bosses/README.md`. Check without Unity: `tools/pixelfx/verify/run.sh` (compile + logic tests);
   see it running: `tools/arena-sim/run.sh` (real scripts on a headless Unity stand-in → MP4 + storyboard).
+- Hand-editing effects: `python3 tools/pixelfx/to-aseprite.py <sheet.json|dir> [--manifest ...]` makes .aseprite
+  files (origin slice = pivot + pixelfx meta); an Aseprite sheet export imports back as is. See `docs/pixelfx-aseprite.md`.

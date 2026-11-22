@@ -26,9 +26,9 @@ namespace PixelFx
                 if (sprites != null && sprites.Length == FrameCount && (sprites.Length == 0 || sprites[0] != null)) return sprites;
                 sprites = new Sprite[FrameCount];
                 if (texture == null) return sprites;
-                data.PivotNormalized(out var px, out var py);
                 for (int i = 0; i < sprites.Length; i++)
                 {
+                    data.PivotNormalized(i, out var px, out var py);
                     data.UnityRect(i, out var x, out var y, out var w, out var h);
                     var s = Sprite.Create(texture, new Rect(x, y, w, h), new Vector2(px, py), pixelsPerUnit, 0, SpriteMeshType.FullRect);
                     s.name = $"{name} {i}";

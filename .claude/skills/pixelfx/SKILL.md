@@ -18,6 +18,10 @@ compatibility: Node 18 or newer. ffmpeg is optional (GIF and MP4 previews). This
 >   (PNG + JSON) into `Assets/PixelFx/Sheets/<category>/`. Unity's `PixelFxSheetPostprocessor` then sets point
 >   filtering / no compression / full size and builds a `PixelFxSheet` asset and a prefab (SpriteRenderer +
 >   `PixelFxPlayer`) next to it. In the editor the same thing is **Tools > pixelfx > Render & Import Effect…**.
+> - Hand-editing: `python3 tools/pixelfx/to-aseprite.py <sheet.json|dir> --out records/aseprite` gives .aseprite files
+>   (frames, durations, tag, `origin` slice with the pivot and the pixelfx meta in its user data). An Aseprite
+>   "Export Sprite Sheet" (JSON array, slices on) dropped over the PNG/JSON imports back unchanged; export-set skips
+>   such edited sheets unless `--force`. Guide: `docs/pixelfx-aseprite.md`.
 > - In game: drop the prefab in, or `PixelFxPlayer.Spawn(sheet, position, flipLeft)`. The pivot is the effect's
 >   origin (feet / impact point). Act hits come through `PixelFxPlayer.onHit` (freeze seconds for hit-stop).
 > - Recolors and variants are separate sheets: `--name blue-torch --opts '{"palette":[...]}'`.

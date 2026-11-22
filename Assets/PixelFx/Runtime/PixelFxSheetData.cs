@@ -10,6 +10,8 @@ namespace PixelFx
     {
         public int x, y, w, h;
         public int durationMs;
+        /// <summary>Where this rect sits inside the full frame when the sheet was exported trimmed (spriteSourceSize).</summary>
+        public int ox, oy;
     }
 
     /// <summary>A contact moment from the effect's act: freeze everything for <see cref="freeze"/> seconds at <see cref="t"/>.</summary>
@@ -69,6 +71,17 @@ namespace PixelFx
             py = frameHeight > 0 ? 1f - pivotY / (float)frameHeight : 0f;
         }
 
+        /// <summary>
+        /// Unity pivot for one frame: normalised from its rect's bottom-left. Differs between frames only when the sheet
+        /// was exported trimmed, where each rect is a different crop of the full frame.
+        /// </summary>
+        public void PivotNormalized(int index, out float px, out float py)
+        {
+            var f = frames[index];
+            px = f.w > 0 ? (pivotX - f.ox) / (float)f.w : 0.5f;
+            py = f.h > 0 ? 1f - (pivotY - f.oy) / (float)f.h : 0f;
+        }
+
         /// <summary>A frame's rect with Unity's texture origin (bottom-left).</summary>
         public void UnityRect(int index, out int x, out int y, out int w, out int h)
         {
@@ -113,7 +126,17 @@ namespace PixelFx
             var size = Obj(meta, "size");
             if (size != null) { d.textureWidth = Int(size, "w"); d.textureHeight = Int(size, "h"); }
 
-            var pfx = Obj(meta, "pixelfx") ?? throw new FormatException("pixelfx sheet: no meta.pixelfx (not a pixelfx sheet?)");
+            // pixelfx's own sheets carry meta.pixelfx. A sheet exported from Aseprite (after editing a file made by
+            // tools/pixelfx/to-aseprite.py) carries it in the user data of the "origin" slice, and the pivot in that slice.
+            var origin = OriginSlice(meta);
+            var pfx = Obj(meta, "pixelfx");
+            if (pfx == null && origin != null && Str(origin, "data").Length > 0)
+            {
+                try { pfx = Obj(MiniJson.Parse(Str(origin, "data")) as Dictionary<string, object>, "pixelfx"); }
+                catch (FormatException) { pfx = null; }
+            }
+            bool plainAseprite = pfx == null;
+            pfx = pfx ?? new Dictionary<string, object>();
             d.id = Str(pfx, "id");
             d.displayName = Str(pfx, "name");
             d.version = Str(pfx, "version");
@@ -152,15 +175,31 @@ namespace PixelFx
                     {
                         if (!(o is Dictionary<string, object> fo)) continue;
                         var r = Obj(fo, "frame") ?? throw new FormatException("pixelfx sheet: frame without rect");
+                        var src = Obj(fo, "spriteSourceSize");
+                        var full = Obj(fo, "sourceSize");
                         d.frames.Add(new PixelFxFrame
                         {
                             x = Int(r, "x"), y = Int(r, "y"), w = Int(r, "w"), h = Int(r, "h"),
                             durationMs = fo.ContainsKey("duration") ? Int(fo, "duration") : defaultMs,
+                            ox = src != null ? Int(src, "x") : 0, oy = src != null ? Int(src, "y") : 0,
                         });
+                        if (full != null && d.frameWidth == 0) { d.frameWidth = Int(full, "w"); d.frameHeight = Int(full, "h"); }
                     }
             }
             if (d.frames.Count == 0) throw new FormatException("pixelfx sheet: no frames");
             if (d.frameWidth == 0) { d.frameWidth = d.frames[0].w; d.frameHeight = d.frames[0].h; }
+            if (!pfx.ContainsKey("fps") && d.frames[0].durationMs > 0) d.fps = (float)Math.Round(1000.0 / d.frames[0].durationMs, 2);
+            // the slice's pivot wins: the artist may have moved it in Aseprite
+            var key = OriginKey(origin);
+            if (key != null && Obj(key, "pivot") is Dictionary<string, object> pv2)
+            {
+                var bounds = Obj(key, "bounds");
+                d.pivotX = Int(pv2, "x") + (bounds != null ? Int(bounds, "x") : 0);
+                d.pivotY = Int(pv2, "y") + (bounds != null ? Int(bounds, "y") : 0);
+            }
+            else if (plainAseprite) { d.pivotX = d.frameWidth / 2; d.pivotY = d.frameHeight; }   // feet at the bottom middle
+            if (d.displayName.Length == 0 && meta.TryGetValue("frameTags", out var tg) && tg is List<object> tl && tl.Count > 0 && tl[0] is Dictionary<string, object> t0)
+                d.displayName = Str(t0, "name");
             if (d.textureWidth == 0 || d.textureHeight == 0)
                 foreach (var f in d.frames)
                 {
@@ -168,6 +207,25 @@ namespace PixelFx
                     d.textureHeight = Math.Max(d.textureHeight, f.y + f.h);
                 }
             return d;
+        }
+
+        static Dictionary<string, object> OriginSlice(Dictionary<string, object> meta)
+        {
+            if (!(meta.TryGetValue("slices", out var sl) && sl is List<object> list)) return null;
+            Dictionary<string, object> first = null;
+            foreach (var o in list)
+            {
+                if (!(o is Dictionary<string, object> s)) continue;
+                if (Str(s, "name") == "origin") return s;
+                if (first == null && OriginKey(s) is Dictionary<string, object> k && k.ContainsKey("pivot")) first = s;
+            }
+            return first;   // no slice called origin: the first one with a pivot
+        }
+
+        static Dictionary<string, object> OriginKey(Dictionary<string, object> slice)
+        {
+            if (slice == null || !(slice.TryGetValue("keys", out var ks) && ks is List<object> kl) || kl.Count == 0) return null;
+            return kl[0] as Dictionary<string, object>;
         }
 
         static Dictionary<string, object> Obj(Dictionary<string, object> o, string k) =>
