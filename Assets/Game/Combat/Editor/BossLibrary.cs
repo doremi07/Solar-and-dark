@@ -57,7 +57,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "slash", sheet = S("serena-shadow-slash"), anchor = CueAnchor.Self, offset = new Vector2(0.4f, 0), aim = CueAim.FaceTarget,
-                    hit = Box(5f, 3f, 2.2f, 1.5f, 0.14f, 12, knockback: 7, hitStop: 0.12f, shake: 0.15f),
+                    hit = Box(7.9f, 2.9f, 0.85f, 1.5f, 0.14f, 12, active: 0.24f, knockback: 7, hitStop: 0.12f, shake: 0.15f),   // the arc, front to back, while the blade sweeps
                 });
 
             var wideSlash = Skill(B, "serena.wide-slash", "광역 슬래시", 0.65f, 0.6f, 6f, 2f, 0, 7f,
@@ -114,12 +114,12 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "domain", sheet = S("serena-holy-domain"), anchor = CueAnchor.Target, loopDuration = 3.2f, followCaster = false, sortingOrder = 2,   // she claims the floor under you
-                    hit = Circle(3.6f, 0, 0.6f, 0.3f, 3, active: 2.9f, tick: 0.5f),
+                    hit = Circle(3.2f, 0, 0, 0.3f, 3, active: 2.9f, tick: 0.5f),   // the rune circle (±3.15)
                 },
                 new SkillCue
                 {
                     label = "burst", time = 3.0f, sheet = S("serena-holy-domain-burst"), anchor = CueAnchor.Target,
-                    hit = Circle(3.6f, 0, 1.2f, 1.52f, 22, knockback: 9, hitStop: 0.15f, shake: 0.3f),
+                    hit = Circle(3.2f, 0, 0, 1.55f, 22, active: 0.1f, knockback: 9, hitStop: 0.15f, shake: 0.3f),   // the circle erupts
                 });
 
             var judgment = Skill(B, "serena.judgment", "심판의 빛", 0.5f, 0.8f, 9f, 1.2f, 0, 99,
@@ -153,7 +153,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "burst", sheet = S("serena-holy-domain-burst"), anchor = CueAnchor.Self,
-                    hit = Circle(3f, 0, 1.2f, 1.52f, 8, knockback: 12, shake: 0.3f),
+                    hit = Circle(3.2f, 0, 0, 1.55f, 8, active: 0.1f, knockback: 12, shake: 0.3f),
                 });
             var fuse = Skill(B, "serena.phase-fuse", "융합", 0.2f, 0.6f, 0, 0, 0, 99,
                 "Phase entry: shadow pillars either side of her.",
@@ -199,7 +199,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "rain", sheet = S("child-light-fall"), anchor = CueAnchor.RandomNearTarget, spread = 4f, count = 2, interval = 0.5f,
-                    hit = Circle(2.9f, 0, 0.8f, 0.4f, 6, active: 1.1f, tick: 0.35f),
+                    hit = Box(5f, 2f, 0, 1f, 0.5f, 6, active: 1.0f, tick: 0.35f),   // the splash at the feet once the stars land
                 });
 
             var crystals = Skill(B, "child.countless-crystals", "무수한 결정", 0.4f, 0.8f, 8f, 1.5f, 0, 99,
@@ -212,7 +212,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "lances", time = 1.3f, sheet = S("child-crystal-lance"), anchor = CueAnchor.RingAroundSelf, spread = 2.2f, offset = new Vector2(0, 1.5f), count = 6, interval = 0.12f,
-                    aim = CueAim.RotateToTarget, loopDuration = 1.2f, projectileSpeed = 14f, projectileRange = 16f, impactSheet = S("child-sparkle"),
+                    aim = CueAim.RotateToTarget, loopDuration = 1.2f, projectileSpeed = 14f, projectileRange = 16f, projectileOvershoot = 2f, impactSheet = S("child-sparkle"),
                     hit = Circle(0.45f, 0, 0, 0, 6, active: 1.2f, knockback: 3),
                 });
 
@@ -221,7 +221,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "burst", sheet = S("child-light-burst"), anchor = CueAnchor.Self,
-                    hit = Circle(3f, 0, 1.75f, 0.22f, 14, knockback: 9, hitStop: 0.1f, shake: 0.2f),
+                    hit = Circle(3f, 0, 1.75f, 0.3f, 14, active: 0.14f, knockback: 9, hitStop: 0.1f, shake: 0.2f),   // the ring reaches 3 at 0.43
                 });
 
             var beam = Skill(B, "child.shadow-beam", "그림자 광선", 0.9f, 0.9f, 8f, 1.5f, 3f, 99,
@@ -256,7 +256,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "well", sheet = S("child-gravity"), anchor = CueAnchor.Target, offset = new Vector2(0, -2.0f), loopDuration = 3f, sortingOrder = 18,
-                    hit = Circle(1.6f, 0, 4.7f, 0.2f, 4, active: 2.7f, tick: 0.4f, pull: 2.6f, pullRadius: 7f),
+                    hit = Circle(1.6f, 0, 3.9f, 0.2f, 4, active: 2.7f, tick: 0.4f, pull: 2.6f, pullRadius: 7f),
                 });
 
             var illusionLance = Skill(B, "child.illusion-lance", "환영의 결정", 0.35f, 0.2f, 0, 1, 0, 99,
@@ -264,7 +264,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "lance", sheet = S("child-crystal-lance"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.4f), aim = CueAim.RotateToTarget,
-                    loopDuration = 1.2f, projectileSpeed = 12f, projectileRange = 14f, impactSheet = S("child-sparkle"),
+                    loopDuration = 1.2f, projectileSpeed = 12f, projectileRange = 14f, projectileOvershoot = 2f, impactSheet = S("child-sparkle"),
                     hit = Circle(0.45f, 0, 0, 0, 6, active: 1.2f, knockback: 3),
                 });
 
@@ -281,7 +281,7 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "field", sheet = S("child-despair"), anchor = CueAnchor.Target, loopDuration = 5f, sortingOrder = 3,
-                    hit = Circle(3.2f, 0, 1f, 0.3f, 3, active: 4.6f, tick: 0.4f, pull: 1.2f, pullRadius: 4.5f),
+                    hit = Box(7f, 2.2f, 0, 1.1f, 0.3f, 3, active: 4.6f, tick: 0.4f, pull: 1.2f, pullRadius: 4.5f),   // under the disc (±3.9)
                 });
 
             var absorb = Skill(B, "child.light-absorb", "빛의 흡수", 0.5f, 1.0f, 15f, 1f, 0, 99,
@@ -290,7 +290,7 @@ namespace SolarDark.Combat.Editor
                 {
                     // implosion: SUCK until 0.8 s, still at 1.02 s, then it blows out
                     label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f), followCaster = true,
-                    hit = Circle(2.6f, 0, 0, 1.02f, 18, knockback: 11, hitStop: 0.15f, shake: 0.3f),
+                    hit = Circle(2.6f, 0, 0, 1.05f, 18, active: 0.08f, knockback: 11, hitStop: 0.15f, shake: 0.3f),   // the ring reaches 2.6 at 1.12
                     action = CueAction.HealSelf, actionValue = 0.04f,
                 },
                 new SkillCue
@@ -312,14 +312,14 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     label = "burst", sheet = S("child-light-burst"), anchor = CueAnchor.Self,
-                    hit = Circle(4f, 0, 1.75f, 0.22f, 8, knockback: 14, shake: 0.3f),
+                    hit = Circle(4f, 0, 1.75f, 0.33f, 8, active: 0.21f, knockback: 14, shake: 0.3f),   // the ring reaches 4 at 0.53
                 });
             var shadowForm = Skill(B, "child.phase-shadow", "완전한 그림자", 0.3f, 1.0f, 0, 0, 0, 99,
                 "Phase entry: she drinks the light round her.",
                 new SkillCue
                 {
                     label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f),
-                    hit = Circle(3f, 0, 0, 1.02f, 10, knockback: 12, shake: 0.3f),
+                    hit = Circle(3f, 0, 0, 1.06f, 10, active: 0.1f, knockback: 12, shake: 0.3f),   // the ring reaches 3 at 1.15
                     action = CueAction.HealSelf, actionValue = 0.02f,
                 },
                 new SkillCue
@@ -395,11 +395,11 @@ namespace SolarDark.Combat.Editor
             };
 
         static SkillHit Box(float w, float h, float ox, float oy, float delay, float damage, float active = 0, float tick = 0, float knockback = 0,
-            float hitStop = 0, float shake = 0, float root = 0) =>
+            float hitStop = 0, float shake = 0, float root = 0, float pull = 0, float pullRadius = 0) =>
             new SkillHit
             {
                 shape = HitShape.Box, size = new Vector2(w, h), offset = new Vector2(ox, oy), delay = delay, active = active, tick = tick,
-                damage = damage, knockback = knockback, hitStop = hitStop, shake = shake, root = root,
+                damage = damage, knockback = knockback, hitStop = hitStop, shake = shake, root = root, pull = pull, pullRadius = pullRadius,
             };
 
         static BossSkill Skill(string boss, string id, string name, float windup, float recovery, float cooldown, float weight, float minRange, float maxRange,

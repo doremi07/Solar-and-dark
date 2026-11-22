@@ -16,6 +16,18 @@ namespace SolarDark.Combat
 
         static readonly Dictionary<long, Sprite> cache = new Dictionary<long, Sprite>();
 
+        /// <summary>Every mark on screen (for AI, tests and bots that read danger).</summary>
+        public static readonly List<TelegraphMarker> All = new List<TelegraphMarker>();
+        public HitShape Shape => shape;
+        /// <summary>Circle: x = radius. Box: width, height.</summary>
+        public Vector2 Size => size;
+        public float Angle => transform.eulerAngles.z * Mathf.Deg2Rad;
+        public Vector2 Center => transform.position;
+        /// <summary>Seconds until the hit goes live (negative once it is live and the mark is holding).</summary>
+        public float UntilLive => life - t;
+        /// <summary>Still tracking its target (the blow has not been placed yet): it moves with them.</summary>
+        public bool Following => follow != null && t <= followFor;
+
         SpriteRenderer outline, fill;
         float t, life, hold, followFor;
         Hurtbox follow;
@@ -63,6 +75,9 @@ namespace SolarDark.Combat
             sr.sortingOrder = order;
             return sr;
         }
+
+        void OnEnable() => All.Add(this);
+        void OnDisable() => All.Remove(this);
 
         void Update()
         {

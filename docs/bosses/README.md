@@ -37,6 +37,14 @@
   ![telegraphs](arena-serena-telegraphs.png)
   ![telegraphs](arena-hidden-child-telegraphs.png)
 
+## 스스로 점검하는 도구
+
+- 판정과 이펙트 비교: `SIM_AUDIT=1 dotnet tools/arena-sim/bin/Release/net8.0/arena-sim.dll serena . 2> cues.jsonl` 후
+  `python3 tools/arena-sim/audit.py cues.jsonl <폴더>`. 스킬마다 판정이 켜진 순간의 이펙트 위에 판정 범위를 그리고,
+  이펙트가 판정 밖에서 그려지는 비율(in)과 판정이 빈 곳까지 닿는 비율(fill)을 출력한다.
+- 회피 검사: `SIM_DODGE=1 tools/arena-sim/run.sh all records/arena-dodge`. 플레이어가 붉은 표시를 읽고 걷거나 대시로 빠진다.
+  그래도 맞는 공격은 피할 수 없는 공격이다. 현재 두 보스 모두 0히트(`arena-serena-dodge.mp4`, `arena-hidden-child-dodge.mp4`).
+
 ## 실행 영상 (Unity 없이)
 
 `tools/arena-sim/run.sh [serena|child|all]`: 게임의 실제 C# 스크립트(BossLibrary, BossArenaScene, 보스 AI, 스킬 러너,

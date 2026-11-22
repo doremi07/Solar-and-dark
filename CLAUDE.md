@@ -14,5 +14,7 @@ Unity game. Pixel art VFX come from **pixelfx** (pinned, vendored in `third_part
   The bosses' bodies are placeholder sprites (no character sheets).
   Overview: `docs/bosses/README.md`. Check without Unity: `tools/pixelfx/verify/run.sh` (compile + logic tests);
   see it running: `tools/arena-sim/run.sh` (real scripts on a headless Unity stand-in → MP4 + storyboard).
+  After changing a skill: `SIM_DODGE=1 tools/arena-sim/run.sh all records/arena-dodge` must show 0 hits (every attack
+  dodgeable from its marks), and `tools/arena-sim/audit.py` shows each hit area over its effect.
 - Hand-editing effects: `python3 tools/pixelfx/to-aseprite.py <sheet.json|dir> [--manifest ...]` makes .aseprite
   files (origin slice = pivot + pixelfx meta); an Aseprite sheet export imports back as is. See `docs/pixelfx-aseprite.md`.

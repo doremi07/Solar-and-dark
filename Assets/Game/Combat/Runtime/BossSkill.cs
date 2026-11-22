@@ -103,6 +103,9 @@ namespace SolarDark.Combat
         [Tooltip("Fly towards the aim direction at this speed (units/s). 0 = stay put.")]
         public float projectileSpeed;
         public float projectileRange = 14;
+        [Tooltip("If 0 or more: the projectile stops this far past the point it was aimed at (it never flies further than its range). " +
+                 "Volleys that converge on the target then leave the floor beyond it safe. -1 = fly the whole range.")]
+        public float projectileOvershoot = -1;
         [Tooltip("Played where a projectile hits something or runs out.")]
         public PixelFxSheet impactSheet;
         public SkillHit hit = new SkillHit();

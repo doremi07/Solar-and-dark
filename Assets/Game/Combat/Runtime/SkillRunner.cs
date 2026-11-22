@@ -28,6 +28,7 @@ namespace SolarDark.Combat
             public float angle;     // radians, for RotateToTarget
             public int facing;      // +1 / -1 after aim
             public bool live;       // position resolved at spawn (TargetLive)
+            public float reach;     // distance to the point it is aimed at (RotateToTarget)
         }
 
         /// <summary>Run <paramref name="skill"/> to the end of its recovery. Yield on it from a coroutine.</summary>
@@ -72,7 +73,7 @@ namespace SolarDark.Combat
                     if (e.kind == SkillTimeline.Kind.Telegraph)
                     {
                         float spawnAt = skill.windup + cue.time + e.instance * cue.interval;
-                        Telegraph(cue, plan, spawnAt - e.t, cue.hit.delay, plan.live ? target : null, aimAt);
+                        Telegraph(cue, plan, spawnAt - e.t, cue.hit.delay, plan.live ? target : null);
                     }
                     else
                     {
@@ -135,6 +136,7 @@ namespace SolarDark.Combat
                 {
                     var to = (aimAt + new Vector2(0, 1.2f)) - pos;   // aim at the body, not the feet
                     p.angle = Mathf.Atan2(to.y, to.x);
+                    p.reach = to.magnitude;
                     p.facing = 1;
                     break;
                 }
@@ -147,7 +149,11 @@ namespace SolarDark.Combat
         /// then keep an outline while it stays live. A mark on a live-tracked target follows them until the instance
         /// spawns, then stays where the blow will land. Dashes mark the path, projectiles their lane.
         /// </summary>
-        static void Telegraph(SkillCue cue, Planned plan, float untilSpawn, float hitDelay, Hurtbox follow, Vector2 aimAt)
+        /// <summary>How far a projectile instance flies: its range, or to just past its aim point (projectileOvershoot).</summary>
+        static float FlightRange(SkillCue cue, Planned plan) =>
+            cue.projectileOvershoot >= 0 && plan.reach > 0 ? Mathf.Min(cue.projectileRange, plan.reach + cue.projectileOvershoot) : cue.projectileRange;
+
+        static void Telegraph(SkillCue cue, Planned plan, float untilSpawn, float hitDelay, Hurtbox follow)
         {
             var h = cue.hit;
             float warn = Mathf.Max(0.05f, untilSpawn + hitDelay);
@@ -165,15 +171,17 @@ namespace SolarDark.Combat
             }
             if (cue.projectileSpeed > 0)
             {
-                // the lane it flies down, from where it leaves to the end of its range
+                // the lane it flies down, from where it leaves until it reaches its range or the floor; it stays marked
+                // while the lance is in flight
                 var dir = new Vector2(Mathf.Cos(plan.angle), Mathf.Sin(plan.angle)) * (plan.facing < 0 && cue.aim != CueAim.RotateToTarget ? -1 : 1);
-                // as far as the target and a little past: the lance keeps flying, but that is the stretch that matters
-                float len = Mathf.Min(cue.projectileRange, (aimAt + new Vector2(0, 1.2f) - at).magnitude + 2.5f);
-                var c = at + dir * (len / 2);
-                TelegraphMarker.Show(HitShape.Box, c, new Vector2(len, thick), Mathf.Atan2(dir.y, dir.x), warn, null, default, 0);
+                float len = FlightRange(cue, plan);
+                if (dir.y < -0.01f) len = Mathf.Min(len, (at.y + 0.2f) / -dir.y);
+                // from just behind where it leaves (its own radius) to where it stops
+                var c = at + dir * ((len - thick / 2) / 2);
+                TelegraphMarker.Show(HitShape.Box, c, new Vector2(len + thick / 2, thick), Mathf.Atan2(dir.y, dir.x), warn, null, default, len / cue.projectileSpeed);
                 return;
             }
-            float hold = h.active > 0.3f && !cue.followCaster ? h.active : 0;   // lingering areas stay outlined while they hurt
+            float hold = cue.action != CueAction.Dash ? h.active : 0;   // an area stays outlined for as long as it can hurt
             TelegraphMarker.Show(h.shape, at, h.size, plan.angle, warn, follow, new Vector2(ox, oy), hold, follow != null ? untilSpawn : 0);
         }
 
@@ -217,8 +225,8 @@ namespace SolarDark.Combat
             {
                 var pr = root.AddComponent<SkillProjectile>();
                 pr.Init(new Vector2(Mathf.Cos(plan.angle), Mathf.Sin(plan.angle)) * (plan.facing < 0 && cue.aim != CueAim.RotateToTarget ? -1 : 1),
-                    cue.projectileSpeed, cue.projectileRange, cue.impactSheet, caster.Team);
-                life = Mathf.Max(life, cue.projectileRange / cue.projectileSpeed + 0.1f);
+                    cue.projectileSpeed, FlightRange(cue, plan), cue.impactSheet, caster.Team);
+                life = Mathf.Max(life, FlightRange(cue, plan) / cue.projectileSpeed + 0.1f);
             }
             if (fx == null || anchored || cue.loopDuration > 0 || cue.projectileSpeed > 0) Object.Destroy(root, Mathf.Max(0.1f, life));
             else if (fx != null && fx.Looping) Object.Destroy(root, Mathf.Max(0.1f, life));

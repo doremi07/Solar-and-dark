@@ -23,6 +23,8 @@ namespace SolarDark.Combat
         public Hurtbox target;
         public SpriteRenderer body;
         public bool autoStart = true;
+        [Tooltip("The boss stays within this distance of x = 0 (backing away and dashes stop at the walls). 0 = no limit.")]
+        public float arenaHalfWidth = 11f;
         public int seed = 12345;
 
         public SkillEvent onSkill = new SkillEvent();
@@ -167,6 +169,14 @@ namespace SolarDark.Combat
                 if (roll <= 0) return s;
             }
             return options[options.Count - 1];
+        }
+
+        void LateUpdate()
+        {
+            if (arenaHalfWidth <= 0) return;
+            var p = transform.position;
+            float x = Mathf.Clamp(p.x, -arenaHalfWidth, arenaHalfWidth);
+            if (x != p.x) transform.position = new Vector3(x, p.y, p.z);
         }
 
         void Approach(float dt)

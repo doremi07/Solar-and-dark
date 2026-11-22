@@ -33,12 +33,19 @@ static class Program
         var def = which == "child" ? child : serena;
         if (Environment.GetEnvironmentVariable("SIM_AUDIT") == "1")
         {
-            // how long each damaging hit is marked before it lands (marks show from the start of the wind-up)
+            // every cue of every skill as JSON lines (stderr), for tools/arena-sim/audit.py
+            static string F(float v) => v.ToString("0.###", System.Globalization.CultureInfo.InvariantCulture);
             foreach (var d in new[] { serena, child })
-                foreach (var sk in d.phases.SelectMany(p => p.skills.Append(p.entrySkill)).Where(x => x != null).Distinct())
-                    foreach (var c in sk.cues)
-                        if (c.hit.shape != HitShape.None && (c.hit.damage > 0 || c.hit.root > 0))
-                            Console.Error.WriteLine($"{d.displayName}\t{sk.displayName}\t{c.label}\twarn {sk.windup + c.time + c.hit.delay:F2}s\tmark {c.telegraph}");
+                foreach (var sk in d.phases.SelectMany(p => p.skills.Append(p.entrySkill)).Where(x => x != null).Distinct()
+                             .SelectMany(x => new[] { x }.Concat(x.cues.Where(c => c.subSkill != null).Select(c => c.subSkill))).Distinct())
+                    for (int ci = 0; ci < sk.cues.Count; ci++)
+                    {
+                        var c = sk.cues[ci]; var h = c.hit;
+                        Console.Error.WriteLine("{" + $"\"boss\":\"{d.id}\",\"skill\":\"{sk.displayName}\",\"id\":\"{sk.id}\",\"cue\":\"{c.label}\",\"windup\":{F(sk.windup)},\"time\":{F(c.time)},\"count\":{c.count},\"interval\":{F(c.interval)}," +
+                            $"\"sheet\":\"{(c.sheet != null ? c.sheet.name : "")}\",\"anchor\":\"{c.anchor}\",\"aim\":\"{c.aim}\",\"offset\":[{F(c.offset.x)},{F(c.offset.y)}],\"spread\":{F(c.spread)}," +
+                            $"\"effectAnchor\":[{F(c.effectAnchor.x)},{F(c.effectAnchor.y)}],\"loop\":{F(c.loopDuration)},\"proj\":{F(c.projectileSpeed)},\"range\":{F(c.projectileRange)},\"followCaster\":{(c.followCaster ? "true" : "false")},\"action\":\"{c.action}\",\"actionValue\":{F(c.actionValue)}," +
+                            $"\"shape\":\"{h.shape}\",\"size\":[{F(h.size.x)},{F(h.size.y)}],\"hoff\":[{F(h.offset.x)},{F(h.offset.y)}],\"delay\":{F(h.delay)},\"active\":{F(h.active)},\"tick\":{F(h.tick)},\"damage\":{F(h.damage)},\"pull\":{F(h.pull)},\"root\":{F(h.root)}" + "}");
+                    }
             return 0;
         }
         BossArenaScene.Build(def, which == "child" ? PlaceholderBody.Kind.HiddenChild : PlaceholderBody.Kind.Serena);
@@ -51,7 +58,13 @@ static class Program
         player.autoPilot = false;
         player.transform.position = new Vector3(-1.5f, 0, 0);
         var hits = new Dictionary<string, int>();
-        playerHp.onHit.AddListener(h => hits[h.skillId] = hits.TryGetValue(h.skillId, out var k) ? k + 1 : 1);
+        playerHp.onHit.AddListener(h =>
+        {
+            hits[h.skillId] = hits.TryGetValue(h.skillId, out var k) ? k + 1 : 1;
+            if (Environment.GetEnvironmentVariable("SIM_DODGE") == "1")
+                Console.Error.WriteLine($"  hit by {h.skillId} at t={Time.time:F2}: player x={player.transform.position.x:F2}, boss x={boss.transform.position.x:F2}, " +
+                    $"marks [{string.Join("; ", TelegraphMarker.All.Where(m => m != null).Select(m => $"{m.Shape} c=({m.Center.x:F1},{m.Center.y:F1}) s=({m.Size.x:F1},{m.Size.y:F1}) live in {m.UntilLive:F2}"))}]");
+        });
         var cam = Camera.main;
         H = Mathf.RoundToInt(cam.orthographicSize * 2 * 16);
         W = (H * 16 / 9) & ~1;
@@ -64,6 +77,12 @@ static class Program
         var log = new List<string>();
         int frame = 0;
         bool trace = Environment.GetEnvironmentVariable("SIM_TRACE") == "1";
+        // SIM_DODGE=1: the stand-in reads the danger marks and steps (or dashes) out of them, like a careful player.
+        // Hits it still takes are attacks that cannot be dodged from where it stood.
+        bool dodge = Environment.GetEnvironmentVariable("SIM_DODGE") == "1";
+        var status = player.GetComponent<StatusReceiver>();
+        var pHurt = player.GetComponent<Hurtbox>();
+        float dashCd = 0;
         BossSkill lastCast = null;
         float clock = 0;
 
@@ -72,6 +91,7 @@ static class Program
             float end = clock + seconds;
             while (clock < end && (until == null || !until()))
             {
+                if (dodge) Dodge();
                 Engine.Tick(Dt);
                 clock += Dt;
                 if (playerHp.Fraction < 0.25f) playerHp.ResetFull();   // keep the stand-in alive for the whole reel
@@ -82,6 +102,54 @@ static class Program
                 }
                 if (frame++ % 2 == 0) Emit(boss, playerHp, cam);
             }
+        }
+
+        bool Danger(float x, float horizon)
+        {
+            float cy = pHurt.offset.y, r = pHurt.radius + 0.1f;
+            foreach (var m in TelegraphMarker.All)
+            {
+                if (m == null || m.UntilLive > horizon || m.Following) continue;   // a mark on you moves with you: only where it lands counts
+                var c = m.Center;
+                bool hit = m.Shape == HitShape.Circle ? SkillGeometry.CircleCircle(c.x, c.y, m.Size.x, x, cy, r)
+                                                      : SkillGeometry.BoxCircle(c.x, c.y, m.Size.x, m.Size.y, m.Angle, x, cy, r);
+                if (hit) return true;
+            }
+            return false;
+        }
+        void Dodge()
+        {
+            dashCd -= Dt;
+            if (!status.CanAct) return;
+            var tr = player.transform;
+            float px = tr.position.x, half = player.arenaHalfWidth;
+            float soonest = TelegraphMarker.All.Where(m => m != null).Select(m => m.UntilLive).DefaultIfEmpty(99).Min();
+            float target;
+            if (soonest > 90)
+            {
+                // nothing marked: drift back to a striking distance in front of the boss
+                float bx = boss.transform.position.x, side = px <= bx ? -1 : 1;
+                target = Mathf.Clamp(bx + side * 3f, -half, half);
+            }
+            else
+            {
+                // the nearest spot no mark covers (looking 1.2 s ahead); stay put if already safe
+                target = px;
+                if (Danger(px, 1.2f))
+                {
+                    float best = float.MaxValue;
+                    for (float x = -half; x <= half; x += 0.1f)
+                        if (!Danger(x, 1.2f) && Mathf.Abs(x - px) < best) { best = Mathf.Abs(x - px); target = x; }
+                }
+            }
+            float d = target - px, step = player.speed * Dt;
+            if (Mathf.Abs(d) > step * 3 && Mathf.Abs(d) > player.speed * Mathf.Max(0.05f, soonest) && dashCd <= 0 && soonest < 90)
+            {
+                px += Mathf.Sign(d) * Mathf.Min(player.dashDistance, Mathf.Abs(d));
+                dashCd = 0.6f;
+            }
+            else px += Mathf.Clamp(d, -step, step);
+            tr.position = new Vector3(Mathf.Clamp(px, -half, half), tr.position.y, tr.position.z);
         }
 
         Run(1.2f);
