@@ -177,7 +177,7 @@ namespace SolarDark.Combat.Editor
                 });
 
             var halo = S("serena-halo");
-            var def = Boss("Serena", "serena", "세레나", "그림자가 된 수호자", "\"…네가, 여기 있었구나.\"", 1400, 4.5f, new Vector2(0.28f, 3.3f),
+            var def = Boss("Serena", "serena", "세레나", "그림자가 된 수호자", "\"…네가, 여기 있었구나.\"", 1400, 4.5f, new Vector2(0.62f, 6.75f),
                 new BossPhase
                 {
                     name = "그림자", enterAtHp = 1f, halo = halo, haloTint = new Color(0.55f, 0.45f, 0.65f, 0.75f), bodyTint = Color.white, idleSheet = C("serena-p1-idle"), castSheet = C("serena-p1-cast"),
@@ -337,7 +337,7 @@ namespace SolarDark.Combat.Editor
                 });
 
             var halo = S("child-halo");
-            return Boss("HiddenChild", "hidden-child", "움켜쥔 아이", "최종 보스 — 빛을 잔뜩 삼킨, 열 살의 슬라", "\"…모두, 다 내 거야.\"", 2000, 5.5f, new Vector2(0.1f, 2.2f),
+            return Boss("HiddenChild", "hidden-child", "움켜쥔 아이", "최종 보스 — 빛을 잔뜩 삼킨, 열 살의 슬라", "\"…모두, 다 내 거야.\"", 2000, 6f, new Vector2(0.19f, 4.25f),
                 new BossPhase
                 {
                     name = "억눌린 빛", enterAtHp = 1f, halo = halo, haloTint = new Color(0.9f, 0.85f, 1f, 0.85f), bodyTint = Color.white, idleSheet = C("child-p1-idle"), castSheet = C("child-p1-cast"),
@@ -421,6 +421,9 @@ namespace SolarDark.Combat.Editor
             d.maxHp = hp;
             d.preferredRange = range;
             d.haloOffset = haloOffset;
+            // hurtbox over the drawn body: the head's height tells the size (Serena ~7.4 units tall, the child ~4.4)
+            d.hurtRadius = haloOffset.y > 5 ? 1.5f : 1.1f;
+            d.hurtOffset = new Vector2(haloOffset.x * 0.8f, haloOffset.y * 0.5f);
             d.phases = new List<BossPhase>(phases);
             return Save(d, $"{OutDir}/{folder}/{folder}.asset");
         }

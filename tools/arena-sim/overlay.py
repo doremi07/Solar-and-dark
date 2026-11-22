@@ -4,11 +4,11 @@ through ffmpeg, and keep the busiest frame of each skill for a storyboard.
 import json, struct, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
 
-W, H, OUT, FONT = int(sys.argv[1]), int(sys.argv[2]), sys.argv[3], sys.argv[4]
+OUT, FONT = sys.argv[3], sys.argv[4]   # argv[1:3] (W H) are ignored: each frame header carries its size
 K = 3
 big, mid, small = (ImageFont.truetype(FONT, s) for s in (30, 20, 15))
-ff = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W*K}x{H*K}", "-r", "30",
-                       "-i", "-", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20", OUT + ".mp4"], stdin=subprocess.PIPE)
+ff = None
+W = H = 0
 src = sys.stdin.buffer
 best = {}      # skill -> (score, image)
 order = []
@@ -26,6 +26,10 @@ while True:
         break
     (n_json,) = struct.unpack("<i", head)
     st = json.loads(src.read(n_json).decode("utf-8"))
+    if ff is None:
+        W, H = st["w"], st["h"]
+        ff = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W*K}x{H*K}", "-r", "30",
+                               "-i", "-", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20", OUT + ".mp4"], stdin=subprocess.PIPE)
     raw = src.read(W * H * 3)
     if len(raw) < W * H * 3:
         break
@@ -44,7 +48,7 @@ while True:
     ff.stdin.write(img.tobytes())
     if st["skill"]:
         # how much is going on: bright pixels in the native frame
-        score = sum(1 for p in base.getdata() if p[0] + p[1] + p[2] > 330)
+        score = sum(1 for p in base.getdata() if p[0] + p[1] + p[2] > 330)   # noqa
         key = (st["phase"], st["skill"])
         if key not in best:
             order.append(key)

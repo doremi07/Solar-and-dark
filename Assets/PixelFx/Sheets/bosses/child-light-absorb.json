@@ -6,7 +6,7 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -14,11 +14,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -28,7 +28,7 @@
     "x": 208,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -36,11 +36,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -50,7 +50,7 @@
     "x": 416,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -58,11 +58,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -72,7 +72,7 @@
     "x": 624,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -80,11 +80,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -94,7 +94,7 @@
     "x": 832,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -102,11 +102,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -116,7 +116,7 @@
     "x": 1040,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -124,11 +124,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -138,7 +138,7 @@
     "x": 1248,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -146,11 +146,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -158,9 +158,9 @@
    "filename": "child-light-absorb 7",
    "frame": {
     "x": 0,
-    "y": 184,
+    "y": 190,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -168,11 +168,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -180,9 +180,9 @@
    "filename": "child-light-absorb 8",
    "frame": {
     "x": 208,
-    "y": 184,
+    "y": 190,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -190,11 +190,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -202,9 +202,9 @@
    "filename": "child-light-absorb 9",
    "frame": {
     "x": 416,
-    "y": 184,
+    "y": 190,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -212,11 +212,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -224,9 +224,9 @@
    "filename": "child-light-absorb 10",
    "frame": {
     "x": 624,
-    "y": 184,
+    "y": 190,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -234,11 +234,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -246,9 +246,9 @@
    "filename": "child-light-absorb 11",
    "frame": {
     "x": 832,
-    "y": 184,
+    "y": 190,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -256,11 +256,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -268,9 +268,9 @@
    "filename": "child-light-absorb 12",
    "frame": {
     "x": 1040,
-    "y": 184,
+    "y": 190,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -278,11 +278,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -290,9 +290,9 @@
    "filename": "child-light-absorb 13",
    "frame": {
     "x": 1248,
-    "y": 184,
+    "y": 190,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -300,11 +300,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -312,9 +312,9 @@
    "filename": "child-light-absorb 14",
    "frame": {
     "x": 0,
-    "y": 368,
+    "y": 380,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -322,11 +322,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -334,9 +334,9 @@
    "filename": "child-light-absorb 15",
    "frame": {
     "x": 208,
-    "y": 368,
+    "y": 380,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -344,11 +344,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -356,9 +356,9 @@
    "filename": "child-light-absorb 16",
    "frame": {
     "x": 416,
-    "y": 368,
+    "y": 380,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -366,11 +366,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -378,9 +378,9 @@
    "filename": "child-light-absorb 17",
    "frame": {
     "x": 624,
-    "y": 368,
+    "y": 380,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -388,11 +388,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -400,9 +400,9 @@
    "filename": "child-light-absorb 18",
    "frame": {
     "x": 832,
-    "y": 368,
+    "y": 380,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -410,11 +410,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -422,9 +422,9 @@
    "filename": "child-light-absorb 19",
    "frame": {
     "x": 1040,
-    "y": 368,
+    "y": 380,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -432,11 +432,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -444,9 +444,9 @@
    "filename": "child-light-absorb 20",
    "frame": {
     "x": 1248,
-    "y": 368,
+    "y": 380,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -454,11 +454,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -466,9 +466,9 @@
    "filename": "child-light-absorb 21",
    "frame": {
     "x": 0,
-    "y": 552,
+    "y": 570,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -476,11 +476,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -488,9 +488,9 @@
    "filename": "child-light-absorb 22",
    "frame": {
     "x": 208,
-    "y": 552,
+    "y": 570,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -498,11 +498,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -510,9 +510,9 @@
    "filename": "child-light-absorb 23",
    "frame": {
     "x": 416,
-    "y": 552,
+    "y": 570,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -520,11 +520,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -532,9 +532,9 @@
    "filename": "child-light-absorb 24",
    "frame": {
     "x": 624,
-    "y": 552,
+    "y": 570,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -542,11 +542,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -554,9 +554,9 @@
    "filename": "child-light-absorb 25",
    "frame": {
     "x": 832,
-    "y": 552,
+    "y": 570,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -564,11 +564,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -576,9 +576,9 @@
    "filename": "child-light-absorb 26",
    "frame": {
     "x": 1040,
-    "y": 552,
+    "y": 570,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -586,11 +586,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -598,9 +598,9 @@
    "filename": "child-light-absorb 27",
    "frame": {
     "x": 1248,
-    "y": 552,
+    "y": 570,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -608,11 +608,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -620,9 +620,9 @@
    "filename": "child-light-absorb 28",
    "frame": {
     "x": 0,
-    "y": 736,
+    "y": 760,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -630,11 +630,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -642,9 +642,9 @@
    "filename": "child-light-absorb 29",
    "frame": {
     "x": 208,
-    "y": 736,
+    "y": 760,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -652,11 +652,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -664,9 +664,9 @@
    "filename": "child-light-absorb 30",
    "frame": {
     "x": 416,
-    "y": 736,
+    "y": 760,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -674,11 +674,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -686,9 +686,9 @@
    "filename": "child-light-absorb 31",
    "frame": {
     "x": 624,
-    "y": 736,
+    "y": 760,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -696,11 +696,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -708,9 +708,9 @@
    "filename": "child-light-absorb 32",
    "frame": {
     "x": 832,
-    "y": 736,
+    "y": 760,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -718,11 +718,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -730,9 +730,9 @@
    "filename": "child-light-absorb 33",
    "frame": {
     "x": 1040,
-    "y": 736,
+    "y": 760,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -740,11 +740,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -752,9 +752,9 @@
    "filename": "child-light-absorb 34",
    "frame": {
     "x": 1248,
-    "y": 736,
+    "y": 760,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -762,11 +762,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -774,9 +774,9 @@
    "filename": "child-light-absorb 35",
    "frame": {
     "x": 0,
-    "y": 920,
+    "y": 950,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -784,11 +784,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -796,9 +796,9 @@
    "filename": "child-light-absorb 36",
    "frame": {
     "x": 208,
-    "y": 920,
+    "y": 950,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -806,11 +806,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -818,9 +818,9 @@
    "filename": "child-light-absorb 37",
    "frame": {
     "x": 416,
-    "y": 920,
+    "y": 950,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -828,11 +828,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -840,9 +840,9 @@
    "filename": "child-light-absorb 38",
    "frame": {
     "x": 624,
-    "y": 920,
+    "y": 950,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -850,11 +850,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -862,9 +862,9 @@
    "filename": "child-light-absorb 39",
    "frame": {
     "x": 832,
-    "y": 920,
+    "y": 950,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -872,11 +872,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -884,9 +884,9 @@
    "filename": "child-light-absorb 40",
    "frame": {
     "x": 1040,
-    "y": 920,
+    "y": 950,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -894,11 +894,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -906,9 +906,9 @@
    "filename": "child-light-absorb 41",
    "frame": {
     "x": 1248,
-    "y": 920,
+    "y": 950,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -916,11 +916,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -928,9 +928,9 @@
    "filename": "child-light-absorb 42",
    "frame": {
     "x": 0,
-    "y": 1104,
+    "y": 1140,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -938,11 +938,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -950,9 +950,9 @@
    "filename": "child-light-absorb 43",
    "frame": {
     "x": 208,
-    "y": 1104,
+    "y": 1140,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -960,11 +960,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -972,9 +972,9 @@
    "filename": "child-light-absorb 44",
    "frame": {
     "x": 416,
-    "y": 1104,
+    "y": 1140,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -982,11 +982,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -994,9 +994,9 @@
    "filename": "child-light-absorb 45",
    "frame": {
     "x": 624,
-    "y": 1104,
+    "y": 1140,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -1004,11 +1004,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -1016,9 +1016,9 @@
    "filename": "child-light-absorb 46",
    "frame": {
     "x": 832,
-    "y": 1104,
+    "y": 1140,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -1026,11 +1026,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -1038,9 +1038,9 @@
    "filename": "child-light-absorb 47",
    "frame": {
     "x": 1040,
-    "y": 1104,
+    "y": 1140,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -1048,11 +1048,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -1060,9 +1060,9 @@
    "filename": "child-light-absorb 48",
    "frame": {
     "x": 1248,
-    "y": 1104,
+    "y": 1140,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -1070,11 +1070,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -1082,9 +1082,9 @@
    "filename": "child-light-absorb 49",
    "frame": {
     "x": 0,
-    "y": 1288,
+    "y": 1330,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -1092,11 +1092,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   },
@@ -1104,9 +1104,9 @@
    "filename": "child-light-absorb 50",
    "frame": {
     "x": 208,
-    "y": 1288,
+    "y": 1330,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "rotated": false,
    "trimmed": false,
@@ -1114,11 +1114,11 @@
     "x": 0,
     "y": 0,
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "sourceSize": {
     "w": 208,
-    "h": 184
+    "h": 190
    },
    "duration": 33
   }
@@ -1130,7 +1130,7 @@
   "format": "RGBA8888",
   "size": {
    "w": 1456,
-   "h": 1472
+   "h": 1520
   },
   "scale": "1",
   "frameTags": [
@@ -1149,7 +1149,7 @@
    "frames": 51,
    "frameSize": [
     208,
-    184
+    190
    ],
    "pivot": [
     104,

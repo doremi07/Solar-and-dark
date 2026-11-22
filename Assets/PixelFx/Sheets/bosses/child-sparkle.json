@@ -6,7 +6,7 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -14,11 +14,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -28,7 +28,7 @@
     "x": 142,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -36,11 +36,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -50,7 +50,7 @@
     "x": 284,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -58,11 +58,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -72,7 +72,7 @@
     "x": 426,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -80,11 +80,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -92,9 +92,9 @@
    "filename": "child-sparkle 4",
    "frame": {
     "x": 0,
-    "y": 110,
+    "y": 118,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -102,11 +102,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -114,9 +114,9 @@
    "filename": "child-sparkle 5",
    "frame": {
     "x": 142,
-    "y": 110,
+    "y": 118,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -124,11 +124,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -136,9 +136,9 @@
    "filename": "child-sparkle 6",
    "frame": {
     "x": 284,
-    "y": 110,
+    "y": 118,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -146,11 +146,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -158,9 +158,9 @@
    "filename": "child-sparkle 7",
    "frame": {
     "x": 426,
-    "y": 110,
+    "y": 118,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -168,11 +168,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -180,9 +180,9 @@
    "filename": "child-sparkle 8",
    "frame": {
     "x": 0,
-    "y": 220,
+    "y": 236,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -190,11 +190,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -202,9 +202,9 @@
    "filename": "child-sparkle 9",
    "frame": {
     "x": 142,
-    "y": 220,
+    "y": 236,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -212,11 +212,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -224,9 +224,9 @@
    "filename": "child-sparkle 10",
    "frame": {
     "x": 284,
-    "y": 220,
+    "y": 236,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -234,11 +234,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -246,9 +246,9 @@
    "filename": "child-sparkle 11",
    "frame": {
     "x": 426,
-    "y": 220,
+    "y": 236,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -256,11 +256,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -268,9 +268,9 @@
    "filename": "child-sparkle 12",
    "frame": {
     "x": 0,
-    "y": 330,
+    "y": 354,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -278,11 +278,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -290,9 +290,9 @@
    "filename": "child-sparkle 13",
    "frame": {
     "x": 142,
-    "y": 330,
+    "y": 354,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -300,11 +300,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -312,9 +312,9 @@
    "filename": "child-sparkle 14",
    "frame": {
     "x": 284,
-    "y": 330,
+    "y": 354,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -322,11 +322,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   },
@@ -334,9 +334,9 @@
    "filename": "child-sparkle 15",
    "frame": {
     "x": 426,
-    "y": 330,
+    "y": 354,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "rotated": false,
    "trimmed": false,
@@ -344,11 +344,11 @@
     "x": 0,
     "y": 0,
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "sourceSize": {
     "w": 142,
-    "h": 110
+    "h": 118
    },
    "duration": 33
   }
@@ -360,7 +360,7 @@
   "format": "RGBA8888",
   "size": {
    "w": 568,
-   "h": 440
+   "h": 472
   },
   "scale": "1",
   "frameTags": [
@@ -379,7 +379,7 @@
    "frames": 16,
    "frameSize": [
     142,
-    110
+    118
    ],
    "pivot": [
     50,

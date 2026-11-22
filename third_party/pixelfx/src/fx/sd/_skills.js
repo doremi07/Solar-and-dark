@@ -74,7 +74,7 @@ export const SKILLS = {
     embers: [{ t0: 2.0, t1: 2.9, rate: 26, x: [-30, 30], y: [-40, -4], vy: [-50, -10] }],
   },
   "serena-rift": {
-    base: "ice/ice-spikes", palette: DUSK, name: "Rift of light and shadow",
+    base: "ice/ice-spikes", palette: DUSK, name: "Rift of light and shadow", grow: [18, 0, 0, 0],
     bursts: [20, 60, 100, 140].map((x) => ({ t: 0.04 + 0.44 * (x / 172), x, y: -2, n: 9, dir: UP, spread: 1.2, speed: [80, 180], g: 320 })).concat(
       [{ t: 1.42, x: 90, y: -22, n: 28, spread: Math.PI * 2, speed: [80, 220], g: 260, w: 60 }]),
     flares: [{ t: 1.36, x: 90, y: -24, r: 80, k: 0.5 }],
@@ -133,12 +133,12 @@ export const SKILLS = {
     glints: [{ rate: 6, x: [-30, -2], y: [-4, 4], size: [2, 3] }],
   },
   "child-sparkle": {
-    base: "impacts/hit-spark", palette: CRYSTAL, name: "Crystal sparkle", floor: false, grow: [6, 0, 0, 30],
+    base: "impacts/hit-spark", palette: CRYSTAL, name: "Crystal sparkle", floor: false, grow: [6, 0, 0, 38],
     bursts: [{ t: 0.01, x: 0, y: 0, n: 14, spread: Math.PI * 2, speed: [80, 200], g: 120, life: 0.4 }],
     flares: [{ t: 0, x: 0, y: 0, r: 30, k: 0.5, white: false }],
   },
   "child-shadow-dash": {
-    base: "melee/thrust", palette: DUSK, opts: { sparks: ["#fbf6ff", "#d2c4ee", "#9a82c8", "#6a4f9a"] }, name: "Shadow dash", grow: [0, 4, 32, 4],
+    base: "melee/thrust", palette: DUSK, opts: { sparks: ["#fbf6ff", "#d2c4ee", "#9a82c8", "#6a4f9a"] }, name: "Shadow dash", grow: [0, 4, 40, 4],
     bursts: [{ t: 0.07, x: 140, y: -26, n: 20, dir: RIGHT, spread: 1.0, speed: [100, 220], g: 200, drag: 4.5 }],
     wisps: [{ t0: 0, t1: 0.4, rate: 30, x: [0, 130], y: [-32, -18], vx: [-20, -4], size: [3, 5] }],
     flares: [{ t: 0.07, x: 140, y: -26, r: 40, k: 0.6 }],
@@ -150,7 +150,7 @@ export const SKILLS = {
     glints: [{ rate: 4, x: [-80, 80], y: [-100, -20] }],
   },
   "child-light-absorb": {
-    base: "explosions/implosion", palette: CRYSTAL, name: "Light absorption", floor: false,
+    base: "explosions/implosion", palette: CRYSTAL, name: "Light absorption", floor: false, grow: [0, 0, 0, 6],
     gather: [{ t0: 0, t1: 0.8, x: 0, y: 0, r: 92, n: 34 }],
     flares: [{ t: 1.02, x: 0, y: 0, r: 76, k: 0.9 }],
     bursts: [{ t: 1.02, x: 0, y: 0, n: 34, spread: Math.PI * 2, speed: [150, 320], g: 60 }],
@@ -183,3 +183,74 @@ export const SKILLS = {
     embers: [{ t0: 0.7, t1: 2.6, rate: 12, x: [-30, 30], y: [-4, 0], vy: [-40, -14] }],
   },
 };
+
+// ---------------------------------------------------------------- detail pass: debris, runes, light shafts, floor marks
+const more = (name, extra) => {
+  const c = SKILLS[name];
+  for (const [k, v] of Object.entries(extra)) c[k] = [...(c[k] ?? []), ...v];
+};
+more("serena-halo", { runes: [{ rate: 1.2, x: [-30, 30], y: [-6, 24], vy: [-14, -6], life: [1.2, 1.8] }] });
+more("child-halo", { runes: [{ rate: 1.2, x: [-30, 30], y: [-6, 24], vy: [-14, -6], life: [1.2, 1.8] }] });
+more("serena-shadow-fall", {
+  shards: [{ t: 0.32, x: 0, y: -4, n: 14, dir: UP, spread: 1.8, speed: [80, 180], w: 30, g: 320 }],
+  scorch: [{ t: 0.3, r: 44, sy: 0.18, life: 2.6 }],
+});
+more("serena-shadow-slash", { sparkrings: [{ t: 0.14, x: 50, y: -34, r: 18, n: 8, life: 0.4 }] });
+more("serena-wide-slash", { scorch: [{ t: 0.12, x: 40, r: 50, sy: 0.12, life: 1.2 }] });
+more("serena-holy-domain", {
+  runes: [{ rate: 4, x: [-54, 54], y: [-8, 6], vy: [-22, -10], life: [1, 1.6] }],
+  shafts: [{ rate: 6, x: [-50, 50], y: [-2, 4], size: [20, 50] }],
+});
+more("serena-holy-domain-burst", {
+  runes: [{ t0: 0.4, t1: 1.5, rate: 6, x: [-40, 40], y: [-6, 4], vy: [-18, -8], life: [0.8, 1.2] }, { t0: 1.55, t1: 3.0, rate: 8, x: [-14, 14], y: [-120, -10], vy: [-40, -20] }],
+  shafts: [{ t0: 1.5, t1: 2.6, rate: 14, x: [-24, 24], y: [-2, 2], size: [60, 150] }],
+  scorch: [{ t: 1.52, r: 46, sy: 0.3, life: 2.2 }],
+});
+more("serena-shadow-chains", {
+  runes: [{ t0: 0.1, t1: 2.0, rate: 5, x: [-40, 40], y: [-8, 8], vy: [-18, -8] }],
+  shards: [{ t: 2.0, x: 0, y: -20, n: 16, speed: [70, 170], w: 14, g: 280 }],
+});
+more("serena-rift", {
+  shards: [{ t: 1.42, x: 90, y: -20, n: 24, speed: [70, 190], w: 70, g: 320, size: 4 }],
+  scorch: [{ t: 0.3, x: 86, r: 90, sy: 0.08, life: 2.4 }],
+});
+more("serena-judgment-mark", { runes: [{ rate: 2.5, x: [-40, 40], y: [-40, 40], vy: [-10, 10], life: [1, 1.6] }] });
+more("serena-judgment", {
+  shafts: [{ t0: 0.42, t1: 0.9, rate: 30, x: [-20, 20], y: [-2, 2], size: [40, 110] }],
+  runes: [{ t0: 0.6, t1: 2.0, rate: 6, x: [-24, 24], y: [-10, 0], vy: [-26, -12] }],
+  scorch: [{ t: 0.54, r: 34, sy: 0.28, life: 2.0 }],
+  sparkrings: [{ t: 0.56, y: -4, r: 46, sy: 0.3, n: 14, life: 0.6 }],
+});
+more("serena-shadow-pillar", {
+  runes: [{ t0: 0.4, t1: 1.5, rate: 6, x: [-40, 40], y: [-6, 4], vy: [-18, -8] }],
+  shafts: [{ t0: 1.5, t1: 2.6, rate: 10, x: [-22, 22], y: [-2, 2], size: [60, 150] }],
+  scorch: [{ t: 1.52, r: 46, sy: 0.3, life: 2.2 }],
+});
+more("child-light-fall", {
+  shards: [0.55, 0.85, 1.15, 1.45].map((t, i) => ({ t, x: -40 + i * 26, y: -3, n: 6, dir: UP, spread: 1.6, speed: [60, 140], g: 340 })),
+  scorch: [{ t: 0.5, r: 56, sy: 0.12, life: 1.9 }],
+});
+more("child-shadow-explosion", {
+  shards: [{ t: 0.52, x: 0, y: -54, n: 26, speed: [100, 240], g: 260, size: 4 }],
+  scorch: [{ t: 0.6, r: 70, sy: 0.16, life: 3.0 }],
+});
+more("child-crystal", { sparkrings: [{ t: 0, x: 0, y: -40, r: 14, n: 6, life: 1.2 }, { t: 1.5, x: 0, y: -40, r: 14, n: 6, life: 1.2 }] });
+more("child-sparkle", { sparkrings: [{ t: 0, r: 22, n: 10, life: 0.4 }], shards: [{ t: 0.01, n: 6, speed: [60, 140], g: 140, life: 0.45 }] });
+more("child-shadow-dash", { shards: [{ t: 0.07, x: 140, y: -26, n: 10, dir: RIGHT, spread: 1.2, speed: [80, 180], g: 240 }] });
+more("child-despair", {
+  shards: [],
+  runes: [{ rate: 3, x: [-80, 80], y: [-20, -4], vy: [-18, -8], life: [1.2, 1.8] }],
+});
+more("child-light-absorb", { shards: [{ t: 1.02, n: 22, speed: [120, 260], g: 80, size: 3.6 }], sparkrings: [{ t: 1.02, r: 60, n: 16, life: 0.55 }] });
+more("child-light-burst", { runes: [{ t0: 0.24, t1: 1.2, rate: 10, x: [-30, 30], y: [-50, -10], vx: [-30, 30], vy: [-30, 10] }], sparkrings: [{ t: 0.22, y: -28, r: 50, n: 14, life: 0.5 }] });
+more("child-shadow-beam", { shards: [] });
+more("child-gravity", {
+  // rocks torn loose, floating up towards the void
+  motes: [],
+  runes: [{ rate: 3, x: [-60, 60], y: [-120, -20], toward: [0, -75], speedK: 0.7, drag: 0.4, g: 0, life: [1, 1.6] }],
+});
+more("child-infinite-light", {
+  shafts: [{ t0: 0.4, t1: 2.0, rate: 16, x: [-14, 14], y: [-2, 2], size: [60, 180] }],
+  runes: [{ t0: 0.7, t1: 2.4, rate: 6, x: [-12, 12], y: [-120, -10], vy: [-40, -16] }],
+  scorch: [{ t: 0.66, r: 34, sy: 0.25, life: 2.4 }],
+});

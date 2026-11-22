@@ -5,7 +5,7 @@
    "frame": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -13,11 +13,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -25,9 +25,9 @@
   {
    "filename": "child-shadow-dash 1",
    "frame": {
-    "x": 228,
+    "x": 236,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -35,11 +35,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -47,9 +47,9 @@
   {
    "filename": "child-shadow-dash 2",
    "frame": {
-    "x": 456,
+    "x": 472,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -57,11 +57,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -71,7 +71,7 @@
    "frame": {
     "x": 0,
     "y": 84,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -79,11 +79,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -91,9 +91,9 @@
   {
    "filename": "child-shadow-dash 4",
    "frame": {
-    "x": 228,
+    "x": 236,
     "y": 84,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -101,11 +101,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -113,9 +113,9 @@
   {
    "filename": "child-shadow-dash 5",
    "frame": {
-    "x": 456,
+    "x": 472,
     "y": 84,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -123,11 +123,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -137,7 +137,7 @@
    "frame": {
     "x": 0,
     "y": 168,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -145,11 +145,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -157,9 +157,9 @@
   {
    "filename": "child-shadow-dash 7",
    "frame": {
-    "x": 228,
+    "x": 236,
     "y": 168,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -167,11 +167,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -179,9 +179,9 @@
   {
    "filename": "child-shadow-dash 8",
    "frame": {
-    "x": 456,
+    "x": 472,
     "y": 168,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -189,11 +189,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -203,7 +203,7 @@
    "frame": {
     "x": 0,
     "y": 252,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -211,11 +211,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -223,9 +223,9 @@
   {
    "filename": "child-shadow-dash 10",
    "frame": {
-    "x": 228,
+    "x": 236,
     "y": 252,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -233,11 +233,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -245,9 +245,9 @@
   {
    "filename": "child-shadow-dash 11",
    "frame": {
-    "x": 456,
+    "x": 472,
     "y": 252,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -255,11 +255,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -269,7 +269,7 @@
    "frame": {
     "x": 0,
     "y": 336,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -277,11 +277,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -289,9 +289,9 @@
   {
    "filename": "child-shadow-dash 13",
    "frame": {
-    "x": 228,
+    "x": 236,
     "y": 336,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -299,11 +299,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -311,9 +311,9 @@
   {
    "filename": "child-shadow-dash 14",
    "frame": {
-    "x": 456,
+    "x": 472,
     "y": 336,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -321,11 +321,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -335,7 +335,7 @@
    "frame": {
     "x": 0,
     "y": 420,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -343,11 +343,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -355,9 +355,9 @@
   {
    "filename": "child-shadow-dash 16",
    "frame": {
-    "x": 228,
+    "x": 236,
     "y": 420,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -365,11 +365,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -377,9 +377,9 @@
   {
    "filename": "child-shadow-dash 17",
    "frame": {
-    "x": 456,
+    "x": 472,
     "y": 420,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -387,11 +387,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -401,7 +401,7 @@
    "frame": {
     "x": 0,
     "y": 504,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -409,11 +409,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -421,9 +421,9 @@
   {
    "filename": "child-shadow-dash 19",
    "frame": {
-    "x": 228,
+    "x": 236,
     "y": 504,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -431,11 +431,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -443,9 +443,9 @@
   {
    "filename": "child-shadow-dash 20",
    "frame": {
-    "x": 456,
+    "x": 472,
     "y": 504,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -453,11 +453,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -467,7 +467,7 @@
    "frame": {
     "x": 0,
     "y": 588,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -475,11 +475,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -487,9 +487,9 @@
   {
    "filename": "child-shadow-dash 22",
    "frame": {
-    "x": 228,
+    "x": 236,
     "y": 588,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -497,11 +497,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -509,9 +509,9 @@
   {
    "filename": "child-shadow-dash 23",
    "frame": {
-    "x": 456,
+    "x": 472,
     "y": 588,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "rotated": false,
@@ -519,11 +519,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "sourceSize": {
-    "w": 228,
+    "w": 236,
     "h": 84
    },
    "duration": 33
@@ -535,7 +535,7 @@
   "image": "child-shadow-dash.png",
   "format": "RGBA8888",
   "size": {
-   "w": 684,
+   "w": 708,
    "h": 672
   },
   "scale": "1",
@@ -554,7 +554,7 @@
    "loop": false,
    "frames": 24,
    "frameSize": [
-    228,
+    236,
     84
    ],
    "pivot": [

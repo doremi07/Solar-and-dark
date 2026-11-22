@@ -68,6 +68,7 @@ namespace SolarDark.Combat
             {
                 health.max = definition.maxHp;
                 health.current = definition.maxHp;
+                if (TryGetComponent<Hurtbox>(out var hb)) { hb.radius = definition.hurtRadius; hb.offset = definition.hurtOffset; }
             }
         }
 

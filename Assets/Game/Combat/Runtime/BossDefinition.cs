@@ -38,6 +38,9 @@ namespace SolarDark.Combat
         public float preferredRange = 5;
         [Tooltip("Halo position from the feet, facing right (the head's centre); mirrored when the boss faces left.")]
         public Vector2 haloOffset = new Vector2(0, 2.1f);
+        [Tooltip("The boss's hurtbox: radius and centre from the feet (applied to its Hurtbox on Awake).")]
+        public float hurtRadius = 0.8f;
+        public Vector2 hurtOffset = new Vector2(0, 1.2f);
         public List<BossPhase> phases = new List<BossPhase>();
 
         /// <summary>The phase for an HP fraction: the last phase whose threshold it has reached.</summary>

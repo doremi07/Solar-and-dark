@@ -38,8 +38,8 @@ namespace SolarDark.Combat.Editor
             var cam = new GameObject("Main Camera").AddComponent<Camera>();
             cam.tag = "MainCamera";
             cam.orthographic = true;
-            cam.orthographicSize = 6.5f;
-            cam.transform.position = new Vector3(0, 4.5f, -10);
+            cam.orthographicSize = 8f;
+            cam.transform.position = new Vector3(0, 6f, -10);
             cam.clearFlags = CameraClearFlags.SolidColor;
             cam.backgroundColor = new Color(0.06f, 0.05f, 0.1f);
 
@@ -64,7 +64,7 @@ namespace SolarDark.Combat.Editor
 
             // the boss
             var boss = new GameObject(def.displayName);
-            boss.transform.position = new Vector3(4, 0, 0);
+            boss.transform.position = new Vector3(5, 0, 0);
             var bsr = new GameObject("Body").AddComponent<SpriteRenderer>();
             bsr.transform.SetParent(boss.transform, false);
             bsr.sortingOrder = 10;

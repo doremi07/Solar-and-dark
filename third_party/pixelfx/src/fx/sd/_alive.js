@@ -9,6 +9,12 @@ import { Rng, fit, clamp, ease, lerp, TAU, WHITE, hex, toHex, sparkle, band } fr
 
 const mod = (a, n) => ((a % n) + n) % n;
 
+// little glyphs for runes rising off spells (5x5, generic marks: crosses, eyes, forks, rings)
+const RUNES = [
+  ["..#..", ".###.", "..#..", "..#..", ".#.#."], ["#...#", ".#.#.", "..#..", ".#.#.", "#...#"], [".###.", "#...#", "#.#.#", "#...#", ".###."],
+  ["#.#.#", "#.#.#", ".###.", "..#..", "..#.."], ["..#..", ".#.#.", "#...#", ".#.#.", "..#.."], ["###..", "#....", "####.", "...#.", "..##."],
+];
+
 // position and velocity after `age` seconds with drag k (1/s) and gravity g (px/s², +down)
 function motion(q, age) {
   const k = q.k || 0.0001, e = Math.exp(-k * age), f = (1 - e) / k;
@@ -55,12 +61,12 @@ function build(cfg, D, loop, seed) {
     for (let i = 0; i < Math.round((b.n ?? 16) * (cfg.density ?? 1.8) * 0.8); i++) {
       const a0 = b.dir ?? -Math.PI / 2, sp = b.spread ?? TAU, a = a0 + R.range(-sp / 2, sp / 2), s = pickRange(R, b.speed, R.range(80, 200));
       const ts = b.t + R.range(0, b.jitter ?? 0.02);
-      parts.push({ kind: "spark", ts, x: b.x + R.range(-(b.w ?? 2), b.w ?? 2), y: b.y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, k: b.drag ?? 3, g: b.g ?? 260, size: 1, hot: R.chance(0.45), life: clampLife(ts, R.range(0.35, b.life ?? 0.85)), ph: 0 });
+      parts.push({ kind: "spark", ts, x: (b.x ?? 0) + R.range(-(b.w ?? 2), b.w ?? 2), y: b.y ?? 0, vx: Math.cos(a) * s, vy: Math.sin(a) * s, k: b.drag ?? 3, g: b.g ?? 260, size: 1, hot: R.chance(0.45), life: clampLife(ts, R.range(0.35, b.life ?? 0.85)), ph: 0 });
     }
     // every burst leaves a shower of glints hanging where it went off
     for (let i = 0; i < (b.glints ?? 7); i++) {
       const a = R.range(0, TAU), r = R.range(4, b.reach ?? 26), ts = b.t + R.range(0.05, 0.6);
-      parts.push({ kind: "glint", ts, x: b.x + Math.cos(a) * r, y: Math.min(-1, b.y + Math.sin(a) * r * 0.8), size: R.range(2, 4.5), life: clampLife(ts, R.range(0.25, 0.5)), ph: 0 });
+      parts.push({ kind: "glint", ts, x: (b.x ?? 0) + Math.cos(a) * r, y: Math.min(-1, (b.y ?? 0) + Math.sin(a) * r * 0.8), size: R.range(2, 4.5), life: clampLife(ts, R.range(0.25, 0.5)), ph: 0 });
     }
   }
   for (const g of cfg.gather ?? []) {
@@ -71,6 +77,20 @@ function build(cfg, D, loop, seed) {
   }
   for (const r of cfg.rings ?? []) parts.push({ kind: "ring", ts: r.t, x: r.x ?? 0, y: r.y ?? 0, size: r.r ?? 30, sy: r.sy ?? 0.2, life: clampLife(r.t, r.life ?? 0.45), ph: 0 });
   for (const f of cfg.flares ?? []) parts.push({ kind: "flare", ts: f.t, x: f.x ?? 0, y: f.y ?? 0, size: f.r ?? 40, k: f.k ?? 0.6, life: clampLife(f.t, f.life ?? 0.35), ph: 0, white: f.white ?? true });
+  for (const b of cfg.shards ?? []) {   // tumbling faceted debris
+    for (let i = 0; i < (b.n ?? 10); i++) {
+      const a0 = b.dir ?? -Math.PI / 2, sp = b.spread ?? TAU, a = a0 + R.range(-sp / 2, sp / 2), v = pickRange(R, b.speed, R.range(60, 150));
+      const ts = b.t + R.range(0, 0.04);
+      parts.push({ kind: "shard", ts, x: (b.x ?? 0) + R.range(-(b.w ?? 3), b.w ?? 3), y: (b.y ?? 0) + R.range(-2, 2), vx: Math.cos(a) * v, vy: Math.sin(a) * v, k: b.drag ?? 1.5, g: b.g ?? 300,
+        size: R.range(1.6, b.size ?? 3.4), rot: R.range(0, TAU), spin: R.range(-12, 12), hot: R.chance(0.3), life: clampLife(ts, R.range(0.5, b.life ?? 1.0)), ph: 0 });
+    }
+  }
+  emit(cfg.runes, "rune", { vx: [-4, 4], vy: [-24, -10], k: 0.6, g: 0, size: 1, life: [0.8, 1.4] });
+  for (const q of parts) if (q.kind === "rune") q.glyph = RUNES[Math.floor(R.range(0, RUNES.length))];
+  emit(cfg.shafts, "shaft", { vx: 0, vy: 0, k: 1, g: 0, size: [20, 60], life: [0.2, 0.5] });
+  for (const sc of cfg.scorch ?? []) parts.push({ kind: "scorch", ts: sc.t, x: sc.x ?? 0, y: sc.y ?? 0, size: sc.r ?? 24, sy: sc.sy ?? 0.22, life: clampLife(sc.t, sc.life ?? 1.6), ph: 0 });
+  for (const r of cfg.sparkrings ?? []) for (let i = 0; i < (r.n ?? 10); i++)
+    parts.push({ kind: "sparkring", ts: r.t, x: r.x ?? 0, y: r.y ?? 0, a: (i / (r.n ?? 10)) * TAU + R.range(-0.1, 0.1), size: r.r ?? 30, sy: r.sy ?? 1, life: clampLife(r.t, r.life ?? 0.5), ph: 0 });
   for (const p of cfg.pulses ?? []) parts.push({ kind: "pulse", ts: 0, x: p.x ?? 0, y: p.y ?? 0, size: p.r ?? 30, k: p.k ?? 0.2, life: D, n: p.n ?? 2, ph: 0 });
   // a one-shot ends empty: nothing may outlive the base effect
   return loop ? parts : parts.filter((q) => q.kind === "pulse" || q.ts + q.life <= D - 0.03);
@@ -79,7 +99,7 @@ function build(cfg, D, loop, seed) {
 function drawPart(p, q, age, C, ramp, D, floor) {
   const u = age / q.life, fade = Math.min(1, u * 6) * (1 - u * u);
   // on a ground effect, flying bits that reach the floor are gone (they'd vanish into it)
-  if (floor && (q.kind === "spark" || q.kind === "ember" || q.kind === "mote") && motion(q, age).y > 0.5) return;
+  if (floor && (q.kind === "spark" || q.kind === "ember" || q.kind === "mote" || q.kind === "shard") && motion(q, age).y > 0.5) return;
   switch (q.kind) {
     case "mote":
     case "ember": {
@@ -133,6 +153,41 @@ function drawPart(p, q, age, C, ramp, D, floor) {
       if (q.white && u < 0.18) sparkle(p, q.x, q.y, 3 + 6 * (1 - u / 0.18), C[7], WHITE, 0.6);
       return;
     }
+    case "shard": {
+      const m = motion(q, age), a = q.rot + q.spin * age, r = q.size;
+      const pts = [0, 2.2, 4.1].map((k) => [m.x + Math.cos(a + k) * r, m.y + Math.sin(a + k) * r * 0.8]);
+      const face = Math.cos(a * 2) > 0;   // facets catch the light as they turn
+      p.poly(pts, face ? C[q.hot ? 7 : 6] : C[3], fade);
+      p.line(pts[0][0], pts[0][1], pts[1][0], pts[1][1], C[face ? 7 : 5], fade);
+      if (face) p.glow(m.x, m.y, 4, C[5], 0.18 * fade);
+      return;
+    }
+    case "rune": {
+      const m = motion(q, age), a = Math.sin(Math.PI * clamp(u)) * 1.2;
+      const g = q.glyph;
+      for (let yy = 0; yy < g.length; yy++) for (let xx = 0; xx < g[yy].length; xx++)
+        if (g[yy][xx] === "#") p.dot(m.x + xx - 2, m.y + yy - 2, yy === 0 ? C[7] : C[6], Math.min(1, a));
+      p.glow(m.x, m.y, 6, C[5], 0.25 * Math.min(1, a));
+      return;
+    }
+    case "shaft": {
+      const k = Math.sin(Math.PI * clamp(u));
+      p.line(q.x, q.y, q.x, q.y - q.size, (v) => (v < 0.15 ? C[7] : C[6]), (v) => k * (1 - v) * 0.9);
+      p.glowLine(q.x, q.y, q.x, q.y - q.size * 0.7, 3, C[5], 0.15 * k);
+      return;
+    }
+    case "scorch": {
+      const k = (1 - u) * Math.min(1, u * 8);
+      p.ellipse(q.x, q.y, q.size, q.size * q.sy, C[2], 0.5 * k);
+      p.ellipse(q.x, q.y, q.size * 0.6, q.size * q.sy * 0.6, C[4], 0.35 * k);
+      p.glow(q.x, q.y - 2, q.size * 1.2, C[5], 0.18 * k);
+      return;
+    }
+    case "sparkring": {
+      const r = q.size * ease.outCubic(clamp(u)), x = q.x + Math.cos(q.a) * r, y = q.y + Math.sin(q.a) * r * q.sy;
+      sparkle(p, x, y, 1 + 3 * (1 - u), C[6], C[7], 0.3 * (1 - u));
+      return;
+    }
     case "pulse": {
       const b = 0.5 + 0.5 * Math.sin((age / D) * TAU * q.n);
       p.glow(q.x, q.y, q.size, C[5], q.k * (0.6 + 0.4 * b));
@@ -158,7 +213,7 @@ export function alive(base, cfg) {
     origin: [bm.origin[0] + gl, bm.origin[1] + gt],
     options: { ...bm.options, ...(cfg.palette ? { palette: cfg.palette } : {}), ...(cfg.opts ?? {}), seed: bm.options?.seed ?? 1 },
   };
-  const D = bm.duration, loop = !!bm.loop, back = new Set(cfg.back ?? ["wisp", "ring", "pulse"]);
+  const D = bm.duration, loop = !!bm.loop, back = new Set(cfg.back ?? ["wisp", "ring", "pulse", "scorch"]);
 
   function create(o) {
     const impl = base.create ? base.create(o) : base;

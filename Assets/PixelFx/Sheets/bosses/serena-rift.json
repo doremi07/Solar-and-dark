@@ -5,7 +5,7 @@
    "frame": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -13,11 +13,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -25,9 +25,9 @@
   {
    "filename": "serena-rift 1",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -35,11 +35,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -47,9 +47,9 @@
   {
    "filename": "serena-rift 2",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -57,11 +57,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -69,9 +69,9 @@
   {
    "filename": "serena-rift 3",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -79,11 +79,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -91,9 +91,9 @@
   {
    "filename": "serena-rift 4",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -101,11 +101,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -113,9 +113,9 @@
   {
    "filename": "serena-rift 5",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -123,11 +123,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -135,9 +135,9 @@
   {
    "filename": "serena-rift 6",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -145,11 +145,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -159,7 +159,7 @@
    "frame": {
     "x": 0,
     "y": 112,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -167,11 +167,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -179,9 +179,9 @@
   {
    "filename": "serena-rift 8",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 112,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -189,11 +189,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -201,9 +201,9 @@
   {
    "filename": "serena-rift 9",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 112,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -211,11 +211,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -223,9 +223,9 @@
   {
    "filename": "serena-rift 10",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 112,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -233,11 +233,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -245,9 +245,9 @@
   {
    "filename": "serena-rift 11",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 112,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -255,11 +255,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -267,9 +267,9 @@
   {
    "filename": "serena-rift 12",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 112,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -277,11 +277,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -289,9 +289,9 @@
   {
    "filename": "serena-rift 13",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 112,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -299,11 +299,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -313,7 +313,7 @@
    "frame": {
     "x": 0,
     "y": 224,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -321,11 +321,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -333,9 +333,9 @@
   {
    "filename": "serena-rift 15",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 224,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -343,11 +343,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -355,9 +355,9 @@
   {
    "filename": "serena-rift 16",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 224,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -365,11 +365,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -377,9 +377,9 @@
   {
    "filename": "serena-rift 17",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 224,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -387,11 +387,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -399,9 +399,9 @@
   {
    "filename": "serena-rift 18",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 224,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -409,11 +409,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -421,9 +421,9 @@
   {
    "filename": "serena-rift 19",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 224,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -431,11 +431,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -443,9 +443,9 @@
   {
    "filename": "serena-rift 20",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 224,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -453,11 +453,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -467,7 +467,7 @@
    "frame": {
     "x": 0,
     "y": 336,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -475,11 +475,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -487,9 +487,9 @@
   {
    "filename": "serena-rift 22",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 336,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -497,11 +497,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -509,9 +509,9 @@
   {
    "filename": "serena-rift 23",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 336,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -519,11 +519,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -531,9 +531,9 @@
   {
    "filename": "serena-rift 24",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 336,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -541,11 +541,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -553,9 +553,9 @@
   {
    "filename": "serena-rift 25",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 336,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -563,11 +563,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -575,9 +575,9 @@
   {
    "filename": "serena-rift 26",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 336,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -585,11 +585,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -597,9 +597,9 @@
   {
    "filename": "serena-rift 27",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 336,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -607,11 +607,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -621,7 +621,7 @@
    "frame": {
     "x": 0,
     "y": 448,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -629,11 +629,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -641,9 +641,9 @@
   {
    "filename": "serena-rift 29",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 448,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -651,11 +651,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -663,9 +663,9 @@
   {
    "filename": "serena-rift 30",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 448,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -673,11 +673,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -685,9 +685,9 @@
   {
    "filename": "serena-rift 31",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 448,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -695,11 +695,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -707,9 +707,9 @@
   {
    "filename": "serena-rift 32",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 448,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -717,11 +717,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -729,9 +729,9 @@
   {
    "filename": "serena-rift 33",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 448,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -739,11 +739,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -751,9 +751,9 @@
   {
    "filename": "serena-rift 34",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 448,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -761,11 +761,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -775,7 +775,7 @@
    "frame": {
     "x": 0,
     "y": 560,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -783,11 +783,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -795,9 +795,9 @@
   {
    "filename": "serena-rift 36",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 560,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -805,11 +805,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -817,9 +817,9 @@
   {
    "filename": "serena-rift 37",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 560,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -827,11 +827,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -839,9 +839,9 @@
   {
    "filename": "serena-rift 38",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 560,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -849,11 +849,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -861,9 +861,9 @@
   {
    "filename": "serena-rift 39",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 560,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -871,11 +871,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -883,9 +883,9 @@
   {
    "filename": "serena-rift 40",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 560,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -893,11 +893,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -905,9 +905,9 @@
   {
    "filename": "serena-rift 41",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 560,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -915,11 +915,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -929,7 +929,7 @@
    "frame": {
     "x": 0,
     "y": 672,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -937,11 +937,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -949,9 +949,9 @@
   {
    "filename": "serena-rift 43",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 672,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -959,11 +959,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -971,9 +971,9 @@
   {
    "filename": "serena-rift 44",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 672,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -981,11 +981,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -993,9 +993,9 @@
   {
    "filename": "serena-rift 45",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 672,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1003,11 +1003,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1015,9 +1015,9 @@
   {
    "filename": "serena-rift 46",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 672,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1025,11 +1025,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1037,9 +1037,9 @@
   {
    "filename": "serena-rift 47",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 672,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1047,11 +1047,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1059,9 +1059,9 @@
   {
    "filename": "serena-rift 48",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 672,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1069,11 +1069,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1083,7 +1083,7 @@
    "frame": {
     "x": 0,
     "y": 784,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1091,11 +1091,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1103,9 +1103,9 @@
   {
    "filename": "serena-rift 50",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 784,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1113,11 +1113,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1125,9 +1125,9 @@
   {
    "filename": "serena-rift 51",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 784,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1135,11 +1135,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1147,9 +1147,9 @@
   {
    "filename": "serena-rift 52",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 784,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1157,11 +1157,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1169,9 +1169,9 @@
   {
    "filename": "serena-rift 53",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 784,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1179,11 +1179,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1191,9 +1191,9 @@
   {
    "filename": "serena-rift 54",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 784,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1201,11 +1201,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1213,9 +1213,9 @@
   {
    "filename": "serena-rift 55",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 784,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1223,11 +1223,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1237,7 +1237,7 @@
    "frame": {
     "x": 0,
     "y": 896,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1245,11 +1245,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1257,9 +1257,9 @@
   {
    "filename": "serena-rift 57",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 896,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1267,11 +1267,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1279,9 +1279,9 @@
   {
    "filename": "serena-rift 58",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 896,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1289,11 +1289,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1301,9 +1301,9 @@
   {
    "filename": "serena-rift 59",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 896,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1311,11 +1311,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1323,9 +1323,9 @@
   {
    "filename": "serena-rift 60",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 896,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1333,11 +1333,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1345,9 +1345,9 @@
   {
    "filename": "serena-rift 61",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 896,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1355,11 +1355,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1367,9 +1367,9 @@
   {
    "filename": "serena-rift 62",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 896,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1377,11 +1377,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1391,7 +1391,7 @@
    "frame": {
     "x": 0,
     "y": 1008,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1399,11 +1399,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1411,9 +1411,9 @@
   {
    "filename": "serena-rift 64",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 1008,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1421,11 +1421,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1433,9 +1433,9 @@
   {
    "filename": "serena-rift 65",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 1008,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1443,11 +1443,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1455,9 +1455,9 @@
   {
    "filename": "serena-rift 66",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 1008,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1465,11 +1465,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1477,9 +1477,9 @@
   {
    "filename": "serena-rift 67",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 1008,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1487,11 +1487,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1499,9 +1499,9 @@
   {
    "filename": "serena-rift 68",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 1008,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1509,11 +1509,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1521,9 +1521,9 @@
   {
    "filename": "serena-rift 69",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 1008,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1531,11 +1531,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1545,7 +1545,7 @@
    "frame": {
     "x": 0,
     "y": 1120,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1553,11 +1553,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1565,9 +1565,9 @@
   {
    "filename": "serena-rift 71",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 1120,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1575,11 +1575,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1587,9 +1587,9 @@
   {
    "filename": "serena-rift 72",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 1120,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1597,11 +1597,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1609,9 +1609,9 @@
   {
    "filename": "serena-rift 73",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 1120,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1619,11 +1619,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1631,9 +1631,9 @@
   {
    "filename": "serena-rift 74",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 1120,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1641,11 +1641,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1653,9 +1653,9 @@
   {
    "filename": "serena-rift 75",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 1120,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1663,11 +1663,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1675,9 +1675,9 @@
   {
    "filename": "serena-rift 76",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 1120,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1685,11 +1685,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1699,7 +1699,7 @@
    "frame": {
     "x": 0,
     "y": 1232,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1707,11 +1707,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1719,9 +1719,9 @@
   {
    "filename": "serena-rift 78",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 1232,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1729,11 +1729,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1741,9 +1741,9 @@
   {
    "filename": "serena-rift 79",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 1232,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1751,11 +1751,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1763,9 +1763,9 @@
   {
    "filename": "serena-rift 80",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 1232,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1773,11 +1773,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1785,9 +1785,9 @@
   {
    "filename": "serena-rift 81",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 1232,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1795,11 +1795,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1807,9 +1807,9 @@
   {
    "filename": "serena-rift 82",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 1232,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1817,11 +1817,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1829,9 +1829,9 @@
   {
    "filename": "serena-rift 83",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 1232,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1839,11 +1839,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1853,7 +1853,7 @@
    "frame": {
     "x": 0,
     "y": 1344,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1861,11 +1861,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1873,9 +1873,9 @@
   {
    "filename": "serena-rift 85",
    "frame": {
-    "x": 264,
+    "x": 282,
     "y": 1344,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1883,11 +1883,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1895,9 +1895,9 @@
   {
    "filename": "serena-rift 86",
    "frame": {
-    "x": 528,
+    "x": 564,
     "y": 1344,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1905,11 +1905,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1917,9 +1917,9 @@
   {
    "filename": "serena-rift 87",
    "frame": {
-    "x": 792,
+    "x": 846,
     "y": 1344,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1927,11 +1927,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1939,9 +1939,9 @@
   {
    "filename": "serena-rift 88",
    "frame": {
-    "x": 1056,
+    "x": 1128,
     "y": 1344,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1949,11 +1949,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1961,9 +1961,9 @@
   {
    "filename": "serena-rift 89",
    "frame": {
-    "x": 1320,
+    "x": 1410,
     "y": 1344,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1971,11 +1971,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -1983,9 +1983,9 @@
   {
    "filename": "serena-rift 90",
    "frame": {
-    "x": 1584,
+    "x": 1692,
     "y": 1344,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "rotated": false,
@@ -1993,11 +1993,11 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "sourceSize": {
-    "w": 264,
+    "w": 282,
     "h": 112
    },
    "duration": 33
@@ -2009,7 +2009,7 @@
   "image": "serena-rift.png",
   "format": "RGBA8888",
   "size": {
-   "w": 1848,
+   "w": 1974,
    "h": 1456
   },
   "scale": "1",
@@ -2028,11 +2028,11 @@
    "loop": false,
    "frames": 91,
    "frameSize": [
-    264,
+    282,
     112
    ],
    "pivot": [
-    24,
+    42,
     96
    ],
    "columns": 7,

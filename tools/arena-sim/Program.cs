@@ -113,7 +113,7 @@ static class Program
         Render(cam);
         var st = boss.CurrentPhase;
         string Esc(string s) => (s ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"");
-        var json = $"{{\"boss\":\"{Esc(boss.definition.displayName)}\",\"title\":\"{Esc(boss.definition.title)}\",\"phase\":{boss.Phase + 1},\"phaseName\":\"{Esc(st?.name)}\"," +
+        var json = $"{{\"w\":{W},\"h\":{H},\"boss\":\"{Esc(boss.definition.displayName)}\",\"title\":\"{Esc(boss.definition.title)}\",\"phase\":{boss.Phase + 1},\"phaseName\":\"{Esc(st?.name)}\"," +
                    $"\"skill\":\"{Esc(boss.Casting?.displayName)}\",\"bossHp\":{boss.Health.Fraction:F3},\"playerHp\":{player.Fraction:F3},\"t\":{Time.time:F2},\"rooted\":{(player.GetComponent<StatusReceiver>().IsRooted ? "true" : "false")}}}";
         var jb = Encoding.UTF8.GetBytes(json);
         stdout.Write(BitConverter.GetBytes(jb.Length));

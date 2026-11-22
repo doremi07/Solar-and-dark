@@ -61,11 +61,11 @@ export class Raster {
       for (let s = 0; s <= steps; s++) {
         const f = s / steps, x = ax + (bx - ax) * f, y = ay + (by - ay) * f, u = (acc + d * f) / (total || 1);
         const r = (typeof w === "function" ? w(u) : w) / 2;
-        if (r < 0.5) { this.set(x, y, typeof color === "function" ? color(u, 0) : color, tag); continue; }
+        if (r < 0.5) { this.set(x, y, typeof color === "function" ? color(u, 0, 0) : color, tag); continue; }
         for (let yy = Math.floor(y - r); yy <= Math.ceil(y + r); yy++)
           for (let xx = Math.floor(x - r); xx <= Math.ceil(x + r); xx++) {
             const ex = xx + 0.5 - x, ey = yy + 0.5 - y;
-            if (ex * ex + ey * ey <= r * r) this.set(xx, yy, typeof color === "function" ? color(u, (-ex - ey) / (r * 1.5)) : color, tag);
+            if (ex * ex + ey * ey <= r * r) this.set(xx, yy, typeof color === "function" ? color(u, (-ex - ey) / (r * 1.5), Math.sqrt(ex * ex + ey * ey) / r) : color, tag);
           }
       }
       acc += d;
@@ -117,3 +117,24 @@ export function lit(ramp, b) {
 export const tl = (u, v, bias = 0) => Math.max(0, Math.min(0.999, 0.85 - u * 0.45 - v * 0.4 + bias));
 
 export const H = (list) => list.map(hex);
+
+/** A smooth path through control points (Catmull-Rom), n samples per segment. */
+export function curve(pts, n = 6) {
+  const out = [];
+  for (let i = 0; i < pts.length - 1; i++) {
+    const p0 = pts[Math.max(0, i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
+    for (let k = 0; k < n; k++) {
+      const t = k / n, t2 = t * t, t3 = t2 * t;
+      const f = (a, b, c, d) => 0.5 * (2 * b + (-a + c) * t + (2 * a - 5 * b + 4 * c - d) * t2 + (-a + 3 * b - 3 * c + d) * t3);
+      out.push([f(p0[0], p1[0], p2[0], p3[0]), f(p0[1], p1[1], p2[1], p3[1])]);
+    }
+  }
+  out.push(pts[pts.length - 1]);
+  return out;
+}
+
+/** Shade across a strand: dark at its edges, its ramp's middle in the body, a light line down the lit side. */
+export function strand(ramp, b, d, bias = 0) {
+  const k = 0.55 + b * 0.35 - d * d * 0.5 + bias;
+  return lit(ramp, Math.max(0, Math.min(0.999, k)));
+}
