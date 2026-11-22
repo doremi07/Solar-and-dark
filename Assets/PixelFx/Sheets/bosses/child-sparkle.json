@@ -1,354 +1,354 @@
 {
  "frames": [
   {
-   "filename": "hit-spark 0",
+   "filename": "child-sparkle 0",
    "frame": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 1",
+   "filename": "child-sparkle 1",
    "frame": {
-    "x": 136,
+    "x": 142,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 2",
+   "filename": "child-sparkle 2",
    "frame": {
-    "x": 272,
+    "x": 284,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 3",
+   "filename": "child-sparkle 3",
    "frame": {
-    "x": 408,
+    "x": 426,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 4",
+   "filename": "child-sparkle 4",
    "frame": {
     "x": 0,
-    "y": 80,
-    "w": 136,
-    "h": 80
+    "y": 110,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 5",
+   "filename": "child-sparkle 5",
    "frame": {
-    "x": 136,
-    "y": 80,
-    "w": 136,
-    "h": 80
+    "x": 142,
+    "y": 110,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 6",
+   "filename": "child-sparkle 6",
    "frame": {
-    "x": 272,
-    "y": 80,
-    "w": 136,
-    "h": 80
+    "x": 284,
+    "y": 110,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 7",
+   "filename": "child-sparkle 7",
    "frame": {
-    "x": 408,
-    "y": 80,
-    "w": 136,
-    "h": 80
+    "x": 426,
+    "y": 110,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 8",
+   "filename": "child-sparkle 8",
    "frame": {
     "x": 0,
-    "y": 160,
-    "w": 136,
-    "h": 80
+    "y": 220,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 9",
+   "filename": "child-sparkle 9",
    "frame": {
-    "x": 136,
-    "y": 160,
-    "w": 136,
-    "h": 80
+    "x": 142,
+    "y": 220,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 10",
+   "filename": "child-sparkle 10",
    "frame": {
-    "x": 272,
-    "y": 160,
-    "w": 136,
-    "h": 80
+    "x": 284,
+    "y": 220,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 11",
+   "filename": "child-sparkle 11",
    "frame": {
-    "x": 408,
-    "y": 160,
-    "w": 136,
-    "h": 80
+    "x": 426,
+    "y": 220,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 12",
+   "filename": "child-sparkle 12",
    "frame": {
     "x": 0,
-    "y": 240,
-    "w": 136,
-    "h": 80
+    "y": 330,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 13",
+   "filename": "child-sparkle 13",
    "frame": {
-    "x": 136,
-    "y": 240,
-    "w": 136,
-    "h": 80
+    "x": 142,
+    "y": 330,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 14",
+   "filename": "child-sparkle 14",
    "frame": {
-    "x": 272,
-    "y": 240,
-    "w": 136,
-    "h": 80
+    "x": 284,
+    "y": 330,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   },
   {
-   "filename": "hit-spark 15",
+   "filename": "child-sparkle 15",
    "frame": {
-    "x": 408,
-    "y": 240,
-    "w": 136,
-    "h": 80
+    "x": 426,
+    "y": 330,
+    "w": 142,
+    "h": 110
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "sourceSize": {
-    "w": 136,
-    "h": 80
+    "w": 142,
+    "h": 110
    },
    "duration": 33
   }
@@ -359,30 +359,30 @@
   "image": "child-sparkle.png",
   "format": "RGBA8888",
   "size": {
-   "w": 544,
-   "h": 320
+   "w": 568,
+   "h": 440
   },
   "scale": "1",
   "frameTags": [
    {
-    "name": "hit-spark",
+    "name": "child-sparkle",
     "from": 0,
     "to": 15,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "impacts/hit-spark",
-   "name": "Hit spark",
+   "id": "sd/child-sparkle",
+   "name": "Crystal sparkle",
    "fps": 30,
    "loop": false,
    "frames": 16,
    "frameSize": [
-    136,
-    80
+    142,
+    110
    ],
    "pivot": [
-    44,
+    50,
     64
    ],
    "columns": 4,

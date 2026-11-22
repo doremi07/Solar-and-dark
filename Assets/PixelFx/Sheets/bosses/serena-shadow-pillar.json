@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "magic-circle-cast 0",
+   "filename": "serena-shadow-pillar 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 1",
+   "filename": "serena-shadow-pillar 1",
    "frame": {
     "x": 200,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 2",
+   "filename": "serena-shadow-pillar 2",
    "frame": {
     "x": 400,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 3",
+   "filename": "serena-shadow-pillar 3",
    "frame": {
     "x": 600,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 4",
+   "filename": "serena-shadow-pillar 4",
    "frame": {
     "x": 800,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 5",
+   "filename": "serena-shadow-pillar 5",
    "frame": {
     "x": 1000,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 6",
+   "filename": "serena-shadow-pillar 6",
    "frame": {
     "x": 1200,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 7",
+   "filename": "serena-shadow-pillar 7",
    "frame": {
     "x": 1400,
     "y": 0,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 8",
+   "filename": "serena-shadow-pillar 8",
    "frame": {
     "x": 1600,
     "y": 0,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 9",
+   "filename": "serena-shadow-pillar 9",
    "frame": {
     "x": 1800,
     "y": 0,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 10",
+   "filename": "serena-shadow-pillar 10",
    "frame": {
     "x": 2000,
     "y": 0,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 11",
+   "filename": "serena-shadow-pillar 11",
    "frame": {
     "x": 2200,
     "y": 0,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 12",
+   "filename": "serena-shadow-pillar 12",
    "frame": {
     "x": 0,
     "y": 220,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 13",
+   "filename": "serena-shadow-pillar 13",
    "frame": {
     "x": 200,
     "y": 220,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 14",
+   "filename": "serena-shadow-pillar 14",
    "frame": {
     "x": 400,
     "y": 220,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 15",
+   "filename": "serena-shadow-pillar 15",
    "frame": {
     "x": 600,
     "y": 220,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 16",
+   "filename": "serena-shadow-pillar 16",
    "frame": {
     "x": 800,
     "y": 220,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 17",
+   "filename": "serena-shadow-pillar 17",
    "frame": {
     "x": 1000,
     "y": 220,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 18",
+   "filename": "serena-shadow-pillar 18",
    "frame": {
     "x": 1200,
     "y": 220,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 19",
+   "filename": "serena-shadow-pillar 19",
    "frame": {
     "x": 1400,
     "y": 220,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 20",
+   "filename": "serena-shadow-pillar 20",
    "frame": {
     "x": 1600,
     "y": 220,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 21",
+   "filename": "serena-shadow-pillar 21",
    "frame": {
     "x": 1800,
     "y": 220,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 22",
+   "filename": "serena-shadow-pillar 22",
    "frame": {
     "x": 2000,
     "y": 220,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 23",
+   "filename": "serena-shadow-pillar 23",
    "frame": {
     "x": 2200,
     "y": 220,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 24",
+   "filename": "serena-shadow-pillar 24",
    "frame": {
     "x": 0,
     "y": 440,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 25",
+   "filename": "serena-shadow-pillar 25",
    "frame": {
     "x": 200,
     "y": 440,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 26",
+   "filename": "serena-shadow-pillar 26",
    "frame": {
     "x": 400,
     "y": 440,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 27",
+   "filename": "serena-shadow-pillar 27",
    "frame": {
     "x": 600,
     "y": 440,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 28",
+   "filename": "serena-shadow-pillar 28",
    "frame": {
     "x": 800,
     "y": 440,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 29",
+   "filename": "serena-shadow-pillar 29",
    "frame": {
     "x": 1000,
     "y": 440,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 30",
+   "filename": "serena-shadow-pillar 30",
    "frame": {
     "x": 1200,
     "y": 440,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 31",
+   "filename": "serena-shadow-pillar 31",
    "frame": {
     "x": 1400,
     "y": 440,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 32",
+   "filename": "serena-shadow-pillar 32",
    "frame": {
     "x": 1600,
     "y": 440,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 33",
+   "filename": "serena-shadow-pillar 33",
    "frame": {
     "x": 1800,
     "y": 440,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 34",
+   "filename": "serena-shadow-pillar 34",
    "frame": {
     "x": 2000,
     "y": 440,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 35",
+   "filename": "serena-shadow-pillar 35",
    "frame": {
     "x": 2200,
     "y": 440,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 36",
+   "filename": "serena-shadow-pillar 36",
    "frame": {
     "x": 0,
     "y": 660,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 37",
+   "filename": "serena-shadow-pillar 37",
    "frame": {
     "x": 200,
     "y": 660,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 38",
+   "filename": "serena-shadow-pillar 38",
    "frame": {
     "x": 400,
     "y": 660,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 39",
+   "filename": "serena-shadow-pillar 39",
    "frame": {
     "x": 600,
     "y": 660,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 40",
+   "filename": "serena-shadow-pillar 40",
    "frame": {
     "x": 800,
     "y": 660,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 41",
+   "filename": "serena-shadow-pillar 41",
    "frame": {
     "x": 1000,
     "y": 660,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 42",
+   "filename": "serena-shadow-pillar 42",
    "frame": {
     "x": 1200,
     "y": 660,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 43",
+   "filename": "serena-shadow-pillar 43",
    "frame": {
     "x": 1400,
     "y": 660,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 44",
+   "filename": "serena-shadow-pillar 44",
    "frame": {
     "x": 1600,
     "y": 660,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 45",
+   "filename": "serena-shadow-pillar 45",
    "frame": {
     "x": 1800,
     "y": 660,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 46",
+   "filename": "serena-shadow-pillar 46",
    "frame": {
     "x": 2000,
     "y": 660,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 47",
+   "filename": "serena-shadow-pillar 47",
    "frame": {
     "x": 2200,
     "y": 660,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 48",
+   "filename": "serena-shadow-pillar 48",
    "frame": {
     "x": 0,
     "y": 880,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 49",
+   "filename": "serena-shadow-pillar 49",
    "frame": {
     "x": 200,
     "y": 880,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 50",
+   "filename": "serena-shadow-pillar 50",
    "frame": {
     "x": 400,
     "y": 880,
@@ -1123,7 +1123,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 51",
+   "filename": "serena-shadow-pillar 51",
    "frame": {
     "x": 600,
     "y": 880,
@@ -1145,7 +1145,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 52",
+   "filename": "serena-shadow-pillar 52",
    "frame": {
     "x": 800,
     "y": 880,
@@ -1167,7 +1167,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 53",
+   "filename": "serena-shadow-pillar 53",
    "frame": {
     "x": 1000,
     "y": 880,
@@ -1189,7 +1189,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 54",
+   "filename": "serena-shadow-pillar 54",
    "frame": {
     "x": 1200,
     "y": 880,
@@ -1211,7 +1211,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 55",
+   "filename": "serena-shadow-pillar 55",
    "frame": {
     "x": 1400,
     "y": 880,
@@ -1233,7 +1233,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 56",
+   "filename": "serena-shadow-pillar 56",
    "frame": {
     "x": 1600,
     "y": 880,
@@ -1255,7 +1255,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 57",
+   "filename": "serena-shadow-pillar 57",
    "frame": {
     "x": 1800,
     "y": 880,
@@ -1277,7 +1277,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 58",
+   "filename": "serena-shadow-pillar 58",
    "frame": {
     "x": 2000,
     "y": 880,
@@ -1299,7 +1299,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 59",
+   "filename": "serena-shadow-pillar 59",
    "frame": {
     "x": 2200,
     "y": 880,
@@ -1321,7 +1321,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 60",
+   "filename": "serena-shadow-pillar 60",
    "frame": {
     "x": 0,
     "y": 1100,
@@ -1343,7 +1343,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 61",
+   "filename": "serena-shadow-pillar 61",
    "frame": {
     "x": 200,
     "y": 1100,
@@ -1365,7 +1365,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 62",
+   "filename": "serena-shadow-pillar 62",
    "frame": {
     "x": 400,
     "y": 1100,
@@ -1387,7 +1387,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 63",
+   "filename": "serena-shadow-pillar 63",
    "frame": {
     "x": 600,
     "y": 1100,
@@ -1409,7 +1409,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 64",
+   "filename": "serena-shadow-pillar 64",
    "frame": {
     "x": 800,
     "y": 1100,
@@ -1431,7 +1431,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 65",
+   "filename": "serena-shadow-pillar 65",
    "frame": {
     "x": 1000,
     "y": 1100,
@@ -1453,7 +1453,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 66",
+   "filename": "serena-shadow-pillar 66",
    "frame": {
     "x": 1200,
     "y": 1100,
@@ -1475,7 +1475,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 67",
+   "filename": "serena-shadow-pillar 67",
    "frame": {
     "x": 1400,
     "y": 1100,
@@ -1497,7 +1497,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 68",
+   "filename": "serena-shadow-pillar 68",
    "frame": {
     "x": 1600,
     "y": 1100,
@@ -1519,7 +1519,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 69",
+   "filename": "serena-shadow-pillar 69",
    "frame": {
     "x": 1800,
     "y": 1100,
@@ -1541,7 +1541,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 70",
+   "filename": "serena-shadow-pillar 70",
    "frame": {
     "x": 2000,
     "y": 1100,
@@ -1563,7 +1563,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 71",
+   "filename": "serena-shadow-pillar 71",
    "frame": {
     "x": 2200,
     "y": 1100,
@@ -1585,7 +1585,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 72",
+   "filename": "serena-shadow-pillar 72",
    "frame": {
     "x": 0,
     "y": 1320,
@@ -1607,7 +1607,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 73",
+   "filename": "serena-shadow-pillar 73",
    "frame": {
     "x": 200,
     "y": 1320,
@@ -1629,7 +1629,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 74",
+   "filename": "serena-shadow-pillar 74",
    "frame": {
     "x": 400,
     "y": 1320,
@@ -1651,7 +1651,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 75",
+   "filename": "serena-shadow-pillar 75",
    "frame": {
     "x": 600,
     "y": 1320,
@@ -1673,7 +1673,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 76",
+   "filename": "serena-shadow-pillar 76",
    "frame": {
     "x": 800,
     "y": 1320,
@@ -1695,7 +1695,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 77",
+   "filename": "serena-shadow-pillar 77",
    "frame": {
     "x": 1000,
     "y": 1320,
@@ -1717,7 +1717,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 78",
+   "filename": "serena-shadow-pillar 78",
    "frame": {
     "x": 1200,
     "y": 1320,
@@ -1739,7 +1739,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 79",
+   "filename": "serena-shadow-pillar 79",
    "frame": {
     "x": 1400,
     "y": 1320,
@@ -1761,7 +1761,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 80",
+   "filename": "serena-shadow-pillar 80",
    "frame": {
     "x": 1600,
     "y": 1320,
@@ -1783,7 +1783,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 81",
+   "filename": "serena-shadow-pillar 81",
    "frame": {
     "x": 1800,
     "y": 1320,
@@ -1805,7 +1805,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 82",
+   "filename": "serena-shadow-pillar 82",
    "frame": {
     "x": 2000,
     "y": 1320,
@@ -1827,7 +1827,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 83",
+   "filename": "serena-shadow-pillar 83",
    "frame": {
     "x": 2200,
     "y": 1320,
@@ -1849,7 +1849,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 84",
+   "filename": "serena-shadow-pillar 84",
    "frame": {
     "x": 0,
     "y": 1540,
@@ -1871,7 +1871,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 85",
+   "filename": "serena-shadow-pillar 85",
    "frame": {
     "x": 200,
     "y": 1540,
@@ -1893,7 +1893,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 86",
+   "filename": "serena-shadow-pillar 86",
    "frame": {
     "x": 400,
     "y": 1540,
@@ -1915,7 +1915,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 87",
+   "filename": "serena-shadow-pillar 87",
    "frame": {
     "x": 600,
     "y": 1540,
@@ -1937,7 +1937,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 88",
+   "filename": "serena-shadow-pillar 88",
    "frame": {
     "x": 800,
     "y": 1540,
@@ -1959,7 +1959,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 89",
+   "filename": "serena-shadow-pillar 89",
    "frame": {
     "x": 1000,
     "y": 1540,
@@ -1981,7 +1981,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 90",
+   "filename": "serena-shadow-pillar 90",
    "frame": {
     "x": 1200,
     "y": 1540,
@@ -2003,7 +2003,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 91",
+   "filename": "serena-shadow-pillar 91",
    "frame": {
     "x": 1400,
     "y": 1540,
@@ -2025,7 +2025,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 92",
+   "filename": "serena-shadow-pillar 92",
    "frame": {
     "x": 1600,
     "y": 1540,
@@ -2047,7 +2047,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 93",
+   "filename": "serena-shadow-pillar 93",
    "frame": {
     "x": 1800,
     "y": 1540,
@@ -2069,7 +2069,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 94",
+   "filename": "serena-shadow-pillar 94",
    "frame": {
     "x": 2000,
     "y": 1540,
@@ -2091,7 +2091,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 95",
+   "filename": "serena-shadow-pillar 95",
    "frame": {
     "x": 2200,
     "y": 1540,
@@ -2113,7 +2113,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 96",
+   "filename": "serena-shadow-pillar 96",
    "frame": {
     "x": 0,
     "y": 1760,
@@ -2135,7 +2135,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 97",
+   "filename": "serena-shadow-pillar 97",
    "frame": {
     "x": 200,
     "y": 1760,
@@ -2157,7 +2157,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 98",
+   "filename": "serena-shadow-pillar 98",
    "frame": {
     "x": 400,
     "y": 1760,
@@ -2179,7 +2179,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 99",
+   "filename": "serena-shadow-pillar 99",
    "frame": {
     "x": 600,
     "y": 1760,
@@ -2201,7 +2201,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 100",
+   "filename": "serena-shadow-pillar 100",
    "frame": {
     "x": 800,
     "y": 1760,
@@ -2223,7 +2223,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 101",
+   "filename": "serena-shadow-pillar 101",
    "frame": {
     "x": 1000,
     "y": 1760,
@@ -2245,7 +2245,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 102",
+   "filename": "serena-shadow-pillar 102",
    "frame": {
     "x": 1200,
     "y": 1760,
@@ -2267,7 +2267,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 103",
+   "filename": "serena-shadow-pillar 103",
    "frame": {
     "x": 1400,
     "y": 1760,
@@ -2289,7 +2289,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 104",
+   "filename": "serena-shadow-pillar 104",
    "frame": {
     "x": 1600,
     "y": 1760,
@@ -2311,7 +2311,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 105",
+   "filename": "serena-shadow-pillar 105",
    "frame": {
     "x": 1800,
     "y": 1760,
@@ -2333,7 +2333,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 106",
+   "filename": "serena-shadow-pillar 106",
    "frame": {
     "x": 2000,
     "y": 1760,
@@ -2355,7 +2355,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 107",
+   "filename": "serena-shadow-pillar 107",
    "frame": {
     "x": 2200,
     "y": 1760,
@@ -2377,7 +2377,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 108",
+   "filename": "serena-shadow-pillar 108",
    "frame": {
     "x": 0,
     "y": 1980,
@@ -2399,7 +2399,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 109",
+   "filename": "serena-shadow-pillar 109",
    "frame": {
     "x": 200,
     "y": 1980,
@@ -2421,7 +2421,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 110",
+   "filename": "serena-shadow-pillar 110",
    "frame": {
     "x": 400,
     "y": 1980,
@@ -2443,7 +2443,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 111",
+   "filename": "serena-shadow-pillar 111",
    "frame": {
     "x": 600,
     "y": 1980,
@@ -2465,7 +2465,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 112",
+   "filename": "serena-shadow-pillar 112",
    "frame": {
     "x": 800,
     "y": 1980,
@@ -2487,7 +2487,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 113",
+   "filename": "serena-shadow-pillar 113",
    "frame": {
     "x": 1000,
     "y": 1980,
@@ -2509,7 +2509,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 114",
+   "filename": "serena-shadow-pillar 114",
    "frame": {
     "x": 1200,
     "y": 1980,
@@ -2531,7 +2531,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 115",
+   "filename": "serena-shadow-pillar 115",
    "frame": {
     "x": 1400,
     "y": 1980,
@@ -2553,7 +2553,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 116",
+   "filename": "serena-shadow-pillar 116",
    "frame": {
     "x": 1600,
     "y": 1980,
@@ -2575,7 +2575,7 @@
    "duration": 33
   },
   {
-   "filename": "magic-circle-cast 117",
+   "filename": "serena-shadow-pillar 117",
    "frame": {
     "x": 1800,
     "y": 1980,
@@ -2609,15 +2609,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "magic-circle-cast",
+    "name": "serena-shadow-pillar",
     "from": 0,
     "to": 117,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "arcane/magic-circle-cast",
-   "name": "Magic circle cast",
+   "id": "sd/serena-shadow-pillar",
+   "name": "Shadow pillar",
    "fps": 30,
    "loop": false,
    "frames": 118,
@@ -2641,8 +2641,7 @@
      "#9a82c8",
      "#d2c4ee",
      "#fbf6ff"
-    ],
-    "seed": 4
+    ]
    }
   }
  }

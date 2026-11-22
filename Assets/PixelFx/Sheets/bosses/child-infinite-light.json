@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "holy-pillar 0",
+   "filename": "child-infinite-light 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 1",
+   "filename": "child-infinite-light 1",
    "frame": {
     "x": 192,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 2",
+   "filename": "child-infinite-light 2",
    "frame": {
     "x": 384,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 3",
+   "filename": "child-infinite-light 3",
    "frame": {
     "x": 576,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 4",
+   "filename": "child-infinite-light 4",
    "frame": {
     "x": 768,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 5",
+   "filename": "child-infinite-light 5",
    "frame": {
     "x": 960,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 6",
+   "filename": "child-infinite-light 6",
    "frame": {
     "x": 1152,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 7",
+   "filename": "child-infinite-light 7",
    "frame": {
     "x": 1344,
     "y": 0,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 8",
+   "filename": "child-infinite-light 8",
    "frame": {
     "x": 1536,
     "y": 0,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 9",
+   "filename": "child-infinite-light 9",
    "frame": {
     "x": 1728,
     "y": 0,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 10",
+   "filename": "child-infinite-light 10",
    "frame": {
     "x": 1920,
     "y": 0,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 11",
+   "filename": "child-infinite-light 11",
    "frame": {
     "x": 2112,
     "y": 0,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 12",
+   "filename": "child-infinite-light 12",
    "frame": {
     "x": 0,
     "y": 232,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 13",
+   "filename": "child-infinite-light 13",
    "frame": {
     "x": 192,
     "y": 232,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 14",
+   "filename": "child-infinite-light 14",
    "frame": {
     "x": 384,
     "y": 232,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 15",
+   "filename": "child-infinite-light 15",
    "frame": {
     "x": 576,
     "y": 232,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 16",
+   "filename": "child-infinite-light 16",
    "frame": {
     "x": 768,
     "y": 232,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 17",
+   "filename": "child-infinite-light 17",
    "frame": {
     "x": 960,
     "y": 232,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 18",
+   "filename": "child-infinite-light 18",
    "frame": {
     "x": 1152,
     "y": 232,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 19",
+   "filename": "child-infinite-light 19",
    "frame": {
     "x": 1344,
     "y": 232,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 20",
+   "filename": "child-infinite-light 20",
    "frame": {
     "x": 1536,
     "y": 232,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 21",
+   "filename": "child-infinite-light 21",
    "frame": {
     "x": 1728,
     "y": 232,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 22",
+   "filename": "child-infinite-light 22",
    "frame": {
     "x": 1920,
     "y": 232,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 23",
+   "filename": "child-infinite-light 23",
    "frame": {
     "x": 2112,
     "y": 232,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 24",
+   "filename": "child-infinite-light 24",
    "frame": {
     "x": 0,
     "y": 464,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 25",
+   "filename": "child-infinite-light 25",
    "frame": {
     "x": 192,
     "y": 464,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 26",
+   "filename": "child-infinite-light 26",
    "frame": {
     "x": 384,
     "y": 464,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 27",
+   "filename": "child-infinite-light 27",
    "frame": {
     "x": 576,
     "y": 464,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 28",
+   "filename": "child-infinite-light 28",
    "frame": {
     "x": 768,
     "y": 464,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 29",
+   "filename": "child-infinite-light 29",
    "frame": {
     "x": 960,
     "y": 464,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 30",
+   "filename": "child-infinite-light 30",
    "frame": {
     "x": 1152,
     "y": 464,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 31",
+   "filename": "child-infinite-light 31",
    "frame": {
     "x": 1344,
     "y": 464,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 32",
+   "filename": "child-infinite-light 32",
    "frame": {
     "x": 1536,
     "y": 464,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 33",
+   "filename": "child-infinite-light 33",
    "frame": {
     "x": 1728,
     "y": 464,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 34",
+   "filename": "child-infinite-light 34",
    "frame": {
     "x": 1920,
     "y": 464,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 35",
+   "filename": "child-infinite-light 35",
    "frame": {
     "x": 2112,
     "y": 464,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 36",
+   "filename": "child-infinite-light 36",
    "frame": {
     "x": 0,
     "y": 696,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 37",
+   "filename": "child-infinite-light 37",
    "frame": {
     "x": 192,
     "y": 696,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 38",
+   "filename": "child-infinite-light 38",
    "frame": {
     "x": 384,
     "y": 696,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 39",
+   "filename": "child-infinite-light 39",
    "frame": {
     "x": 576,
     "y": 696,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 40",
+   "filename": "child-infinite-light 40",
    "frame": {
     "x": 768,
     "y": 696,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 41",
+   "filename": "child-infinite-light 41",
    "frame": {
     "x": 960,
     "y": 696,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 42",
+   "filename": "child-infinite-light 42",
    "frame": {
     "x": 1152,
     "y": 696,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 43",
+   "filename": "child-infinite-light 43",
    "frame": {
     "x": 1344,
     "y": 696,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 44",
+   "filename": "child-infinite-light 44",
    "frame": {
     "x": 1536,
     "y": 696,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 45",
+   "filename": "child-infinite-light 45",
    "frame": {
     "x": 1728,
     "y": 696,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 46",
+   "filename": "child-infinite-light 46",
    "frame": {
     "x": 1920,
     "y": 696,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 47",
+   "filename": "child-infinite-light 47",
    "frame": {
     "x": 2112,
     "y": 696,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 48",
+   "filename": "child-infinite-light 48",
    "frame": {
     "x": 0,
     "y": 928,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 49",
+   "filename": "child-infinite-light 49",
    "frame": {
     "x": 192,
     "y": 928,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 50",
+   "filename": "child-infinite-light 50",
    "frame": {
     "x": 384,
     "y": 928,
@@ -1123,7 +1123,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 51",
+   "filename": "child-infinite-light 51",
    "frame": {
     "x": 576,
     "y": 928,
@@ -1145,7 +1145,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 52",
+   "filename": "child-infinite-light 52",
    "frame": {
     "x": 768,
     "y": 928,
@@ -1167,7 +1167,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 53",
+   "filename": "child-infinite-light 53",
    "frame": {
     "x": 960,
     "y": 928,
@@ -1189,7 +1189,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 54",
+   "filename": "child-infinite-light 54",
    "frame": {
     "x": 1152,
     "y": 928,
@@ -1211,7 +1211,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 55",
+   "filename": "child-infinite-light 55",
    "frame": {
     "x": 1344,
     "y": 928,
@@ -1233,7 +1233,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 56",
+   "filename": "child-infinite-light 56",
    "frame": {
     "x": 1536,
     "y": 928,
@@ -1255,7 +1255,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 57",
+   "filename": "child-infinite-light 57",
    "frame": {
     "x": 1728,
     "y": 928,
@@ -1277,7 +1277,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 58",
+   "filename": "child-infinite-light 58",
    "frame": {
     "x": 1920,
     "y": 928,
@@ -1299,7 +1299,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 59",
+   "filename": "child-infinite-light 59",
    "frame": {
     "x": 2112,
     "y": 928,
@@ -1321,7 +1321,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 60",
+   "filename": "child-infinite-light 60",
    "frame": {
     "x": 0,
     "y": 1160,
@@ -1343,7 +1343,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 61",
+   "filename": "child-infinite-light 61",
    "frame": {
     "x": 192,
     "y": 1160,
@@ -1365,7 +1365,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 62",
+   "filename": "child-infinite-light 62",
    "frame": {
     "x": 384,
     "y": 1160,
@@ -1387,7 +1387,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 63",
+   "filename": "child-infinite-light 63",
    "frame": {
     "x": 576,
     "y": 1160,
@@ -1409,7 +1409,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 64",
+   "filename": "child-infinite-light 64",
    "frame": {
     "x": 768,
     "y": 1160,
@@ -1431,7 +1431,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 65",
+   "filename": "child-infinite-light 65",
    "frame": {
     "x": 960,
     "y": 1160,
@@ -1453,7 +1453,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 66",
+   "filename": "child-infinite-light 66",
    "frame": {
     "x": 1152,
     "y": 1160,
@@ -1475,7 +1475,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 67",
+   "filename": "child-infinite-light 67",
    "frame": {
     "x": 1344,
     "y": 1160,
@@ -1497,7 +1497,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 68",
+   "filename": "child-infinite-light 68",
    "frame": {
     "x": 1536,
     "y": 1160,
@@ -1519,7 +1519,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 69",
+   "filename": "child-infinite-light 69",
    "frame": {
     "x": 1728,
     "y": 1160,
@@ -1541,7 +1541,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 70",
+   "filename": "child-infinite-light 70",
    "frame": {
     "x": 1920,
     "y": 1160,
@@ -1563,7 +1563,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 71",
+   "filename": "child-infinite-light 71",
    "frame": {
     "x": 2112,
     "y": 1160,
@@ -1585,7 +1585,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 72",
+   "filename": "child-infinite-light 72",
    "frame": {
     "x": 0,
     "y": 1392,
@@ -1607,7 +1607,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 73",
+   "filename": "child-infinite-light 73",
    "frame": {
     "x": 192,
     "y": 1392,
@@ -1629,7 +1629,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 74",
+   "filename": "child-infinite-light 74",
    "frame": {
     "x": 384,
     "y": 1392,
@@ -1651,7 +1651,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 75",
+   "filename": "child-infinite-light 75",
    "frame": {
     "x": 576,
     "y": 1392,
@@ -1673,7 +1673,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 76",
+   "filename": "child-infinite-light 76",
    "frame": {
     "x": 768,
     "y": 1392,
@@ -1695,7 +1695,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 77",
+   "filename": "child-infinite-light 77",
    "frame": {
     "x": 960,
     "y": 1392,
@@ -1717,7 +1717,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 78",
+   "filename": "child-infinite-light 78",
    "frame": {
     "x": 1152,
     "y": 1392,
@@ -1739,7 +1739,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 79",
+   "filename": "child-infinite-light 79",
    "frame": {
     "x": 1344,
     "y": 1392,
@@ -1761,7 +1761,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 80",
+   "filename": "child-infinite-light 80",
    "frame": {
     "x": 1536,
     "y": 1392,
@@ -1783,7 +1783,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 81",
+   "filename": "child-infinite-light 81",
    "frame": {
     "x": 1728,
     "y": 1392,
@@ -1805,7 +1805,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 82",
+   "filename": "child-infinite-light 82",
    "frame": {
     "x": 1920,
     "y": 1392,
@@ -1827,7 +1827,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 83",
+   "filename": "child-infinite-light 83",
    "frame": {
     "x": 2112,
     "y": 1392,
@@ -1849,7 +1849,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 84",
+   "filename": "child-infinite-light 84",
    "frame": {
     "x": 0,
     "y": 1624,
@@ -1871,7 +1871,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 85",
+   "filename": "child-infinite-light 85",
    "frame": {
     "x": 192,
     "y": 1624,
@@ -1893,7 +1893,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 86",
+   "filename": "child-infinite-light 86",
    "frame": {
     "x": 384,
     "y": 1624,
@@ -1915,7 +1915,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 87",
+   "filename": "child-infinite-light 87",
    "frame": {
     "x": 576,
     "y": 1624,
@@ -1937,7 +1937,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 88",
+   "filename": "child-infinite-light 88",
    "frame": {
     "x": 768,
     "y": 1624,
@@ -1959,7 +1959,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 89",
+   "filename": "child-infinite-light 89",
    "frame": {
     "x": 960,
     "y": 1624,
@@ -1981,7 +1981,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 90",
+   "filename": "child-infinite-light 90",
    "frame": {
     "x": 1152,
     "y": 1624,
@@ -2003,7 +2003,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 91",
+   "filename": "child-infinite-light 91",
    "frame": {
     "x": 1344,
     "y": 1624,
@@ -2025,7 +2025,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 92",
+   "filename": "child-infinite-light 92",
    "frame": {
     "x": 1536,
     "y": 1624,
@@ -2047,7 +2047,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 93",
+   "filename": "child-infinite-light 93",
    "frame": {
     "x": 1728,
     "y": 1624,
@@ -2069,7 +2069,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 94",
+   "filename": "child-infinite-light 94",
    "frame": {
     "x": 1920,
     "y": 1624,
@@ -2091,7 +2091,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 95",
+   "filename": "child-infinite-light 95",
    "frame": {
     "x": 2112,
     "y": 1624,
@@ -2113,7 +2113,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 96",
+   "filename": "child-infinite-light 96",
    "frame": {
     "x": 0,
     "y": 1856,
@@ -2135,7 +2135,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 97",
+   "filename": "child-infinite-light 97",
    "frame": {
     "x": 192,
     "y": 1856,
@@ -2157,7 +2157,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 98",
+   "filename": "child-infinite-light 98",
    "frame": {
     "x": 384,
     "y": 1856,
@@ -2179,7 +2179,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 99",
+   "filename": "child-infinite-light 99",
    "frame": {
     "x": 576,
     "y": 1856,
@@ -2201,7 +2201,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 100",
+   "filename": "child-infinite-light 100",
    "frame": {
     "x": 768,
     "y": 1856,
@@ -2223,7 +2223,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 101",
+   "filename": "child-infinite-light 101",
    "frame": {
     "x": 960,
     "y": 1856,
@@ -2245,7 +2245,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 102",
+   "filename": "child-infinite-light 102",
    "frame": {
     "x": 1152,
     "y": 1856,
@@ -2267,7 +2267,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 103",
+   "filename": "child-infinite-light 103",
    "frame": {
     "x": 1344,
     "y": 1856,
@@ -2289,7 +2289,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 104",
+   "filename": "child-infinite-light 104",
    "frame": {
     "x": 1536,
     "y": 1856,
@@ -2311,7 +2311,7 @@
    "duration": 33
   },
   {
-   "filename": "holy-pillar 105",
+   "filename": "child-infinite-light 105",
    "frame": {
     "x": 1728,
     "y": 1856,
@@ -2345,15 +2345,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "holy-pillar",
+    "name": "child-infinite-light",
     "from": 0,
     "to": 105,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "holy/holy-pillar",
-   "name": "Holy pillar",
+   "id": "sd/child-infinite-light",
+   "name": "Infinite light",
    "fps": 30,
    "loop": false,
    "frames": 106,

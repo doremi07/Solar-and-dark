@@ -1,0 +1,703 @@
+{
+ "frames": [
+  {
+   "filename": "child-cast 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 1",
+   "frame": {
+    "x": 108,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 2",
+   "frame": {
+    "x": 216,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 3",
+   "frame": {
+    "x": 324,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 4",
+   "frame": {
+    "x": 432,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 5",
+   "frame": {
+    "x": 540,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 6",
+   "frame": {
+    "x": 0,
+    "y": 96,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 7",
+   "frame": {
+    "x": 108,
+    "y": 96,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 8",
+   "frame": {
+    "x": 216,
+    "y": 96,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 9",
+   "frame": {
+    "x": 324,
+    "y": 96,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 10",
+   "frame": {
+    "x": 432,
+    "y": 96,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 11",
+   "frame": {
+    "x": 540,
+    "y": 96,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 12",
+   "frame": {
+    "x": 0,
+    "y": 192,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 13",
+   "frame": {
+    "x": 108,
+    "y": 192,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 14",
+   "frame": {
+    "x": 216,
+    "y": 192,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 15",
+   "frame": {
+    "x": 324,
+    "y": 192,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 16",
+   "frame": {
+    "x": 432,
+    "y": 192,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 17",
+   "frame": {
+    "x": 540,
+    "y": 192,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 18",
+   "frame": {
+    "x": 0,
+    "y": 288,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 19",
+   "frame": {
+    "x": 108,
+    "y": 288,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 20",
+   "frame": {
+    "x": 216,
+    "y": 288,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 21",
+   "frame": {
+    "x": 324,
+    "y": 288,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 22",
+   "frame": {
+    "x": 432,
+    "y": 288,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 23",
+   "frame": {
+    "x": 540,
+    "y": 288,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 24",
+   "frame": {
+    "x": 0,
+    "y": 384,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 25",
+   "frame": {
+    "x": 108,
+    "y": 384,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 26",
+   "frame": {
+    "x": 216,
+    "y": 384,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 27",
+   "frame": {
+    "x": 324,
+    "y": 384,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 28",
+   "frame": {
+    "x": 432,
+    "y": 384,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  },
+  {
+   "filename": "child-cast 29",
+   "frame": {
+    "x": 540,
+    "y": 384,
+    "w": 108,
+    "h": 96
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 108,
+    "h": 96
+   },
+   "sourceSize": {
+    "w": 108,
+    "h": 96
+   },
+   "duration": 33
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "child-p3-cast.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 648,
+   "h": 480
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "child-cast",
+    "from": 0,
+    "to": 29,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "sd/child-cast",
+   "name": "The Hidden Child (cast)",
+   "fps": 30,
+   "loop": true,
+   "frames": 30,
+   "frameSize": [
+    108,
+    96
+   ],
+   "pivot": [
+    54,
+    92
+   ],
+   "columns": 6,
+   "version": "0.3.1",
+   "options": {
+    "phase": 3
+   }
+  }
+ }
+}

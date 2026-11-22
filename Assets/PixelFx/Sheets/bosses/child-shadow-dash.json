@@ -1,530 +1,530 @@
 {
  "frames": [
   {
-   "filename": "thrust 0",
+   "filename": "child-shadow-dash 0",
    "frame": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 1",
+   "filename": "child-shadow-dash 1",
    "frame": {
-    "x": 196,
+    "x": 228,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 2",
+   "filename": "child-shadow-dash 2",
    "frame": {
-    "x": 392,
+    "x": 456,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 3",
+   "filename": "child-shadow-dash 3",
    "frame": {
-    "x": 588,
-    "y": 0,
-    "w": 196,
-    "h": 76
+    "x": 0,
+    "y": 84,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 4",
+   "filename": "child-shadow-dash 4",
    "frame": {
-    "x": 0,
-    "y": 76,
-    "w": 196,
-    "h": 76
+    "x": 228,
+    "y": 84,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 5",
+   "filename": "child-shadow-dash 5",
    "frame": {
-    "x": 196,
-    "y": 76,
-    "w": 196,
-    "h": 76
+    "x": 456,
+    "y": 84,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 6",
+   "filename": "child-shadow-dash 6",
    "frame": {
-    "x": 392,
-    "y": 76,
-    "w": 196,
-    "h": 76
+    "x": 0,
+    "y": 168,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 7",
+   "filename": "child-shadow-dash 7",
    "frame": {
-    "x": 588,
-    "y": 76,
-    "w": 196,
-    "h": 76
+    "x": 228,
+    "y": 168,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 8",
+   "filename": "child-shadow-dash 8",
    "frame": {
-    "x": 0,
-    "y": 152,
-    "w": 196,
-    "h": 76
+    "x": 456,
+    "y": 168,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 9",
+   "filename": "child-shadow-dash 9",
    "frame": {
-    "x": 196,
-    "y": 152,
-    "w": 196,
-    "h": 76
+    "x": 0,
+    "y": 252,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 10",
+   "filename": "child-shadow-dash 10",
    "frame": {
-    "x": 392,
-    "y": 152,
-    "w": 196,
-    "h": 76
+    "x": 228,
+    "y": 252,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 11",
+   "filename": "child-shadow-dash 11",
    "frame": {
-    "x": 588,
-    "y": 152,
-    "w": 196,
-    "h": 76
+    "x": 456,
+    "y": 252,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 12",
+   "filename": "child-shadow-dash 12",
    "frame": {
     "x": 0,
-    "y": 228,
-    "w": 196,
-    "h": 76
+    "y": 336,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 13",
+   "filename": "child-shadow-dash 13",
    "frame": {
-    "x": 196,
-    "y": 228,
-    "w": 196,
-    "h": 76
+    "x": 228,
+    "y": 336,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 14",
+   "filename": "child-shadow-dash 14",
    "frame": {
-    "x": 392,
-    "y": 228,
-    "w": 196,
-    "h": 76
+    "x": 456,
+    "y": 336,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 15",
+   "filename": "child-shadow-dash 15",
    "frame": {
-    "x": 588,
-    "y": 228,
-    "w": 196,
-    "h": 76
+    "x": 0,
+    "y": 420,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 16",
+   "filename": "child-shadow-dash 16",
    "frame": {
-    "x": 0,
-    "y": 304,
-    "w": 196,
-    "h": 76
+    "x": 228,
+    "y": 420,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 17",
+   "filename": "child-shadow-dash 17",
    "frame": {
-    "x": 196,
-    "y": 304,
-    "w": 196,
-    "h": 76
+    "x": 456,
+    "y": 420,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 18",
+   "filename": "child-shadow-dash 18",
    "frame": {
-    "x": 392,
-    "y": 304,
-    "w": 196,
-    "h": 76
+    "x": 0,
+    "y": 504,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 19",
+   "filename": "child-shadow-dash 19",
    "frame": {
-    "x": 588,
-    "y": 304,
-    "w": 196,
-    "h": 76
+    "x": 228,
+    "y": 504,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 20",
+   "filename": "child-shadow-dash 20",
    "frame": {
-    "x": 0,
-    "y": 380,
-    "w": 196,
-    "h": 76
+    "x": 456,
+    "y": 504,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 21",
+   "filename": "child-shadow-dash 21",
    "frame": {
-    "x": 196,
-    "y": 380,
-    "w": 196,
-    "h": 76
+    "x": 0,
+    "y": 588,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 22",
+   "filename": "child-shadow-dash 22",
    "frame": {
-    "x": 392,
-    "y": 380,
-    "w": 196,
-    "h": 76
+    "x": 228,
+    "y": 588,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   },
   {
-   "filename": "thrust 23",
+   "filename": "child-shadow-dash 23",
    "frame": {
-    "x": 588,
-    "y": 380,
-    "w": 196,
-    "h": 76
+    "x": 456,
+    "y": 588,
+    "w": 228,
+    "h": 84
    },
    "rotated": false,
    "trimmed": false,
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "sourceSize": {
-    "w": 196,
-    "h": 76
+    "w": 228,
+    "h": 84
    },
    "duration": 33
   }
@@ -535,33 +535,33 @@
   "image": "child-shadow-dash.png",
   "format": "RGBA8888",
   "size": {
-   "w": 784,
-   "h": 456
+   "w": 684,
+   "h": 672
   },
   "scale": "1",
   "frameTags": [
    {
-    "name": "thrust",
+    "name": "child-shadow-dash",
     "from": 0,
     "to": 23,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "melee/thrust",
-   "name": "Thrust",
+   "id": "sd/child-shadow-dash",
+   "name": "Shadow dash",
    "fps": 30,
    "loop": false,
    "frames": 24,
    "frameSize": [
-    196,
-    76
+    228,
+    84
    ],
    "pivot": [
     34,
-    62
+    66
    ],
-   "columns": 4,
+   "columns": 3,
    "act": {
     "windup": 0.46,
     "recovery": 0,
@@ -715,12 +715,6 @@
      "#9a82c8",
      "#d2c4ee",
      "#fbf6ff"
-    ],
-    "sparks": [
-     "#fbf6ff",
-     "#d2c4ee",
-     "#9a82c8",
-     "#6a4f9a"
     ]
    }
   }

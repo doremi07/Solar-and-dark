@@ -53,6 +53,8 @@ static class Program
         var shown = new HashSet<BossSkill>();
         var log = new List<string>();
         int frame = 0;
+        bool trace = Environment.GetEnvironmentVariable("SIM_TRACE") == "1";
+        BossSkill lastCast = null;
         float clock = 0;
 
         void Run(float seconds, Func<bool> until = null)
@@ -63,6 +65,11 @@ static class Program
                 Engine.Tick(Dt);
                 clock += Dt;
                 if (playerHp.Fraction < 0.25f) playerHp.ResetFull();   // keep the stand-in alive for the whole reel
+                if (trace && boss.Casting != lastCast)
+                {
+                    Console.Error.WriteLine($"trace clock={clock:F2} time={Time.time:F2} scale={Time.timeScale} casting={boss.Casting?.id ?? "-"}");
+                    lastCast = boss.Casting;
+                }
                 if (frame++ % 2 == 0) Emit(boss, playerHp, cam);
             }
         }
@@ -80,6 +87,7 @@ static class Program
             foreach (var s in def.phases[p].skills)
             {
                 if (!shown.Add(s)) continue;
+                Run(8f, () => boss.Casting == null);   // let whatever the AI picked finish, or the forced cast queues behind it
                 boss.ForceNext(s);
                 Run(6f, () => boss.Casting == s);
                 float start = clock;

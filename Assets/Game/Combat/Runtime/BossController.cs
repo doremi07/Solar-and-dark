@@ -30,6 +30,7 @@ namespace SolarDark.Combat
 
         Health health;
         Animator animator;
+        BossBody bossBody;
         PixelFxPlayer halo;
         readonly Dictionary<BossSkill, float> readyAt = new Dictionary<BossSkill, float>();
         System.Random rng;
@@ -47,6 +48,7 @@ namespace SolarDark.Combat
             {
                 facing = value >= 0 ? 1 : -1;
                 if (body != null) body.flipX = facing < 0;
+                if (halo != null && definition != null) halo.transform.localPosition = new Vector3(definition.haloOffset.x * facing, definition.haloOffset.y, 0);
             }
         }
         public SpriteRenderer Body => body;
@@ -60,6 +62,7 @@ namespace SolarDark.Combat
             health = GetComponent<Health>();
             animator = GetComponentInChildren<Animator>();
             if (body == null) body = GetComponentInChildren<SpriteRenderer>();
+            bossBody = body != null ? body.GetComponent<BossBody>() : null;
             rng = new System.Random(seed);
             if (definition != null)
             {
@@ -136,6 +139,7 @@ namespace SolarDark.Combat
             Casting = skill;
             readyAt[skill] = Time.time + skill.windup + skill.cooldown;
             onSkill.Invoke(skill);
+            if (bossBody != null) bossBody.PlayCast(skill.windup);
             if (animator != null && !string.IsNullOrEmpty(skill.animTrigger)) animator.SetTrigger(skill.animTrigger);
             yield return SkillRunner.Run(skill, this, seed + 7919 * ++casts);
             Casting = null;
@@ -185,11 +189,12 @@ namespace SolarDark.Combat
             var p = CurrentPhase;
             if (p == null) return;
             if (body != null) body.color = p.bodyTint;
+            if (bossBody != null && p.idleSheet != null) bossBody.SetSheets(p.idleSheet, p.castSheet);
             if (halo != null) Destroy(halo.gameObject);
             if (p.halo != null)
             {
                 halo = PixelFxPlayer.Spawn(p.halo, transform.position + (Vector3)definition.haloOffset, false, transform);
-                halo.transform.localPosition = definition.haloOffset;
+                halo.transform.localPosition = new Vector3(definition.haloOffset.x * facing, definition.haloOffset.y, 0);
                 var sr = halo.GetComponent<SpriteRenderer>();
                 sr.color = p.haloTint;
                 sr.sortingOrder = (body != null ? body.sortingOrder : 10) - 1;

@@ -9,7 +9,8 @@ Each file gets:
   - a slice "origin" covering the canvas whose pivot is the effect's origin (feet / impact point), and whose user
     data holds the sheet's meta.pixelfx as JSON (id, fps, loop, act timing...), so an Aseprite export of the edited
     file goes straight back into Unity (see docs/pixelfx-aseprite.md)
-  - the effect's palette ramp as the sprite palette, when the manifest names one
+  - the effect's palette ramp as the sprite palette when the manifest names one, else the sheet's own opaque
+    colors (up to 64, dark to light)
 
 Format: https://github.com/aseprite/aseprite/blob/main/docs/ase-file-specs.md (written as version 1.3).
 Uses only the standard library plus Pillow for reading the PNG.
@@ -93,6 +94,17 @@ def hex_rgba(s):
     return (int(s[0:2], 16), int(s[2:4], 16), int(s[4:6], 16), 255)
 
 
+def auto_palette(sheet, limit=64):
+    """The sheet's own opaque colors, most used first (capped), then ordered dark to light: the colors a character
+    is painted with, ready in Aseprite's palette."""
+    counts = {}
+    for r, g, b, a in sheet.getdata():
+        if a == 255:
+            counts[(r, g, b)] = counts.get((r, g, b), 0) + 1
+    top = sorted(counts, key=counts.get, reverse=True)[:limit]
+    return [(r, g, b, 255) for (r, g, b) in sorted(top, key=lambda c: 0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2])]
+
+
 def convert(json_path, out_dir, ramp=None):
     meta_all = json.load(open(json_path, encoding="utf-8"))
     meta = meta_all["meta"]
@@ -106,7 +118,7 @@ def convert(json_path, out_dir, ramp=None):
     name = os.path.splitext(os.path.basename(json_path))[0]
 
     first = [color_profile()]
-    colors = [hex_rgba(c) for c in ramp] if ramp else []
+    colors = [hex_rgba(c) for c in ramp] if ramp else auto_palette(sheet)
     if colors:
         first.append(palette(colors))
     first.append(layer(name))

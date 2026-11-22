@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "shadow-chains 0",
+   "filename": "serena-shadow-chains 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 1",
+   "filename": "serena-shadow-chains 1",
    "frame": {
     "x": 176,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 2",
+   "filename": "serena-shadow-chains 2",
    "frame": {
     "x": 352,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 3",
+   "filename": "serena-shadow-chains 3",
    "frame": {
     "x": 528,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 4",
+   "filename": "serena-shadow-chains 4",
    "frame": {
     "x": 704,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 5",
+   "filename": "serena-shadow-chains 5",
    "frame": {
     "x": 880,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 6",
+   "filename": "serena-shadow-chains 6",
    "frame": {
     "x": 1056,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 7",
+   "filename": "serena-shadow-chains 7",
    "frame": {
     "x": 1232,
     "y": 0,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 8",
+   "filename": "serena-shadow-chains 8",
    "frame": {
     "x": 1408,
     "y": 0,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 9",
+   "filename": "serena-shadow-chains 9",
    "frame": {
     "x": 0,
     "y": 120,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 10",
+   "filename": "serena-shadow-chains 10",
    "frame": {
     "x": 176,
     "y": 120,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 11",
+   "filename": "serena-shadow-chains 11",
    "frame": {
     "x": 352,
     "y": 120,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 12",
+   "filename": "serena-shadow-chains 12",
    "frame": {
     "x": 528,
     "y": 120,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 13",
+   "filename": "serena-shadow-chains 13",
    "frame": {
     "x": 704,
     "y": 120,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 14",
+   "filename": "serena-shadow-chains 14",
    "frame": {
     "x": 880,
     "y": 120,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 15",
+   "filename": "serena-shadow-chains 15",
    "frame": {
     "x": 1056,
     "y": 120,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 16",
+   "filename": "serena-shadow-chains 16",
    "frame": {
     "x": 1232,
     "y": 120,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 17",
+   "filename": "serena-shadow-chains 17",
    "frame": {
     "x": 1408,
     "y": 120,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 18",
+   "filename": "serena-shadow-chains 18",
    "frame": {
     "x": 0,
     "y": 240,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 19",
+   "filename": "serena-shadow-chains 19",
    "frame": {
     "x": 176,
     "y": 240,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 20",
+   "filename": "serena-shadow-chains 20",
    "frame": {
     "x": 352,
     "y": 240,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 21",
+   "filename": "serena-shadow-chains 21",
    "frame": {
     "x": 528,
     "y": 240,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 22",
+   "filename": "serena-shadow-chains 22",
    "frame": {
     "x": 704,
     "y": 240,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 23",
+   "filename": "serena-shadow-chains 23",
    "frame": {
     "x": 880,
     "y": 240,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 24",
+   "filename": "serena-shadow-chains 24",
    "frame": {
     "x": 1056,
     "y": 240,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 25",
+   "filename": "serena-shadow-chains 25",
    "frame": {
     "x": 1232,
     "y": 240,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 26",
+   "filename": "serena-shadow-chains 26",
    "frame": {
     "x": 1408,
     "y": 240,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 27",
+   "filename": "serena-shadow-chains 27",
    "frame": {
     "x": 0,
     "y": 360,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 28",
+   "filename": "serena-shadow-chains 28",
    "frame": {
     "x": 176,
     "y": 360,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 29",
+   "filename": "serena-shadow-chains 29",
    "frame": {
     "x": 352,
     "y": 360,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 30",
+   "filename": "serena-shadow-chains 30",
    "frame": {
     "x": 528,
     "y": 360,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 31",
+   "filename": "serena-shadow-chains 31",
    "frame": {
     "x": 704,
     "y": 360,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 32",
+   "filename": "serena-shadow-chains 32",
    "frame": {
     "x": 880,
     "y": 360,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 33",
+   "filename": "serena-shadow-chains 33",
    "frame": {
     "x": 1056,
     "y": 360,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 34",
+   "filename": "serena-shadow-chains 34",
    "frame": {
     "x": 1232,
     "y": 360,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 35",
+   "filename": "serena-shadow-chains 35",
    "frame": {
     "x": 1408,
     "y": 360,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 36",
+   "filename": "serena-shadow-chains 36",
    "frame": {
     "x": 0,
     "y": 480,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 37",
+   "filename": "serena-shadow-chains 37",
    "frame": {
     "x": 176,
     "y": 480,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 38",
+   "filename": "serena-shadow-chains 38",
    "frame": {
     "x": 352,
     "y": 480,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 39",
+   "filename": "serena-shadow-chains 39",
    "frame": {
     "x": 528,
     "y": 480,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 40",
+   "filename": "serena-shadow-chains 40",
    "frame": {
     "x": 704,
     "y": 480,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 41",
+   "filename": "serena-shadow-chains 41",
    "frame": {
     "x": 880,
     "y": 480,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 42",
+   "filename": "serena-shadow-chains 42",
    "frame": {
     "x": 1056,
     "y": 480,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 43",
+   "filename": "serena-shadow-chains 43",
    "frame": {
     "x": 1232,
     "y": 480,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 44",
+   "filename": "serena-shadow-chains 44",
    "frame": {
     "x": 1408,
     "y": 480,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 45",
+   "filename": "serena-shadow-chains 45",
    "frame": {
     "x": 0,
     "y": 600,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 46",
+   "filename": "serena-shadow-chains 46",
    "frame": {
     "x": 176,
     "y": 600,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 47",
+   "filename": "serena-shadow-chains 47",
    "frame": {
     "x": 352,
     "y": 600,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 48",
+   "filename": "serena-shadow-chains 48",
    "frame": {
     "x": 528,
     "y": 600,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 49",
+   "filename": "serena-shadow-chains 49",
    "frame": {
     "x": 704,
     "y": 600,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 50",
+   "filename": "serena-shadow-chains 50",
    "frame": {
     "x": 880,
     "y": 600,
@@ -1123,7 +1123,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 51",
+   "filename": "serena-shadow-chains 51",
    "frame": {
     "x": 1056,
     "y": 600,
@@ -1145,7 +1145,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 52",
+   "filename": "serena-shadow-chains 52",
    "frame": {
     "x": 1232,
     "y": 600,
@@ -1167,7 +1167,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 53",
+   "filename": "serena-shadow-chains 53",
    "frame": {
     "x": 1408,
     "y": 600,
@@ -1189,7 +1189,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 54",
+   "filename": "serena-shadow-chains 54",
    "frame": {
     "x": 0,
     "y": 720,
@@ -1211,7 +1211,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 55",
+   "filename": "serena-shadow-chains 55",
    "frame": {
     "x": 176,
     "y": 720,
@@ -1233,7 +1233,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 56",
+   "filename": "serena-shadow-chains 56",
    "frame": {
     "x": 352,
     "y": 720,
@@ -1255,7 +1255,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 57",
+   "filename": "serena-shadow-chains 57",
    "frame": {
     "x": 528,
     "y": 720,
@@ -1277,7 +1277,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 58",
+   "filename": "serena-shadow-chains 58",
    "frame": {
     "x": 704,
     "y": 720,
@@ -1299,7 +1299,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 59",
+   "filename": "serena-shadow-chains 59",
    "frame": {
     "x": 880,
     "y": 720,
@@ -1321,7 +1321,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 60",
+   "filename": "serena-shadow-chains 60",
    "frame": {
     "x": 1056,
     "y": 720,
@@ -1343,7 +1343,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 61",
+   "filename": "serena-shadow-chains 61",
    "frame": {
     "x": 1232,
     "y": 720,
@@ -1365,7 +1365,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 62",
+   "filename": "serena-shadow-chains 62",
    "frame": {
     "x": 1408,
     "y": 720,
@@ -1387,7 +1387,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 63",
+   "filename": "serena-shadow-chains 63",
    "frame": {
     "x": 0,
     "y": 840,
@@ -1409,7 +1409,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 64",
+   "filename": "serena-shadow-chains 64",
    "frame": {
     "x": 176,
     "y": 840,
@@ -1431,7 +1431,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 65",
+   "filename": "serena-shadow-chains 65",
    "frame": {
     "x": 352,
     "y": 840,
@@ -1453,7 +1453,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 66",
+   "filename": "serena-shadow-chains 66",
    "frame": {
     "x": 528,
     "y": 840,
@@ -1475,7 +1475,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 67",
+   "filename": "serena-shadow-chains 67",
    "frame": {
     "x": 704,
     "y": 840,
@@ -1497,7 +1497,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 68",
+   "filename": "serena-shadow-chains 68",
    "frame": {
     "x": 880,
     "y": 840,
@@ -1519,7 +1519,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 69",
+   "filename": "serena-shadow-chains 69",
    "frame": {
     "x": 1056,
     "y": 840,
@@ -1541,7 +1541,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 70",
+   "filename": "serena-shadow-chains 70",
    "frame": {
     "x": 1232,
     "y": 840,
@@ -1563,7 +1563,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 71",
+   "filename": "serena-shadow-chains 71",
    "frame": {
     "x": 1408,
     "y": 840,
@@ -1585,7 +1585,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 72",
+   "filename": "serena-shadow-chains 72",
    "frame": {
     "x": 0,
     "y": 960,
@@ -1607,7 +1607,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 73",
+   "filename": "serena-shadow-chains 73",
    "frame": {
     "x": 176,
     "y": 960,
@@ -1629,7 +1629,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 74",
+   "filename": "serena-shadow-chains 74",
    "frame": {
     "x": 352,
     "y": 960,
@@ -1651,7 +1651,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 75",
+   "filename": "serena-shadow-chains 75",
    "frame": {
     "x": 528,
     "y": 960,
@@ -1673,7 +1673,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 76",
+   "filename": "serena-shadow-chains 76",
    "frame": {
     "x": 704,
     "y": 960,
@@ -1695,7 +1695,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 77",
+   "filename": "serena-shadow-chains 77",
    "frame": {
     "x": 880,
     "y": 960,
@@ -1717,7 +1717,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 78",
+   "filename": "serena-shadow-chains 78",
    "frame": {
     "x": 1056,
     "y": 960,
@@ -1739,7 +1739,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 79",
+   "filename": "serena-shadow-chains 79",
    "frame": {
     "x": 1232,
     "y": 960,
@@ -1761,7 +1761,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 80",
+   "filename": "serena-shadow-chains 80",
    "frame": {
     "x": 1408,
     "y": 960,
@@ -1783,7 +1783,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 81",
+   "filename": "serena-shadow-chains 81",
    "frame": {
     "x": 0,
     "y": 1080,
@@ -1805,7 +1805,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 82",
+   "filename": "serena-shadow-chains 82",
    "frame": {
     "x": 176,
     "y": 1080,
@@ -1827,7 +1827,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 83",
+   "filename": "serena-shadow-chains 83",
    "frame": {
     "x": 352,
     "y": 1080,
@@ -1849,7 +1849,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 84",
+   "filename": "serena-shadow-chains 84",
    "frame": {
     "x": 528,
     "y": 1080,
@@ -1871,7 +1871,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 85",
+   "filename": "serena-shadow-chains 85",
    "frame": {
     "x": 704,
     "y": 1080,
@@ -1893,7 +1893,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 86",
+   "filename": "serena-shadow-chains 86",
    "frame": {
     "x": 880,
     "y": 1080,
@@ -1915,7 +1915,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 87",
+   "filename": "serena-shadow-chains 87",
    "frame": {
     "x": 1056,
     "y": 1080,
@@ -1937,7 +1937,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 88",
+   "filename": "serena-shadow-chains 88",
    "frame": {
     "x": 1232,
     "y": 1080,
@@ -1959,7 +1959,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 89",
+   "filename": "serena-shadow-chains 89",
    "frame": {
     "x": 1408,
     "y": 1080,
@@ -1981,7 +1981,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 90",
+   "filename": "serena-shadow-chains 90",
    "frame": {
     "x": 0,
     "y": 1200,
@@ -2003,7 +2003,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 91",
+   "filename": "serena-shadow-chains 91",
    "frame": {
     "x": 176,
     "y": 1200,
@@ -2025,7 +2025,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 92",
+   "filename": "serena-shadow-chains 92",
    "frame": {
     "x": 352,
     "y": 1200,
@@ -2047,7 +2047,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 93",
+   "filename": "serena-shadow-chains 93",
    "frame": {
     "x": 528,
     "y": 1200,
@@ -2069,7 +2069,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 94",
+   "filename": "serena-shadow-chains 94",
    "frame": {
     "x": 704,
     "y": 1200,
@@ -2091,7 +2091,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 95",
+   "filename": "serena-shadow-chains 95",
    "frame": {
     "x": 880,
     "y": 1200,
@@ -2113,7 +2113,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-chains 96",
+   "filename": "serena-shadow-chains 96",
    "frame": {
     "x": 1056,
     "y": 1200,
@@ -2147,14 +2147,14 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "shadow-chains",
+    "name": "serena-shadow-chains",
     "from": 0,
     "to": 96,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "shadow/shadow-chains",
+   "id": "sd/serena-shadow-chains",
    "name": "Shadow chains",
    "fps": 30,
    "loop": false,

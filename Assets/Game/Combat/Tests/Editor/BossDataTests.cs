@@ -28,7 +28,13 @@ public class BossDataTests
             Assert.Greater(d.phases[1].enterAtHp, d.phases[2].enterAtHp);
             Assert.AreEqual(2, d.PhaseFor(0.1f));
             Assert.AreEqual(0, d.PhaseFor(1f));
-            foreach (var p in d.phases) Assert.NotNull(p.halo, $"{d.displayName} {p.name} halo");
+            foreach (var p in d.phases)
+            {
+                Assert.NotNull(p.halo, $"{d.displayName} {p.name} halo");
+                Assert.NotNull(p.idleSheet, $"{d.displayName} {p.name} idle body");
+                Assert.NotNull(p.castSheet, $"{d.displayName} {p.name} cast body");
+                Assert.IsTrue(p.idleSheet.data.loop, $"{d.displayName} {p.name} idle loops");
+            }
         }
     }
 

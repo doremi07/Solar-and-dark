@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "smite 0",
+   "filename": "serena-judgment 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 1",
+   "filename": "serena-judgment 1",
    "frame": {
     "x": 224,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 2",
+   "filename": "serena-judgment 2",
    "frame": {
     "x": 448,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 3",
+   "filename": "serena-judgment 3",
    "frame": {
     "x": 672,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 4",
+   "filename": "serena-judgment 4",
    "frame": {
     "x": 896,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 5",
+   "filename": "serena-judgment 5",
    "frame": {
     "x": 1120,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 6",
+   "filename": "serena-judgment 6",
    "frame": {
     "x": 1344,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 7",
+   "filename": "serena-judgment 7",
    "frame": {
     "x": 1568,
     "y": 0,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 8",
+   "filename": "serena-judgment 8",
    "frame": {
     "x": 1792,
     "y": 0,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 9",
+   "filename": "serena-judgment 9",
    "frame": {
     "x": 0,
     "y": 176,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 10",
+   "filename": "serena-judgment 10",
    "frame": {
     "x": 224,
     "y": 176,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 11",
+   "filename": "serena-judgment 11",
    "frame": {
     "x": 448,
     "y": 176,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 12",
+   "filename": "serena-judgment 12",
    "frame": {
     "x": 672,
     "y": 176,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 13",
+   "filename": "serena-judgment 13",
    "frame": {
     "x": 896,
     "y": 176,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 14",
+   "filename": "serena-judgment 14",
    "frame": {
     "x": 1120,
     "y": 176,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 15",
+   "filename": "serena-judgment 15",
    "frame": {
     "x": 1344,
     "y": 176,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 16",
+   "filename": "serena-judgment 16",
    "frame": {
     "x": 1568,
     "y": 176,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 17",
+   "filename": "serena-judgment 17",
    "frame": {
     "x": 1792,
     "y": 176,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 18",
+   "filename": "serena-judgment 18",
    "frame": {
     "x": 0,
     "y": 352,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 19",
+   "filename": "serena-judgment 19",
    "frame": {
     "x": 224,
     "y": 352,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 20",
+   "filename": "serena-judgment 20",
    "frame": {
     "x": 448,
     "y": 352,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 21",
+   "filename": "serena-judgment 21",
    "frame": {
     "x": 672,
     "y": 352,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 22",
+   "filename": "serena-judgment 22",
    "frame": {
     "x": 896,
     "y": 352,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 23",
+   "filename": "serena-judgment 23",
    "frame": {
     "x": 1120,
     "y": 352,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 24",
+   "filename": "serena-judgment 24",
    "frame": {
     "x": 1344,
     "y": 352,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 25",
+   "filename": "serena-judgment 25",
    "frame": {
     "x": 1568,
     "y": 352,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 26",
+   "filename": "serena-judgment 26",
    "frame": {
     "x": 1792,
     "y": 352,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 27",
+   "filename": "serena-judgment 27",
    "frame": {
     "x": 0,
     "y": 528,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 28",
+   "filename": "serena-judgment 28",
    "frame": {
     "x": 224,
     "y": 528,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 29",
+   "filename": "serena-judgment 29",
    "frame": {
     "x": 448,
     "y": 528,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 30",
+   "filename": "serena-judgment 30",
    "frame": {
     "x": 672,
     "y": 528,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 31",
+   "filename": "serena-judgment 31",
    "frame": {
     "x": 896,
     "y": 528,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 32",
+   "filename": "serena-judgment 32",
    "frame": {
     "x": 1120,
     "y": 528,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 33",
+   "filename": "serena-judgment 33",
    "frame": {
     "x": 1344,
     "y": 528,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 34",
+   "filename": "serena-judgment 34",
    "frame": {
     "x": 1568,
     "y": 528,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 35",
+   "filename": "serena-judgment 35",
    "frame": {
     "x": 1792,
     "y": 528,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 36",
+   "filename": "serena-judgment 36",
    "frame": {
     "x": 0,
     "y": 704,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 37",
+   "filename": "serena-judgment 37",
    "frame": {
     "x": 224,
     "y": 704,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 38",
+   "filename": "serena-judgment 38",
    "frame": {
     "x": 448,
     "y": 704,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 39",
+   "filename": "serena-judgment 39",
    "frame": {
     "x": 672,
     "y": 704,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 40",
+   "filename": "serena-judgment 40",
    "frame": {
     "x": 896,
     "y": 704,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 41",
+   "filename": "serena-judgment 41",
    "frame": {
     "x": 1120,
     "y": 704,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 42",
+   "filename": "serena-judgment 42",
    "frame": {
     "x": 1344,
     "y": 704,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 43",
+   "filename": "serena-judgment 43",
    "frame": {
     "x": 1568,
     "y": 704,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 44",
+   "filename": "serena-judgment 44",
    "frame": {
     "x": 1792,
     "y": 704,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 45",
+   "filename": "serena-judgment 45",
    "frame": {
     "x": 0,
     "y": 880,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 46",
+   "filename": "serena-judgment 46",
    "frame": {
     "x": 224,
     "y": 880,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 47",
+   "filename": "serena-judgment 47",
    "frame": {
     "x": 448,
     "y": 880,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 48",
+   "filename": "serena-judgment 48",
    "frame": {
     "x": 672,
     "y": 880,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 49",
+   "filename": "serena-judgment 49",
    "frame": {
     "x": 896,
     "y": 880,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 50",
+   "filename": "serena-judgment 50",
    "frame": {
     "x": 1120,
     "y": 880,
@@ -1123,7 +1123,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 51",
+   "filename": "serena-judgment 51",
    "frame": {
     "x": 1344,
     "y": 880,
@@ -1145,7 +1145,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 52",
+   "filename": "serena-judgment 52",
    "frame": {
     "x": 1568,
     "y": 880,
@@ -1167,7 +1167,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 53",
+   "filename": "serena-judgment 53",
    "frame": {
     "x": 1792,
     "y": 880,
@@ -1189,7 +1189,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 54",
+   "filename": "serena-judgment 54",
    "frame": {
     "x": 0,
     "y": 1056,
@@ -1211,7 +1211,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 55",
+   "filename": "serena-judgment 55",
    "frame": {
     "x": 224,
     "y": 1056,
@@ -1233,7 +1233,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 56",
+   "filename": "serena-judgment 56",
    "frame": {
     "x": 448,
     "y": 1056,
@@ -1255,7 +1255,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 57",
+   "filename": "serena-judgment 57",
    "frame": {
     "x": 672,
     "y": 1056,
@@ -1277,7 +1277,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 58",
+   "filename": "serena-judgment 58",
    "frame": {
     "x": 896,
     "y": 1056,
@@ -1299,7 +1299,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 59",
+   "filename": "serena-judgment 59",
    "frame": {
     "x": 1120,
     "y": 1056,
@@ -1321,7 +1321,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 60",
+   "filename": "serena-judgment 60",
    "frame": {
     "x": 1344,
     "y": 1056,
@@ -1343,7 +1343,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 61",
+   "filename": "serena-judgment 61",
    "frame": {
     "x": 1568,
     "y": 1056,
@@ -1365,7 +1365,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 62",
+   "filename": "serena-judgment 62",
    "frame": {
     "x": 1792,
     "y": 1056,
@@ -1387,7 +1387,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 63",
+   "filename": "serena-judgment 63",
    "frame": {
     "x": 0,
     "y": 1232,
@@ -1409,7 +1409,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 64",
+   "filename": "serena-judgment 64",
    "frame": {
     "x": 224,
     "y": 1232,
@@ -1431,7 +1431,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 65",
+   "filename": "serena-judgment 65",
    "frame": {
     "x": 448,
     "y": 1232,
@@ -1453,7 +1453,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 66",
+   "filename": "serena-judgment 66",
    "frame": {
     "x": 672,
     "y": 1232,
@@ -1475,7 +1475,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 67",
+   "filename": "serena-judgment 67",
    "frame": {
     "x": 896,
     "y": 1232,
@@ -1497,7 +1497,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 68",
+   "filename": "serena-judgment 68",
    "frame": {
     "x": 1120,
     "y": 1232,
@@ -1519,7 +1519,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 69",
+   "filename": "serena-judgment 69",
    "frame": {
     "x": 1344,
     "y": 1232,
@@ -1541,7 +1541,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 70",
+   "filename": "serena-judgment 70",
    "frame": {
     "x": 1568,
     "y": 1232,
@@ -1563,7 +1563,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 71",
+   "filename": "serena-judgment 71",
    "frame": {
     "x": 1792,
     "y": 1232,
@@ -1585,7 +1585,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 72",
+   "filename": "serena-judgment 72",
    "frame": {
     "x": 0,
     "y": 1408,
@@ -1607,7 +1607,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 73",
+   "filename": "serena-judgment 73",
    "frame": {
     "x": 224,
     "y": 1408,
@@ -1629,7 +1629,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 74",
+   "filename": "serena-judgment 74",
    "frame": {
     "x": 448,
     "y": 1408,
@@ -1651,7 +1651,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 75",
+   "filename": "serena-judgment 75",
    "frame": {
     "x": 672,
     "y": 1408,
@@ -1673,7 +1673,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 76",
+   "filename": "serena-judgment 76",
    "frame": {
     "x": 896,
     "y": 1408,
@@ -1695,7 +1695,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 77",
+   "filename": "serena-judgment 77",
    "frame": {
     "x": 1120,
     "y": 1408,
@@ -1717,7 +1717,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 78",
+   "filename": "serena-judgment 78",
    "frame": {
     "x": 1344,
     "y": 1408,
@@ -1739,7 +1739,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 79",
+   "filename": "serena-judgment 79",
    "frame": {
     "x": 1568,
     "y": 1408,
@@ -1761,7 +1761,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 80",
+   "filename": "serena-judgment 80",
    "frame": {
     "x": 1792,
     "y": 1408,
@@ -1783,7 +1783,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 81",
+   "filename": "serena-judgment 81",
    "frame": {
     "x": 0,
     "y": 1584,
@@ -1805,7 +1805,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 82",
+   "filename": "serena-judgment 82",
    "frame": {
     "x": 224,
     "y": 1584,
@@ -1827,7 +1827,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 83",
+   "filename": "serena-judgment 83",
    "frame": {
     "x": 448,
     "y": 1584,
@@ -1849,7 +1849,7 @@
    "duration": 33
   },
   {
-   "filename": "smite 84",
+   "filename": "serena-judgment 84",
    "frame": {
     "x": 672,
     "y": 1584,
@@ -1883,15 +1883,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "smite",
+    "name": "serena-judgment",
     "from": 0,
     "to": 84,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "holy/smite",
-   "name": "Smite",
+   "id": "sd/serena-judgment",
+   "name": "Light of judgment",
    "fps": 30,
    "loop": false,
    "frames": 85,

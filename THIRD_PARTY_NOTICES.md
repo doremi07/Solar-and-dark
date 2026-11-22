@@ -45,6 +45,12 @@ pixelfx in turn adapts the following MIT-licensed work (from its `NOTICE.md`):
 - **Hollow Crown** by rehan-remade — `src/core/act.js` (poses on 12 fps steps, hit-stops, the springy target).
   https://github.com/rehan-remade/hollow-crown — Copyright (c) 2026 rehan-remade, MIT License.
 
+### Solar and Dark's own work on top of pixelfx
+
+`third_party/pixelfx/src/fx/sd/` (the boss effects' flourishes, `shadow/shadow-chains`, `holy/thorn-halo`, and the
+Serena / Hidden Child character drawings) is this project's own code. It imports and renders pixelfx's MIT-licensed
+core and effects, so the sheets rendered from it carry the pixelfx credit above.
+
 ### Not included
 
 The **Patch Pixel** typeface (`gallery/fonts/PatchPixel-Regular.woff2` upstream) is © Patch, all rights reserved,

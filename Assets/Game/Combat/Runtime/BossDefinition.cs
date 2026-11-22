@@ -15,6 +15,10 @@ namespace SolarDark.Combat
         [Tooltip("Cast once on entering the phase (while invulnerable).")]
         public BossSkill entrySkill;
         public PixelFxSheet halo;
+        [Tooltip("The body's idle loop for this phase (pixelfx character sheet). Needs a BossBody on the body.")]
+        public PixelFxSheet idleSheet;
+        [Tooltip("The body's cast animation; its release frame is timed to each skill's wind-up.")]
+        public PixelFxSheet castSheet;
         public Color haloTint = Color.white;
         public Color bodyTint = Color.white;
         [Tooltip("Seconds between attacks: random in this range.")]
@@ -32,7 +36,7 @@ namespace SolarDark.Combat
         public float maxHp = 1000;
         [Tooltip("Horizontal distance the boss tries to keep from the target between attacks.")]
         public float preferredRange = 5;
-        [Tooltip("Halo position above the feet.")]
+        [Tooltip("Halo position from the feet, facing right (the head's centre); mirrored when the boss faces left.")]
         public Vector2 haloOffset = new Vector2(0, 2.1f);
         public List<BossPhase> phases = new List<BossPhase>();
 

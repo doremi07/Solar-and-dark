@@ -1,11 +1,11 @@
 {
  "frames": [
   {
-   "filename": "scythe-reap 0",
+   "filename": "serena-shadow-slash 0",
    "frame": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -13,21 +13,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 1",
+   "filename": "serena-shadow-slash 1",
    "frame": {
-    "x": 184,
+    "x": 216,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -35,21 +35,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 2",
+   "filename": "serena-shadow-slash 2",
    "frame": {
-    "x": 368,
+    "x": 432,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -57,21 +57,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 3",
+   "filename": "serena-shadow-slash 3",
    "frame": {
-    "x": 552,
+    "x": 648,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -79,21 +79,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 4",
+   "filename": "serena-shadow-slash 4",
    "frame": {
-    "x": 736,
+    "x": 864,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -101,21 +101,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 5",
+   "filename": "serena-shadow-slash 5",
    "frame": {
-    "x": 920,
+    "x": 1080,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -123,43 +123,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 6",
-   "frame": {
-    "x": 1104,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "rotated": false,
-   "trimmed": false,
-   "spriteSourceSize": {
-    "x": 0,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "sourceSize": {
-    "w": 184,
-    "h": 116
-   },
-   "duration": 33
-  },
-  {
-   "filename": "scythe-reap 7",
+   "filename": "serena-shadow-slash 6",
    "frame": {
     "x": 0,
     "y": 116,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -167,21 +145,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 8",
+   "filename": "serena-shadow-slash 7",
    "frame": {
-    "x": 184,
+    "x": 216,
     "y": 116,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -189,21 +167,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 9",
+   "filename": "serena-shadow-slash 8",
    "frame": {
-    "x": 368,
+    "x": 432,
     "y": 116,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -211,21 +189,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 10",
+   "filename": "serena-shadow-slash 9",
    "frame": {
-    "x": 552,
+    "x": 648,
     "y": 116,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -233,21 +211,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 11",
+   "filename": "serena-shadow-slash 10",
    "frame": {
-    "x": 736,
+    "x": 864,
     "y": 116,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -255,21 +233,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 12",
+   "filename": "serena-shadow-slash 11",
    "frame": {
-    "x": 920,
+    "x": 1080,
     "y": 116,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -277,43 +255,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 13",
-   "frame": {
-    "x": 1104,
-    "y": 116,
-    "w": 184,
-    "h": 116
-   },
-   "rotated": false,
-   "trimmed": false,
-   "spriteSourceSize": {
-    "x": 0,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "sourceSize": {
-    "w": 184,
-    "h": 116
-   },
-   "duration": 33
-  },
-  {
-   "filename": "scythe-reap 14",
+   "filename": "serena-shadow-slash 12",
    "frame": {
     "x": 0,
     "y": 232,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -321,21 +277,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 15",
+   "filename": "serena-shadow-slash 13",
    "frame": {
-    "x": 184,
+    "x": 216,
     "y": 232,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -343,21 +299,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 16",
+   "filename": "serena-shadow-slash 14",
    "frame": {
-    "x": 368,
+    "x": 432,
     "y": 232,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -365,21 +321,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 17",
+   "filename": "serena-shadow-slash 15",
    "frame": {
-    "x": 552,
+    "x": 648,
     "y": 232,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -387,21 +343,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 18",
+   "filename": "serena-shadow-slash 16",
    "frame": {
-    "x": 736,
+    "x": 864,
     "y": 232,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -409,21 +365,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 19",
+   "filename": "serena-shadow-slash 17",
    "frame": {
-    "x": 920,
+    "x": 1080,
     "y": 232,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -431,43 +387,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 20",
-   "frame": {
-    "x": 1104,
-    "y": 232,
-    "w": 184,
-    "h": 116
-   },
-   "rotated": false,
-   "trimmed": false,
-   "spriteSourceSize": {
-    "x": 0,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "sourceSize": {
-    "w": 184,
-    "h": 116
-   },
-   "duration": 33
-  },
-  {
-   "filename": "scythe-reap 21",
+   "filename": "serena-shadow-slash 18",
    "frame": {
     "x": 0,
     "y": 348,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -475,21 +409,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 22",
+   "filename": "serena-shadow-slash 19",
    "frame": {
-    "x": 184,
+    "x": 216,
     "y": 348,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -497,21 +431,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 23",
+   "filename": "serena-shadow-slash 20",
    "frame": {
-    "x": 368,
+    "x": 432,
     "y": 348,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -519,21 +453,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 24",
+   "filename": "serena-shadow-slash 21",
    "frame": {
-    "x": 552,
+    "x": 648,
     "y": 348,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -541,21 +475,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 25",
+   "filename": "serena-shadow-slash 22",
    "frame": {
-    "x": 736,
+    "x": 864,
     "y": 348,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -563,21 +497,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 26",
+   "filename": "serena-shadow-slash 23",
    "frame": {
-    "x": 920,
+    "x": 1080,
     "y": 348,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -585,43 +519,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 27",
-   "frame": {
-    "x": 1104,
-    "y": 348,
-    "w": 184,
-    "h": 116
-   },
-   "rotated": false,
-   "trimmed": false,
-   "spriteSourceSize": {
-    "x": 0,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "sourceSize": {
-    "w": 184,
-    "h": 116
-   },
-   "duration": 33
-  },
-  {
-   "filename": "scythe-reap 28",
+   "filename": "serena-shadow-slash 24",
    "frame": {
     "x": 0,
     "y": 464,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -629,21 +541,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 29",
+   "filename": "serena-shadow-slash 25",
    "frame": {
-    "x": 184,
+    "x": 216,
     "y": 464,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -651,21 +563,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 30",
+   "filename": "serena-shadow-slash 26",
    "frame": {
-    "x": 368,
+    "x": 432,
     "y": 464,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -673,21 +585,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 31",
+   "filename": "serena-shadow-slash 27",
    "frame": {
-    "x": 552,
+    "x": 648,
     "y": 464,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -695,21 +607,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 32",
+   "filename": "serena-shadow-slash 28",
    "frame": {
-    "x": 736,
+    "x": 864,
     "y": 464,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -717,21 +629,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 33",
+   "filename": "serena-shadow-slash 29",
    "frame": {
-    "x": 920,
+    "x": 1080,
     "y": 464,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -739,43 +651,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 34",
-   "frame": {
-    "x": 1104,
-    "y": 464,
-    "w": 184,
-    "h": 116
-   },
-   "rotated": false,
-   "trimmed": false,
-   "spriteSourceSize": {
-    "x": 0,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "sourceSize": {
-    "w": 184,
-    "h": 116
-   },
-   "duration": 33
-  },
-  {
-   "filename": "scythe-reap 35",
+   "filename": "serena-shadow-slash 30",
    "frame": {
     "x": 0,
     "y": 580,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -783,21 +673,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 36",
+   "filename": "serena-shadow-slash 31",
    "frame": {
-    "x": 184,
+    "x": 216,
     "y": 580,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -805,21 +695,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 37",
+   "filename": "serena-shadow-slash 32",
    "frame": {
-    "x": 368,
+    "x": 432,
     "y": 580,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -827,21 +717,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 38",
+   "filename": "serena-shadow-slash 33",
    "frame": {
-    "x": 552,
+    "x": 648,
     "y": 580,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -849,21 +739,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 39",
+   "filename": "serena-shadow-slash 34",
    "frame": {
-    "x": 736,
+    "x": 864,
     "y": 580,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -871,21 +761,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 40",
+   "filename": "serena-shadow-slash 35",
    "frame": {
-    "x": 920,
+    "x": 1080,
     "y": 580,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -893,43 +783,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 41",
-   "frame": {
-    "x": 1104,
-    "y": 580,
-    "w": 184,
-    "h": 116
-   },
-   "rotated": false,
-   "trimmed": false,
-   "spriteSourceSize": {
-    "x": 0,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "sourceSize": {
-    "w": 184,
-    "h": 116
-   },
-   "duration": 33
-  },
-  {
-   "filename": "scythe-reap 42",
+   "filename": "serena-shadow-slash 36",
    "frame": {
     "x": 0,
     "y": 696,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -937,21 +805,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 43",
+   "filename": "serena-shadow-slash 37",
    "frame": {
-    "x": 184,
+    "x": 216,
     "y": 696,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -959,21 +827,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 44",
+   "filename": "serena-shadow-slash 38",
    "frame": {
-    "x": 368,
+    "x": 432,
     "y": 696,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -981,21 +849,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 45",
+   "filename": "serena-shadow-slash 39",
    "frame": {
-    "x": 552,
+    "x": 648,
     "y": 696,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1003,21 +871,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 46",
+   "filename": "serena-shadow-slash 40",
    "frame": {
-    "x": 736,
+    "x": 864,
     "y": 696,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1025,21 +893,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 47",
+   "filename": "serena-shadow-slash 41",
    "frame": {
-    "x": 920,
+    "x": 1080,
     "y": 696,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1047,43 +915,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 48",
-   "frame": {
-    "x": 1104,
-    "y": 696,
-    "w": 184,
-    "h": 116
-   },
-   "rotated": false,
-   "trimmed": false,
-   "spriteSourceSize": {
-    "x": 0,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "sourceSize": {
-    "w": 184,
-    "h": 116
-   },
-   "duration": 33
-  },
-  {
-   "filename": "scythe-reap 49",
+   "filename": "serena-shadow-slash 42",
    "frame": {
     "x": 0,
     "y": 812,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1091,21 +937,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 50",
+   "filename": "serena-shadow-slash 43",
    "frame": {
-    "x": 184,
+    "x": 216,
     "y": 812,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1113,21 +959,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 51",
+   "filename": "serena-shadow-slash 44",
    "frame": {
-    "x": 368,
+    "x": 432,
     "y": 812,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1135,21 +981,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 52",
+   "filename": "serena-shadow-slash 45",
    "frame": {
-    "x": 552,
+    "x": 648,
     "y": 812,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1157,21 +1003,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 53",
+   "filename": "serena-shadow-slash 46",
    "frame": {
-    "x": 736,
+    "x": 864,
     "y": 812,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1179,21 +1025,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 54",
+   "filename": "serena-shadow-slash 47",
    "frame": {
-    "x": 920,
+    "x": 1080,
     "y": 812,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1201,43 +1047,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 55",
-   "frame": {
-    "x": 1104,
-    "y": 812,
-    "w": 184,
-    "h": 116
-   },
-   "rotated": false,
-   "trimmed": false,
-   "spriteSourceSize": {
-    "x": 0,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "sourceSize": {
-    "w": 184,
-    "h": 116
-   },
-   "duration": 33
-  },
-  {
-   "filename": "scythe-reap 56",
+   "filename": "serena-shadow-slash 48",
    "frame": {
     "x": 0,
     "y": 928,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1245,21 +1069,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 57",
+   "filename": "serena-shadow-slash 49",
    "frame": {
-    "x": 184,
+    "x": 216,
     "y": 928,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1267,21 +1091,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 58",
+   "filename": "serena-shadow-slash 50",
    "frame": {
-    "x": 368,
+    "x": 432,
     "y": 928,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1289,21 +1113,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 59",
+   "filename": "serena-shadow-slash 51",
    "frame": {
-    "x": 552,
+    "x": 648,
     "y": 928,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1311,21 +1135,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 60",
+   "filename": "serena-shadow-slash 52",
    "frame": {
-    "x": 736,
+    "x": 864,
     "y": 928,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1333,21 +1157,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 61",
+   "filename": "serena-shadow-slash 53",
    "frame": {
-    "x": 920,
+    "x": 1080,
     "y": 928,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1355,43 +1179,21 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "duration": 33
   },
   {
-   "filename": "scythe-reap 62",
-   "frame": {
-    "x": 1104,
-    "y": 928,
-    "w": 184,
-    "h": 116
-   },
-   "rotated": false,
-   "trimmed": false,
-   "spriteSourceSize": {
-    "x": 0,
-    "y": 0,
-    "w": 184,
-    "h": 116
-   },
-   "sourceSize": {
-    "w": 184,
-    "h": 116
-   },
-   "duration": 33
-  },
-  {
-   "filename": "scythe-reap 63",
+   "filename": "serena-shadow-slash 54",
    "frame": {
     "x": 0,
     "y": 1044,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "rotated": false,
@@ -1399,11 +1201,209 @@
    "spriteSourceSize": {
     "x": 0,
     "y": 0,
-    "w": 184,
+    "w": 216,
     "h": 116
    },
    "sourceSize": {
-    "w": 184,
+    "w": 216,
+    "h": 116
+   },
+   "duration": 33
+  },
+  {
+   "filename": "serena-shadow-slash 55",
+   "frame": {
+    "x": 216,
+    "y": 1044,
+    "w": 216,
+    "h": 116
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 216,
+    "h": 116
+   },
+   "sourceSize": {
+    "w": 216,
+    "h": 116
+   },
+   "duration": 33
+  },
+  {
+   "filename": "serena-shadow-slash 56",
+   "frame": {
+    "x": 432,
+    "y": 1044,
+    "w": 216,
+    "h": 116
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 216,
+    "h": 116
+   },
+   "sourceSize": {
+    "w": 216,
+    "h": 116
+   },
+   "duration": 33
+  },
+  {
+   "filename": "serena-shadow-slash 57",
+   "frame": {
+    "x": 648,
+    "y": 1044,
+    "w": 216,
+    "h": 116
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 216,
+    "h": 116
+   },
+   "sourceSize": {
+    "w": 216,
+    "h": 116
+   },
+   "duration": 33
+  },
+  {
+   "filename": "serena-shadow-slash 58",
+   "frame": {
+    "x": 864,
+    "y": 1044,
+    "w": 216,
+    "h": 116
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 216,
+    "h": 116
+   },
+   "sourceSize": {
+    "w": 216,
+    "h": 116
+   },
+   "duration": 33
+  },
+  {
+   "filename": "serena-shadow-slash 59",
+   "frame": {
+    "x": 1080,
+    "y": 1044,
+    "w": 216,
+    "h": 116
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 216,
+    "h": 116
+   },
+   "sourceSize": {
+    "w": 216,
+    "h": 116
+   },
+   "duration": 33
+  },
+  {
+   "filename": "serena-shadow-slash 60",
+   "frame": {
+    "x": 0,
+    "y": 1160,
+    "w": 216,
+    "h": 116
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 216,
+    "h": 116
+   },
+   "sourceSize": {
+    "w": 216,
+    "h": 116
+   },
+   "duration": 33
+  },
+  {
+   "filename": "serena-shadow-slash 61",
+   "frame": {
+    "x": 216,
+    "y": 1160,
+    "w": 216,
+    "h": 116
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 216,
+    "h": 116
+   },
+   "sourceSize": {
+    "w": 216,
+    "h": 116
+   },
+   "duration": 33
+  },
+  {
+   "filename": "serena-shadow-slash 62",
+   "frame": {
+    "x": 432,
+    "y": 1160,
+    "w": 216,
+    "h": 116
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 216,
+    "h": 116
+   },
+   "sourceSize": {
+    "w": 216,
+    "h": 116
+   },
+   "duration": 33
+  },
+  {
+   "filename": "serena-shadow-slash 63",
+   "frame": {
+    "x": 648,
+    "y": 1160,
+    "w": 216,
+    "h": 116
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 216,
+    "h": 116
+   },
+   "sourceSize": {
+    "w": 216,
     "h": 116
    },
    "duration": 33
@@ -1415,33 +1415,33 @@
   "image": "serena-shadow-slash.png",
   "format": "RGBA8888",
   "size": {
-   "w": 1288,
-   "h": 1160
+   "w": 1296,
+   "h": 1276
   },
   "scale": "1",
   "frameTags": [
    {
-    "name": "scythe-reap",
+    "name": "serena-shadow-slash",
     "from": 0,
     "to": 63,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "melee/scythe-reap",
-   "name": "Scythe reap",
+   "id": "sd/serena-shadow-slash",
+   "name": "Shadow slash",
    "fps": 30,
    "loop": false,
    "frames": 64,
    "frameSize": [
-    184,
+    216,
     116
    ],
    "pivot": [
-    84,
+    100,
     98
    ],
-   "columns": 7,
+   "columns": 6,
    "act": {
     "windup": 0.56,
     "recovery": 0,

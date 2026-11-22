@@ -13,6 +13,18 @@
 
 ![boss fx sheets](fx-sheets.png)
 
+## 생동감 레이어와 캐릭터
+
+- 각 스킬 이펙트는 `third_party/pixelfx/src/fx/sd/<시트 이름>.js`: 라이브러리 이펙트(컨셉 팔레트)에 그 이펙트의 박자에 맞춘
+  2차 움직임을 얹은 것. 방출 전에 빨려드는 기운, 접촉 순간의 불꽃·충격파·섬광, 남아서 깜빡이는 반짝임, 피어오르는 티끌과
+  불씨, 어두운 연기. 조정은 `sd/_skills.js` 한 곳에서 (도우미: `sd/_alive.js`, 모두 t의 순수 함수라 루프 이음새 없음).
+  ![before / after](lively-shadow-slash.png)
+- 보스 캐릭터: `sd/_serena.js`, `sd/_child.js`에서 코드로 그린 도트(외곽선, 좌상단 광원, 머리카락·치맛자락 흔들림, 촉수).
+  페이즈마다 대기(2초 루프)와 시전(1초, 0.35초에 베기/폭발, 대기 자세로 시작·끝) 시트 →
+  `tools/pixelfx/boss-characters.json` → `Assets/PixelFx/Sheets/characters/`. Unity에서는 `BossBody`가 페이즈의 시트를 재생하고,
+  시전은 베는 프레임이 스킬 선딜 끝에 맞도록 속도를 맞춘다.
+  ![characters](characters.png)
+
 ## 실행 영상 (Unity 없이)
 
 `tools/arena-sim/run.sh [serena|child|all]`: 게임의 실제 C# 스크립트(BossLibrary, BossArenaScene, 보스 AI, 스킬 러너,
@@ -82,6 +94,6 @@ Unity에서.
 
 ## 남은 일
 
-- 캐릭터 스프라이트는 임시(`PlaceholderBody`). 실제 아트가 오면 Body의 SpriteRenderer/Animator만 교체하면 된다.
-  스킬 시작 시 `BossController.onSkill`과 애니메이터 트리거(`animTrigger`, 스킬 id 뒷부분)가 나간다.
+- 캐릭터는 코드로 그린 첫 버전. 손그림으로 바꾸려면 `.aseprite`로 변환해 고친 뒤 같은 위치에 시트를 내보내면 된다
+  (`docs/pixelfx-aseprite.md`). 스킬 시작 시 `BossController.onSkill`과 애니메이터 트리거(`animTrigger`)도 나간다.
 - 수치(피해·쿨다운·범위)는 첫 버전. 아레나에서 N 키로 스킬을 하나씩 확인하며 에셋에서 조정.

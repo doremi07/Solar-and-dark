@@ -68,7 +68,8 @@ namespace SolarDark.Combat.Editor
             var bsr = new GameObject("Body").AddComponent<SpriteRenderer>();
             bsr.transform.SetParent(boss.transform, false);
             bsr.sortingOrder = 10;
-            bsr.gameObject.AddComponent<PlaceholderBody>().kind = kind;
+            bsr.gameObject.AddComponent<PlaceholderBody>().kind = kind;   // until the first phase's idle sheet takes over
+            bsr.gameObject.AddComponent<BossBody>();
             var bh = boss.AddComponent<Health>();
             bh.invulnerableAfterHit = 0.1f;
             var bhb = boss.AddComponent<Hurtbox>();

@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "ice-spikes 0",
+   "filename": "serena-rift 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 1",
+   "filename": "serena-rift 1",
    "frame": {
     "x": 264,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 2",
+   "filename": "serena-rift 2",
    "frame": {
     "x": 528,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 3",
+   "filename": "serena-rift 3",
    "frame": {
     "x": 792,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 4",
+   "filename": "serena-rift 4",
    "frame": {
     "x": 1056,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 5",
+   "filename": "serena-rift 5",
    "frame": {
     "x": 1320,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 6",
+   "filename": "serena-rift 6",
    "frame": {
     "x": 1584,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 7",
+   "filename": "serena-rift 7",
    "frame": {
     "x": 0,
     "y": 112,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 8",
+   "filename": "serena-rift 8",
    "frame": {
     "x": 264,
     "y": 112,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 9",
+   "filename": "serena-rift 9",
    "frame": {
     "x": 528,
     "y": 112,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 10",
+   "filename": "serena-rift 10",
    "frame": {
     "x": 792,
     "y": 112,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 11",
+   "filename": "serena-rift 11",
    "frame": {
     "x": 1056,
     "y": 112,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 12",
+   "filename": "serena-rift 12",
    "frame": {
     "x": 1320,
     "y": 112,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 13",
+   "filename": "serena-rift 13",
    "frame": {
     "x": 1584,
     "y": 112,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 14",
+   "filename": "serena-rift 14",
    "frame": {
     "x": 0,
     "y": 224,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 15",
+   "filename": "serena-rift 15",
    "frame": {
     "x": 264,
     "y": 224,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 16",
+   "filename": "serena-rift 16",
    "frame": {
     "x": 528,
     "y": 224,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 17",
+   "filename": "serena-rift 17",
    "frame": {
     "x": 792,
     "y": 224,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 18",
+   "filename": "serena-rift 18",
    "frame": {
     "x": 1056,
     "y": 224,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 19",
+   "filename": "serena-rift 19",
    "frame": {
     "x": 1320,
     "y": 224,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 20",
+   "filename": "serena-rift 20",
    "frame": {
     "x": 1584,
     "y": 224,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 21",
+   "filename": "serena-rift 21",
    "frame": {
     "x": 0,
     "y": 336,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 22",
+   "filename": "serena-rift 22",
    "frame": {
     "x": 264,
     "y": 336,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 23",
+   "filename": "serena-rift 23",
    "frame": {
     "x": 528,
     "y": 336,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 24",
+   "filename": "serena-rift 24",
    "frame": {
     "x": 792,
     "y": 336,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 25",
+   "filename": "serena-rift 25",
    "frame": {
     "x": 1056,
     "y": 336,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 26",
+   "filename": "serena-rift 26",
    "frame": {
     "x": 1320,
     "y": 336,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 27",
+   "filename": "serena-rift 27",
    "frame": {
     "x": 1584,
     "y": 336,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 28",
+   "filename": "serena-rift 28",
    "frame": {
     "x": 0,
     "y": 448,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 29",
+   "filename": "serena-rift 29",
    "frame": {
     "x": 264,
     "y": 448,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 30",
+   "filename": "serena-rift 30",
    "frame": {
     "x": 528,
     "y": 448,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 31",
+   "filename": "serena-rift 31",
    "frame": {
     "x": 792,
     "y": 448,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 32",
+   "filename": "serena-rift 32",
    "frame": {
     "x": 1056,
     "y": 448,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 33",
+   "filename": "serena-rift 33",
    "frame": {
     "x": 1320,
     "y": 448,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 34",
+   "filename": "serena-rift 34",
    "frame": {
     "x": 1584,
     "y": 448,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 35",
+   "filename": "serena-rift 35",
    "frame": {
     "x": 0,
     "y": 560,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 36",
+   "filename": "serena-rift 36",
    "frame": {
     "x": 264,
     "y": 560,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 37",
+   "filename": "serena-rift 37",
    "frame": {
     "x": 528,
     "y": 560,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 38",
+   "filename": "serena-rift 38",
    "frame": {
     "x": 792,
     "y": 560,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 39",
+   "filename": "serena-rift 39",
    "frame": {
     "x": 1056,
     "y": 560,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 40",
+   "filename": "serena-rift 40",
    "frame": {
     "x": 1320,
     "y": 560,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 41",
+   "filename": "serena-rift 41",
    "frame": {
     "x": 1584,
     "y": 560,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 42",
+   "filename": "serena-rift 42",
    "frame": {
     "x": 0,
     "y": 672,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 43",
+   "filename": "serena-rift 43",
    "frame": {
     "x": 264,
     "y": 672,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 44",
+   "filename": "serena-rift 44",
    "frame": {
     "x": 528,
     "y": 672,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 45",
+   "filename": "serena-rift 45",
    "frame": {
     "x": 792,
     "y": 672,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 46",
+   "filename": "serena-rift 46",
    "frame": {
     "x": 1056,
     "y": 672,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 47",
+   "filename": "serena-rift 47",
    "frame": {
     "x": 1320,
     "y": 672,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 48",
+   "filename": "serena-rift 48",
    "frame": {
     "x": 1584,
     "y": 672,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 49",
+   "filename": "serena-rift 49",
    "frame": {
     "x": 0,
     "y": 784,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 50",
+   "filename": "serena-rift 50",
    "frame": {
     "x": 264,
     "y": 784,
@@ -1123,7 +1123,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 51",
+   "filename": "serena-rift 51",
    "frame": {
     "x": 528,
     "y": 784,
@@ -1145,7 +1145,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 52",
+   "filename": "serena-rift 52",
    "frame": {
     "x": 792,
     "y": 784,
@@ -1167,7 +1167,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 53",
+   "filename": "serena-rift 53",
    "frame": {
     "x": 1056,
     "y": 784,
@@ -1189,7 +1189,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 54",
+   "filename": "serena-rift 54",
    "frame": {
     "x": 1320,
     "y": 784,
@@ -1211,7 +1211,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 55",
+   "filename": "serena-rift 55",
    "frame": {
     "x": 1584,
     "y": 784,
@@ -1233,7 +1233,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 56",
+   "filename": "serena-rift 56",
    "frame": {
     "x": 0,
     "y": 896,
@@ -1255,7 +1255,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 57",
+   "filename": "serena-rift 57",
    "frame": {
     "x": 264,
     "y": 896,
@@ -1277,7 +1277,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 58",
+   "filename": "serena-rift 58",
    "frame": {
     "x": 528,
     "y": 896,
@@ -1299,7 +1299,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 59",
+   "filename": "serena-rift 59",
    "frame": {
     "x": 792,
     "y": 896,
@@ -1321,7 +1321,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 60",
+   "filename": "serena-rift 60",
    "frame": {
     "x": 1056,
     "y": 896,
@@ -1343,7 +1343,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 61",
+   "filename": "serena-rift 61",
    "frame": {
     "x": 1320,
     "y": 896,
@@ -1365,7 +1365,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 62",
+   "filename": "serena-rift 62",
    "frame": {
     "x": 1584,
     "y": 896,
@@ -1387,7 +1387,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 63",
+   "filename": "serena-rift 63",
    "frame": {
     "x": 0,
     "y": 1008,
@@ -1409,7 +1409,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 64",
+   "filename": "serena-rift 64",
    "frame": {
     "x": 264,
     "y": 1008,
@@ -1431,7 +1431,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 65",
+   "filename": "serena-rift 65",
    "frame": {
     "x": 528,
     "y": 1008,
@@ -1453,7 +1453,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 66",
+   "filename": "serena-rift 66",
    "frame": {
     "x": 792,
     "y": 1008,
@@ -1475,7 +1475,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 67",
+   "filename": "serena-rift 67",
    "frame": {
     "x": 1056,
     "y": 1008,
@@ -1497,7 +1497,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 68",
+   "filename": "serena-rift 68",
    "frame": {
     "x": 1320,
     "y": 1008,
@@ -1519,7 +1519,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 69",
+   "filename": "serena-rift 69",
    "frame": {
     "x": 1584,
     "y": 1008,
@@ -1541,7 +1541,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 70",
+   "filename": "serena-rift 70",
    "frame": {
     "x": 0,
     "y": 1120,
@@ -1563,7 +1563,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 71",
+   "filename": "serena-rift 71",
    "frame": {
     "x": 264,
     "y": 1120,
@@ -1585,7 +1585,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 72",
+   "filename": "serena-rift 72",
    "frame": {
     "x": 528,
     "y": 1120,
@@ -1607,7 +1607,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 73",
+   "filename": "serena-rift 73",
    "frame": {
     "x": 792,
     "y": 1120,
@@ -1629,7 +1629,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 74",
+   "filename": "serena-rift 74",
    "frame": {
     "x": 1056,
     "y": 1120,
@@ -1651,7 +1651,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 75",
+   "filename": "serena-rift 75",
    "frame": {
     "x": 1320,
     "y": 1120,
@@ -1673,7 +1673,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 76",
+   "filename": "serena-rift 76",
    "frame": {
     "x": 1584,
     "y": 1120,
@@ -1695,7 +1695,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 77",
+   "filename": "serena-rift 77",
    "frame": {
     "x": 0,
     "y": 1232,
@@ -1717,7 +1717,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 78",
+   "filename": "serena-rift 78",
    "frame": {
     "x": 264,
     "y": 1232,
@@ -1739,7 +1739,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 79",
+   "filename": "serena-rift 79",
    "frame": {
     "x": 528,
     "y": 1232,
@@ -1761,7 +1761,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 80",
+   "filename": "serena-rift 80",
    "frame": {
     "x": 792,
     "y": 1232,
@@ -1783,7 +1783,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 81",
+   "filename": "serena-rift 81",
    "frame": {
     "x": 1056,
     "y": 1232,
@@ -1805,7 +1805,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 82",
+   "filename": "serena-rift 82",
    "frame": {
     "x": 1320,
     "y": 1232,
@@ -1827,7 +1827,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 83",
+   "filename": "serena-rift 83",
    "frame": {
     "x": 1584,
     "y": 1232,
@@ -1849,7 +1849,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 84",
+   "filename": "serena-rift 84",
    "frame": {
     "x": 0,
     "y": 1344,
@@ -1871,7 +1871,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 85",
+   "filename": "serena-rift 85",
    "frame": {
     "x": 264,
     "y": 1344,
@@ -1893,7 +1893,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 86",
+   "filename": "serena-rift 86",
    "frame": {
     "x": 528,
     "y": 1344,
@@ -1915,7 +1915,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 87",
+   "filename": "serena-rift 87",
    "frame": {
     "x": 792,
     "y": 1344,
@@ -1937,7 +1937,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 88",
+   "filename": "serena-rift 88",
    "frame": {
     "x": 1056,
     "y": 1344,
@@ -1959,7 +1959,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 89",
+   "filename": "serena-rift 89",
    "frame": {
     "x": 1320,
     "y": 1344,
@@ -1981,7 +1981,7 @@
    "duration": 33
   },
   {
-   "filename": "ice-spikes 90",
+   "filename": "serena-rift 90",
    "frame": {
     "x": 1584,
     "y": 1344,
@@ -2015,15 +2015,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "ice-spikes",
+    "name": "serena-rift",
     "from": 0,
     "to": 90,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "ice/ice-spikes",
-   "name": "Ice spikes",
+   "id": "sd/serena-rift",
+   "name": "Rift of light and shadow",
    "fps": 30,
    "loop": false,
    "frames": 91,

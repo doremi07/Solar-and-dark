@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "void-orb 0",
+   "filename": "child-gravity 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 1",
+   "filename": "child-gravity 1",
    "frame": {
     "x": 168,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 2",
+   "filename": "child-gravity 2",
    "frame": {
     "x": 336,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 3",
+   "filename": "child-gravity 3",
    "frame": {
     "x": 504,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 4",
+   "filename": "child-gravity 4",
    "frame": {
     "x": 672,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 5",
+   "filename": "child-gravity 5",
    "frame": {
     "x": 840,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 6",
+   "filename": "child-gravity 6",
    "frame": {
     "x": 1008,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 7",
+   "filename": "child-gravity 7",
    "frame": {
     "x": 1176,
     "y": 0,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 8",
+   "filename": "child-gravity 8",
    "frame": {
     "x": 1344,
     "y": 0,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 9",
+   "filename": "child-gravity 9",
    "frame": {
     "x": 1512,
     "y": 0,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 10",
+   "filename": "child-gravity 10",
    "frame": {
     "x": 0,
     "y": 160,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 11",
+   "filename": "child-gravity 11",
    "frame": {
     "x": 168,
     "y": 160,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 12",
+   "filename": "child-gravity 12",
    "frame": {
     "x": 336,
     "y": 160,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 13",
+   "filename": "child-gravity 13",
    "frame": {
     "x": 504,
     "y": 160,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 14",
+   "filename": "child-gravity 14",
    "frame": {
     "x": 672,
     "y": 160,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 15",
+   "filename": "child-gravity 15",
    "frame": {
     "x": 840,
     "y": 160,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 16",
+   "filename": "child-gravity 16",
    "frame": {
     "x": 1008,
     "y": 160,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 17",
+   "filename": "child-gravity 17",
    "frame": {
     "x": 1176,
     "y": 160,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 18",
+   "filename": "child-gravity 18",
    "frame": {
     "x": 1344,
     "y": 160,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 19",
+   "filename": "child-gravity 19",
    "frame": {
     "x": 1512,
     "y": 160,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 20",
+   "filename": "child-gravity 20",
    "frame": {
     "x": 0,
     "y": 320,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 21",
+   "filename": "child-gravity 21",
    "frame": {
     "x": 168,
     "y": 320,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 22",
+   "filename": "child-gravity 22",
    "frame": {
     "x": 336,
     "y": 320,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 23",
+   "filename": "child-gravity 23",
    "frame": {
     "x": 504,
     "y": 320,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 24",
+   "filename": "child-gravity 24",
    "frame": {
     "x": 672,
     "y": 320,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 25",
+   "filename": "child-gravity 25",
    "frame": {
     "x": 840,
     "y": 320,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 26",
+   "filename": "child-gravity 26",
    "frame": {
     "x": 1008,
     "y": 320,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 27",
+   "filename": "child-gravity 27",
    "frame": {
     "x": 1176,
     "y": 320,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 28",
+   "filename": "child-gravity 28",
    "frame": {
     "x": 1344,
     "y": 320,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 29",
+   "filename": "child-gravity 29",
    "frame": {
     "x": 1512,
     "y": 320,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 30",
+   "filename": "child-gravity 30",
    "frame": {
     "x": 0,
     "y": 480,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 31",
+   "filename": "child-gravity 31",
    "frame": {
     "x": 168,
     "y": 480,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 32",
+   "filename": "child-gravity 32",
    "frame": {
     "x": 336,
     "y": 480,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 33",
+   "filename": "child-gravity 33",
    "frame": {
     "x": 504,
     "y": 480,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 34",
+   "filename": "child-gravity 34",
    "frame": {
     "x": 672,
     "y": 480,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 35",
+   "filename": "child-gravity 35",
    "frame": {
     "x": 840,
     "y": 480,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 36",
+   "filename": "child-gravity 36",
    "frame": {
     "x": 1008,
     "y": 480,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 37",
+   "filename": "child-gravity 37",
    "frame": {
     "x": 1176,
     "y": 480,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 38",
+   "filename": "child-gravity 38",
    "frame": {
     "x": 1344,
     "y": 480,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 39",
+   "filename": "child-gravity 39",
    "frame": {
     "x": 1512,
     "y": 480,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 40",
+   "filename": "child-gravity 40",
    "frame": {
     "x": 0,
     "y": 640,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 41",
+   "filename": "child-gravity 41",
    "frame": {
     "x": 168,
     "y": 640,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 42",
+   "filename": "child-gravity 42",
    "frame": {
     "x": 336,
     "y": 640,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 43",
+   "filename": "child-gravity 43",
    "frame": {
     "x": 504,
     "y": 640,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 44",
+   "filename": "child-gravity 44",
    "frame": {
     "x": 672,
     "y": 640,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 45",
+   "filename": "child-gravity 45",
    "frame": {
     "x": 840,
     "y": 640,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 46",
+   "filename": "child-gravity 46",
    "frame": {
     "x": 1008,
     "y": 640,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 47",
+   "filename": "child-gravity 47",
    "frame": {
     "x": 1176,
     "y": 640,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 48",
+   "filename": "child-gravity 48",
    "frame": {
     "x": 1344,
     "y": 640,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 49",
+   "filename": "child-gravity 49",
    "frame": {
     "x": 1512,
     "y": 640,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 50",
+   "filename": "child-gravity 50",
    "frame": {
     "x": 0,
     "y": 800,
@@ -1123,7 +1123,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 51",
+   "filename": "child-gravity 51",
    "frame": {
     "x": 168,
     "y": 800,
@@ -1145,7 +1145,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 52",
+   "filename": "child-gravity 52",
    "frame": {
     "x": 336,
     "y": 800,
@@ -1167,7 +1167,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 53",
+   "filename": "child-gravity 53",
    "frame": {
     "x": 504,
     "y": 800,
@@ -1189,7 +1189,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 54",
+   "filename": "child-gravity 54",
    "frame": {
     "x": 672,
     "y": 800,
@@ -1211,7 +1211,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 55",
+   "filename": "child-gravity 55",
    "frame": {
     "x": 840,
     "y": 800,
@@ -1233,7 +1233,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 56",
+   "filename": "child-gravity 56",
    "frame": {
     "x": 1008,
     "y": 800,
@@ -1255,7 +1255,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 57",
+   "filename": "child-gravity 57",
    "frame": {
     "x": 1176,
     "y": 800,
@@ -1277,7 +1277,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 58",
+   "filename": "child-gravity 58",
    "frame": {
     "x": 1344,
     "y": 800,
@@ -1299,7 +1299,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 59",
+   "filename": "child-gravity 59",
    "frame": {
     "x": 1512,
     "y": 800,
@@ -1321,7 +1321,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 60",
+   "filename": "child-gravity 60",
    "frame": {
     "x": 0,
     "y": 960,
@@ -1343,7 +1343,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 61",
+   "filename": "child-gravity 61",
    "frame": {
     "x": 168,
     "y": 960,
@@ -1365,7 +1365,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 62",
+   "filename": "child-gravity 62",
    "frame": {
     "x": 336,
     "y": 960,
@@ -1387,7 +1387,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 63",
+   "filename": "child-gravity 63",
    "frame": {
     "x": 504,
     "y": 960,
@@ -1409,7 +1409,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 64",
+   "filename": "child-gravity 64",
    "frame": {
     "x": 672,
     "y": 960,
@@ -1431,7 +1431,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 65",
+   "filename": "child-gravity 65",
    "frame": {
     "x": 840,
     "y": 960,
@@ -1453,7 +1453,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 66",
+   "filename": "child-gravity 66",
    "frame": {
     "x": 1008,
     "y": 960,
@@ -1475,7 +1475,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 67",
+   "filename": "child-gravity 67",
    "frame": {
     "x": 1176,
     "y": 960,
@@ -1497,7 +1497,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 68",
+   "filename": "child-gravity 68",
    "frame": {
     "x": 1344,
     "y": 960,
@@ -1519,7 +1519,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 69",
+   "filename": "child-gravity 69",
    "frame": {
     "x": 1512,
     "y": 960,
@@ -1541,7 +1541,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 70",
+   "filename": "child-gravity 70",
    "frame": {
     "x": 0,
     "y": 1120,
@@ -1563,7 +1563,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 71",
+   "filename": "child-gravity 71",
    "frame": {
     "x": 168,
     "y": 1120,
@@ -1585,7 +1585,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 72",
+   "filename": "child-gravity 72",
    "frame": {
     "x": 336,
     "y": 1120,
@@ -1607,7 +1607,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 73",
+   "filename": "child-gravity 73",
    "frame": {
     "x": 504,
     "y": 1120,
@@ -1629,7 +1629,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 74",
+   "filename": "child-gravity 74",
    "frame": {
     "x": 672,
     "y": 1120,
@@ -1651,7 +1651,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 75",
+   "filename": "child-gravity 75",
    "frame": {
     "x": 840,
     "y": 1120,
@@ -1673,7 +1673,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 76",
+   "filename": "child-gravity 76",
    "frame": {
     "x": 1008,
     "y": 1120,
@@ -1695,7 +1695,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 77",
+   "filename": "child-gravity 77",
    "frame": {
     "x": 1176,
     "y": 1120,
@@ -1717,7 +1717,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 78",
+   "filename": "child-gravity 78",
    "frame": {
     "x": 1344,
     "y": 1120,
@@ -1739,7 +1739,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 79",
+   "filename": "child-gravity 79",
    "frame": {
     "x": 1512,
     "y": 1120,
@@ -1761,7 +1761,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 80",
+   "filename": "child-gravity 80",
    "frame": {
     "x": 0,
     "y": 1280,
@@ -1783,7 +1783,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 81",
+   "filename": "child-gravity 81",
    "frame": {
     "x": 168,
     "y": 1280,
@@ -1805,7 +1805,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 82",
+   "filename": "child-gravity 82",
    "frame": {
     "x": 336,
     "y": 1280,
@@ -1827,7 +1827,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 83",
+   "filename": "child-gravity 83",
    "frame": {
     "x": 504,
     "y": 1280,
@@ -1849,7 +1849,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 84",
+   "filename": "child-gravity 84",
    "frame": {
     "x": 672,
     "y": 1280,
@@ -1871,7 +1871,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 85",
+   "filename": "child-gravity 85",
    "frame": {
     "x": 840,
     "y": 1280,
@@ -1893,7 +1893,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 86",
+   "filename": "child-gravity 86",
    "frame": {
     "x": 1008,
     "y": 1280,
@@ -1915,7 +1915,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 87",
+   "filename": "child-gravity 87",
    "frame": {
     "x": 1176,
     "y": 1280,
@@ -1937,7 +1937,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 88",
+   "filename": "child-gravity 88",
    "frame": {
     "x": 1344,
     "y": 1280,
@@ -1959,7 +1959,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 89",
+   "filename": "child-gravity 89",
    "frame": {
     "x": 1512,
     "y": 1280,
@@ -1981,7 +1981,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 90",
+   "filename": "child-gravity 90",
    "frame": {
     "x": 0,
     "y": 1440,
@@ -2003,7 +2003,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 91",
+   "filename": "child-gravity 91",
    "frame": {
     "x": 168,
     "y": 1440,
@@ -2025,7 +2025,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 92",
+   "filename": "child-gravity 92",
    "frame": {
     "x": 336,
     "y": 1440,
@@ -2047,7 +2047,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 93",
+   "filename": "child-gravity 93",
    "frame": {
     "x": 504,
     "y": 1440,
@@ -2069,7 +2069,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 94",
+   "filename": "child-gravity 94",
    "frame": {
     "x": 672,
     "y": 1440,
@@ -2091,7 +2091,7 @@
    "duration": 33
   },
   {
-   "filename": "void-orb 95",
+   "filename": "child-gravity 95",
    "frame": {
     "x": 840,
     "y": 1440,
@@ -2125,15 +2125,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "void-orb",
+    "name": "child-gravity",
     "from": 0,
     "to": 95,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "shadow/void-orb",
-   "name": "Void orb",
+   "id": "sd/child-gravity",
+   "name": "Gravity manipulation",
    "fps": 30,
    "loop": true,
    "frames": 96,

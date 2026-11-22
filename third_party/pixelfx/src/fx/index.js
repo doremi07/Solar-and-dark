@@ -246,6 +246,34 @@ import * as critters_jellyfish from "./critters/jellyfish.js";
 import * as critters_slime from "./critters/slime.js";
 import * as critters_snake from "./critters/snake.js";
 import * as critters_wisp from "./critters/wisp.js";
+import * as sd_child_body from "./sd/child-body.js";
+import * as sd_child_cast from "./sd/child-cast.js";
+import * as sd_child_crystal from "./sd/child-crystal.js";
+import * as sd_child_crystal_lance from "./sd/child-crystal-lance.js";
+import * as sd_child_despair from "./sd/child-despair.js";
+import * as sd_child_gravity from "./sd/child-gravity.js";
+import * as sd_child_halo from "./sd/child-halo.js";
+import * as sd_child_infinite_light from "./sd/child-infinite-light.js";
+import * as sd_child_light_absorb from "./sd/child-light-absorb.js";
+import * as sd_child_light_burst from "./sd/child-light-burst.js";
+import * as sd_child_light_fall from "./sd/child-light-fall.js";
+import * as sd_child_shadow_beam from "./sd/child-shadow-beam.js";
+import * as sd_child_shadow_dash from "./sd/child-shadow-dash.js";
+import * as sd_child_shadow_explosion from "./sd/child-shadow-explosion.js";
+import * as sd_child_sparkle from "./sd/child-sparkle.js";
+import * as sd_serena_body from "./sd/serena-body.js";
+import * as sd_serena_cast from "./sd/serena-cast.js";
+import * as sd_serena_halo from "./sd/serena-halo.js";
+import * as sd_serena_holy_domain from "./sd/serena-holy-domain.js";
+import * as sd_serena_holy_domain_burst from "./sd/serena-holy-domain-burst.js";
+import * as sd_serena_judgment from "./sd/serena-judgment.js";
+import * as sd_serena_judgment_mark from "./sd/serena-judgment-mark.js";
+import * as sd_serena_rift from "./sd/serena-rift.js";
+import * as sd_serena_shadow_chains from "./sd/serena-shadow-chains.js";
+import * as sd_serena_shadow_fall from "./sd/serena-shadow-fall.js";
+import * as sd_serena_shadow_pillar from "./sd/serena-shadow-pillar.js";
+import * as sd_serena_shadow_slash from "./sd/serena-shadow-slash.js";
+import * as sd_serena_wide_slash from "./sd/serena-wide-slash.js";
 
 export { categories } from "./categories.js";
 
@@ -496,4 +524,32 @@ export const effects = {
   "critters/slime": critters_slime,
   "critters/snake": critters_snake,
   "critters/wisp": critters_wisp,
+  "sd/child-body": sd_child_body,
+  "sd/child-cast": sd_child_cast,
+  "sd/child-crystal": sd_child_crystal,
+  "sd/child-crystal-lance": sd_child_crystal_lance,
+  "sd/child-despair": sd_child_despair,
+  "sd/child-gravity": sd_child_gravity,
+  "sd/child-halo": sd_child_halo,
+  "sd/child-infinite-light": sd_child_infinite_light,
+  "sd/child-light-absorb": sd_child_light_absorb,
+  "sd/child-light-burst": sd_child_light_burst,
+  "sd/child-light-fall": sd_child_light_fall,
+  "sd/child-shadow-beam": sd_child_shadow_beam,
+  "sd/child-shadow-dash": sd_child_shadow_dash,
+  "sd/child-shadow-explosion": sd_child_shadow_explosion,
+  "sd/child-sparkle": sd_child_sparkle,
+  "sd/serena-body": sd_serena_body,
+  "sd/serena-cast": sd_serena_cast,
+  "sd/serena-halo": sd_serena_halo,
+  "sd/serena-holy-domain": sd_serena_holy_domain,
+  "sd/serena-holy-domain-burst": sd_serena_holy_domain_burst,
+  "sd/serena-judgment": sd_serena_judgment,
+  "sd/serena-judgment-mark": sd_serena_judgment_mark,
+  "sd/serena-rift": sd_serena_rift,
+  "sd/serena-shadow-chains": sd_serena_shadow_chains,
+  "sd/serena-shadow-fall": sd_serena_shadow_fall,
+  "sd/serena-shadow-pillar": sd_serena_shadow_pillar,
+  "sd/serena-shadow-slash": sd_serena_shadow_slash,
+  "sd/serena-wide-slash": sd_serena_wide_slash,
 };

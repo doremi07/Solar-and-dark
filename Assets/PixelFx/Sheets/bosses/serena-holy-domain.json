@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "rune-circle 0",
+   "filename": "serena-holy-domain 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 1",
+   "filename": "serena-holy-domain 1",
    "frame": {
     "x": 136,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 2",
+   "filename": "serena-holy-domain 2",
    "frame": {
     "x": 272,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 3",
+   "filename": "serena-holy-domain 3",
    "frame": {
     "x": 408,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 4",
+   "filename": "serena-holy-domain 4",
    "frame": {
     "x": 544,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 5",
+   "filename": "serena-holy-domain 5",
    "frame": {
     "x": 680,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 6",
+   "filename": "serena-holy-domain 6",
    "frame": {
     "x": 816,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 7",
+   "filename": "serena-holy-domain 7",
    "frame": {
     "x": 952,
     "y": 0,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 8",
+   "filename": "serena-holy-domain 8",
    "frame": {
     "x": 1088,
     "y": 0,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 9",
+   "filename": "serena-holy-domain 9",
    "frame": {
     "x": 1224,
     "y": 0,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 10",
+   "filename": "serena-holy-domain 10",
    "frame": {
     "x": 0,
     "y": 100,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 11",
+   "filename": "serena-holy-domain 11",
    "frame": {
     "x": 136,
     "y": 100,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 12",
+   "filename": "serena-holy-domain 12",
    "frame": {
     "x": 272,
     "y": 100,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 13",
+   "filename": "serena-holy-domain 13",
    "frame": {
     "x": 408,
     "y": 100,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 14",
+   "filename": "serena-holy-domain 14",
    "frame": {
     "x": 544,
     "y": 100,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 15",
+   "filename": "serena-holy-domain 15",
    "frame": {
     "x": 680,
     "y": 100,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 16",
+   "filename": "serena-holy-domain 16",
    "frame": {
     "x": 816,
     "y": 100,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 17",
+   "filename": "serena-holy-domain 17",
    "frame": {
     "x": 952,
     "y": 100,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 18",
+   "filename": "serena-holy-domain 18",
    "frame": {
     "x": 1088,
     "y": 100,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 19",
+   "filename": "serena-holy-domain 19",
    "frame": {
     "x": 1224,
     "y": 100,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 20",
+   "filename": "serena-holy-domain 20",
    "frame": {
     "x": 0,
     "y": 200,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 21",
+   "filename": "serena-holy-domain 21",
    "frame": {
     "x": 136,
     "y": 200,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 22",
+   "filename": "serena-holy-domain 22",
    "frame": {
     "x": 272,
     "y": 200,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 23",
+   "filename": "serena-holy-domain 23",
    "frame": {
     "x": 408,
     "y": 200,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 24",
+   "filename": "serena-holy-domain 24",
    "frame": {
     "x": 544,
     "y": 200,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 25",
+   "filename": "serena-holy-domain 25",
    "frame": {
     "x": 680,
     "y": 200,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 26",
+   "filename": "serena-holy-domain 26",
    "frame": {
     "x": 816,
     "y": 200,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 27",
+   "filename": "serena-holy-domain 27",
    "frame": {
     "x": 952,
     "y": 200,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 28",
+   "filename": "serena-holy-domain 28",
    "frame": {
     "x": 1088,
     "y": 200,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 29",
+   "filename": "serena-holy-domain 29",
    "frame": {
     "x": 1224,
     "y": 200,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 30",
+   "filename": "serena-holy-domain 30",
    "frame": {
     "x": 0,
     "y": 300,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 31",
+   "filename": "serena-holy-domain 31",
    "frame": {
     "x": 136,
     "y": 300,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 32",
+   "filename": "serena-holy-domain 32",
    "frame": {
     "x": 272,
     "y": 300,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 33",
+   "filename": "serena-holy-domain 33",
    "frame": {
     "x": 408,
     "y": 300,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 34",
+   "filename": "serena-holy-domain 34",
    "frame": {
     "x": 544,
     "y": 300,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 35",
+   "filename": "serena-holy-domain 35",
    "frame": {
     "x": 680,
     "y": 300,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 36",
+   "filename": "serena-holy-domain 36",
    "frame": {
     "x": 816,
     "y": 300,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 37",
+   "filename": "serena-holy-domain 37",
    "frame": {
     "x": 952,
     "y": 300,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 38",
+   "filename": "serena-holy-domain 38",
    "frame": {
     "x": 1088,
     "y": 300,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 39",
+   "filename": "serena-holy-domain 39",
    "frame": {
     "x": 1224,
     "y": 300,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 40",
+   "filename": "serena-holy-domain 40",
    "frame": {
     "x": 0,
     "y": 400,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 41",
+   "filename": "serena-holy-domain 41",
    "frame": {
     "x": 136,
     "y": 400,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 42",
+   "filename": "serena-holy-domain 42",
    "frame": {
     "x": 272,
     "y": 400,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 43",
+   "filename": "serena-holy-domain 43",
    "frame": {
     "x": 408,
     "y": 400,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 44",
+   "filename": "serena-holy-domain 44",
    "frame": {
     "x": 544,
     "y": 400,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 45",
+   "filename": "serena-holy-domain 45",
    "frame": {
     "x": 680,
     "y": 400,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 46",
+   "filename": "serena-holy-domain 46",
    "frame": {
     "x": 816,
     "y": 400,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 47",
+   "filename": "serena-holy-domain 47",
    "frame": {
     "x": 952,
     "y": 400,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 48",
+   "filename": "serena-holy-domain 48",
    "frame": {
     "x": 1088,
     "y": 400,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 49",
+   "filename": "serena-holy-domain 49",
    "frame": {
     "x": 1224,
     "y": 400,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 50",
+   "filename": "serena-holy-domain 50",
    "frame": {
     "x": 0,
     "y": 500,
@@ -1123,7 +1123,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 51",
+   "filename": "serena-holy-domain 51",
    "frame": {
     "x": 136,
     "y": 500,
@@ -1145,7 +1145,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 52",
+   "filename": "serena-holy-domain 52",
    "frame": {
     "x": 272,
     "y": 500,
@@ -1167,7 +1167,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 53",
+   "filename": "serena-holy-domain 53",
    "frame": {
     "x": 408,
     "y": 500,
@@ -1189,7 +1189,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 54",
+   "filename": "serena-holy-domain 54",
    "frame": {
     "x": 544,
     "y": 500,
@@ -1211,7 +1211,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 55",
+   "filename": "serena-holy-domain 55",
    "frame": {
     "x": 680,
     "y": 500,
@@ -1233,7 +1233,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 56",
+   "filename": "serena-holy-domain 56",
    "frame": {
     "x": 816,
     "y": 500,
@@ -1255,7 +1255,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 57",
+   "filename": "serena-holy-domain 57",
    "frame": {
     "x": 952,
     "y": 500,
@@ -1277,7 +1277,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 58",
+   "filename": "serena-holy-domain 58",
    "frame": {
     "x": 1088,
     "y": 500,
@@ -1299,7 +1299,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 59",
+   "filename": "serena-holy-domain 59",
    "frame": {
     "x": 1224,
     "y": 500,
@@ -1321,7 +1321,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 60",
+   "filename": "serena-holy-domain 60",
    "frame": {
     "x": 0,
     "y": 600,
@@ -1343,7 +1343,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 61",
+   "filename": "serena-holy-domain 61",
    "frame": {
     "x": 136,
     "y": 600,
@@ -1365,7 +1365,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 62",
+   "filename": "serena-holy-domain 62",
    "frame": {
     "x": 272,
     "y": 600,
@@ -1387,7 +1387,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 63",
+   "filename": "serena-holy-domain 63",
    "frame": {
     "x": 408,
     "y": 600,
@@ -1409,7 +1409,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 64",
+   "filename": "serena-holy-domain 64",
    "frame": {
     "x": 544,
     "y": 600,
@@ -1431,7 +1431,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 65",
+   "filename": "serena-holy-domain 65",
    "frame": {
     "x": 680,
     "y": 600,
@@ -1453,7 +1453,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 66",
+   "filename": "serena-holy-domain 66",
    "frame": {
     "x": 816,
     "y": 600,
@@ -1475,7 +1475,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 67",
+   "filename": "serena-holy-domain 67",
    "frame": {
     "x": 952,
     "y": 600,
@@ -1497,7 +1497,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 68",
+   "filename": "serena-holy-domain 68",
    "frame": {
     "x": 1088,
     "y": 600,
@@ -1519,7 +1519,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 69",
+   "filename": "serena-holy-domain 69",
    "frame": {
     "x": 1224,
     "y": 600,
@@ -1541,7 +1541,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 70",
+   "filename": "serena-holy-domain 70",
    "frame": {
     "x": 0,
     "y": 700,
@@ -1563,7 +1563,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 71",
+   "filename": "serena-holy-domain 71",
    "frame": {
     "x": 136,
     "y": 700,
@@ -1585,7 +1585,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 72",
+   "filename": "serena-holy-domain 72",
    "frame": {
     "x": 272,
     "y": 700,
@@ -1607,7 +1607,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 73",
+   "filename": "serena-holy-domain 73",
    "frame": {
     "x": 408,
     "y": 700,
@@ -1629,7 +1629,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 74",
+   "filename": "serena-holy-domain 74",
    "frame": {
     "x": 544,
     "y": 700,
@@ -1651,7 +1651,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 75",
+   "filename": "serena-holy-domain 75",
    "frame": {
     "x": 680,
     "y": 700,
@@ -1673,7 +1673,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 76",
+   "filename": "serena-holy-domain 76",
    "frame": {
     "x": 816,
     "y": 700,
@@ -1695,7 +1695,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 77",
+   "filename": "serena-holy-domain 77",
    "frame": {
     "x": 952,
     "y": 700,
@@ -1717,7 +1717,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 78",
+   "filename": "serena-holy-domain 78",
    "frame": {
     "x": 1088,
     "y": 700,
@@ -1739,7 +1739,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 79",
+   "filename": "serena-holy-domain 79",
    "frame": {
     "x": 1224,
     "y": 700,
@@ -1761,7 +1761,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 80",
+   "filename": "serena-holy-domain 80",
    "frame": {
     "x": 0,
     "y": 800,
@@ -1783,7 +1783,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 81",
+   "filename": "serena-holy-domain 81",
    "frame": {
     "x": 136,
     "y": 800,
@@ -1805,7 +1805,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 82",
+   "filename": "serena-holy-domain 82",
    "frame": {
     "x": 272,
     "y": 800,
@@ -1827,7 +1827,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 83",
+   "filename": "serena-holy-domain 83",
    "frame": {
     "x": 408,
     "y": 800,
@@ -1849,7 +1849,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 84",
+   "filename": "serena-holy-domain 84",
    "frame": {
     "x": 544,
     "y": 800,
@@ -1871,7 +1871,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 85",
+   "filename": "serena-holy-domain 85",
    "frame": {
     "x": 680,
     "y": 800,
@@ -1893,7 +1893,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 86",
+   "filename": "serena-holy-domain 86",
    "frame": {
     "x": 816,
     "y": 800,
@@ -1915,7 +1915,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 87",
+   "filename": "serena-holy-domain 87",
    "frame": {
     "x": 952,
     "y": 800,
@@ -1937,7 +1937,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 88",
+   "filename": "serena-holy-domain 88",
    "frame": {
     "x": 1088,
     "y": 800,
@@ -1959,7 +1959,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 89",
+   "filename": "serena-holy-domain 89",
    "frame": {
     "x": 1224,
     "y": 800,
@@ -1981,7 +1981,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 90",
+   "filename": "serena-holy-domain 90",
    "frame": {
     "x": 0,
     "y": 900,
@@ -2003,7 +2003,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 91",
+   "filename": "serena-holy-domain 91",
    "frame": {
     "x": 136,
     "y": 900,
@@ -2025,7 +2025,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 92",
+   "filename": "serena-holy-domain 92",
    "frame": {
     "x": 272,
     "y": 900,
@@ -2047,7 +2047,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 93",
+   "filename": "serena-holy-domain 93",
    "frame": {
     "x": 408,
     "y": 900,
@@ -2069,7 +2069,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 94",
+   "filename": "serena-holy-domain 94",
    "frame": {
     "x": 544,
     "y": 900,
@@ -2091,7 +2091,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 95",
+   "filename": "serena-holy-domain 95",
    "frame": {
     "x": 680,
     "y": 900,
@@ -2113,7 +2113,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 96",
+   "filename": "serena-holy-domain 96",
    "frame": {
     "x": 816,
     "y": 900,
@@ -2135,7 +2135,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 97",
+   "filename": "serena-holy-domain 97",
    "frame": {
     "x": 952,
     "y": 900,
@@ -2157,7 +2157,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 98",
+   "filename": "serena-holy-domain 98",
    "frame": {
     "x": 1088,
     "y": 900,
@@ -2179,7 +2179,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 99",
+   "filename": "serena-holy-domain 99",
    "frame": {
     "x": 1224,
     "y": 900,
@@ -2201,7 +2201,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 100",
+   "filename": "serena-holy-domain 100",
    "frame": {
     "x": 0,
     "y": 1000,
@@ -2223,7 +2223,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 101",
+   "filename": "serena-holy-domain 101",
    "frame": {
     "x": 136,
     "y": 1000,
@@ -2245,7 +2245,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 102",
+   "filename": "serena-holy-domain 102",
    "frame": {
     "x": 272,
     "y": 1000,
@@ -2267,7 +2267,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 103",
+   "filename": "serena-holy-domain 103",
    "frame": {
     "x": 408,
     "y": 1000,
@@ -2289,7 +2289,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 104",
+   "filename": "serena-holy-domain 104",
    "frame": {
     "x": 544,
     "y": 1000,
@@ -2311,7 +2311,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 105",
+   "filename": "serena-holy-domain 105",
    "frame": {
     "x": 680,
     "y": 1000,
@@ -2333,7 +2333,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 106",
+   "filename": "serena-holy-domain 106",
    "frame": {
     "x": 816,
     "y": 1000,
@@ -2355,7 +2355,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 107",
+   "filename": "serena-holy-domain 107",
    "frame": {
     "x": 952,
     "y": 1000,
@@ -2377,7 +2377,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 108",
+   "filename": "serena-holy-domain 108",
    "frame": {
     "x": 1088,
     "y": 1000,
@@ -2399,7 +2399,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 109",
+   "filename": "serena-holy-domain 109",
    "frame": {
     "x": 1224,
     "y": 1000,
@@ -2421,7 +2421,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 110",
+   "filename": "serena-holy-domain 110",
    "frame": {
     "x": 0,
     "y": 1100,
@@ -2443,7 +2443,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 111",
+   "filename": "serena-holy-domain 111",
    "frame": {
     "x": 136,
     "y": 1100,
@@ -2465,7 +2465,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 112",
+   "filename": "serena-holy-domain 112",
    "frame": {
     "x": 272,
     "y": 1100,
@@ -2487,7 +2487,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 113",
+   "filename": "serena-holy-domain 113",
    "frame": {
     "x": 408,
     "y": 1100,
@@ -2509,7 +2509,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 114",
+   "filename": "serena-holy-domain 114",
    "frame": {
     "x": 544,
     "y": 1100,
@@ -2531,7 +2531,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 115",
+   "filename": "serena-holy-domain 115",
    "frame": {
     "x": 680,
     "y": 1100,
@@ -2553,7 +2553,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 116",
+   "filename": "serena-holy-domain 116",
    "frame": {
     "x": 816,
     "y": 1100,
@@ -2575,7 +2575,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 117",
+   "filename": "serena-holy-domain 117",
    "frame": {
     "x": 952,
     "y": 1100,
@@ -2597,7 +2597,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 118",
+   "filename": "serena-holy-domain 118",
    "frame": {
     "x": 1088,
     "y": 1100,
@@ -2619,7 +2619,7 @@
    "duration": 33
   },
   {
-   "filename": "rune-circle 119",
+   "filename": "serena-holy-domain 119",
    "frame": {
     "x": 1224,
     "y": 1100,
@@ -2653,15 +2653,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "rune-circle",
+    "name": "serena-holy-domain",
     "from": 0,
     "to": 119,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "arcane/rune-circle",
-   "name": "Rune circle",
+   "id": "sd/serena-holy-domain",
+   "name": "Holy domain",
    "fps": 30,
    "loop": true,
    "frames": 120,

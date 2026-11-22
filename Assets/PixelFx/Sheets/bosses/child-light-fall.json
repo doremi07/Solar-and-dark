@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "star-fall 0",
+   "filename": "child-light-fall 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 1",
+   "filename": "child-light-fall 1",
    "frame": {
     "x": 232,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 2",
+   "filename": "child-light-fall 2",
    "frame": {
     "x": 464,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 3",
+   "filename": "child-light-fall 3",
    "frame": {
     "x": 696,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 4",
+   "filename": "child-light-fall 4",
    "frame": {
     "x": 928,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 5",
+   "filename": "child-light-fall 5",
    "frame": {
     "x": 1160,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 6",
+   "filename": "child-light-fall 6",
    "frame": {
     "x": 1392,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 7",
+   "filename": "child-light-fall 7",
    "frame": {
     "x": 1624,
     "y": 0,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 8",
+   "filename": "child-light-fall 8",
    "frame": {
     "x": 0,
     "y": 172,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 9",
+   "filename": "child-light-fall 9",
    "frame": {
     "x": 232,
     "y": 172,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 10",
+   "filename": "child-light-fall 10",
    "frame": {
     "x": 464,
     "y": 172,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 11",
+   "filename": "child-light-fall 11",
    "frame": {
     "x": 696,
     "y": 172,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 12",
+   "filename": "child-light-fall 12",
    "frame": {
     "x": 928,
     "y": 172,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 13",
+   "filename": "child-light-fall 13",
    "frame": {
     "x": 1160,
     "y": 172,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 14",
+   "filename": "child-light-fall 14",
    "frame": {
     "x": 1392,
     "y": 172,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 15",
+   "filename": "child-light-fall 15",
    "frame": {
     "x": 1624,
     "y": 172,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 16",
+   "filename": "child-light-fall 16",
    "frame": {
     "x": 0,
     "y": 344,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 17",
+   "filename": "child-light-fall 17",
    "frame": {
     "x": 232,
     "y": 344,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 18",
+   "filename": "child-light-fall 18",
    "frame": {
     "x": 464,
     "y": 344,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 19",
+   "filename": "child-light-fall 19",
    "frame": {
     "x": 696,
     "y": 344,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 20",
+   "filename": "child-light-fall 20",
    "frame": {
     "x": 928,
     "y": 344,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 21",
+   "filename": "child-light-fall 21",
    "frame": {
     "x": 1160,
     "y": 344,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 22",
+   "filename": "child-light-fall 22",
    "frame": {
     "x": 1392,
     "y": 344,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 23",
+   "filename": "child-light-fall 23",
    "frame": {
     "x": 1624,
     "y": 344,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 24",
+   "filename": "child-light-fall 24",
    "frame": {
     "x": 0,
     "y": 516,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 25",
+   "filename": "child-light-fall 25",
    "frame": {
     "x": 232,
     "y": 516,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 26",
+   "filename": "child-light-fall 26",
    "frame": {
     "x": 464,
     "y": 516,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 27",
+   "filename": "child-light-fall 27",
    "frame": {
     "x": 696,
     "y": 516,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 28",
+   "filename": "child-light-fall 28",
    "frame": {
     "x": 928,
     "y": 516,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 29",
+   "filename": "child-light-fall 29",
    "frame": {
     "x": 1160,
     "y": 516,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 30",
+   "filename": "child-light-fall 30",
    "frame": {
     "x": 1392,
     "y": 516,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 31",
+   "filename": "child-light-fall 31",
    "frame": {
     "x": 1624,
     "y": 516,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 32",
+   "filename": "child-light-fall 32",
    "frame": {
     "x": 0,
     "y": 688,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 33",
+   "filename": "child-light-fall 33",
    "frame": {
     "x": 232,
     "y": 688,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 34",
+   "filename": "child-light-fall 34",
    "frame": {
     "x": 464,
     "y": 688,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 35",
+   "filename": "child-light-fall 35",
    "frame": {
     "x": 696,
     "y": 688,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 36",
+   "filename": "child-light-fall 36",
    "frame": {
     "x": 928,
     "y": 688,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 37",
+   "filename": "child-light-fall 37",
    "frame": {
     "x": 1160,
     "y": 688,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 38",
+   "filename": "child-light-fall 38",
    "frame": {
     "x": 1392,
     "y": 688,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 39",
+   "filename": "child-light-fall 39",
    "frame": {
     "x": 1624,
     "y": 688,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 40",
+   "filename": "child-light-fall 40",
    "frame": {
     "x": 0,
     "y": 860,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 41",
+   "filename": "child-light-fall 41",
    "frame": {
     "x": 232,
     "y": 860,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 42",
+   "filename": "child-light-fall 42",
    "frame": {
     "x": 464,
     "y": 860,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 43",
+   "filename": "child-light-fall 43",
    "frame": {
     "x": 696,
     "y": 860,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 44",
+   "filename": "child-light-fall 44",
    "frame": {
     "x": 928,
     "y": 860,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 45",
+   "filename": "child-light-fall 45",
    "frame": {
     "x": 1160,
     "y": 860,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 46",
+   "filename": "child-light-fall 46",
    "frame": {
     "x": 1392,
     "y": 860,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 47",
+   "filename": "child-light-fall 47",
    "frame": {
     "x": 1624,
     "y": 860,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 48",
+   "filename": "child-light-fall 48",
    "frame": {
     "x": 0,
     "y": 1032,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 49",
+   "filename": "child-light-fall 49",
    "frame": {
     "x": 232,
     "y": 1032,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 50",
+   "filename": "child-light-fall 50",
    "frame": {
     "x": 464,
     "y": 1032,
@@ -1123,7 +1123,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 51",
+   "filename": "child-light-fall 51",
    "frame": {
     "x": 696,
     "y": 1032,
@@ -1145,7 +1145,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 52",
+   "filename": "child-light-fall 52",
    "frame": {
     "x": 928,
     "y": 1032,
@@ -1167,7 +1167,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 53",
+   "filename": "child-light-fall 53",
    "frame": {
     "x": 1160,
     "y": 1032,
@@ -1189,7 +1189,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 54",
+   "filename": "child-light-fall 54",
    "frame": {
     "x": 1392,
     "y": 1032,
@@ -1211,7 +1211,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 55",
+   "filename": "child-light-fall 55",
    "frame": {
     "x": 1624,
     "y": 1032,
@@ -1233,7 +1233,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 56",
+   "filename": "child-light-fall 56",
    "frame": {
     "x": 0,
     "y": 1204,
@@ -1255,7 +1255,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 57",
+   "filename": "child-light-fall 57",
    "frame": {
     "x": 232,
     "y": 1204,
@@ -1277,7 +1277,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 58",
+   "filename": "child-light-fall 58",
    "frame": {
     "x": 464,
     "y": 1204,
@@ -1299,7 +1299,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 59",
+   "filename": "child-light-fall 59",
    "frame": {
     "x": 696,
     "y": 1204,
@@ -1321,7 +1321,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 60",
+   "filename": "child-light-fall 60",
    "frame": {
     "x": 928,
     "y": 1204,
@@ -1343,7 +1343,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 61",
+   "filename": "child-light-fall 61",
    "frame": {
     "x": 1160,
     "y": 1204,
@@ -1365,7 +1365,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 62",
+   "filename": "child-light-fall 62",
    "frame": {
     "x": 1392,
     "y": 1204,
@@ -1387,7 +1387,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 63",
+   "filename": "child-light-fall 63",
    "frame": {
     "x": 1624,
     "y": 1204,
@@ -1409,7 +1409,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 64",
+   "filename": "child-light-fall 64",
    "frame": {
     "x": 0,
     "y": 1376,
@@ -1431,7 +1431,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 65",
+   "filename": "child-light-fall 65",
    "frame": {
     "x": 232,
     "y": 1376,
@@ -1453,7 +1453,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 66",
+   "filename": "child-light-fall 66",
    "frame": {
     "x": 464,
     "y": 1376,
@@ -1475,7 +1475,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 67",
+   "filename": "child-light-fall 67",
    "frame": {
     "x": 696,
     "y": 1376,
@@ -1497,7 +1497,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 68",
+   "filename": "child-light-fall 68",
    "frame": {
     "x": 928,
     "y": 1376,
@@ -1519,7 +1519,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 69",
+   "filename": "child-light-fall 69",
    "frame": {
     "x": 1160,
     "y": 1376,
@@ -1541,7 +1541,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 70",
+   "filename": "child-light-fall 70",
    "frame": {
     "x": 1392,
     "y": 1376,
@@ -1563,7 +1563,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 71",
+   "filename": "child-light-fall 71",
    "frame": {
     "x": 1624,
     "y": 1376,
@@ -1585,7 +1585,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 72",
+   "filename": "child-light-fall 72",
    "frame": {
     "x": 0,
     "y": 1548,
@@ -1607,7 +1607,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 73",
+   "filename": "child-light-fall 73",
    "frame": {
     "x": 232,
     "y": 1548,
@@ -1629,7 +1629,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 74",
+   "filename": "child-light-fall 74",
    "frame": {
     "x": 464,
     "y": 1548,
@@ -1651,7 +1651,7 @@
    "duration": 33
   },
   {
-   "filename": "star-fall 75",
+   "filename": "child-light-fall 75",
    "frame": {
     "x": 696,
     "y": 1548,
@@ -1685,15 +1685,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "star-fall",
+    "name": "child-light-fall",
     "from": 0,
     "to": 75,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "arcane/star-fall",
-   "name": "Star fall",
+   "id": "sd/child-light-fall",
+   "name": "Light fall",
    "fps": 30,
    "loop": false,
    "frames": 76,

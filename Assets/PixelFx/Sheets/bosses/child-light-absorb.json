@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "implosion 0",
+   "filename": "child-light-absorb 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 1",
+   "filename": "child-light-absorb 1",
    "frame": {
     "x": 208,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 2",
+   "filename": "child-light-absorb 2",
    "frame": {
     "x": 416,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 3",
+   "filename": "child-light-absorb 3",
    "frame": {
     "x": 624,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 4",
+   "filename": "child-light-absorb 4",
    "frame": {
     "x": 832,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 5",
+   "filename": "child-light-absorb 5",
    "frame": {
     "x": 1040,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 6",
+   "filename": "child-light-absorb 6",
    "frame": {
     "x": 1248,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 7",
+   "filename": "child-light-absorb 7",
    "frame": {
     "x": 0,
     "y": 184,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 8",
+   "filename": "child-light-absorb 8",
    "frame": {
     "x": 208,
     "y": 184,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 9",
+   "filename": "child-light-absorb 9",
    "frame": {
     "x": 416,
     "y": 184,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 10",
+   "filename": "child-light-absorb 10",
    "frame": {
     "x": 624,
     "y": 184,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 11",
+   "filename": "child-light-absorb 11",
    "frame": {
     "x": 832,
     "y": 184,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 12",
+   "filename": "child-light-absorb 12",
    "frame": {
     "x": 1040,
     "y": 184,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 13",
+   "filename": "child-light-absorb 13",
    "frame": {
     "x": 1248,
     "y": 184,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 14",
+   "filename": "child-light-absorb 14",
    "frame": {
     "x": 0,
     "y": 368,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 15",
+   "filename": "child-light-absorb 15",
    "frame": {
     "x": 208,
     "y": 368,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 16",
+   "filename": "child-light-absorb 16",
    "frame": {
     "x": 416,
     "y": 368,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 17",
+   "filename": "child-light-absorb 17",
    "frame": {
     "x": 624,
     "y": 368,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 18",
+   "filename": "child-light-absorb 18",
    "frame": {
     "x": 832,
     "y": 368,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 19",
+   "filename": "child-light-absorb 19",
    "frame": {
     "x": 1040,
     "y": 368,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 20",
+   "filename": "child-light-absorb 20",
    "frame": {
     "x": 1248,
     "y": 368,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 21",
+   "filename": "child-light-absorb 21",
    "frame": {
     "x": 0,
     "y": 552,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 22",
+   "filename": "child-light-absorb 22",
    "frame": {
     "x": 208,
     "y": 552,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 23",
+   "filename": "child-light-absorb 23",
    "frame": {
     "x": 416,
     "y": 552,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 24",
+   "filename": "child-light-absorb 24",
    "frame": {
     "x": 624,
     "y": 552,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 25",
+   "filename": "child-light-absorb 25",
    "frame": {
     "x": 832,
     "y": 552,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 26",
+   "filename": "child-light-absorb 26",
    "frame": {
     "x": 1040,
     "y": 552,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 27",
+   "filename": "child-light-absorb 27",
    "frame": {
     "x": 1248,
     "y": 552,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 28",
+   "filename": "child-light-absorb 28",
    "frame": {
     "x": 0,
     "y": 736,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 29",
+   "filename": "child-light-absorb 29",
    "frame": {
     "x": 208,
     "y": 736,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 30",
+   "filename": "child-light-absorb 30",
    "frame": {
     "x": 416,
     "y": 736,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 31",
+   "filename": "child-light-absorb 31",
    "frame": {
     "x": 624,
     "y": 736,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 32",
+   "filename": "child-light-absorb 32",
    "frame": {
     "x": 832,
     "y": 736,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 33",
+   "filename": "child-light-absorb 33",
    "frame": {
     "x": 1040,
     "y": 736,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 34",
+   "filename": "child-light-absorb 34",
    "frame": {
     "x": 1248,
     "y": 736,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 35",
+   "filename": "child-light-absorb 35",
    "frame": {
     "x": 0,
     "y": 920,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 36",
+   "filename": "child-light-absorb 36",
    "frame": {
     "x": 208,
     "y": 920,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 37",
+   "filename": "child-light-absorb 37",
    "frame": {
     "x": 416,
     "y": 920,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 38",
+   "filename": "child-light-absorb 38",
    "frame": {
     "x": 624,
     "y": 920,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 39",
+   "filename": "child-light-absorb 39",
    "frame": {
     "x": 832,
     "y": 920,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 40",
+   "filename": "child-light-absorb 40",
    "frame": {
     "x": 1040,
     "y": 920,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 41",
+   "filename": "child-light-absorb 41",
    "frame": {
     "x": 1248,
     "y": 920,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 42",
+   "filename": "child-light-absorb 42",
    "frame": {
     "x": 0,
     "y": 1104,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 43",
+   "filename": "child-light-absorb 43",
    "frame": {
     "x": 208,
     "y": 1104,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 44",
+   "filename": "child-light-absorb 44",
    "frame": {
     "x": 416,
     "y": 1104,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 45",
+   "filename": "child-light-absorb 45",
    "frame": {
     "x": 624,
     "y": 1104,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 46",
+   "filename": "child-light-absorb 46",
    "frame": {
     "x": 832,
     "y": 1104,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 47",
+   "filename": "child-light-absorb 47",
    "frame": {
     "x": 1040,
     "y": 1104,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 48",
+   "filename": "child-light-absorb 48",
    "frame": {
     "x": 1248,
     "y": 1104,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 49",
+   "filename": "child-light-absorb 49",
    "frame": {
     "x": 0,
     "y": 1288,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "implosion 50",
+   "filename": "child-light-absorb 50",
    "frame": {
     "x": 208,
     "y": 1288,
@@ -1135,15 +1135,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "implosion",
+    "name": "child-light-absorb",
     "from": 0,
     "to": 50,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "explosions/implosion",
-   "name": "Implosion",
+   "id": "sd/child-light-absorb",
+   "name": "Light absorption",
    "fps": 30,
    "loop": false,
    "frames": 51,

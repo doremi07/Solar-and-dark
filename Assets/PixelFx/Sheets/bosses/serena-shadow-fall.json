@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "shadow-tendrils 0",
+   "filename": "serena-shadow-fall 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 1",
+   "filename": "serena-shadow-fall 1",
    "frame": {
     "x": 208,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 2",
+   "filename": "serena-shadow-fall 2",
    "frame": {
     "x": 416,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 3",
+   "filename": "serena-shadow-fall 3",
    "frame": {
     "x": 624,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 4",
+   "filename": "serena-shadow-fall 4",
    "frame": {
     "x": 832,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 5",
+   "filename": "serena-shadow-fall 5",
    "frame": {
     "x": 1040,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 6",
+   "filename": "serena-shadow-fall 6",
    "frame": {
     "x": 1248,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 7",
+   "filename": "serena-shadow-fall 7",
    "frame": {
     "x": 1456,
     "y": 0,
@@ -177,7 +177,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 8",
+   "filename": "serena-shadow-fall 8",
    "frame": {
     "x": 0,
     "y": 130,
@@ -199,7 +199,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 9",
+   "filename": "serena-shadow-fall 9",
    "frame": {
     "x": 208,
     "y": 130,
@@ -221,7 +221,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 10",
+   "filename": "serena-shadow-fall 10",
    "frame": {
     "x": 416,
     "y": 130,
@@ -243,7 +243,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 11",
+   "filename": "serena-shadow-fall 11",
    "frame": {
     "x": 624,
     "y": 130,
@@ -265,7 +265,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 12",
+   "filename": "serena-shadow-fall 12",
    "frame": {
     "x": 832,
     "y": 130,
@@ -287,7 +287,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 13",
+   "filename": "serena-shadow-fall 13",
    "frame": {
     "x": 1040,
     "y": 130,
@@ -309,7 +309,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 14",
+   "filename": "serena-shadow-fall 14",
    "frame": {
     "x": 1248,
     "y": 130,
@@ -331,7 +331,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 15",
+   "filename": "serena-shadow-fall 15",
    "frame": {
     "x": 1456,
     "y": 130,
@@ -353,7 +353,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 16",
+   "filename": "serena-shadow-fall 16",
    "frame": {
     "x": 0,
     "y": 260,
@@ -375,7 +375,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 17",
+   "filename": "serena-shadow-fall 17",
    "frame": {
     "x": 208,
     "y": 260,
@@ -397,7 +397,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 18",
+   "filename": "serena-shadow-fall 18",
    "frame": {
     "x": 416,
     "y": 260,
@@ -419,7 +419,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 19",
+   "filename": "serena-shadow-fall 19",
    "frame": {
     "x": 624,
     "y": 260,
@@ -441,7 +441,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 20",
+   "filename": "serena-shadow-fall 20",
    "frame": {
     "x": 832,
     "y": 260,
@@ -463,7 +463,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 21",
+   "filename": "serena-shadow-fall 21",
    "frame": {
     "x": 1040,
     "y": 260,
@@ -485,7 +485,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 22",
+   "filename": "serena-shadow-fall 22",
    "frame": {
     "x": 1248,
     "y": 260,
@@ -507,7 +507,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 23",
+   "filename": "serena-shadow-fall 23",
    "frame": {
     "x": 1456,
     "y": 260,
@@ -529,7 +529,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 24",
+   "filename": "serena-shadow-fall 24",
    "frame": {
     "x": 0,
     "y": 390,
@@ -551,7 +551,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 25",
+   "filename": "serena-shadow-fall 25",
    "frame": {
     "x": 208,
     "y": 390,
@@ -573,7 +573,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 26",
+   "filename": "serena-shadow-fall 26",
    "frame": {
     "x": 416,
     "y": 390,
@@ -595,7 +595,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 27",
+   "filename": "serena-shadow-fall 27",
    "frame": {
     "x": 624,
     "y": 390,
@@ -617,7 +617,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 28",
+   "filename": "serena-shadow-fall 28",
    "frame": {
     "x": 832,
     "y": 390,
@@ -639,7 +639,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 29",
+   "filename": "serena-shadow-fall 29",
    "frame": {
     "x": 1040,
     "y": 390,
@@ -661,7 +661,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 30",
+   "filename": "serena-shadow-fall 30",
    "frame": {
     "x": 1248,
     "y": 390,
@@ -683,7 +683,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 31",
+   "filename": "serena-shadow-fall 31",
    "frame": {
     "x": 1456,
     "y": 390,
@@ -705,7 +705,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 32",
+   "filename": "serena-shadow-fall 32",
    "frame": {
     "x": 0,
     "y": 520,
@@ -727,7 +727,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 33",
+   "filename": "serena-shadow-fall 33",
    "frame": {
     "x": 208,
     "y": 520,
@@ -749,7 +749,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 34",
+   "filename": "serena-shadow-fall 34",
    "frame": {
     "x": 416,
     "y": 520,
@@ -771,7 +771,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 35",
+   "filename": "serena-shadow-fall 35",
    "frame": {
     "x": 624,
     "y": 520,
@@ -793,7 +793,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 36",
+   "filename": "serena-shadow-fall 36",
    "frame": {
     "x": 832,
     "y": 520,
@@ -815,7 +815,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 37",
+   "filename": "serena-shadow-fall 37",
    "frame": {
     "x": 1040,
     "y": 520,
@@ -837,7 +837,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 38",
+   "filename": "serena-shadow-fall 38",
    "frame": {
     "x": 1248,
     "y": 520,
@@ -859,7 +859,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 39",
+   "filename": "serena-shadow-fall 39",
    "frame": {
     "x": 1456,
     "y": 520,
@@ -881,7 +881,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 40",
+   "filename": "serena-shadow-fall 40",
    "frame": {
     "x": 0,
     "y": 650,
@@ -903,7 +903,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 41",
+   "filename": "serena-shadow-fall 41",
    "frame": {
     "x": 208,
     "y": 650,
@@ -925,7 +925,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 42",
+   "filename": "serena-shadow-fall 42",
    "frame": {
     "x": 416,
     "y": 650,
@@ -947,7 +947,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 43",
+   "filename": "serena-shadow-fall 43",
    "frame": {
     "x": 624,
     "y": 650,
@@ -969,7 +969,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 44",
+   "filename": "serena-shadow-fall 44",
    "frame": {
     "x": 832,
     "y": 650,
@@ -991,7 +991,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 45",
+   "filename": "serena-shadow-fall 45",
    "frame": {
     "x": 1040,
     "y": 650,
@@ -1013,7 +1013,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 46",
+   "filename": "serena-shadow-fall 46",
    "frame": {
     "x": 1248,
     "y": 650,
@@ -1035,7 +1035,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 47",
+   "filename": "serena-shadow-fall 47",
    "frame": {
     "x": 1456,
     "y": 650,
@@ -1057,7 +1057,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 48",
+   "filename": "serena-shadow-fall 48",
    "frame": {
     "x": 0,
     "y": 780,
@@ -1079,7 +1079,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 49",
+   "filename": "serena-shadow-fall 49",
    "frame": {
     "x": 208,
     "y": 780,
@@ -1101,7 +1101,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 50",
+   "filename": "serena-shadow-fall 50",
    "frame": {
     "x": 416,
     "y": 780,
@@ -1123,7 +1123,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 51",
+   "filename": "serena-shadow-fall 51",
    "frame": {
     "x": 624,
     "y": 780,
@@ -1145,7 +1145,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 52",
+   "filename": "serena-shadow-fall 52",
    "frame": {
     "x": 832,
     "y": 780,
@@ -1167,7 +1167,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 53",
+   "filename": "serena-shadow-fall 53",
    "frame": {
     "x": 1040,
     "y": 780,
@@ -1189,7 +1189,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 54",
+   "filename": "serena-shadow-fall 54",
    "frame": {
     "x": 1248,
     "y": 780,
@@ -1211,7 +1211,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 55",
+   "filename": "serena-shadow-fall 55",
    "frame": {
     "x": 1456,
     "y": 780,
@@ -1233,7 +1233,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 56",
+   "filename": "serena-shadow-fall 56",
    "frame": {
     "x": 0,
     "y": 910,
@@ -1255,7 +1255,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 57",
+   "filename": "serena-shadow-fall 57",
    "frame": {
     "x": 208,
     "y": 910,
@@ -1277,7 +1277,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 58",
+   "filename": "serena-shadow-fall 58",
    "frame": {
     "x": 416,
     "y": 910,
@@ -1299,7 +1299,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 59",
+   "filename": "serena-shadow-fall 59",
    "frame": {
     "x": 624,
     "y": 910,
@@ -1321,7 +1321,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 60",
+   "filename": "serena-shadow-fall 60",
    "frame": {
     "x": 832,
     "y": 910,
@@ -1343,7 +1343,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 61",
+   "filename": "serena-shadow-fall 61",
    "frame": {
     "x": 1040,
     "y": 910,
@@ -1365,7 +1365,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 62",
+   "filename": "serena-shadow-fall 62",
    "frame": {
     "x": 1248,
     "y": 910,
@@ -1387,7 +1387,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 63",
+   "filename": "serena-shadow-fall 63",
    "frame": {
     "x": 1456,
     "y": 910,
@@ -1409,7 +1409,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 64",
+   "filename": "serena-shadow-fall 64",
    "frame": {
     "x": 0,
     "y": 1040,
@@ -1431,7 +1431,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 65",
+   "filename": "serena-shadow-fall 65",
    "frame": {
     "x": 208,
     "y": 1040,
@@ -1453,7 +1453,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 66",
+   "filename": "serena-shadow-fall 66",
    "frame": {
     "x": 416,
     "y": 1040,
@@ -1475,7 +1475,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 67",
+   "filename": "serena-shadow-fall 67",
    "frame": {
     "x": 624,
     "y": 1040,
@@ -1497,7 +1497,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 68",
+   "filename": "serena-shadow-fall 68",
    "frame": {
     "x": 832,
     "y": 1040,
@@ -1519,7 +1519,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 69",
+   "filename": "serena-shadow-fall 69",
    "frame": {
     "x": 1040,
     "y": 1040,
@@ -1541,7 +1541,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 70",
+   "filename": "serena-shadow-fall 70",
    "frame": {
     "x": 1248,
     "y": 1040,
@@ -1563,7 +1563,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 71",
+   "filename": "serena-shadow-fall 71",
    "frame": {
     "x": 1456,
     "y": 1040,
@@ -1585,7 +1585,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 72",
+   "filename": "serena-shadow-fall 72",
    "frame": {
     "x": 0,
     "y": 1170,
@@ -1607,7 +1607,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 73",
+   "filename": "serena-shadow-fall 73",
    "frame": {
     "x": 208,
     "y": 1170,
@@ -1629,7 +1629,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 74",
+   "filename": "serena-shadow-fall 74",
    "frame": {
     "x": 416,
     "y": 1170,
@@ -1651,7 +1651,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 75",
+   "filename": "serena-shadow-fall 75",
    "frame": {
     "x": 624,
     "y": 1170,
@@ -1673,7 +1673,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 76",
+   "filename": "serena-shadow-fall 76",
    "frame": {
     "x": 832,
     "y": 1170,
@@ -1695,7 +1695,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 77",
+   "filename": "serena-shadow-fall 77",
    "frame": {
     "x": 1040,
     "y": 1170,
@@ -1717,7 +1717,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 78",
+   "filename": "serena-shadow-fall 78",
    "frame": {
     "x": 1248,
     "y": 1170,
@@ -1739,7 +1739,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 79",
+   "filename": "serena-shadow-fall 79",
    "frame": {
     "x": 1456,
     "y": 1170,
@@ -1761,7 +1761,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 80",
+   "filename": "serena-shadow-fall 80",
    "frame": {
     "x": 0,
     "y": 1300,
@@ -1783,7 +1783,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 81",
+   "filename": "serena-shadow-fall 81",
    "frame": {
     "x": 208,
     "y": 1300,
@@ -1805,7 +1805,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 82",
+   "filename": "serena-shadow-fall 82",
    "frame": {
     "x": 416,
     "y": 1300,
@@ -1827,7 +1827,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 83",
+   "filename": "serena-shadow-fall 83",
    "frame": {
     "x": 624,
     "y": 1300,
@@ -1849,7 +1849,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 84",
+   "filename": "serena-shadow-fall 84",
    "frame": {
     "x": 832,
     "y": 1300,
@@ -1871,7 +1871,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 85",
+   "filename": "serena-shadow-fall 85",
    "frame": {
     "x": 1040,
     "y": 1300,
@@ -1893,7 +1893,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 86",
+   "filename": "serena-shadow-fall 86",
    "frame": {
     "x": 1248,
     "y": 1300,
@@ -1915,7 +1915,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 87",
+   "filename": "serena-shadow-fall 87",
    "frame": {
     "x": 1456,
     "y": 1300,
@@ -1937,7 +1937,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 88",
+   "filename": "serena-shadow-fall 88",
    "frame": {
     "x": 0,
     "y": 1430,
@@ -1959,7 +1959,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 89",
+   "filename": "serena-shadow-fall 89",
    "frame": {
     "x": 208,
     "y": 1430,
@@ -1981,7 +1981,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 90",
+   "filename": "serena-shadow-fall 90",
    "frame": {
     "x": 416,
     "y": 1430,
@@ -2003,7 +2003,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 91",
+   "filename": "serena-shadow-fall 91",
    "frame": {
     "x": 624,
     "y": 1430,
@@ -2025,7 +2025,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 92",
+   "filename": "serena-shadow-fall 92",
    "frame": {
     "x": 832,
     "y": 1430,
@@ -2047,7 +2047,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 93",
+   "filename": "serena-shadow-fall 93",
    "frame": {
     "x": 1040,
     "y": 1430,
@@ -2069,7 +2069,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 94",
+   "filename": "serena-shadow-fall 94",
    "frame": {
     "x": 1248,
     "y": 1430,
@@ -2091,7 +2091,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 95",
+   "filename": "serena-shadow-fall 95",
    "frame": {
     "x": 1456,
     "y": 1430,
@@ -2113,7 +2113,7 @@
    "duration": 33
   },
   {
-   "filename": "shadow-tendrils 96",
+   "filename": "serena-shadow-fall 96",
    "frame": {
     "x": 0,
     "y": 1560,
@@ -2147,15 +2147,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "shadow-tendrils",
+    "name": "serena-shadow-fall",
     "from": 0,
     "to": 96,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "shadow/shadow-tendrils",
-   "name": "Shadow tendrils",
+   "id": "sd/serena-shadow-fall",
+   "name": "Shadow fall",
    "fps": 30,
    "loop": false,
    "frames": 97,
