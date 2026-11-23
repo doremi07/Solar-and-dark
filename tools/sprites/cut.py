@@ -18,6 +18,7 @@ from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # panel boxes in sheet-1 (1500 x 1000): the phase-by-phase figures
 PANELS = {
+    "serena-p1": (400, 75, 565, 310), "serena-p2": (570, 75, 755, 310), "serena-p3": (760, 75, 950, 310),
     "child-p1": (400, 555, 570, 795), "child-p2": (565, 555, 765, 795), "child-p3": (765, 555, 990, 800),
 }
 NO_HALO_CLEAR = {"child-p3"}   # its dark tendrils fill the halo zone
