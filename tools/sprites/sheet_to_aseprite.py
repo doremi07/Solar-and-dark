@@ -7,7 +7,7 @@ Each group of the sheet becomes one file, its pieces left to right as frames on 
 feet on the same line), with two layers:
   - "sprite": the cut-out piece, to edit
   - "original" (hidden): the same area of the sheet as delivered, checkerboard and all, to check the cut against
-An "origin" slice marks the bottom centre (the pivot). Frames are rebuilt at 1x (the sheet draws them at 2x); durations per kind (DURATIONS).
+An "origin" slice marks the bottom centre (the pivot). Frames keep the sheet's own resolution; durations per kind (DURATIONS).
 """
 import argparse, importlib.util, json, os, struct
 import numpy as np
@@ -156,56 +156,32 @@ def make_palette(pixels, n=16):
     return cen, cv2.cvtColor(cen[None].clip(0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB)[0]
 
 
-SCALE = 2   # the sheet's sprites are pixel art drawn at 2x and softened; they are rebuilt at 1x
-
-
-def grid_phase(rgb, alpha):
-    """Where the 2x2 pixel grid sits (0 or 1 on each axis): the offset whose blocks are the most even."""
-    g = rgb[..., :3].astype(np.float32).mean(-1)
-    best = None
-    for oy in (0, 1):
-        for ox in (0, 1):
-            b = g[oy:, ox:]; h, w = (b.shape[0] // 2) * 2, (b.shape[1] // 2) * 2
-            b = b[:h, :w].reshape(h // 2, 2, w // 2, 2)
-            m = alpha[oy:, ox:][:h, :w].reshape(h // 2, 2, w // 2, 2).all(axis=(1, 3))
-            v = b.var(axis=(1, 3))[m].mean() if m.any() else 1e9
-            if best is None or v < best[0]: best = (v, ox, oy)
-    return best[1], best[2]
-
-
-def paint(rgba, cen, pal, phase=(0, 0)):
-    """Rebuild a cut-out as 1x pixel art in the family's palette: every pixel of the sheet takes its nearest palette
-    colour, each 2x2 block (on the sheet's own grid) becomes the colour most of its pixels have (ties to the darker:
-    lines win), opaque if at least two of its pixels are; then a cleanup: a pixel none of its 8 neighbours shares
-    takes the colour most of them agree on, unless it stands out (a line, an eye, a glint)."""
+def paint(rgba, cen, pal):
+    """Repaint a cut-out at the sheet's own resolution in the family's palette. Shrinking it (it looks 2x but is not on
+    a clean grid) broke thin lines, eyes and the sword, so nothing is resampled. Each pixel takes its nearest palette
+    colour; then a cleanup removes only compression speckle: a pixel whose colour no 4-neighbour shares takes the
+    colour of the neighbours if they all agree and are close in lightness. A line, an eye or a glint differs strongly
+    from what is around it, or continues in a neighbour, so it is never touched."""
     import cv2
-    ox, oy = phase
     m = rgba[..., 3] > 0
     lab = cv2.cvtColor(np.ascontiguousarray(rgba[..., :3]), cv2.COLOR_RGB2LAB).astype(np.float32)
-    full = np.argmin(((lab.reshape(-1, 3)[:, None] - cen[None]) ** 2).sum(-1), 1).reshape(m.shape)
-    full = np.where(m, full, -1)
-    full = np.pad(full, ((oy, 2), (ox, 2)), constant_values=-1)       # put the grid at (0, 0), room for a last block
-    h, w = full.shape[0] // 2, full.shape[1] // 2
-    blocks = full[:h * 2, :w * 2].reshape(h, 2, w, 2).transpose(0, 2, 1, 3).reshape(h, w, 4)
-    idx = np.full((h, w), -1, np.int16)
-    for y in range(h):
-        for x in range(w):
-            v = blocks[y, x]; v = v[v >= 0]
-            if len(v) < 2: continue
-            c, k = np.unique(v, return_counts=True)
-            idx[y, x] = c[k == k.max()].min()                         # palette is dark to light: ties go darker
+    idx = np.argmin(((lab.reshape(-1, 3)[:, None] - cen[None]) ** 2).sum(-1), 1).reshape(m.shape)
+    idx = np.where(m, idx, -1).astype(np.int16)
     L = cen[:, 0]
+    h, w = idx.shape
     for _ in range(2):
         src = idx.copy()
         for y in range(1, h - 1):
             for x in range(1, w - 1):
                 c = src[y, x]
                 if c < 0: continue
-                nb = np.delete(src[y - 1:y + 2, x - 1:x + 2].ravel(), 4); nb = nb[nb >= 0]
-                if not len(nb) or (nb == c).sum() >= 1: continue
-                v, k = np.unique(nb, return_counts=True)
+                four = np.array([src[y - 1, x], src[y + 1, x], src[y, x - 1], src[y, x + 1]])
+                if (four == c).any() or (four < 0).any(): continue     # continues somewhere, or on the edge: keep
+                diag = np.array([src[y - 1, x - 1], src[y - 1, x + 1], src[y + 1, x - 1], src[y + 1, x + 1]])
+                if (diag == c).any(): continue                         # a diagonal line: keep
+                v, k = np.unique(four, return_counts=True)
                 t = v[np.argmax(k)]
-                if k.max() >= 4 and abs(L[c] - L[t]) < 60: idx[y, x] = t
+                if k.max() >= 3 and abs(L[c] - L[t]) < 22: idx[y, x] = t
     out = np.zeros((h, w, 4), np.uint8)
     mm = idx >= 0
     out[mm, :3] = pal[idx[mm]]; out[mm, 3] = 255
@@ -260,18 +236,15 @@ def main():
         elif name in COUNTS: masks = split_bodies(g, al, COUNTS[name])
         else: masks = split_clusters(al)
         o = orig[y0:y1, x0:x1]
-        phase = grid_phase(g, al)
         fc, fo = [], []
         for mk in masks:
             ys, xs = np.nonzero(mk)
             t, b_, l, r = ys.min(), ys.max() + 1, xs.min(), xs.max() + 1
             piece = g[t:b_, l:r].copy(); piece[..., 3] = np.where(mk[t:b_, l:r], 255, 0)
             # crop on the 2x2 grid so the blocks are the sheet's own pixels
-            t -= (t - phase[1]) % 2; l -= (l - phase[0]) % 2
             piece = g[t:b_, l:r].copy(); piece[..., 3] = np.where(mk[t:b_, l:r], 255, 0)
             fc.append(np.ascontiguousarray(paint(piece, *pals[family(name)])))
-            ref = Image.fromarray(np.ascontiguousarray(o[t:b_, l:r]))
-            fo.append(np.asarray(ref.resize((max(1, ref.width // 2), max(1, ref.height // 2)), Image.BOX)))
+            fo.append(np.ascontiguousarray(o[t:b_, l:r]))
         fc = [f for f in fc if (f[..., 3] > 0).any()]
         dur = DURATIONS[name.split("-")[-1]]
         n, W, H = write(os.path.join(a.out, name + ".aseprite"), fc, fo[:len(fc)], pals[family(name)][1], dur)
