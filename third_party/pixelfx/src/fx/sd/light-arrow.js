@@ -6,13 +6,13 @@ export const meta = {
   name: "Light arrow",
   desc: "An arrow of light in flight: a white-hot head rimmed in gold, a shaft of light, fletchings like small wings, a ribbon of light behind shedding motes and glints.",
   tags: ["projectile", "arrow", "holy", "light", "directional", "loop"],
-  size: [136, 36],
-  origin: [116, 18],
+  size: [96, 32],
+  origin: [80, 16],
   duration: 0.6,
   loop: true,
   fps: 30,
   bg: "sky",
-  options: { palette: ["#3a2410", "#7a5226", "#c08a3e", "#e8b85a", "#f8dc8c", "#fff0c4", "#fffbec", "#ffffff"], length: 38, seed: 5 },
+  options: { palette: ["#3a2410", "#7a5226", "#c08a3e", "#e8b85a", "#f8dc8c", "#fff0c4", "#fffbec", "#ffffff"], length: 22, seed: 5 },
 };
 
 export function draw(p, t, o) {
@@ -20,12 +20,12 @@ export function draw(p, t, o) {
   const left = -meta.origin[0] + 2;
 
   // the ribbon of light behind: a thin wavering band that thins and cools as it trails off
-  for (let d = L * 0.55; d < L * 2.1; d += 0.5) {
-    const u = (d - L * 0.55) / (L * 1.55), y = 0.5 + Math.sin(d * 0.22 - ph * TAU * 2) * (0.4 + u * 1.6);
+  for (let d = L * 0.8; d < L * 2.4; d += 0.5) {
+    const u = (d - L * 0.8) / (L * 1.6), y = 0.5 + Math.sin(d * 0.22 - ph * TAU * 2) * (0.4 + u * 1.6);
     if (-d < left || rand(Math.floor(d), fr) < u * 0.55) continue;
     p.dot(-d, y, u < 0.25 ? C[6] : u < 0.55 ? C[5] : C[4]);
   }
-  p.glowLine(-L * 0.5, 0.5, -L * 1.9, 0.5, 6, C[4], 0.22);
+  p.glowLine(-L * 0.8, 0.5, -L * 2.2, 0.5, 5, C[4], 0.2);
 
   // motes shed off the shaft: they drift back and fade; a few wink as glints
   beat(t, D, 12, S, (r) => r.range(0.2, 0.34), (age, life, r) => {
@@ -46,10 +46,10 @@ export function draw(p, t, o) {
   // fletchings of light at the tail: two feathers swept back, a bright spine and a soft vane, flickering
   const fl = 0.85 + 0.15 * Math.sin(ph * TAU * 3);
   for (const s of [-1, 1]) {
-    for (let k = 0; k < 10; k++) {
-      const x = -L + 2 - k, sp = 1.5 + k * 0.5 * fl, y = 0.5 + s * sp;
-      p.dot(x, y, k < 4 ? C[6] : C[5]);                                 // the spine
-      for (let v = 1.5; v < sp; v += 1) p.dot(x + 1, 0.5 + s * v, k < 5 ? C[4] : C[3]);   // the vane
+    for (let k = 0; k < 7; k++) {
+      const x = -L + 2 - k, sp = 1.5 + k * 0.55 * fl, y = 0.5 + s * sp;
+      p.dot(x, y, k < 3 ? C[6] : C[5]);                                 // the spine
+      for (let v = 1.5; v < sp; v += 1) p.dot(x + 1, 0.5 + s * v, k < 4 ? C[4] : C[3]);   // the vane
     }
   }
   p.glow(-L - 4, 0.5, 9, C[4], 0.32 * fl);

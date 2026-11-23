@@ -4,7 +4,7 @@ import { beat } from "../projectiles/_lib.js";
 
 export const meta = {
   name: "Red sword wave",
-  desc: "A crescent of red blade energy flying forward: a white-hot cutting edge, a crimson body thinning to sharp horns, two fainter echoes behind, embers shed from its back.",
+  desc: "A crescent of red blade energy flying forward: a white-hot cutting edge, a crimson body sweeping back to sharp horns, a dithered smear of motion behind, embers.",
   tags: ["projectile", "slash", "sword", "wave", "red", "directional", "loop"],
   size: [128, 80],
   origin: [96, 40],
@@ -40,25 +40,32 @@ export function draw(p, t, o) {
 
   // embers and slivers shed from its back, streaming away and cooling
   beat(t, D, 16, S, (r) => r.range(0.22, 0.4), (age, life, r) => {
-    const k = age / life, yy = r.range(-H, H) * 0.9, x0 = -Math.abs(yy) * 0.45 - 6;
+    const k = age / life, yy = r.range(-H, H) * 0.8, x0 = -16 - Math.abs(yy) * 0.3;
     const x = x0 - age * r.range(90, 160), y = 0.5 + yy + r.range(-1, 1) * age * 30;
     if (x < left) return;
     if (r.chance(0.3)) p.line(x, y, x - 3 * (1 - k) - 1, y, k < 0.4 ? C[6] : C[4]);
     else p.dot(x, y, k < 0.3 ? C[6] : k < 0.6 ? C[5] : k < 0.85 ? C[4] : C[3]);
   });
 
-  // two after-crescents, fainter and further back, breaking up as they fade
-  p.glowLine(-34, 0.5, -10, 0.5, H * 1.4, C[2], 0.18);
-  crescent(p, C, -24, 40, 3, Math.round(H * 0.8), 0.35, false);
-  crescent(p, C, -13, 40, 5, Math.round(H * 0.9), 0.65, false);
-
-  // the wave: a pulse of white runs over its edge twice a loop; it breathes a pixel
-  const pulse = ((ph * 2) % 1) < 0.18;
-  crescent(p, C, 0, 40 + wob, 9, H + Math.round(wob * 0.6), 1, pulse);
+  // the wave: a sharp crescent whose horns sweep back, and behind it the smear of its own motion, fading back
+  // through dark reds in an ordered dither (no separate echoes)
+  const R = H + 1, pulse = ((ph * 2) % 1) < 0.18, h = H + Math.round(wob * 0.6);
+  p.shade(-R - 26, -h - 1, 2, h + 1, (x, y) => {
+    const yy = y - 0.5;
+    if (Math.abs(yy) > h) return;
+    const xo = -R + Math.sqrt(Math.max(0, R * R - yy * yy));
+    const back = 13 * Math.pow(Math.max(0, 1 - (yy / h) ** 2), 0.8);  // the smear is longest in the middle, nothing at the horns
+    const u = (xo - x) / Math.max(1, back);
+    if (u < 0 || u > 1) return;
+    const bayer = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5][(Math.floor(x) & 3) + (Math.floor(y) & 3) * 4] / 16;
+    if (u > 0.35 && bayer < (u - 0.35) / 0.65) return;
+    return u < 0.35 ? C[3] : u < 0.65 ? C[2] : C[1];
+  });
+  crescent(p, C, 0, R, 5, h, 1, pulse);
 
   // the light: a red bloom on the body, a hot glint on the edge and at each horn
   p.glow(-3, 0.5, H * 1.1, C[3], 0.55);
   p.glow(1, 0.5, 8, C[6], 0.35);
   sparkle(p, 1, 0.5 + wob * 2, 3, WHITE, C[6], 0.45);
-  for (const s of [-1, 1]) p.glow(-H * H / 80, 0.5 + s * H, 4, C[5], 0.35);
+
 }
