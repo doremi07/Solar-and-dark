@@ -7,7 +7,7 @@ Each group of the sheet becomes one file, its pieces left to right as frames on 
 feet on the same line), with two layers:
   - "sprite": the cut-out piece, to edit
   - "original" (hidden): the same area of the sheet as delivered, checkerboard and all, to check the cut against
-An "origin" slice marks the bottom centre (the pivot). Frames are 100 ms; retime them in Aseprite.
+An "origin" slice marks the bottom centre (the pivot). Frames are rebuilt at 1x (the sheet draws them at 2x); durations per kind (DURATIONS).
 """
 import argparse, importlib.util, json, os, struct
 import numpy as np
@@ -23,7 +23,7 @@ GROUPS = [
     ("serena-p1-idle", 14, 450, 514, 586), ("serena-p2-idle", 544, 450, 1002, 586), ("serena-p3-idle", 1036, 450, 1532, 586),
     ("serena-p1-attack", 4, 588, 524, 724), ("serena-p2-attack", 536, 596, 1028, 738), ("serena-p3-attack", 1028, 590, 1532, 724),
     ("serena-p1-skill", 4, 736, 490, 888), ("serena-p2-skill", 524, 736, 1030, 892), ("serena-p3-skill", 1050, 722, 1532, 904),
-    ("serena-p1-down", 18, 908, 474, 1018), ("serena-fx-crystals", 528, 916, 772, 1004), ("serena-fx-shadow", 772, 906, 1532, 1012),
+    ("serena-p1-down", 18, 908, 474, 1018), ("serena-fx-crystals", 528, 916, 694, 1004), ("serena-mini", 694, 916, 772, 1004), ("serena-fx-shadow", 772, 906, 1532, 1012),
 ]
 
 
@@ -119,7 +119,8 @@ def split_clusters(alpha, gap=3):
     near = cv2.dilate(alpha.astype(np.uint8), np.ones((gap, gap), np.uint8))
     cnt, lab, st, cen = cv2.connectedComponentsWithStats(near, 8)
     size = {i: int((alpha & (lab == i)).sum()) for i in range(1, cnt)}
-    big = [i for i in size if size[i] >= 150]
+    top = max(size.values()) if size else 0
+    big = [i for i in size if size[i] >= max(150, 0.08 * top)]       # a frame of its own only if it is a real effect
     groups = {i: alpha & (lab == i) for i in big}
     for i in size:                                                     # a lone spark joins the nearest real piece
         if i in big or size[i] < 6: continue
@@ -129,6 +130,7 @@ def split_clusters(alpha, gap=3):
 
 
 def family(name):
+    if name == "serena-mini": return "p2"                              # the small Serena: a character, not an effect
     return name.split("-")[1] if name.split("-")[1] in ("p1", "p2", "p3") else "fx"
 
 
@@ -154,16 +156,45 @@ def make_palette(pixels, n=16):
     return cen, cv2.cvtColor(cen[None].clip(0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB)[0]
 
 
-def paint(rgba, cen, pal):
-    """Repaint a cut-out with the family's palette only, then a cleanup: a pixel none of its 8 neighbours shares takes
-    the colour most of them agree on, unless it stands out (a line, an eye, a glint)."""
+SCALE = 2   # the sheet's sprites are pixel art drawn at 2x and softened; they are rebuilt at 1x
+
+
+def grid_phase(rgb, alpha):
+    """Where the 2x2 pixel grid sits (0 or 1 on each axis): the offset whose blocks are the most even."""
+    g = rgb[..., :3].astype(np.float32).mean(-1)
+    best = None
+    for oy in (0, 1):
+        for ox in (0, 1):
+            b = g[oy:, ox:]; h, w = (b.shape[0] // 2) * 2, (b.shape[1] // 2) * 2
+            b = b[:h, :w].reshape(h // 2, 2, w // 2, 2)
+            m = alpha[oy:, ox:][:h, :w].reshape(h // 2, 2, w // 2, 2).all(axis=(1, 3))
+            v = b.var(axis=(1, 3))[m].mean() if m.any() else 1e9
+            if best is None or v < best[0]: best = (v, ox, oy)
+    return best[1], best[2]
+
+
+def paint(rgba, cen, pal, phase=(0, 0)):
+    """Rebuild a cut-out as 1x pixel art in the family's palette: every pixel of the sheet takes its nearest palette
+    colour, each 2x2 block (on the sheet's own grid) becomes the colour most of its pixels have (ties to the darker:
+    lines win), opaque if at least two of its pixels are; then a cleanup: a pixel none of its 8 neighbours shares
+    takes the colour most of them agree on, unless it stands out (a line, an eye, a glint)."""
     import cv2
+    ox, oy = phase
     m = rgba[..., 3] > 0
     lab = cv2.cvtColor(np.ascontiguousarray(rgba[..., :3]), cv2.COLOR_RGB2LAB).astype(np.float32)
-    idx = np.argmin(((lab.reshape(-1, 3)[:, None] - cen[None]) ** 2).sum(-1), 1).reshape(m.shape)
-    idx = np.where(m, idx, -1)
+    full = np.argmin(((lab.reshape(-1, 3)[:, None] - cen[None]) ** 2).sum(-1), 1).reshape(m.shape)
+    full = np.where(m, full, -1)
+    full = np.pad(full, ((oy, 2), (ox, 2)), constant_values=-1)       # put the grid at (0, 0), room for a last block
+    h, w = full.shape[0] // 2, full.shape[1] // 2
+    blocks = full[:h * 2, :w * 2].reshape(h, 2, w, 2).transpose(0, 2, 1, 3).reshape(h, w, 4)
+    idx = np.full((h, w), -1, np.int16)
+    for y in range(h):
+        for x in range(w):
+            v = blocks[y, x]; v = v[v >= 0]
+            if len(v) < 2: continue
+            c, k = np.unique(v, return_counts=True)
+            idx[y, x] = c[k == k.max()].min()                         # palette is dark to light: ties go darker
     L = cen[:, 0]
-    h, w = idx.shape
     for _ in range(2):
         src = idx.copy()
         for y in range(1, h - 1):
@@ -175,9 +206,13 @@ def paint(rgba, cen, pal):
                 v, k = np.unique(nb, return_counts=True)
                 t = v[np.argmax(k)]
                 if k.max() >= 4 and abs(L[c] - L[t]) < 60: idx[y, x] = t
-    out = np.zeros_like(rgba)
-    out[m, :3] = pal[idx[m]]; out[m, 3] = 255
+    out = np.zeros((h, w, 4), np.uint8)
+    mm = idx >= 0
+    out[mm, :3] = pal[idx[mm]]; out[mm, 3] = 255
     return out
+
+
+DURATIONS = {"idle": 120, "attack": 90, "skill": 80, "down": 150, "crystals": 80, "shadow": 80, "mini": 120, "art": 100}
 
 
 def write(path, frames_cut, frames_orig, pal, duration=100):
@@ -225,14 +260,21 @@ def main():
         elif name in COUNTS: masks = split_bodies(g, al, COUNTS[name])
         else: masks = split_clusters(al)
         o = orig[y0:y1, x0:x1]
+        phase = grid_phase(g, al)
         fc, fo = [], []
         for mk in masks:
             ys, xs = np.nonzero(mk)
             t, b_, l, r = ys.min(), ys.max() + 1, xs.min(), xs.max() + 1
             piece = g[t:b_, l:r].copy(); piece[..., 3] = np.where(mk[t:b_, l:r], 255, 0)
+            # crop on the 2x2 grid so the blocks are the sheet's own pixels
+            t -= (t - phase[1]) % 2; l -= (l - phase[0]) % 2
+            piece = g[t:b_, l:r].copy(); piece[..., 3] = np.where(mk[t:b_, l:r], 255, 0)
             fc.append(np.ascontiguousarray(paint(piece, *pals[family(name)])))
-            fo.append(np.ascontiguousarray(o[t:b_, l:r]))
-        n, W, H = write(os.path.join(a.out, name + ".aseprite"), fc, fo, pals[family(name)][1])
+            ref = Image.fromarray(np.ascontiguousarray(o[t:b_, l:r]))
+            fo.append(np.asarray(ref.resize((max(1, ref.width // 2), max(1, ref.height // 2)), Image.BOX)))
+        fc = [f for f in fc if (f[..., 3] > 0).any()]
+        dur = DURATIONS[name.split("-")[-1]]
+        n, W, H = write(os.path.join(a.out, name + ".aseprite"), fc, fo[:len(fc)], pals[family(name)][1], dur)
         index.append({"file": name + ".aseprite", "frames": n, "size": [W, H], "sheet_box": [x0, y0, x1, y1]})
         print(f"{name:22s} {n:2d} frames  {W}x{H}")
     json.dump(index, open(os.path.join(a.out, "index.json"), "w"), indent=1)
