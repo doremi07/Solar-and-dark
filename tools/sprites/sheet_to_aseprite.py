@@ -134,6 +134,23 @@ def family(name):
     return name.split("-")[1] if name.split("-")[1] in ("p1", "p2", "p3") else "fx"
 
 
+MERGE = 34   # colours closer than this in Lab (OpenCV's 0-255 scale, about 13 dE) become one
+
+
+def merge_similar(cen, limit=MERGE):
+    """Colours that read as the same are one colour: repeatedly join the closest pair (their middle) until no two are
+    closer than `limit`."""
+    cen = [c.astype(np.float32) for c in cen]
+    while len(cen) > 2:
+        warm = [c[2] - 128 > 6 for c in cen]                          # the halo's gold never merges into the lavenders
+        d = np.array([[np.linalg.norm(a - b) if i != j and warm[i] == warm[j] else 1e9 for j, b in enumerate(cen)]
+                      for i, a in enumerate(cen)])
+        i, j = np.unravel_index(np.argmin(d), d.shape)
+        if d[i, j] >= limit: break
+        cen[i] = (cen[i] + cen[j]) / 2; cen.pop(j)
+    return np.array(cen, np.float32)
+
+
 def make_palette(pixels, n=16):
     """n colours for a family, picked in Lab (perceptual), dark to light. Each distinct colour (binned) counts once,
     not by area, so small accents get a colour of their own; the halo's gold, if the family has it, is kept as two
@@ -152,6 +169,7 @@ def make_palette(pixels, n=16):
     if accents:
         acc = cv2.cvtColor(np.array([accents]).clip(0, 255).astype(np.uint8), cv2.COLOR_RGB2LAB)[0].astype(np.float32)
         cen = np.concatenate([cen, acc])
+    cen = merge_similar(cen)                                          # similar colours become one (warm with warm only)
     cen = cen[np.argsort(cen[:, 0])]
     return cen, cv2.cvtColor(cen[None].clip(0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB)[0]
 
