@@ -95,8 +95,21 @@ def split_bodies(rgb, alpha, n):
         cols = np.unique(by_column[piece])
         if len(cols) == 1 or st[i, 4] < 400:                           # whole, to the nearest body
             k = int(np.argmin([abs(cen[i][0] - c) for c in centres])); out[k] |= piece
-        else:                                                          # a piece joining bodies: split halfway
-            for k in cols: out[k] |= piece & (by_column == k)
+        else:                                                          # a piece joining bodies: split along its own
+            markers = np.zeros(alpha.shape, np.int32)                  # gaps and edges, seeded from each body's core
+            for k in cols:
+                core = piece & (by_column == k) & (dist >= max(2.0, dist[piece & (by_column == k)].max() * 0.5))
+                if not core.any(): core = piece & (by_column == k) & (np.abs(X - centres[k]) < 2)
+                markers[core] = int(k) + 1
+            ws = cv2.watershed(np.ascontiguousarray(rgb[..., :3]), markers)
+            bounds = [-1e9] + mids + [1e9]
+            for k in cols:
+                lo, hi = bounds[k], bounds[k + 1]
+                pad = (centres[min(k + 1, n - 1)] - centres[max(k - 1, 0)]) / 6
+                near = (X >= lo - pad) & (X <= hi + pad)               # a body reaches a little past its own line, no more
+                out[k] |= piece & near & ((ws == int(k) + 1) | ((ws == -1) & (by_column == k)))
+            rest = piece & ~np.any([o for o in out], axis=0)
+            for k in cols: out[k] |= rest & (by_column == k)
     return out
 
 
@@ -105,8 +118,14 @@ def split_clusters(alpha, gap=3):
     import cv2
     near = cv2.dilate(alpha.astype(np.uint8), np.ones((gap, gap), np.uint8))
     cnt, lab, st, cen = cv2.connectedComponentsWithStats(near, 8)
-    keep = [i for i in range(1, cnt) if (alpha & (lab == i)).sum() > 40]
-    return [alpha & (lab == i) for i in sorted(keep, key=lambda i: st[i, 0])]
+    size = {i: int((alpha & (lab == i)).sum()) for i in range(1, cnt)}
+    big = [i for i in size if size[i] >= 150]
+    groups = {i: alpha & (lab == i) for i in big}
+    for i in size:                                                     # a lone spark joins the nearest real piece
+        if i in big or size[i] < 6: continue
+        j = min(big, key=lambda b: (cen[b][0] - cen[i][0]) ** 2 + (cen[b][1] - cen[i][1]) ** 2)
+        groups[j] |= alpha & (lab == i)
+    return [groups[i] for i in sorted(big, key=lambda i: st[i, 0])]
 
 
 def family(name):
@@ -115,12 +134,22 @@ def family(name):
 
 def make_palette(pixels, n=16):
     """n colours for a family, picked in Lab (perceptual), dark to light. Each distinct colour (binned) counts once,
-    not by area, so small accents (the gold halo, the pink of a cheek, a glowing edge) get a colour of their own."""
+    not by area, so small accents get a colour of their own; the halo's gold, if the family has it, is kept as two
+    colours (its light and its shade) instead of being averaged into the pale lavender."""
     import cv2
-    binned = np.unique((pixels // 8).astype(np.int16), axis=0) * 8 + 4
+    p = pixels.astype(np.int16)
+    warm = (p[:, 0] > p[:, 2] + 12) & (p[:, 0] > p[:, 1] + 4) & (p.mean(1) > 120)
+    accents = []
+    if warm.mean() > 0.002:
+        w = p[warm]; Lw = w.mean(1)
+        accents = [w[Lw >= np.median(Lw)].mean(0), w[Lw < np.median(Lw)].mean(0)]
+    binned = np.unique((p[~warm] // 8), axis=0) * 8 + 4
     lab = cv2.cvtColor(binned[None].astype(np.uint8), cv2.COLOR_RGB2LAB)[0].astype(np.float32)
     crit = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 80, 0.2)
-    _, _, cen = cv2.kmeans(lab, n, None, crit, 6, cv2.KMEANS_PP_CENTERS)
+    _, _, cen = cv2.kmeans(lab, n - len(accents), None, crit, 6, cv2.KMEANS_PP_CENTERS)
+    if accents:
+        acc = cv2.cvtColor(np.array([accents]).clip(0, 255).astype(np.uint8), cv2.COLOR_RGB2LAB)[0].astype(np.float32)
+        cen = np.concatenate([cen, acc])
     cen = cen[np.argsort(cen[:, 0])]
     return cen, cv2.cvtColor(cen[None].clip(0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB)[0]
 

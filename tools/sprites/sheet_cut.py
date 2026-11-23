@@ -55,10 +55,10 @@ def cut(rgb, protect=None):
     fg = ~bg
     # what is left of the blend on the outside: light, washed-out pixels on the silhouette's edge (the art's own
     # outline there is dark, so it stays); peeled for up to three pixels
-    for _ in range(3):
+    cool = a[..., 2] >= a[..., 0] - 2                                  # the blend is bluish; the halo's gold is warm
+    for _ in range(6):
         edge = fg & (cv2.erode(fg.astype(np.uint8), np.ones((3, 3), np.uint8)) == 0)
-        cool = a[..., 2] >= a[..., 0]                                  # the blend is bluish; the halo's gold is warm
-        fg &= ~(edge & (L >= 190) & (chroma <= 30) & cool)
+        fg &= ~(edge & (L >= 185) & (chroma <= 40) & cool)
     n, lab, st, _ = cv2.connectedComponentsWithStats(fg.astype(np.uint8), 8)
     for i in range(1, n):
         if st[i, cv2.CC_STAT_AREA] < 6: fg &= lab != i
