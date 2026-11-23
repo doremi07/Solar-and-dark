@@ -72,10 +72,89 @@ def split_count(alpha, n):
     return [(edges[i], edges[i + 1]) for i in range(n)]
 
 
-def write(path, frames_cut, frames_orig, pivot, duration=100):
+def split_bodies(rgb, alpha, n):
+    """n frames whose hair and cloth overlap. Each body's centre is the middle of the thickest part of its slot (the
+    slots are cut at the sparsest columns); a separate piece (a halo, a strand, a spark) goes whole to the body whose
+    centre is nearest; a piece joining two bodies is split on the line halfway between their centres.
+    Returns n masks, left to right."""
+    import cv2
+    m = alpha.astype(np.uint8)
+    dist = cv2.distanceTransform(m, cv2.DIST_L2, 5)
+    centres = []
+    for a_, b_ in split_count(alpha, n):
+        d = np.zeros_like(dist); d[:, a_:b_] = dist[:, a_:b_]
+        ys, xs = np.nonzero(d >= d.max() * 0.5)
+        centres.append(float(xs.mean()))
+    mids = [(centres[k] + centres[k + 1]) / 2 for k in range(n - 1)]
+    X = np.arange(alpha.shape[1])[None, :].repeat(alpha.shape[0], 0)
+    by_column = np.searchsorted(mids, X)                               # which body each column belongs to
+    out = [np.zeros_like(alpha) for _ in range(n)]
+    cnt, lab, st, cen = cv2.connectedComponentsWithStats(m, 8)
+    for i in range(1, cnt):
+        piece = lab == i
+        cols = np.unique(by_column[piece])
+        if len(cols) == 1 or st[i, 4] < 400:                           # whole, to the nearest body
+            k = int(np.argmin([abs(cen[i][0] - c) for c in centres])); out[k] |= piece
+        else:                                                          # a piece joining bodies: split halfway
+            for k in cols: out[k] |= piece & (by_column == k)
+    return out
+
+
+def split_clusters(alpha, gap=3):
+    """Effect groups: each cluster of pieces closer than `gap` px is one frame, left to right."""
+    import cv2
+    near = cv2.dilate(alpha.astype(np.uint8), np.ones((gap, gap), np.uint8))
+    cnt, lab, st, cen = cv2.connectedComponentsWithStats(near, 8)
+    keep = [i for i in range(1, cnt) if (alpha & (lab == i)).sum() > 40]
+    return [alpha & (lab == i) for i in sorted(keep, key=lambda i: st[i, 0])]
+
+
+def family(name):
+    return name.split("-")[1] if name.split("-")[1] in ("p1", "p2", "p3") else "fx"
+
+
+def make_palette(pixels, n=16):
+    """n colours for a family, picked in Lab (perceptual), dark to light. Each distinct colour (binned) counts once,
+    not by area, so small accents (the gold halo, the pink of a cheek, a glowing edge) get a colour of their own."""
+    import cv2
+    binned = np.unique((pixels // 8).astype(np.int16), axis=0) * 8 + 4
+    lab = cv2.cvtColor(binned[None].astype(np.uint8), cv2.COLOR_RGB2LAB)[0].astype(np.float32)
+    crit = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 80, 0.2)
+    _, _, cen = cv2.kmeans(lab, n, None, crit, 6, cv2.KMEANS_PP_CENTERS)
+    cen = cen[np.argsort(cen[:, 0])]
+    return cen, cv2.cvtColor(cen[None].clip(0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB)[0]
+
+
+def paint(rgba, cen, pal):
+    """Repaint a cut-out with the family's palette only, then a cleanup: a pixel none of its 8 neighbours shares takes
+    the colour most of them agree on, unless it stands out (a line, an eye, a glint)."""
+    import cv2
+    m = rgba[..., 3] > 0
+    lab = cv2.cvtColor(np.ascontiguousarray(rgba[..., :3]), cv2.COLOR_RGB2LAB).astype(np.float32)
+    idx = np.argmin(((lab.reshape(-1, 3)[:, None] - cen[None]) ** 2).sum(-1), 1).reshape(m.shape)
+    idx = np.where(m, idx, -1)
+    L = cen[:, 0]
+    h, w = idx.shape
+    for _ in range(2):
+        src = idx.copy()
+        for y in range(1, h - 1):
+            for x in range(1, w - 1):
+                c = src[y, x]
+                if c < 0: continue
+                nb = np.delete(src[y - 1:y + 2, x - 1:x + 2].ravel(), 4); nb = nb[nb >= 0]
+                if not len(nb) or (nb == c).sum() >= 1: continue
+                v, k = np.unique(nb, return_counts=True)
+                t = v[np.argmax(k)]
+                if k.max() >= 4 and abs(L[c] - L[t]) < 60: idx[y, x] = t
+    out = np.zeros_like(rgba)
+    out[m, :3] = pal[idx[m]]; out[m, 3] = 255
+    return out
+
+
+def write(path, frames_cut, frames_orig, pal, duration=100):
     h = max(f.shape[0] for f in frames_cut); w = max(f.shape[1] for f in frames_cut)
     W, H = w + 4, h + 4
-    colors = A.auto_palette(Image.fromarray(np.concatenate([f.reshape(-1, 4) for f in frames_cut])[None]))
+    colors = [(int(r), int(g), int(b), 255) for r, g, b in pal]
     out = []
     for i, (fc, fo) in enumerate(zip(frames_cut, frames_orig)):
         ox, oy = (W - fc.shape[1]) // 2, H - 2 - fc.shape[0]           # bottom-centre aligned
@@ -105,19 +184,26 @@ def main():
     cut = np.asarray(Image.open(os.path.join(ROOT, "art/bosses/serena-sheet/cut.png")).convert("RGBA"))
     orig = np.asarray(Image.open(os.path.join(ROOT, "art/bosses/serena-sheet/sheet.webp")).convert("RGBA"))
     index = []
+    fam_px = {}
+    for name, x0, y0, x1, y1 in GROUPS:
+        g = cut[y0:y1, x0:x1]
+        fam_px.setdefault(family(name), []).append(g[g[..., 3] > 0][:, :3])
+    pals = {f: make_palette(np.concatenate(v)) for f, v in fam_px.items()}
     for name, x0, y0, x1, y1 in GROUPS:
         g = cut[y0:y1, x0:x1]
         al = g[..., 3] > 0
-        spans = [(0, g.shape[1])] if name.endswith("-art") else split_count(al, COUNTS[name]) if name in COUNTS else pieces(al, x0, x1)
+        if name.endswith("-art"): masks = [al]
+        elif name in COUNTS: masks = split_bodies(g, al, COUNTS[name])
+        else: masks = split_clusters(al)
+        o = orig[y0:y1, x0:x1]
         fc, fo = [], []
-        for a_, b_ in spans:
-            piece = g[:, a_:b_]
-            ys = np.nonzero(piece[..., 3].any(1))[0]
-            top, bot = ys.min(), ys.max() + 1
-            fc.append(np.ascontiguousarray(piece[top:bot]))
-            o = orig[y0 + top: y0 + bot, x0 + a_: x0 + b_].copy()
-            fo.append(np.ascontiguousarray(o))
-        n, W, H = write(os.path.join(a.out, name + ".aseprite"), fc, fo, None)
+        for mk in masks:
+            ys, xs = np.nonzero(mk)
+            t, b_, l, r = ys.min(), ys.max() + 1, xs.min(), xs.max() + 1
+            piece = g[t:b_, l:r].copy(); piece[..., 3] = np.where(mk[t:b_, l:r], 255, 0)
+            fc.append(np.ascontiguousarray(paint(piece, *pals[family(name)])))
+            fo.append(np.ascontiguousarray(o[t:b_, l:r]))
+        n, W, H = write(os.path.join(a.out, name + ".aseprite"), fc, fo, pals[family(name)][1])
         index.append({"file": name + ".aseprite", "frames": n, "size": [W, H], "sheet_box": [x0, y0, x1, y1]})
         print(f"{name:22s} {n:2d} frames  {W}x{H}")
     json.dump(index, open(os.path.join(a.out, "index.json"), "w"), indent=1)

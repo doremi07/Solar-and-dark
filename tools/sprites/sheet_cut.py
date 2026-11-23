@@ -33,26 +33,35 @@ def protect_mask(rgb, model):
 
 
 def cut(rgb, protect=None):
+    """Background = the checker's exactly-grey pixels (R = G = B within 3, light, not the pure white of a sparkle),
+    in areas of at least 12 px; then the blend pixels along that edge (grey-ish, light) go too. The art's whites are
+    lavender (blue a few levels above green), so they stay."""
     a = rgb.astype(np.int16)
     h, w, _ = a.shape
     L = a.mean(-1)
-    neutral = (a.max(-1) - a.min(-1) <= 10) & (a.min(-1) >= 215)
-    n, lab, st, _ = cv2.connectedComponentsWithStats(neutral.astype(np.uint8), 4)
+    chroma = a.max(-1) - a.min(-1)
+    grey = (chroma <= 3) & (L >= 212) & (L <= 251)
+    n, lab, st, _ = cv2.connectedComponentsWithStats(grey.astype(np.uint8), 4)
     bg = np.zeros((h, w), bool)
     for i in range(1, n):
-        x, y, ww, hh, ar = st[i]
-        sel = lab == i
-        v = L[sel]
-        edge = x == 0 or y == 0 or x + ww >= w or y + hh >= h
-        guarded = protect is not None and float(protect[sel].mean()) >= 0.7
-        if edge or (not guarded and (v.mean() < 243.5 or (v.mean() < 246.5 and v.std() >= 6.5 and ar >= 20))): bg |= sel
-    # the soft fringe where the art meets the checker: neutral, light, beside the background
-    near = cv2.dilate(bg.astype(np.uint8), np.ones((3, 3), np.uint8)) > 0
-    fringe = near & ~bg & (a.max(-1) - a.min(-1) <= 14) & (a.min(-1) >= 205)
-    fg = ~(bg | fringe)
+        if st[i, cv2.CC_STAT_AREA] >= 12: bg |= lab == i
+    # close pinholes in the checker (a compression speck inside a cell), never across art
+    closed = cv2.morphologyEx(bg.astype(np.uint8), cv2.MORPH_CLOSE, np.ones((3, 3), np.uint8)) > 0
+    bg |= closed & (chroma <= 6) & (L >= 205)
+    # the blend along the edge: two passes of greyish light pixels touching the background
+    for _ in range(2):
+        near = cv2.dilate(bg.astype(np.uint8), np.ones((3, 3), np.uint8)) > 0
+        bg |= near & (chroma <= 7) & (L >= 200)
+    fg = ~bg
+    # what is left of the blend on the outside: light, washed-out pixels on the silhouette's edge (the art's own
+    # outline there is dark, so it stays); peeled for up to three pixels
+    for _ in range(3):
+        edge = fg & (cv2.erode(fg.astype(np.uint8), np.ones((3, 3), np.uint8)) == 0)
+        cool = a[..., 2] >= a[..., 0]                                  # the blend is bluish; the halo's gold is warm
+        fg &= ~(edge & (L >= 190) & (chroma <= 30) & cool)
     n, lab, st, _ = cv2.connectedComponentsWithStats(fg.astype(np.uint8), 8)
     for i in range(1, n):
-        if st[i, cv2.CC_STAT_AREA] < 4: fg &= lab != i
+        if st[i, cv2.CC_STAT_AREA] < 6: fg &= lab != i
     return np.dstack([rgb, (fg * 255).astype(np.uint8)])
 
 
@@ -61,5 +70,4 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--model", help="isnet-anime.onnx (guards pale parts of the art)")
     args = ap.parse_args()
     src = np.asarray(Image.open(os.path.join(ROOT, "art/bosses/serena-sheet/sheet.webp")).convert("RGB"))
-    prot = protect_mask(src, args.model) if args.model else None
-    Image.fromarray(cut(src, prot)).save(os.path.join(ROOT, "art/bosses/serena-sheet/cut.png"))
+    Image.fromarray(cut(src)).save(os.path.join(ROOT, "art/bosses/serena-sheet/cut.png"))
