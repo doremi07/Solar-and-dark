@@ -143,7 +143,7 @@ namespace SolarDark.Combat
             Casting = skill;
             readyAt[skill] = Time.time + skill.windup + skill.cooldown;
             onSkill.Invoke(skill);
-            if (bossBody != null) bossBody.PlayCast(skill.windup);
+            if (bossBody != null) bossBody.PlayCast(skill.bodyMotion, skill.windup, skill.ActiveLength - skill.windup);
             if (animator != null && !string.IsNullOrEmpty(skill.animTrigger)) animator.SetTrigger(skill.animTrigger);
             yield return SkillRunner.Run(skill, this, seed + 7919 * ++casts);
             Casting = null;
@@ -201,7 +201,7 @@ namespace SolarDark.Combat
             var p = CurrentPhase;
             if (p == null) return;
             if (body != null) body.color = p.bodyTint;
-            if (bossBody != null && p.idleSheet != null) bossBody.SetSheets(p.idleSheet, p.castSheet, p.hurtSheet);
+            if (bossBody != null && p.idleSheet != null) bossBody.SetSheets(p.idleSheet, p.hurtSheet, p.strikeSheet, p.slamSheet, p.channelSheet);
             if (halo != null) Destroy(halo.gameObject);
             if (p.halo != null)
             {
@@ -238,7 +238,10 @@ namespace SolarDark.Combat
             {
                 int k = i / 2 + 1, side = i % 2 == 0 ? -1 : 1;
                 var go = new GameObject("illusion");
-                go.transform.position = center + new Vector2(side * k * Mathf.Max(1, spacing), 0);
+                var at = center + new Vector2(side * k * Mathf.Max(1, spacing), 0);
+                // inside the arena: an image past the wall would fire from off screen
+                if (owner is BossController bc && bc.arenaHalfWidth > 0) at.x = Mathf.Clamp(at.x, -bc.arenaHalfWidth + 0.5f, bc.arenaHalfWidth - 0.5f);
+                go.transform.position = at;
                 var ill = go.AddComponent<BossIllusion>();
                 ill.owner = owner;
                 ill.body = go.AddComponent<SpriteRenderer>();

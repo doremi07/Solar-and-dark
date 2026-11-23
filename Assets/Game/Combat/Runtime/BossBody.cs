@@ -5,49 +5,60 @@ namespace SolarDark.Combat
 {
     /// <summary>
     /// Plays a boss's body from its phase's sprite sheets (tools/sprites/make.py, 128 x 128 from the concept art):
-    /// the idle loop; the cast, sped up or slowed so its release frame (<see cref="castRelease"/> seconds into the sheet)
-    /// lands exactly when the skill's wind-up ends; and the hurt flinch, which never interrupts a cast.
+    /// the idle loop; the skill's motion (strike / slam / channel), sped up or slowed so its release frame
+    /// (<see cref="castRelease"/> seconds into the sheet) lands exactly when the wind-up ends, which is when the skill's
+    /// effect bursts; a channel then holds its lit pose (frames <see cref="holdFrom"/>..<see cref="holdTo"/>, looped) for
+    /// as long as the spell runs; and the hurt flinch, which never interrupts an attack.
     /// <see cref="BossController"/> drives it; flipping is the SpriteRenderer's flipX.
     /// </summary>
     [RequireComponent(typeof(SpriteRenderer))]
     public class BossBody : MonoBehaviour
     {
-        public PixelFxSheet idle;
-        public PixelFxSheet cast;
-        public PixelFxSheet hurt;
-        [Tooltip("Seconds into the cast sheet where the blow is released (make.py: frame 4 at 12 fps).")]
+        public PixelFxSheet idle, hurt, strike, slam, channel;
+        [Tooltip("Seconds into a motion sheet where the blow is released (make.py: frame 4 at 12 fps).")]
         public float castRelease = 4f / 12f;
+        [Tooltip("The channel sheet's held frames (make.py CHANNEL_HOLD).")]
+        public int holdFrom = 5, holdTo = 10;
 
         enum Mode { Idle, Cast, Hurt }
         SpriteRenderer sr;
-        float t, speed = 1;
+        PixelFxSheet cast;
+        float t, speed = 1, holdLeft;
         Mode mode;
 
         public bool Casting => mode == Mode.Cast;
 
         void Awake() => sr = GetComponent<SpriteRenderer>();
 
-        public void SetSheets(PixelFxSheet idleSheet, PixelFxSheet castSheet, PixelFxSheet hurtSheet)
+        public void SetSheets(PixelFxSheet idleSheet, PixelFxSheet hurtSheet, PixelFxSheet strikeSheet, PixelFxSheet slamSheet, PixelFxSheet channelSheet)
         {
             idle = idleSheet;
-            cast = castSheet;
             hurt = hurtSheet;
+            strike = strikeSheet;
+            slam = slamSheet;
+            channel = channelSheet;
             mode = Mode.Idle;
             t = 0;
             Show();
         }
 
-        /// <summary>Play the cast so its release lands after <paramref name="windup"/> seconds.</summary>
-        public void PlayCast(float windup)
+        /// <summary>
+        /// Play <paramref name="motion"/> so its release lands after <paramref name="windup"/> seconds; a channel then holds
+        /// for <paramref name="hold"/> more seconds (the spell's own length after the wind-up).
+        /// </summary>
+        public void PlayCast(BodyMotion motion, float windup, float hold)
         {
+            cast = motion == BodyMotion.Slam ? slam : motion == BodyMotion.Channel ? channel : strike;
+            if (cast == null) cast = strike;
             if (cast == null) return;
             speed = Mathf.Clamp(castRelease / Mathf.Max(0.05f, windup), 0.35f, 3f);
+            holdLeft = motion == BodyMotion.Channel && cast == channel ? Mathf.Max(0, hold) : 0;
             mode = Mode.Cast;
             t = 0;
             Show();
         }
 
-        /// <summary>Flinch, unless a cast is playing (the attack reads first).</summary>
+        /// <summary>Flinch, unless an attack is playing (the attack reads first).</summary>
         public void PlayHurt()
         {
             if (hurt == null || mode == Mode.Cast) return;
@@ -59,7 +70,18 @@ namespace SolarDark.Combat
 
         void Update()
         {
-            t += Time.deltaTime * (mode == Mode.Idle ? 1 : speed);
+            float dt = Time.deltaTime;
+            if (mode == Mode.Cast && t >= castRelease)
+            {
+                speed = 1;   // after the release the motion plays at its own pace, whatever the wind-up asked
+                if (holdLeft > 0)
+                {
+                    holdLeft -= dt;
+                    float fd = 1f / Mathf.Max(1, cast.data.fps), a = holdFrom * fd, b = (holdTo + 1) * fd;
+                    if (t + dt >= b) { t = a + (t + dt - b) % (b - a); Show(); return; }   // loop the held, lit frames
+                }
+            }
+            t += dt * (mode == Mode.Idle ? 1 : speed);
             var sheet = Current;
             if (mode != Mode.Idle && (sheet == null || t >= sheet.data.TotalSeconds))
             {

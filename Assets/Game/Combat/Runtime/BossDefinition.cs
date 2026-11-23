@@ -18,8 +18,10 @@ namespace SolarDark.Combat
         public PixelFxSheet halo;
         [Tooltip("The body's idle loop for this phase (tools/sprites/make.py). Needs a BossBody on the body.")]
         public PixelFxSheet idleSheet;
-        [Tooltip("The body's cast; its release frame is timed to each skill's wind-up.")]
-        public PixelFxSheet castSheet;
+        [Tooltip("The body's casts, one per BodyMotion; the release frame is timed to each skill's wind-up.")]
+        public PixelFxSheet strikeSheet;
+        public PixelFxSheet slamSheet;
+        public PixelFxSheet channelSheet;
         [Tooltip("The body's flinch when hit (skipped while casting).")]
         public PixelFxSheet hurtSheet;
         public Color haloTint = Color.white;

@@ -1,0 +1,334 @@
+{
+ "frames": [
+  {
+   "filename": "serena-p1-channel 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 1",
+   "frame": {
+    "x": 128,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 2",
+   "frame": {
+    "x": 256,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 3",
+   "frame": {
+    "x": 384,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 4",
+   "frame": {
+    "x": 512,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 5",
+   "frame": {
+    "x": 640,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 6",
+   "frame": {
+    "x": 768,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 7",
+   "frame": {
+    "x": 896,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 8",
+   "frame": {
+    "x": 0,
+    "y": 128,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 9",
+   "frame": {
+    "x": 128,
+    "y": 128,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 10",
+   "frame": {
+    "x": 256,
+    "y": 128,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  },
+  {
+   "filename": "serena-p1-channel 11",
+   "frame": {
+    "x": 384,
+    "y": 128,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "solar-and-dark/tools/sprites/make.py",
+  "version": "1",
+  "image": "serena-p1-channel.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 1024,
+   "h": 256
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "serena-p1-channel",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "sd-body/serena-p1-channel",
+   "name": "serena-p1-channel",
+   "fps": 12,
+   "loop": false,
+   "frames": 12,
+   "frameSize": [
+    128,
+    128
+   ],
+   "pivot": [
+    64,
+    126
+   ],
+   "columns": 8,
+   "palette": [
+    "#090513",
+    "#130c20",
+    "#1d152a",
+    "#261c36",
+    "#33273d",
+    "#403251",
+    "#533e39",
+    "#4f4163",
+    "#6c564f",
+    "#63566d",
+    "#65528c",
+    "#7a6b79",
+    "#7a66a5",
+    "#8e7f8a",
+    "#917db1",
+    "#a5969f",
+    "#a793c8",
+    "#bdadb5",
+    "#c1aedf",
+    "#d3c3c7",
+    "#dac9e9",
+    "#ebdad9",
+    "#f0e0f1",
+    "#fbf2f5"
+   ],
+   "release": 0.3333333333333333,
+   "hold": [
+    5,
+    10
+   ]
+  }
+ }
+}

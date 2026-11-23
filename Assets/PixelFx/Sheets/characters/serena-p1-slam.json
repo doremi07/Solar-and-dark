@@ -1,7 +1,7 @@
 {
  "frames": [
   {
-   "filename": "serena-p2-cast 0",
+   "filename": "serena-p1-slam 0",
    "frame": {
     "x": 0,
     "y": 0,
@@ -23,7 +23,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 1",
+   "filename": "serena-p1-slam 1",
    "frame": {
     "x": 128,
     "y": 0,
@@ -45,7 +45,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 2",
+   "filename": "serena-p1-slam 2",
    "frame": {
     "x": 256,
     "y": 0,
@@ -67,7 +67,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 3",
+   "filename": "serena-p1-slam 3",
    "frame": {
     "x": 384,
     "y": 0,
@@ -89,7 +89,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 4",
+   "filename": "serena-p1-slam 4",
    "frame": {
     "x": 512,
     "y": 0,
@@ -111,7 +111,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 5",
+   "filename": "serena-p1-slam 5",
    "frame": {
     "x": 640,
     "y": 0,
@@ -133,7 +133,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 6",
+   "filename": "serena-p1-slam 6",
    "frame": {
     "x": 768,
     "y": 0,
@@ -155,7 +155,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 7",
+   "filename": "serena-p1-slam 7",
    "frame": {
     "x": 896,
     "y": 0,
@@ -177,7 +177,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 8",
+   "filename": "serena-p1-slam 8",
    "frame": {
     "x": 0,
     "y": 128,
@@ -199,7 +199,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 9",
+   "filename": "serena-p1-slam 9",
    "frame": {
     "x": 128,
     "y": 128,
@@ -221,7 +221,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 10",
+   "filename": "serena-p1-slam 10",
    "frame": {
     "x": 256,
     "y": 128,
@@ -243,7 +243,7 @@
    "duration": 83
   },
   {
-   "filename": "serena-p2-cast 11",
+   "filename": "serena-p1-slam 11",
    "frame": {
     "x": 384,
     "y": 128,
@@ -268,7 +268,7 @@
  "meta": {
   "app": "solar-and-dark/tools/sprites/make.py",
   "version": "1",
-  "image": "serena-p2-cast.png",
+  "image": "serena-p1-slam.png",
   "format": "RGBA8888",
   "size": {
    "w": 1024,
@@ -277,15 +277,15 @@
   "scale": "1",
   "frameTags": [
    {
-    "name": "serena-p2-cast",
+    "name": "serena-p1-slam",
     "from": 0,
     "to": 11,
     "direction": "forward"
    }
   ],
   "pixelfx": {
-   "id": "sd-body/serena-p2-cast",
-   "name": "serena-p2-cast",
+   "id": "sd-body/serena-p1-slam",
+   "name": "serena-p1-slam",
    "fps": 12,
    "loop": false,
    "frames": 12,
@@ -299,38 +299,30 @@
    ],
    "columns": 8,
    "palette": [
-    "#080413",
-    "#120b20",
-    "#1c142a",
-    "#261c34",
-    "#2d2242",
-    "#3b2d38",
-    "#3d2f50",
-    "#4b3b6a",
-    "#504155",
-    "#5a433b",
-    "#60516a",
-    "#614e89",
-    "#705951",
-    "#716379",
-    "#735f9c",
-    "#88716b",
-    "#836fae",
-    "#85768b",
-    "#9787a0",
-    "#9b86bd",
-    "#a69088",
-    "#ac9db0",
-    "#b19cd3",
-    "#c2aba2",
-    "#c1b0c3",
-    "#c5b2e2",
-    "#dcc5bb",
-    "#d6c6d3",
-    "#dbcae9",
-    "#eedbd8",
-    "#efdff0",
-    "#fbf0f4"
+    "#090513",
+    "#130c20",
+    "#1d152a",
+    "#261c36",
+    "#33273d",
+    "#403251",
+    "#533e39",
+    "#4f4163",
+    "#6c564f",
+    "#63566d",
+    "#65528c",
+    "#7a6b79",
+    "#7a66a5",
+    "#8e7f8a",
+    "#917db1",
+    "#a5969f",
+    "#a793c8",
+    "#bdadb5",
+    "#c1aedf",
+    "#d3c3c7",
+    "#dac9e9",
+    "#ebdad9",
+    "#f0e0f1",
+    "#fbf2f5"
    ],
    "release": 0.3333333333333333
   }

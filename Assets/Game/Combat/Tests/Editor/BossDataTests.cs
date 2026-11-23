@@ -31,7 +31,9 @@ public class BossDataTests
             foreach (var p in d.phases)
             {
                 Assert.NotNull(p.idleSheet, $"{d.displayName} {p.name} idle body");
-                Assert.NotNull(p.castSheet, $"{d.displayName} {p.name} cast body");
+                Assert.NotNull(p.strikeSheet, $"{d.displayName} {p.name} strike body");
+                Assert.NotNull(p.slamSheet, $"{d.displayName} {p.name} slam body");
+                Assert.NotNull(p.channelSheet, $"{d.displayName} {p.name} channel body");
                 Assert.NotNull(p.hurtSheet, $"{d.displayName} {p.name} hurt body");
                 Assert.IsTrue(p.idleSheet.data.loop, $"{d.displayName} {p.name} idle loops");
             }

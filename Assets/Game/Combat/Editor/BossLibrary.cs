@@ -171,17 +171,17 @@ namespace SolarDark.Combat.Editor
             var def = Boss("Serena", "serena", "세레나", "그림자가 된 수호자", "\"…네가, 여기 있었구나.\"", 1400, 4.5f,
                 new BossPhase
                 {
-                    name = "그림자", enterAtHp = 1f, bodyTint = Color.white, idleSheet = C("serena-p1-idle"), castSheet = C("serena-p1-cast"), hurtSheet = C("serena-p1-hurt"),
+                    name = "그림자", enterAtHp = 1f, bodyTint = Color.white, idleSheet = C("serena-p1-idle"), strikeSheet = C("serena-p1-strike"), slamSheet = C("serena-p1-slam"), channelSheet = C("serena-p1-channel"), hurtSheet = C("serena-p1-hurt"),
                     skills = { shadowSlash, shadowFall, chains, wideSlash }, idleTime = new Vector2(0.9f, 1.5f), moveSpeed = 2.4f,
                 },
                 new BossPhase
                 {
-                    name = "융합", enterAtHp = 0.66f, bodyTint = Color.white, idleSheet = C("serena-p2-idle"), castSheet = C("serena-p2-cast"), hurtSheet = C("serena-p2-hurt"),
+                    name = "융합", enterAtHp = 0.66f, bodyTint = Color.white, idleSheet = C("serena-p2-idle"), strikeSheet = C("serena-p2-strike"), slamSheet = C("serena-p2-slam"), channelSheet = C("serena-p2-channel"), hurtSheet = C("serena-p2-hurt"),
                     entrySkill = fuse, skills = { shadowSlash, wideSlash, shadowFall, chains, rift, riftTwin, pillar }, idleTime = new Vector2(0.7f, 1.2f), moveSpeed = 2.8f,
                 },
                 new BossPhase
                 {
-                    name = "정화", enterAtHp = 0.33f, bodyTint = Color.white, idleSheet = C("serena-p3-idle"), castSheet = C("serena-p3-cast"), hurtSheet = C("serena-p3-hurt"),
+                    name = "정화", enterAtHp = 0.33f, bodyTint = Color.white, idleSheet = C("serena-p3-idle"), strikeSheet = C("serena-p3-strike"), slamSheet = C("serena-p3-slam"), channelSheet = C("serena-p3-channel"), hurtSheet = C("serena-p3-hurt"),
                     entrySkill = awaken, skills = { shadowSlash, riftTwin, pillar, domain, judgment, judgmentTriple, chains }, idleTime = new Vector2(0.5f, 1f), moveSpeed = 3.2f,
                 });
             return def;
@@ -205,12 +205,12 @@ namespace SolarDark.Combat.Editor
                 "Six crystals bloom round her, hang, then fire at the target one by one.",
                 new SkillCue
                 {
-                    label = "crystals", sheet = S("child-crystal"), anchor = CueAnchor.RingAroundSelf, spread = 2.2f, offset = new Vector2(0, 1.2f), count = 6, interval = 0.08f,
+                    label = "crystals", sheet = S("child-crystal"), anchor = CueAnchor.RingAroundSelf, spread = 2.2f, offset = new Vector2(0, 3.1f), count = 6, interval = 0.08f,
                     loopDuration = 1.3f, hit = new SkillHit(), sortingOrder = 22,
                 },
                 new SkillCue
                 {
-                    label = "lances", time = 1.3f, sheet = S("child-crystal-lance"), anchor = CueAnchor.RingAroundSelf, spread = 2.2f, offset = new Vector2(0, 1.5f), count = 6, interval = 0.12f,
+                    label = "lances", time = 1.3f, sheet = S("child-crystal-lance"), anchor = CueAnchor.RingAroundSelf, spread = 2.2f, offset = new Vector2(0, 3.4f), count = 6, interval = 0.12f,
                     aim = CueAim.RotateToTarget, loopDuration = 1.2f, projectileSpeed = 14f, projectileRange = 16f, projectileOvershoot = 2f, impactSheet = S("child-sparkle"),
                     hit = Circle(0.45f, 0, 0, 0, 6, active: 1.2f, knockback: 3),
                 });
@@ -219,7 +219,7 @@ namespace SolarDark.Combat.Editor
                 "Light gathers in her and blows out in a ring.",
                 new SkillCue
                 {
-                    label = "burst", sheet = S("child-light-burst"), anchor = CueAnchor.Self,
+                    label = "burst", sheet = S("child-light-burst"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.35f),   // the burst at her hands (3.1)
                     hit = Circle(3f, 0, 1.75f, 0.3f, 14, active: 0.14f, knockback: 9, hitStop: 0.1f, shake: 0.2f),   // the ring reaches 3 at 0.43
                 });
 
@@ -227,8 +227,8 @@ namespace SolarDark.Combat.Editor
                 "She locks on and fires a shadow beam at where the target stood.",
                 new SkillCue
                 {
-                    // arcane-beam fires from the hand (HX 15, HY -24 px) and is L = 168 px long: rotate round the hand
-                    label = "beam", sheet = S("child-shadow-beam"), anchor = CueAnchor.Self, offset = new Vector2(0.6f, 1.6f), aim = CueAim.RotateToTarget,
+                    // arcane-beam fires from the hand (HX 15, HY -24 px) and is L = 168 px long: rotate round the hand, held at her hands (3.1)
+                    label = "beam", sheet = S("child-shadow-beam"), anchor = CueAnchor.Self, offset = new Vector2(0.6f, 3.1f), aim = CueAim.RotateToTarget,
                     effectAnchor = new Vector2(15 / 16f, 24 / 16f), loopDuration = 1.8f, followCaster = true, sortingOrder = 24,
                     hit = Box(10.5f, 0.9f, 5.25f, 0, 0.05f, 4, active: 1.7f, tick: 0.2f, knockback: 2),
                 });
@@ -288,13 +288,13 @@ namespace SolarDark.Combat.Editor
                 new SkillCue
                 {
                     // implosion: SUCK until 0.8 s, still at 1.02 s, then it blows out
-                    label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f), followCaster = true,
+                    label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 3.1f), followCaster = true,
                     hit = Circle(2.6f, 0, 0, 1.05f, 18, active: 0.08f, knockback: 11, hitStop: 0.15f, shake: 0.3f),   // the ring reaches 2.6 at 1.12
                     action = CueAction.HealSelf, actionValue = 0.04f,
                 },
                 new SkillCue
                 {
-                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f),
+                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 3.1f),
                     hit = Circle(0.1f, 0, 0, 0, 0, active: 0.95f, pull: 5f, pullRadius: 8f),
                 });
 
@@ -310,37 +310,37 @@ namespace SolarDark.Combat.Editor
                 "Phase entry: a burst of light that throws everything back.",
                 new SkillCue
                 {
-                    label = "burst", sheet = S("child-light-burst"), anchor = CueAnchor.Self,
+                    label = "burst", sheet = S("child-light-burst"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.35f),   // the burst at her hands (3.1)
                     hit = Circle(4f, 0, 1.75f, 0.33f, 8, active: 0.21f, knockback: 14, shake: 0.3f),   // the ring reaches 4 at 0.53
                 });
             var shadowForm = Skill(B, "child.phase-shadow", "완전한 그림자", 0.3f, 1.0f, 0, 0, 0, 99,
                 "Phase entry: she drinks the light round her.",
                 new SkillCue
                 {
-                    label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f),
+                    label = "absorb", sheet = S("child-light-absorb"), anchor = CueAnchor.Self, offset = new Vector2(0, 3.1f),
                     hit = Circle(3f, 0, 0, 1.06f, 10, active: 0.1f, knockback: 12, shake: 0.3f),   // the ring reaches 3 at 1.15
                     action = CueAction.HealSelf, actionValue = 0.02f,
                 },
                 new SkillCue
                 {
-                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 1.6f),
+                    label = "pull", anchor = CueAnchor.Self, offset = new Vector2(0, 3.1f),
                     hit = Circle(0.1f, 0, 0, 0, 0, active: 0.95f, pull: 6f, pullRadius: 9f),
                 });
 
             return Boss("HiddenChild", "hidden-child", "움켜쥔 아이", "최종 보스 — 빛을 잔뜩 삼킨, 열 살의 슬라", "\"…모두, 다 내 거야.\"", 2000, 6f,
                 new BossPhase
                 {
-                    name = "억눌린 빛", enterAtHp = 1f, bodyTint = Color.white, idleSheet = C("child-p1-idle"), castSheet = C("child-p1-cast"), hurtSheet = C("child-p1-hurt"),
+                    name = "억눌린 빛", enterAtHp = 1f, bodyTint = Color.white, idleSheet = C("child-p1-idle"), strikeSheet = C("child-p1-strike"), slamSheet = C("child-p1-slam"), channelSheet = C("child-p1-channel"), hurtSheet = C("child-p1-hurt"),
                     skills = { lightFall, crystals, lightBurst, beam }, idleTime = new Vector2(0.9f, 1.4f), moveSpeed = 2f,
                 },
                 new BossPhase
                 {
-                    name = "폭주", enterAtHp = 0.6f, bodyTint = Color.white, idleSheet = C("child-p2-idle"), castSheet = C("child-p2-cast"), hurtSheet = C("child-p2-hurt"),
+                    name = "폭주", enterAtHp = 0.6f, bodyTint = Color.white, idleSheet = C("child-p2-idle"), strikeSheet = C("child-p2-strike"), slamSheet = C("child-p2-slam"), channelSheet = C("child-p2-channel"), hurtSheet = C("child-p2-hurt"),
                     entrySkill = berserk, skills = { lightFall, crystals, beam, explosion, dash, gravity, illusions }, idleTime = new Vector2(0.6f, 1.1f), moveSpeed = 2.8f,
                 },
                 new BossPhase
                 {
-                    name = "완전한 그림자", enterAtHp = 0.25f, bodyTint = Color.white, idleSheet = C("child-p3-idle"), castSheet = C("child-p3-cast"), hurtSheet = C("child-p3-hurt"),
+                    name = "완전한 그림자", enterAtHp = 0.25f, bodyTint = Color.white, idleSheet = C("child-p3-idle"), strikeSheet = C("child-p3-strike"), slamSheet = C("child-p3-slam"), channelSheet = C("child-p3-channel"), hurtSheet = C("child-p3-hurt"),
                     entrySkill = shadowForm, skills = { explosion, dash, gravity, illusions, despair, absorb, infinite, beam }, idleTime = new Vector2(0.4f, 0.9f), moveSpeed = 3.4f,
                 });
         }
@@ -411,6 +411,18 @@ namespace SolarDark.Combat.Editor
                 damage = damage, knockback = knockback, hitStop = hitStop, shake = shake, root = root, pull = pull, pullRadius = pullRadius,
             };
 
+        // the body's part in each attack, matched to its effect: blows lunge in, ground eruptions are driven down into the
+        // floor, spells that last are held up and lit for as long as they run
+        static readonly HashSet<string> Strikes = new HashSet<string> { "serena.shadow-slash", "serena.wide-slash", "child.shadow-dash" };
+        static readonly HashSet<string> Slams = new HashSet<string>
+        {
+            "serena.shadow-fall", "serena.rift", "serena.rift-twin", "serena.shadow-pillar", "serena.phase-fuse",
+            "child.light-burst", "child.shadow-explosion", "child.phase-berserk",
+        };
+
+        static BodyMotion Motion(string id) =>
+            Strikes.Contains(id) ? BodyMotion.Strike : Slams.Contains(id) ? BodyMotion.Slam : BodyMotion.Channel;
+
         static BossSkill Skill(string boss, string id, string name, float windup, float recovery, float cooldown, float weight, float minRange, float maxRange,
             string notes, params SkillCue[] cues)
         {
@@ -426,6 +438,7 @@ namespace SolarDark.Combat.Editor
             s.maxRange = maxRange;
             s.animTrigger = id.Substring(id.IndexOf('.') + 1);
             s.castTint = boss == "Serena" ? (id.Contains("judgment") || id.Contains("domain") ? Gold : Violet) : Lavender;
+            s.bodyMotion = Motion(id);
             s.cues = new List<SkillCue>(cues);
             return Save(s, $"{OutDir}/{boss}/Skills/{id.Substring(id.IndexOf('.') + 1)}.asset");
         }

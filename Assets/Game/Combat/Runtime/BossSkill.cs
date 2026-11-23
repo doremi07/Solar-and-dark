@@ -118,6 +118,8 @@ namespace SolarDark.Combat
         public BossSkill subSkill;
     }
 
+    public enum BodyMotion { Strike, Slam, Channel }
+
     /// <summary>A boss attack: wind-up, a timeline of cues, recovery. Built for Serena and the Hidden Child by
     /// Tools > Solar and Dark > Build Boss Assets; tune the generated assets freely.</summary>
     [CreateAssetMenu(menuName = "Solar and Dark/Boss Skill", fileName = "BossSkill")]
@@ -136,6 +138,9 @@ namespace SolarDark.Combat
         [Tooltip("Animator trigger fired at the start of the wind-up (if the boss has an Animator).")]
         public string animTrigger = "";
         public Color castTint = new Color(0.8f, 0.7f, 1f, 1f);
+        [Tooltip("What the body does (BossBody): Strike lunges in with the blow, Slam rises and comes down on the release, " +
+                 "Channel rises lit and holds it while the spell lasts.")]
+        public BodyMotion bodyMotion = BodyMotion.Strike;
         public List<SkillCue> cues = new List<SkillCue>();
 
         /// <summary>Seconds from the start of the wind-up until the last cue has spawned and its hit is over.</summary>

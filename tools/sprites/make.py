@@ -6,15 +6,15 @@ pixelfx-format sprite sheets (PNG + JSON) that Unity's PixelFxSheet importer rea
 Input: art/bosses/cutouts/<boss>-p<n>.png (cut from the concept sheet by tools/sprites/cut.py).
 
 Pixel art: every phase of a boss is scaled by the same factor (the largest fits 124 x 124, feet 2 px above the bottom),
-area-averaged after a light sharpen, and snapped to one 32-colour palette taken from that boss's own figures, so the
-colours and the silhouette are the reference's. Nothing is redrawn.
+denoised (edge-keeping), given back its local contrast, area-averaged, snapped to one 24-colour palette taken from that boss's own figures, then
+cleaned of single-pixel noise (mode filter), so the colours and the silhouette are the reference's. Nothing is redrawn.
 
 Animation moves those pixels, it never paints new ones (nearest sampling; a flash maps each colour to a brighter colour
 of the same palette):
   idle  16 frames at 10 fps, loop. The figure floats 1 px; hair and hem sway more the further they are from the body's
         axis and the lower they hang; loose pieces (crystals, shadow scraps) drift on their own phases.
-  cast  12 frames at 12 fps. A lean back (wind-up), the release on frame 4 (0.33 s: BossBody.castRelease) leaning in
-        with a brightening, then it settles back into the idle pose.
+  strike / slam / channel  12 frames at 12 fps, one per kind of attack (MOTIONS below): the release on frame 4
+        (0.33 s: BossBody.castRelease) is when the skill's effect bursts.
   hurt   6 frames at 12 fps. A flash and a recoil, then back.
 """
 import argparse, json, math, os
@@ -35,13 +35,29 @@ def load(name):
     return a[ys.min(): ys.max() + 1, xs.min(): xs.max() + 1]
 
 
-def pixelize(crops, colours=32):
+def mode_filter(idx, passes=2, need=5):
+    """Noise: a pixel that shares its colour with fewer than two neighbours takes the colour most of them agree on."""
+    h, w = idx.shape
+    for _ in range(passes):
+        src = idx.copy()
+        for y in range(1, h - 1):
+            for x in range(1, w - 1):
+                if src[y, x] < 0: continue
+                nb = np.delete(src[y - 1:y + 2, x - 1:x + 2].ravel(), 4)
+                nb = nb[nb >= 0]
+                if (nb == src[y, x]).sum() >= 2: continue
+                v, n = np.unique(nb, return_counts=True)
+                if len(v) and n.max() >= need: idx[y, x] = v[np.argmax(n)]
+    return idx
+
+
+def pixelize(crops, colours=24):
     sc = min(124 / max(c.shape[0] for c in crops.values()), 124 / max(c.shape[1] for c in crops.values()))
     small = {}
     for k, c in crops.items():
-        rgb = c[..., :3]
-        blur = cv2.GaussianBlur(rgb, (0, 0), 1.0)
-        rgb = np.clip(rgb + 0.6 * (rgb - blur), 0, 1)           # the source is soft: a light unsharp mask first
+        # the source is soft and carries compression noise: an edge-keeping denoise, then local contrast back
+        rgb = cv2.bilateralFilter((c[..., :3] * 255).astype(np.uint8), 7, 40, 5).astype(np.float32) / 255
+        rgb = np.clip(rgb + 1.0 * (rgb - cv2.GaussianBlur(rgb, (0, 0), 1.2)), 0, 1)
         pm = np.dstack([rgb * c[..., 3:4], c[..., 3]])
         h, w = c.shape[:2]
         r = cv2.resize(pm, (max(1, round(w * sc)), max(1, round(h * sc))), interpolation=cv2.INTER_AREA)
@@ -54,8 +70,10 @@ def pixelize(crops, colours=32):
     out = {}
     for k, (rgb, m) in small.items():
         idx = np.argmin(((rgb.reshape(-1, 3)[:, None, :] * 255 - pal[None]) ** 2).sum(-1), 1).reshape(m.shape)
+        idx = mode_filter(np.where(m, idx, -1).astype(np.int16))
+        m = idx >= 0
         nb = cv2.filter2D(m.astype(np.uint8), -1, np.array([[1, 1, 1], [1, 0, 1], [1, 1, 1]], np.float32))
-        m = m & (nb > 0)                                          # no lone pixels
+        m &= nb > 0                                               # no lone pixels
         n, lab, st, _ = cv2.connectedComponentsWithStats(m.astype(np.uint8), 8)
         for i in range(1, n):
             if st[i, cv2.CC_STAT_AREA] < 12: m &= lab != i       # nor specks
@@ -137,13 +155,29 @@ def idle(ix, pal, frames=16):
         yield render(ix, lab, main, loose, pal, sway=1.6, phase=ph, bob=int(round(-0.6 - 0.6 * math.sin(ph))), drift=1.6)
 
 
-def cast(ix, pal):
+# The body's part in each attack. Frame 4 (0.33 s at 12 fps) is the release in all three; BossBody times it to the end of
+# the skill's wind-up, which is when the effect bursts. Keys: (lean px at the head, float px, shift px, brightening).
+MOTIONS = {
+    # slashes, the dash: wind up leaning back, then lunge in with the blow, the light caught on it, and settle
+    "strike": [(-2, 0, -1, 0), (-5, -1, -2, 0), (-8, -2, -3, 0), (-9, -2, -4, 0.06), (8, -1, 6, 0.3), (10, -1, 8, 0.2),
+               (8, -1, 7, 0.08), (6, -1, 5, 0), (4, -1, 3, 0), (2, -1, 2, 0), (1, -1, 1, 0), (0, -1, 0, 0)],
+    # ground eruptions: rise as the power gathers, then come down hard on the release, as if driving it into the floor
+    "slam": [(0, -2, 0, 0), (-1, -4, 0, 0.03), (-2, -7, 0, 0.06), (-3, -9, 0, 0.1), (3, 1, 0, 0.32), (2, 1, 0, 0.18),
+             (1, 0, 0, 0.06), (0, -1, 0, 0), (0, -1, 0, 0), (0, -1, 0, 0), (0, -1, 0, 0), (0, -1, 0, 0)],
+    # spells that last: rise with the glow building, flare on the release, then hold up and lit while the spell runs
+    # (frames 5-10 loop for as long as it lasts: BossBody), and come down on 11
+    "channel": [(0, -1, 0, 0), (0, -3, 0, 0.05), (0, -5, 0, 0.1), (0, -6, 0, 0.16), (0, -7, 0, 0.32), (0, -7, 0, 0.22),
+                (0, -7, 0, 0.18), (0, -8, 0, 0.16), (0, -8, 0, 0.18), (0, -7, 0, 0.2), (0, -7, 0, 0.18), (0, -3, 0, 0.05)],
+}
+CHANNEL_HOLD = (5, 10)
+
+
+def cast(ix, pal, motion):
     lab, main, loose = parts(ix)
-    # frame: lean (px at the head), float, brightening
-    keys = [(-1, 0, 0), (-3, -1, 0), (-4, -1, 0), (-4, -2, 0.08), (4, -2, 0.3), (5, -2, 0.18),
-            (4, -1, 0.06), (3, -1, 0), (2, -1, 0), (1, -1, 0), (0, -1, 0), (0, -1, 0)]
-    for f, (lean, bob, fl) in enumerate(keys):
-        yield render(ix, lab, main, loose, pal, sway=1.6, phase=2 * math.pi * f / 16, bob=bob, lean=lean, drift=1.6, flash=fl)
+    for f, (lean, bob, shift, fl) in enumerate(MOTIONS[motion]):
+        # in the held stretch the sway keeps its own 6-frame loop so it can repeat seamlessly
+        ph = 2 * math.pi * ((f - CHANNEL_HOLD[0]) / 6 if motion == "channel" and CHANNEL_HOLD[0] <= f <= CHANNEL_HOLD[1] else f / 16)
+        yield render(ix, lab, main, loose, pal, sway=1.6, phase=ph, bob=bob, lean=lean, shift=shift, drift=1.6, flash=fl)
 
 
 def hurt(ix, pal):
@@ -197,10 +231,12 @@ def main():
         for n in names:
             ix = ixs[n]
             write_sheet(a.out, n + "-idle", list(idle(ix, pal)), pal, 10, True)
-            write_sheet(a.out, n + "-cast", list(cast(ix, pal)), pal, 12, False, {"release": 4 / 12})
+            for motion in MOTIONS:
+                extra = {"release": 4 / 12, **({"hold": list(CHANNEL_HOLD)} if motion == "channel" else {})}
+                write_sheet(a.out, f"{n}-{motion}", list(cast(ix, pal, motion)), pal, 12, False, extra)
             write_sheet(a.out, n + "-hurt", list(hurt(ix, pal)), pal, 12, False)
             stills.append((n, to_rgba(ix, pal)))
-            print(f"{n}: idle 16, cast 12, hurt 6 frames, {len(np.unique(ix[ix >= 0]))} colours")
+            print(f"{n}: idle 16, strike/slam/channel 12, hurt 6 frames, {len(np.unique(ix[ix >= 0]))} colours")
     row = Image.new("RGBA", (len(stills) * (N + 8), N), (90, 88, 104, 255))
     for i, (_, s) in enumerate(stills):
         row.alpha_composite(Image.fromarray(s), (i * (N + 8), 0))

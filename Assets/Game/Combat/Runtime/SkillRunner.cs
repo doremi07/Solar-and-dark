@@ -60,6 +60,7 @@ namespace SolarDark.Combat
             // wind-up: tint the body as a tell
             var body = caster.Body;
             Color baseColor = body != null ? body.color : Color.white;
+            if (body != null && body.GetComponent<BossBody>() != null) body = null;   // a drawn body shows its own wind-up: no tint strobe
 
             float t = 0, end = skill.ActiveLength;
             int next = 0;
@@ -176,9 +177,9 @@ namespace SolarDark.Combat
                 var dir = new Vector2(Mathf.Cos(plan.angle), Mathf.Sin(plan.angle)) * (plan.facing < 0 && cue.aim != CueAim.RotateToTarget ? -1 : 1);
                 float len = FlightRange(cue, plan);
                 if (dir.y < -0.01f) len = Mathf.Min(len, (at.y + 0.2f) / -dir.y);
-                // from just behind where it leaves (its own radius) to where it stops
-                var c = at + dir * ((len - thick / 2) / 2);
-                TelegraphMarker.Show(HitShape.Box, c, new Vector2(len + thick / 2, thick), Mathf.Atan2(dir.y, dir.x), warn, null, default, len / cue.projectileSpeed);
+                // from where it leaves to where it stops, plus its own radius at both ends
+                var c = at + dir * (len / 2);
+                TelegraphMarker.Show(HitShape.Box, c, new Vector2(len + thick, thick), Mathf.Atan2(dir.y, dir.x), warn, null, default, len / cue.projectileSpeed);
                 return;
             }
             float hold = cue.action != CueAction.Dash ? h.active : 0;   // an area stays outlined for as long as it can hurt

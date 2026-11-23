@@ -63,7 +63,7 @@ static class Program
             hits[h.skillId] = hits.TryGetValue(h.skillId, out var k) ? k + 1 : 1;
             if (Environment.GetEnvironmentVariable("SIM_DODGE") == "1")
                 Console.Error.WriteLine($"  hit by {h.skillId} at t={Time.time:F2}: player x={player.transform.position.x:F2}, boss x={boss.transform.position.x:F2}, " +
-                    $"marks [{string.Join("; ", TelegraphMarker.All.Where(m => m != null).Select(m => $"{m.Shape} c=({m.Center.x:F1},{m.Center.y:F1}) s=({m.Size.x:F1},{m.Size.y:F1}) live in {m.UntilLive:F2}"))}]");
+                    $"marks [{string.Join(" ", Engine.FindAll<SkillProjectile>().Select(q => $"proj({q.transform.position.x:F1},{q.transform.position.y:F1})")) + " | " + string.Join("; ", TelegraphMarker.All.Where(m => m != null).Select(m => $"{m.Shape} c=({m.Center.x:F1},{m.Center.y:F1}) s=({m.Size.x:F1},{m.Size.y:F1}) live in {m.UntilLive:F2}"))}]");
         });
         var cam = Camera.main;
         H = Mathf.RoundToInt(cam.orthographicSize * 2 * 16);
