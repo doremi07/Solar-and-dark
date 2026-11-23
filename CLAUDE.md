@@ -11,7 +11,8 @@ Unity game. Pixel art VFX come from **pixelfx** (pinned, vendored in `third_part
 - Boss skills (Serena, the Hidden Child): data in `Assets/Game/Combat/Editor/BossLibrary.cs`, runtime in
   `Assets/Game/Combat/Runtime`, sheets from `tools/pixelfx/boss-fx.json` via `tools/pixelfx/export-set.mjs`.
   Effects are `sd/*` (library effect + at most three flourishes, tuned in `sd/_skills.js`; keep them restrained).
-  The bosses' bodies are placeholder sprites (no character sheets).
+  Boss bodies: 128x128 sheets made from the concept art by `tools/sprites/make.py` (idle/cast/hurt per phase,
+  played by `BossBody`); keep the reference's colours and shapes, never redraw them.
   Overview: `docs/bosses/README.md`. Check without Unity: `tools/pixelfx/verify/run.sh` (compile + logic tests);
   see it running: `tools/arena-sim/run.sh` (real scripts on a headless Unity stand-in → MP4 + storyboard).
   After changing a skill: `SIM_DODGE=1 tools/arena-sim/run.sh all records/arena-dodge` must show 0 hits (every attack

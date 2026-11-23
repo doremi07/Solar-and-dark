@@ -30,7 +30,10 @@ public class BossDataTests
             Assert.AreEqual(0, d.PhaseFor(1f));
             foreach (var p in d.phases)
             {
-                Assert.NotNull(p.halo, $"{d.displayName} {p.name} halo");
+                Assert.NotNull(p.idleSheet, $"{d.displayName} {p.name} idle body");
+                Assert.NotNull(p.castSheet, $"{d.displayName} {p.name} cast body");
+                Assert.NotNull(p.hurtSheet, $"{d.displayName} {p.name} hurt body");
+                Assert.IsTrue(p.idleSheet.data.loop, $"{d.displayName} {p.name} idle loops");
             }
         }
     }

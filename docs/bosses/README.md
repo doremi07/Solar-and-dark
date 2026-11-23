@@ -13,6 +13,25 @@
 
 ![boss fx sheets](fx-sheets.png)
 
+## 보스 몸 스프라이트 (컨셉 아트 그대로, 128×128)
+
+- 원본: `art/bosses/concept/sheet-1.webp`의 페이즈별 그림. `tools/sprites/cut.py`가 배경을 지운 결과가 `art/bosses/cutouts/`
+  (패널 가장자리에서 배경 그라데이션을 따라 채우기 + 애니메 캐릭터 분할 모델 isnet-anime. 모델은 이 단계에만 쓰는 로컬 도구이고
+  게임에 들어가지 않는다. 결과를 커밋해 두었으니 다시 자를 때만 필요).
+- `python3 tools/sprites/make.py` → `Assets/PixelFx/Sheets/characters/<boss>-p<n>-{idle,cast,hurt}`. 보스마다 세 페이즈를
+  같은 배율로 줄이고(가장 큰 것이 124×124, 발은 바닥에서 2 px 위), 그 보스의 그림에서 뽑은 32색 팔레트로 맞춘다.
+  새로 그린 부분은 없다.
+- 애니메이션은 그 픽셀을 옮기기만 한다(최근접 샘플링, 밝아지는 순간도 같은 팔레트 안의 밝은 색으로).
+  - idle 16프레임 10 fps 루프: 1 px 떠오름, 몸 축에서 멀고 아래로 늘어진 부분(머리카락 끝, 치맛단, 촉수)일수록 크게 흔들림,
+    떨어진 조각(결정, 그림자 조각)은 각자 다른 박자로 떠다님.
+  - cast 12프레임 12 fps: 뒤로 젖히는 준비, 4번째 프레임(0.33 s)에 앞으로 기울며 밝아짐, 다시 대기 자세.
+    `BossBody`가 이 프레임이 스킬 선딜 끝에 오도록 속도를 맞춘다.
+  - hurt 6프레임 12 fps: 번쩍임과 뒤로 밀림. 시전 중에는 재생하지 않는다.
+- 스프라이트에 후광이 그려져 있으므로 페이즈의 후광 이펙트(`sd/*-halo`)는 끔. 피격 범위는 몸통(반지름 1.5, 발에서 3.2 위).
+  ![bodies](bodies.png)
+  ![serena](serena-body-anim.gif)
+  ![child](child-body-anim.gif)
+
 ## 이펙트 레이어
 
 - 각 스킬 이펙트는 `third_party/pixelfx/src/fx/sd/<시트 이름>.js`: 라이브러리 이펙트(컨셉 팔레트)에 그 이펙트의 박자에 맞춘
@@ -114,6 +133,7 @@ Unity에서.
 
 ## 남은 일
 
-- 보스 몸은 자리표시 도트(24×38 px). 실제 캐릭터 아트는 `BossController.body`의 SpriteRenderer에 넣으면 되고,
-  스킬 시작 시 `BossController.onSkill`과 애니메이터 트리거(`animTrigger`)가 나간다.
+- 몸 애니메이션은 기존 그림의 픽셀을 움직여 만든 것이라 걷기·베기 같은 새 자세는 없다. 새 자세가 필요하면 손으로 그리거나
+  (Aseprite 파일 제공) PixelLab 같은 생성 도구로 만든 뒤 같은 시트 이름으로 내보내면 된다. 스킬 시작 시
+  `BossController.onSkill`과 애니메이터 트리거(`animTrigger`)도 나간다.
 - 수치(피해·쿨다운·범위)는 첫 버전. 아레나에서 N 키로 스킬을 하나씩 확인하며 에셋에서 조정.

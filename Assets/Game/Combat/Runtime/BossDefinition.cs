@@ -14,7 +14,14 @@ namespace SolarDark.Combat
         public List<BossSkill> skills = new List<BossSkill>();
         [Tooltip("Cast once on entering the phase (while invulnerable).")]
         public BossSkill entrySkill;
+        [Tooltip("A halo effect over the body. Leave empty when the body sprites draw their own (the concept-art bodies do).")]
         public PixelFxSheet halo;
+        [Tooltip("The body's idle loop for this phase (tools/sprites/make.py). Needs a BossBody on the body.")]
+        public PixelFxSheet idleSheet;
+        [Tooltip("The body's cast; its release frame is timed to each skill's wind-up.")]
+        public PixelFxSheet castSheet;
+        [Tooltip("The body's flinch when hit (skipped while casting).")]
+        public PixelFxSheet hurtSheet;
         public Color haloTint = Color.white;
         public Color bodyTint = Color.white;
         [Tooltip("Seconds between attacks: random in this range.")]

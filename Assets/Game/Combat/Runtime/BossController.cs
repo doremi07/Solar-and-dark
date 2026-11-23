@@ -33,6 +33,7 @@ namespace SolarDark.Combat
         Health health;
         Animator animator;
         PixelFxPlayer halo;
+        BossBody bossBody;
         readonly Dictionary<BossSkill, float> readyAt = new Dictionary<BossSkill, float>();
         System.Random rng;
         int facing = -1, phase = -1, casts;
@@ -61,8 +62,10 @@ namespace SolarDark.Combat
         void Awake()
         {
             health = GetComponent<Health>();
+            if (health != null) health.onHit.AddListener(_ => { if (bossBody != null) bossBody.PlayHurt(); });
             animator = GetComponentInChildren<Animator>();
             if (body == null) body = GetComponentInChildren<SpriteRenderer>();
+            bossBody = body != null ? body.GetComponent<BossBody>() : null;
             rng = new System.Random(seed);
             if (definition != null)
             {
@@ -140,6 +143,7 @@ namespace SolarDark.Combat
             Casting = skill;
             readyAt[skill] = Time.time + skill.windup + skill.cooldown;
             onSkill.Invoke(skill);
+            if (bossBody != null) bossBody.PlayCast(skill.windup);
             if (animator != null && !string.IsNullOrEmpty(skill.animTrigger)) animator.SetTrigger(skill.animTrigger);
             yield return SkillRunner.Run(skill, this, seed + 7919 * ++casts);
             Casting = null;
@@ -197,6 +201,7 @@ namespace SolarDark.Combat
             var p = CurrentPhase;
             if (p == null) return;
             if (body != null) body.color = p.bodyTint;
+            if (bossBody != null && p.idleSheet != null) bossBody.SetSheets(p.idleSheet, p.castSheet, p.hurtSheet);
             if (halo != null) Destroy(halo.gameObject);
             if (p.halo != null)
             {
