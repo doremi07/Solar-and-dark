@@ -259,6 +259,8 @@ import * as sd_child_shadow_beam from "./sd/child-shadow-beam.js";
 import * as sd_child_shadow_dash from "./sd/child-shadow-dash.js";
 import * as sd_child_shadow_explosion from "./sd/child-shadow-explosion.js";
 import * as sd_child_sparkle from "./sd/child-sparkle.js";
+import * as sd_light_arrow from "./sd/light-arrow.js";
+import * as sd_red_sword_wave from "./sd/red-sword-wave.js";
 import * as sd_serena_halo from "./sd/serena-halo.js";
 import * as sd_serena_holy_domain from "./sd/serena-holy-domain.js";
 import * as sd_serena_holy_domain_burst from "./sd/serena-holy-domain-burst.js";
@@ -534,6 +536,8 @@ export const effects = {
   "sd/child-shadow-dash": sd_child_shadow_dash,
   "sd/child-shadow-explosion": sd_child_shadow_explosion,
   "sd/child-sparkle": sd_child_sparkle,
+  "sd/light-arrow": sd_light_arrow,
+  "sd/red-sword-wave": sd_red_sword_wave,
   "sd/serena-halo": sd_serena_halo,
   "sd/serena-holy-domain": sd_serena_holy_domain,
   "sd/serena-holy-domain-burst": sd_serena_holy_domain_burst,

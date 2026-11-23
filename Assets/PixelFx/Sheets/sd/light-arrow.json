@@ -1,0 +1,436 @@
+{
+ "frames": [
+  {
+   "filename": "light-arrow 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 1",
+   "frame": {
+    "x": 136,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 2",
+   "frame": {
+    "x": 272,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 3",
+   "frame": {
+    "x": 0,
+    "y": 36,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 4",
+   "frame": {
+    "x": 136,
+    "y": 36,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 5",
+   "frame": {
+    "x": 272,
+    "y": 36,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 6",
+   "frame": {
+    "x": 0,
+    "y": 72,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 7",
+   "frame": {
+    "x": 136,
+    "y": 72,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 8",
+   "frame": {
+    "x": 272,
+    "y": 72,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 9",
+   "frame": {
+    "x": 0,
+    "y": 108,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 10",
+   "frame": {
+    "x": 136,
+    "y": 108,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 11",
+   "frame": {
+    "x": 272,
+    "y": 108,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 12",
+   "frame": {
+    "x": 0,
+    "y": 144,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 13",
+   "frame": {
+    "x": 136,
+    "y": 144,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 14",
+   "frame": {
+    "x": 272,
+    "y": 144,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 15",
+   "frame": {
+    "x": 0,
+    "y": 180,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 16",
+   "frame": {
+    "x": 136,
+    "y": 180,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  },
+  {
+   "filename": "light-arrow 17",
+   "frame": {
+    "x": 272,
+    "y": 180,
+    "w": 136,
+    "h": 36
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 136,
+    "h": 36
+   },
+   "sourceSize": {
+    "w": 136,
+    "h": 36
+   },
+   "duration": 33
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "light-arrow.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 408,
+   "h": 216
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "light-arrow",
+    "from": 0,
+    "to": 17,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "sd/light-arrow",
+   "name": "Light arrow",
+   "fps": 30,
+   "loop": true,
+   "frames": 18,
+   "frameSize": [
+    136,
+    36
+   ],
+   "pivot": [
+    116,
+    18
+   ],
+   "columns": 3,
+   "version": "0.3.1"
+  }
+ }
+}
