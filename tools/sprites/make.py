@@ -3,7 +3,8 @@ pixelfx-format sprite sheets (PNG + JSON) that Unity's PixelFxSheet importer rea
 
     python3 tools/sprites/make.py [--out Assets/PixelFx/Sheets/characters] [--preview records/sprites]
 
-Input: art/bosses/cutouts/<boss>-p<n>.png (cut from the concept sheet by tools/sprites/cut.py).
+Input: Serena is designed by tools/sprites/serena.py after her high-resolution art; the Child is pixelized from
+art/bosses/cutouts/child-p<n>.png (cut from the concept sheet by tools/sprites/cut.py), as below.
 
 Pixel art: every phase of a boss is scaled by the same factor (the largest fits 124 x 124, feet 2 px above the bottom),
 denoised (edge-keeping), given back its local contrast, area-averaged, snapped to one 20-colour palette taken from that boss's own figures, then
@@ -17,11 +18,12 @@ of the same palette):
         (0.33 s: BossBody.castRelease) is when the skill's effect bursts.
   hurt   6 frames at 12 fps. A flash and a recoil, then back.
 """
-import argparse, json, math, os
+import argparse, json, math, os, sys
 import numpy as np, cv2
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 N = 128
 BOSSES = {"serena": ["serena-p1", "serena-p2", "serena-p3"], "child": ["child-p1", "child-p2", "child-p3"]}
 PIVOT = (N // 2, N - 2)   # the feet
@@ -29,39 +31,8 @@ PIVOT = (N // 2, N - 2)   # the feet
 
 # ---------------------------------------------------------------- pixel art
 
-# Serena is drawn from the clean high-resolution art (art/bosses/concept/serena-hires.jpg): phase 2 is that art as it
-# is; phases 1 and 3 keep its drawing and take their colours from their own panels on the concept sheet (cutouts
-# serena-p<n>-sheet.png), each pixel taking the panel's colour at the same brightness rank. Phase 3 keeps the art's gold.
-SERENA = {"serena-p1": ("serena-p1-sheet", False), "serena-p2": None, "serena-p3": ("serena-p3-sheet", True)}
-LUMA = np.array([0.299, 0.587, 0.114], np.float32)
-
-
-def _open(name):
-    return np.asarray(Image.open(os.path.join(ROOT, "art/bosses/cutouts", name + ".png"))).astype(np.float32) / 255
-
-
-def recolour(src, ref, keep_gold, mix=0.6):
-    m, mr = src[..., 3] > 0.5, ref[..., 3] > 0.5
-    ls = src[..., :3] @ LUMA
-    rc = ref[..., :3][mr][np.argsort((ref[..., :3] @ LUMA)[mr])]
-    k = max(1, len(rc) // 100)                                    # the panel's colours, dark to light, lightly smoothed
-    ramp = np.stack([np.convolve(rc[:, c], np.ones(k) / k, mode="same") for c in range(3)], 1)
-    q = np.argsort(np.argsort(ls[m])) / max(1, m.sum() - 1)       # each pixel's brightness rank
-    out = src[..., :3].copy()
-    out[m] = np.clip((1 - mix) * out[m] + mix * ramp[(q * (len(ramp) - 1)).astype(int)], 0, 1)
-    if keep_gold:
-        hsv = cv2.cvtColor(src[..., :3], cv2.COLOR_RGB2HSV)       # H in degrees
-        gold = m & (hsv[..., 0] > 25) & (hsv[..., 0] < 60) & (hsv[..., 1] > 0.25)
-        out[gold] = src[..., :3][gold]
-    return np.dstack([out, src[..., 3]])
-
-
 def load(name):
-    if name in SERENA:
-        a = _open("serena-hires")
-        if SERENA[name]: a = recolour(a, _open(SERENA[name][0]), SERENA[name][1])
-    else:
-        a = _open(name)
+    a = np.asarray(Image.open(os.path.join(ROOT, "art/bosses/cutouts", name + ".png"))).astype(np.float32) / 255
     ys, xs = np.nonzero(a[..., 3] > 0.5)
     return a[ys.min(): ys.max() + 1, xs.min(): xs.max() + 1]
 
@@ -86,16 +57,9 @@ def pixelize(crops, colours=20):
     sc = min(124 / max(c.shape[0] for c in crops.values()), 124 / max(c.shape[1] for c in crops.values()))
     small = {}
     for k, c in crops.items():
-        rgb8 = (c[..., :3] * 255).astype(np.uint8)
-        if sc < 0.3:
-            # high-resolution art: flatten each area of colour first (mean shift keeps the edges between areas), so
-            # the shrink gives clean tones instead of averaging shading grain into speckle
-            rgb8[c[..., 3] <= 0.5] = 0
-            rgb = cv2.pyrMeanShiftFiltering(rgb8, 10, 28).astype(np.float32) / 255
-        else:
-            # the soft, noisy concept sheet: an edge-keeping denoise, then its local contrast back
-            rgb = cv2.bilateralFilter(rgb8, 7, 40, 5).astype(np.float32) / 255
-            rgb = np.clip(rgb + 2.2 * (rgb - cv2.GaussianBlur(rgb, (0, 0), 1.2)), 0, 1)
+        # the soft, noisy concept sheet: an edge-keeping denoise, then its local contrast back
+        rgb = cv2.bilateralFilter((c[..., :3] * 255).astype(np.uint8), 7, 40, 5).astype(np.float32) / 255
+        rgb = np.clip(rgb + 2.2 * (rgb - cv2.GaussianBlur(rgb, (0, 0), 1.2)), 0, 1)
         pm = np.dstack([rgb * c[..., 3:4], c[..., 3]])
         h, w = c.shape[:2]
         r = cv2.resize(pm, (max(1, round(w * sc)), max(1, round(h * sc))), interpolation=cv2.INTER_AREA)
@@ -291,12 +255,18 @@ def main():
     os.makedirs(a.out, exist_ok=True); os.makedirs(a.preview, exist_ok=True)
     stills = []
     for boss, names in BOSSES.items():
-        # Serena's phases differ in colour: a palette each; the Child's share one
-        groups = [[n] for n in names] if boss == "serena" else [names]
-        for g in groups:
-            ixs, pal = pixelize({n: load(n) for n in g})
+        # Serena is designed after her high-resolution art (serena.py), a palette per phase; the Child is pixelized
+        # from the concept sheet, one palette for all three
+        if boss == "serena":
+            import serena
+            designed = serena.design()
+            groups = [([n], {n: designed[int(n[-1])][0]}, designed[int(n[-1])][1], False) for n in names]
+        else:
+            ixs, pal = pixelize({n: load(n) for n in names})
+            groups = [(names, ixs, pal, True)]
+        for g, ixs, pal, clean in groups:
             for n in g:
-                ix = crisp(n, ixs[n], pal)
+                ix = crisp(n, ixs[n], pal) if clean else ixs[n]
                 write_sheet(a.out, n + "-idle", list(idle(ix, pal)), pal, 10, True)
                 for motion in MOTIONS:
                     extra = {"release": 4 / 12, **({"hold": list(CHANNEL_HOLD)} if motion == "channel" else {})}
