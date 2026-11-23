@@ -6,7 +6,9 @@ cannot carry are drawn on top: the halo as a clean ring with its spikes, gold ch
 shapes, the face (eyes with their light, mouth) and a dark rim on light edges.
 
 Each pixel is a (material, step) pair, so a phase is the same drawing with its own ramps: phase 1 sinks into shadow
-(silver halo), phase 2 is the art's own colours, phase 3 is purified (pale cloth and tendrils, bright gold).
+(silver halo), phase 2 is the art's own colours with the concept's pale halo (the halo warms
+from silver to gold across the phases: gold arrives with the awakening), phase 3 is purified as the concept sheet draws it
+(white and cream cloth, hair and ribbons with lavender shade, bright gold).
 
     python3 tools/sprites/serena.py      # writes records/sprites/serena-design.png (the three phases side by side)
 """
@@ -15,7 +17,7 @@ import numpy as np, cv2
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-N, FIT = 128, 124
+N, FIT = 128, 118   # 118 px tall: room in the frame for the body's motions (make.py)
 PURPLE, WHITE, SKIN, GOLD, LINE = range(5)
 
 H = lambda h: [int(h[i:i + 2], 16) for i in (1, 3, 5)]
@@ -23,13 +25,13 @@ H = lambda h: [int(h[i:i + 2], 16) for i in (1, 3, 5)]
 RAMPS = {
     2: {PURPLE: ["#1a1330", "#2c204a", "#40296f", "#5c4094", "#7b57b9", "#9a72d4", "#b796e8", "#d3bdf5", "#ebe1fc"],
         WHITE: ["#c2b6dc", "#e2daf2", "#f8f5ff"], SKIN: ["#c99aa6", "#ebc7c8", "#fde9e4"],
-        GOLD: ["#7c5a30", "#c59a52", "#f0d58e"], LINE: ["#0e0918"]},
+        GOLD: ["#6f6280", "#b9adc6", "#f3eef6"], LINE: ["#0e0918"]},   # pale silver-lilac: gold is for the awakening
     1: {PURPLE: ["#0f0b1c", "#1a1430", "#261c44", "#352659", "#47336f", "#5d4688", "#7a64a5", "#9a88c0", "#bbb0d8"],
         WHITE: ["#6f6890", "#938cb2", "#b9b3d2"], SKIN: ["#a98d9e", "#cdb4bd", "#e7d8db"],
         GOLD: ["#5c586f", "#9894b3", "#dcd9ee"], LINE: ["#07050e"]},
-    3: {PURPLE: ["#3a3157", "#4f4474", "#685c92", "#8478ad", "#a096c6", "#bab1da", "#d1cae9", "#e5e0f4", "#f5f2fc"],
+    3: {PURPLE: ["#4a3d63", "#6a5a86", "#8e80a8", "#b0a5c6", "#cbc2db", "#e2dbea", "#f2ecf3", "#fbf7f6", "#ffffff"],
         WHITE: ["#d9d1ea", "#efeaf8", "#fffdfb"], SKIN: ["#d8a9b1", "#f1d1cf", "#fff1ea"],
-        GOLD: ["#9a7334", "#d9ad5e", "#fbe8a8"], LINE: ["#2a2240"]},
+        GOLD: ["#9a7334", "#d9ad5e", "#fbe8a8"], LINE: ["#3d3152"]},
 }
 
 
@@ -49,18 +51,21 @@ def _art():
 
 # Her face, measured on the art (art pixels): the left eye's centre; the rest is designed around it.
 LEFT_EYE = (632, 258)
-# Designed at sprite size (the face is ~9 px wide): '.' keeps what is there (hair), the rest are
-# L lashes / line, h catch-light, i iris dark, j iris light, s skin, m skin in shade, d mouth, b blush.
-# The right eye sits a pixel lower: her head is tilted. Row 2, column 1 is the left eye's catch-light.
+# Designed at sprite size: the whole face block, bangs included (12 x 10). '.' keeps what is there.
+# H/h/g hair (light, mid, shade), s/m skin (lit, shade), b blush, d mouth, L lashes and jaw line,
+# e iris (dark), i iris (light), w catch-light. Calm, half-lidded eyes; the right one a pixel lower (her head tilts).
+# Row 3, column 2 is the left eye's catch-light.
 FACE = [
-    ".ssssss...",
-    "LLLLssss..",
-    "shiisssLLL",
-    "sjjisshiim",
-    "sbssssjjim",
-    ".ssssssbm.",
-    "..ssdsssm.",
-    "...mssmm..",
+    "HHHHHhhHHHg.",
+    "hHssssHhHsgL",
+    "gsLLLssssshL",
+    "gswesssLLLmL",
+    "gsiisssweimL",
+    "gmsssssiismg",
+    "gmbssssssbm.",
+    ".gmsssdssm..",
+    "..gmsssmmg..",
+    "...gLmmLg...",
 ]
 
 
@@ -190,9 +195,10 @@ def paint(phase, m, light, gold_cover, geo):
         put(sx, sy, gl)
     # face: the designed grid, its left eye's catch-light on the art's left eye
     lx, ly = geo["left_eye"]
-    fx, fy = int(round(lx)) - 1, int(round(ly)) - 2
-    key = {"L": base[LINE], "h": base[WHITE] + 2, "i": base[PURPLE] + 2, "j": base[PURPLE] + 5,
-           "s": base[SKIN] + 2, "m": base[SKIN] + 1, "d": base[SKIN], "b": base[SKIN]}
+    fx, fy = int(round(lx)) - 2, int(round(ly)) - 3
+    key = {"H": base[PURPLE] + 8, "h": base[PURPLE] + 7, "g": base[PURPLE] + 5, "s": base[SKIN] + 2, "m": base[SKIN] + 1,
+           "b": base[SKIN], "d": base[SKIN], "L": base[LINE], "e": base[PURPLE] + 2, "i": base[PURPLE] + 4,
+           "w": base[WHITE] + 2}
     for r, row in enumerate(FACE):
         for c, ch in enumerate(row):
             if ch != ".": put(fx + c, fy + r, key[ch])
