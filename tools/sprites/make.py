@@ -17,11 +17,12 @@ of the same palette):
         (0.33 s: BossBody.castRelease) is when the skill's effect bursts.
   hurt   6 frames at 12 fps. A flash and a recoil, then back.
 """
-import argparse, json, math, os
+import argparse, json, math, os, sys
 import numpy as np, cv2
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 N = 128
 BOSSES = {"serena": ["serena-p1", "serena-p2", "serena-p3"], "child": ["child-p1", "child-p2", "child-p3"]}
 PIVOT = (N // 2, N - 2)   # the feet
@@ -270,10 +271,17 @@ def main():
     os.makedirs(a.out, exist_ok=True); os.makedirs(a.preview, exist_ok=True)
     stills = []
     for boss, names in BOSSES.items():
-        ixs, pals = pixelize({n: load(n) for n in names})
+        if boss == "serena":
+            # Serena is drawn by hand (serena_hand.py): one design per phase, nothing to clean up
+            import serena_hand
+            drawn = serena_hand.design()
+            ixs = {n: drawn[int(n[-1])][0] for n in names}
+            pals = {n: drawn[int(n[-1])][1] for n in names}
+        else:
+            ixs, pals = pixelize({n: load(n) for n in names})
         for n in names:
             pal = pals[n]
-            ix = crisp(n, ixs[n], pal)
+            ix = crisp(n, ixs[n], pal) if boss != "serena" else ixs[n]
             anims = {"idle": (list(idle(ix, pal)), 10, True, None)}
             for motion in MOTIONS:
                 extra = {"release": 4 / 12, **({"hold": list(CHANNEL_HOLD)} if motion == "channel" else {})}
