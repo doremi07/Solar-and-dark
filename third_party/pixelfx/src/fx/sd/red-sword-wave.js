@@ -61,11 +61,31 @@ export function draw(p, t, o) {
     if (u > 0.35 && bayer < (u - 0.35) / 0.65) return;
     return u < 0.35 ? C[3] : u < 0.65 ? C[2] : C[1];
   });
+  // speed lines: three short streaks raking back from the blade, hot at the blade and cooling to nothing
+  for (const [yy, len, off] of [[-0.45, 9, 0], [0.05, 13, 0.4], [0.5, 7, 0.75]]) {
+    const y = Math.round(0.5 + yy * h), xo = -R + Math.sqrt(Math.max(0, R * R - (yy * h) ** 2)) - 6;
+    const sh = ((ph * 2 + off) % 1) * 6;
+    for (let k = 0; k < len; k++) p.dot(xo - sh - k, y, k < len * 0.3 ? C[4] : k < len * 0.65 ? C[3] : C[2]);
+  }
   crescent(p, C, 0, R, 5, h, 1, pulse);
 
-  // the light: a red bloom on the body, a hot glint on the edge and at each horn
-  p.glow(-3, 0.5, H * 1.1, C[3], 0.55);
-  p.glow(1, 0.5, 8, C[6], 0.35);
+  // a dark hairline on its back edge, so the blade reads crisp against the smear and any background
+  for (let yy = -h + 2; yy <= h - 2; yy++) {
+    const xo = -R + Math.sqrt(Math.max(0, R * R - yy * yy)), xi = xo - 5 * Math.sqrt(Math.max(0, 1 - (yy / h) ** 2));
+    p.dot(Math.floor(xi) - 1, yy + 0.5, C[1]);
+  }
+  // a glint travelling the cutting edge from horn to horn, and the horns' tips catching the light
+  const gy = -h + ((ph * 2) % 1) * 2 * h, gx = -R + Math.sqrt(Math.max(0, R * R - gy * gy));
+  sparkle(p, gx, gy + 0.5, 2, WHITE, C[6], 0.5);
+  for (const sgn of [-1, 1]) {
+    const ty = sgn * (h - 0.5), tx = -R + Math.sqrt(Math.max(0, R * R - ty * ty));
+    p.dot(tx, ty + 0.5, WHITE);
+    p.glow(tx, ty + 0.5, 3, C[5], 0.4);
+  }
+
+  // the light: a crimson bloom on the body, a hot core at the centre of the edge
+  p.glow(-4, 0.5, H * 1.15, C[3], 0.5);
+  p.glow(1, 0.5, 7, C[6], 0.35);
   sparkle(p, 1, 0.5 + wob * 2, 3, WHITE, C[6], 0.45);
 
 }

@@ -19,13 +19,14 @@ export function draw(p, t, o) {
   const C = fit(o.palette, 8), L = o.length, S = o.seed, D = meta.duration, ph = t / D, fr = Math.floor(t * 30 + 1e-6);
   const left = -meta.origin[0] + 2;
 
-  // the ribbon of light behind: a thin wavering band that thins and cools as it trails off
-  for (let d = L * 0.8; d < L * 2.4; d += 0.5) {
-    const u = (d - L * 0.8) / (L * 1.6), y = 0.5 + Math.sin(d * 0.22 - ph * TAU * 2) * (0.4 + u * 1.6);
-    if (-d < left || rand(Math.floor(d), fr) < u * 0.55) continue;
-    p.dot(-d, y, u < 0.25 ? C[6] : u < 0.55 ? C[5] : C[4]);
+  // the trail: a single ribbon of light, 3 px at the fletching thinning to a thread, rippling gently and cooling
+  for (let d = L * 0.75; d < L * 2.3; d += 0.5) {
+    const u = (d - L * 0.75) / (L * 1.55), y = 0.5 + Math.sin(d * 0.2 - ph * TAU * 2) * u * 1.4;
+    if (-d < left || (u > 0.55 && rand(Math.floor(d), fr) < (u - 0.55) * 1.6)) continue;
+    p.dot(-d, y, u < 0.3 ? WHITE : u < 0.6 ? C[6] : C[5]);
+    if (u < 0.5) { p.dot(-d, y - 1, C[5]); p.dot(-d, y + 1, C[4]); }     // lit above, a step darker below
   }
-  p.glowLine(-L * 0.8, 0.5, -L * 2.2, 0.5, 5, C[4], 0.2);
+  p.glowLine(-L * 0.75, 0.5, -L * 2.1, 0.5, 6, C[4], 0.25);
 
   // motes shed off the shaft: they drift back and fade; a few wink as glints
   beat(t, D, 12, S, (r) => r.range(0.2, 0.34), (age, life, r) => {
@@ -60,8 +61,22 @@ export function draw(p, t, o) {
     if (d < 0 || d > 12) return;
     const w = d < 8 ? d * 0.55 : (12 - d) * 1.1;                         // widest 8 px back, then closes on the shaft
     if (v > w) return;
-    return v < w - 1.6 ? (d < 6 ? WHITE : C[6]) : v < w - 0.6 ? C[5] : C[3];
+    const lower = y > 0.5;                                                 // lit from above: the lower facet a step down
+    return v < w - 1.6 ? (d < 6 ? (lower ? C[6] : WHITE) : lower ? C[5] : C[6]) : v < w - 0.6 ? (lower ? C[4] : C[5]) : C[3];
   });
+
+  // two motes of light spiralling the shaft, hidden as they pass behind it
+  for (const sgn of [0, Math.PI]) {
+    for (let d = 2; d < L - 2; d += 0.5) {
+      const a = d * 0.5 - ph * TAU * 3 + sgn, y = 0.5 + Math.sin(a) * 2.4;
+      if (Math.cos(a) > 0.92) p.dot(-d, y, WHITE);
+      else if (Math.cos(a) > 0.75) p.dot(-d, y, C[5]);
+    }
+  }
+  // a lens flare on the head: a thin horizontal streak and a small cross
+  const fl2 = 0.7 + 0.3 * Math.sin(ph * TAU * 2);
+  p.glowLine(-8, 0.5, 16, 0.5, 2, WHITE, 0.25 * fl2);
+  p.line(9, 0.5, 13, 0.5, C[6]);
 
   // the light it carries
   const g = 0.8 + 0.2 * Math.sin(ph * TAU * 2);
