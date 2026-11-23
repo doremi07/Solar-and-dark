@@ -11,8 +11,8 @@ cleaned of single-pixel noise (mode filter), so the colours and the silhouette a
 
 Animation moves those pixels, it never paints new ones (nearest sampling; a flash maps each colour to a brighter colour
 of the same palette):
-  idle  16 frames at 10 fps, loop. The figure floats 1 px; hair and hem sway more the further they are from the body's
-        axis and the lower they hang; loose pieces (crystals, shadow scraps) drift on their own phases.
+  idle  16 frames at 10 fps, loop. The figure floats 1 px; below the waist whole rows sway, more the lower they hang
+        (rows move as one, so nothing tears); loose pieces (crystals, shadow scraps) drift on their own phases.
   strike / slam / channel  12 frames at 12 fps, one per kind of attack (MOTIONS below): the release on frame 4
         (0.33 s: BossBody.castRelease) is when the skill's effect bursts.
   hurt   6 frames at 12 fps. A flash and a recoil, then back.
@@ -86,9 +86,15 @@ def pixelize(crops, colours=20):
     sc = min(124 / max(c.shape[0] for c in crops.values()), 124 / max(c.shape[1] for c in crops.values()))
     small = {}
     for k, c in crops.items():
-        # the source is soft and carries compression noise: an edge-keeping denoise, then local contrast back
-        rgb = cv2.bilateralFilter((c[..., :3] * 255).astype(np.uint8), 7, 40, 5).astype(np.float32) / 255
-        if sc > 0.3:   # a soft low-resolution source; a sharp high-resolution one needs no help
+        rgb8 = (c[..., :3] * 255).astype(np.uint8)
+        if sc < 0.3:
+            # high-resolution art: flatten each area of colour first (mean shift keeps the edges between areas), so
+            # the shrink gives clean tones instead of averaging shading grain into speckle
+            rgb8[c[..., 3] <= 0.5] = 0
+            rgb = cv2.pyrMeanShiftFiltering(rgb8, 10, 28).astype(np.float32) / 255
+        else:
+            # the soft, noisy concept sheet: an edge-keeping denoise, then its local contrast back
+            rgb = cv2.bilateralFilter(rgb8, 7, 40, 5).astype(np.float32) / 255
             rgb = np.clip(rgb + 2.2 * (rgb - cv2.GaussianBlur(rgb, (0, 0), 1.2)), 0, 1)
         pm = np.dstack([rgb * c[..., 3:4], c[..., 3]])
         h, w = c.shape[:2]
@@ -173,13 +179,11 @@ def render(ix, lab, main, loose, pal, *, sway=0.0, phase=0.0, bob=0, lean=0.0, s
     h, w = ix.shape
     ys, xs = np.nonzero(ix >= 0)
     top, bottom = ys.min(), ys.max()
-    axis = np.median(xs[ys > top + (bottom - top) * 0.3])
     Y, X = np.mgrid[0:h, 0:w].astype(np.float32)
-    # sway: grows with distance from the body's axis and with how low it hangs; hair at the top barely moves
-    far = np.clip((np.abs(X - axis) - 8) / 30, 0, 1)
-    low = np.clip((Y - (top + (bottom - top) * 0.35)) / ((bottom - top) * 0.65), 0, 1)
-    wgt = np.clip(0.55 * far + 0.75 * low * (0.4 + 0.6 * far), 0, 1)
-    dx = sway * wgt * np.sin(phase - Y * 0.07)
+    # sway: whole rows slide together (a row never shears against itself, which would drop or double pixels and
+    # flicker), more the lower they hang; above the waist the figure only floats
+    low = np.clip((Y - (top + (bottom - top) * 0.45)) / ((bottom - top) * 0.55), 0, 1)
+    dx = sway * low * np.sin(phase - Y * 0.07)
     # lean: a shear about the feet (positive leans forward, to the right)
     dx += lean * (bottom - Y) / max(1, bottom - top)
     dx += shift

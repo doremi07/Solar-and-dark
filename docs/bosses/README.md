@@ -17,7 +17,7 @@
 
 - 세레나: 고해상도 원화 `art/bosses/concept/serena-hires.jpg`(흰 배경, 컷아웃 `art/bosses/cutouts/serena-hires.png`)에서 만든다.
   2페이즈는 원화 그대로, 1·3페이즈는 원화의 그림에 시트 패널(`serena-p<n>-sheet.png`)의 색을 입힌다(같은 밝기 순위의
-  패널 색으로 60 %, 3페이즈는 원화의 금색 유지). 페이즈마다 팔레트 20색.
+  패널 색으로 60 %, 3페이즈는 원화의 금색 유지). 페이즈마다 팔레트 20색. 고해상도 원화는 줄이기 전에 색 영역을 평탄화(mean shift)해서 음영 결이 점 노이즈로 뭉개지지 않게 한다.
 - 원본(아이): `art/bosses/concept/sheet-1.webp`의 페이즈별 그림. `tools/sprites/cut.py`가 배경을 지운 결과가 `art/bosses/cutouts/`
   (패널 가장자리에서 배경 그라데이션을 따라 채우기 + 애니메 캐릭터 분할 모델 isnet-anime. 모델은 이 단계에만 쓰는 로컬 도구이고
   게임에 들어가지 않는다. 결과를 커밋해 두었으니 다시 자를 때만 필요).
