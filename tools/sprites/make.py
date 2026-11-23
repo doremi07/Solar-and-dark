@@ -29,8 +29,39 @@ PIVOT = (N // 2, N - 2)   # the feet
 
 # ---------------------------------------------------------------- pixel art
 
+# Serena is drawn from the clean high-resolution art (art/bosses/concept/serena-hires.jpg): phase 2 is that art as it
+# is; phases 1 and 3 keep its drawing and take their colours from their own panels on the concept sheet (cutouts
+# serena-p<n>-sheet.png), each pixel taking the panel's colour at the same brightness rank. Phase 3 keeps the art's gold.
+SERENA = {"serena-p1": ("serena-p1-sheet", False), "serena-p2": None, "serena-p3": ("serena-p3-sheet", True)}
+LUMA = np.array([0.299, 0.587, 0.114], np.float32)
+
+
+def _open(name):
+    return np.asarray(Image.open(os.path.join(ROOT, "art/bosses/cutouts", name + ".png"))).astype(np.float32) / 255
+
+
+def recolour(src, ref, keep_gold, mix=0.6):
+    m, mr = src[..., 3] > 0.5, ref[..., 3] > 0.5
+    ls = src[..., :3] @ LUMA
+    rc = ref[..., :3][mr][np.argsort((ref[..., :3] @ LUMA)[mr])]
+    k = max(1, len(rc) // 100)                                    # the panel's colours, dark to light, lightly smoothed
+    ramp = np.stack([np.convolve(rc[:, c], np.ones(k) / k, mode="same") for c in range(3)], 1)
+    q = np.argsort(np.argsort(ls[m])) / max(1, m.sum() - 1)       # each pixel's brightness rank
+    out = src[..., :3].copy()
+    out[m] = np.clip((1 - mix) * out[m] + mix * ramp[(q * (len(ramp) - 1)).astype(int)], 0, 1)
+    if keep_gold:
+        hsv = cv2.cvtColor(src[..., :3], cv2.COLOR_RGB2HSV)       # H in degrees
+        gold = m & (hsv[..., 0] > 25) & (hsv[..., 0] < 60) & (hsv[..., 1] > 0.25)
+        out[gold] = src[..., :3][gold]
+    return np.dstack([out, src[..., 3]])
+
+
 def load(name):
-    a = np.asarray(Image.open(os.path.join(ROOT, "art/bosses/cutouts", name + ".png"))).astype(np.float32) / 255
+    if name in SERENA:
+        a = _open("serena-hires")
+        if SERENA[name]: a = recolour(a, _open(SERENA[name][0]), SERENA[name][1])
+    else:
+        a = _open(name)
     ys, xs = np.nonzero(a[..., 3] > 0.5)
     return a[ys.min(): ys.max() + 1, xs.min(): xs.max() + 1]
 
@@ -57,7 +88,8 @@ def pixelize(crops, colours=20):
     for k, c in crops.items():
         # the source is soft and carries compression noise: an edge-keeping denoise, then local contrast back
         rgb = cv2.bilateralFilter((c[..., :3] * 255).astype(np.uint8), 7, 40, 5).astype(np.float32) / 255
-        rgb = np.clip(rgb + 2.2 * (rgb - cv2.GaussianBlur(rgb, (0, 0), 1.2)), 0, 1)
+        if sc > 0.3:   # a soft low-resolution source; a sharp high-resolution one needs no help
+            rgb = np.clip(rgb + 2.2 * (rgb - cv2.GaussianBlur(rgb, (0, 0), 1.2)), 0, 1)
         pm = np.dstack([rgb * c[..., 3:4], c[..., 3]])
         h, w = c.shape[:2]
         r = cv2.resize(pm, (max(1, round(w * sc)), max(1, round(h * sc))), interpolation=cv2.INTER_AREA)
@@ -85,7 +117,7 @@ def pixelize(crops, colours=20):
     return out, pal.clip(0, 255).astype(np.uint8)
 
 
-HALO_ZONE = {"serena-p1": 0.34, "serena-p2": 0.34, "serena-p3": 0.34, "child-p1": 0.3, "child-p2": 0.3}   # child-p3's halo zone is all tendril
+HALO_ZONE = {"child-p1": 0.3, "child-p2": 0.3}   # the sheet's halos show muddy shadow through the ring; child-p3's zone is all tendril
 
 
 def crisp(name, ix, pal):
@@ -108,7 +140,8 @@ def crisp(name, ix, pal):
     solid = (out >= 0).astype(np.uint8)
     edge = (solid > 0) & (cv2.erode(solid, np.array([[0, 1, 0], [1, 1, 1], [0, 1, 0]], np.uint8)) == 0)
     L2 = np.where(out >= 0, luma[np.maximum(out, 0)], -1)
-    out[edge & (L2 > 90) & ~zone] = 0                            # darkest colour of the boss's palette; thin halo lines keep theirs
+    nb = cv2.filter2D(solid, -1, np.ones((3, 3), np.float32))   # solid pixels in the 3x3, itself included
+    out[edge & (L2 > 90) & ~zone & (nb >= 6)] = 0               # darkest colour of the palette; thin lines (halo, chains) keep theirs
     return out
 
 
@@ -254,16 +287,19 @@ def main():
     os.makedirs(a.out, exist_ok=True); os.makedirs(a.preview, exist_ok=True)
     stills = []
     for boss, names in BOSSES.items():
-        ixs, pal = pixelize({n: load(n) for n in names})
-        for n in names:
-            ix = crisp(n, ixs[n], pal)
-            write_sheet(a.out, n + "-idle", list(idle(ix, pal)), pal, 10, True)
-            for motion in MOTIONS:
-                extra = {"release": 4 / 12, **({"hold": list(CHANNEL_HOLD)} if motion == "channel" else {})}
-                write_sheet(a.out, f"{n}-{motion}", list(cast(ix, pal, motion)), pal, 12, False, extra)
-            write_sheet(a.out, n + "-hurt", list(hurt(ix, pal)), pal, 12, False)
-            stills.append((n, to_rgba(ix, pal)))
-            print(f"{n}: idle 16, strike/slam/channel 12, hurt 6 frames, {len(np.unique(ix[ix >= 0]))} colours")
+        # Serena's phases differ in colour: a palette each; the Child's share one
+        groups = [[n] for n in names] if boss == "serena" else [names]
+        for g in groups:
+            ixs, pal = pixelize({n: load(n) for n in g})
+            for n in g:
+                ix = crisp(n, ixs[n], pal)
+                write_sheet(a.out, n + "-idle", list(idle(ix, pal)), pal, 10, True)
+                for motion in MOTIONS:
+                    extra = {"release": 4 / 12, **({"hold": list(CHANNEL_HOLD)} if motion == "channel" else {})}
+                    write_sheet(a.out, f"{n}-{motion}", list(cast(ix, pal, motion)), pal, 12, False, extra)
+                write_sheet(a.out, n + "-hurt", list(hurt(ix, pal)), pal, 12, False)
+                stills.append((n, to_rgba(ix, pal)))
+                print(f"{n}: idle 16, strike/slam/channel 12, hurt 6 frames, {len(np.unique(ix[ix >= 0]))} colours")
     row = Image.new("RGBA", (len(stills) * (N + 8), N), (90, 88, 104, 255))
     for i, (_, s) in enumerate(stills):
         row.alpha_composite(Image.fromarray(s), (i * (N + 8), 0))
