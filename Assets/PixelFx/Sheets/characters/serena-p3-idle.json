@@ -387,17 +387,17 @@
    ],
    "columns": 8,
    "palette": [
-    "#4a3d63",
-    "#6a5a86",
-    "#8e80a8",
-    "#b0a5c6",
-    "#cbc2db",
-    "#e2dbea",
-    "#f2ecf3",
-    "#fbf7f6",
+    "#2b2350",
+    "#3e3270",
+    "#5a4c8c",
+    "#7c6eaa",
+    "#9d92c4",
+    "#bdb4da",
+    "#d9d2ec",
+    "#efeaf7",
     "#ffffff",
-    "#d9d1ea",
-    "#efeaf8",
+    "#b8acd6",
+    "#e6e0f4",
     "#fffdfb",
     "#d8a9b1",
     "#f1d1cf",
@@ -405,7 +405,11 @@
     "#9a7334",
     "#d9ad5e",
     "#fbe8a8",
-    "#3d3152"
+    "#2a2240",
+    "#6d6a86",
+    "#b8b6cc",
+    "#e9e8f4",
+    "#ffffff"
    ]
   }
  }
