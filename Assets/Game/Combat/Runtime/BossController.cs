@@ -111,8 +111,8 @@ namespace SolarDark.Combat
                 if (want != phase)
                 {
                     bool deeper = want > phase;   // a debug jump back skips the entry skill
-                    EnterPhase(want);
-                    var entry = CurrentPhase.entrySkill;
+                    var entry = definition.phases[want].entrySkill;
+                    EnterPhase(want, deeper && entry != null ? entry : null);
                     if (deeper && entry != null)
                     {
                         health.invulnerable = true;
@@ -195,13 +195,19 @@ namespace SolarDark.Combat
             transform.position += new Vector3(step, 0, 0);
         }
 
-        void EnterPhase(int index)
+        /// <param name="entry">The phase's entry skill about to be cast: the body changes when its effect bursts (its first
+        /// hit goes live), not before, so the new look comes out of the light instead of ahead of it.</param>
+        void EnterPhase(int index, BossSkill entry = null)
         {
             phase = index;
             var p = CurrentPhase;
             if (p == null) return;
             if (body != null) body.color = p.bodyTint;
-            if (bossBody != null && p.idleSheet != null) bossBody.SetSheets(p.idleSheet, p.hurtSheet, p.strikeSheet, p.slamSheet, p.channelSheet);
+            if (bossBody != null && p.idleSheet != null)
+            {
+                if (entry == null) bossBody.SetSheets(p.idleSheet, p.hurtSheet, p.strikeSheet, p.slamSheet, p.channelSheet);
+                else StartCoroutine(ChangeBodyAt(p, entry.windup + BurstTime(entry)));
+            }
             if (halo != null) Destroy(halo.gameObject);
             if (p.halo != null)
             {
@@ -212,6 +218,20 @@ namespace SolarDark.Combat
                 sr.sortingOrder = (body != null ? body.sortingOrder : 10) - 1;
             }
             onPhase.Invoke(index, p);
+        }
+
+        static float BurstTime(BossSkill s)
+        {
+            float t = float.MaxValue;
+            foreach (var c in s.cues)
+                if (c.hit.shape != HitShape.None && c.hit.damage > 0) t = Mathf.Min(t, c.time + c.hit.delay);
+            return t == float.MaxValue ? 0 : t;
+        }
+
+        IEnumerator ChangeBodyAt(BossPhase p, float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            if (CurrentPhase == p) bossBody.SetSheets(p.idleSheet, p.hurtSheet, p.strikeSheet, p.slamSheet, p.channelSheet);
         }
 
         float RandomRange(float a, float b) => a + (float)rng.NextDouble() * (b - a);

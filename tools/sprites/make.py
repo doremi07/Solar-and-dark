@@ -6,7 +6,7 @@ pixelfx-format sprite sheets (PNG + JSON) that Unity's PixelFxSheet importer rea
 Input: art/bosses/cutouts/<boss>-p<n>.png (cut from the concept sheet by tools/sprites/cut.py).
 
 Pixel art: every phase of a boss is scaled by the same factor (the largest fits 124 x 124, feet 2 px above the bottom),
-denoised (edge-keeping), given back its local contrast, area-averaged, snapped to one 24-colour palette taken from that boss's own figures, then
+denoised (edge-keeping), given back its local contrast, area-averaged, snapped to one 20-colour palette taken from that boss's own figures, then
 cleaned of single-pixel noise (mode filter), so the colours and the silhouette are the reference's. Nothing is redrawn.
 
 Animation moves those pixels, it never paints new ones (nearest sampling; a flash maps each colour to a brighter colour
@@ -51,13 +51,13 @@ def mode_filter(idx, passes=2, need=5):
     return idx
 
 
-def pixelize(crops, colours=24):
+def pixelize(crops, colours=20):
     sc = min(124 / max(c.shape[0] for c in crops.values()), 124 / max(c.shape[1] for c in crops.values()))
     small = {}
     for k, c in crops.items():
         # the source is soft and carries compression noise: an edge-keeping denoise, then local contrast back
         rgb = cv2.bilateralFilter((c[..., :3] * 255).astype(np.uint8), 7, 40, 5).astype(np.float32) / 255
-        rgb = np.clip(rgb + 1.0 * (rgb - cv2.GaussianBlur(rgb, (0, 0), 1.2)), 0, 1)
+        rgb = np.clip(rgb + 2.2 * (rgb - cv2.GaussianBlur(rgb, (0, 0), 1.2)), 0, 1)
         pm = np.dstack([rgb * c[..., 3:4], c[..., 3]])
         h, w = c.shape[:2]
         r = cv2.resize(pm, (max(1, round(w * sc)), max(1, round(h * sc))), interpolation=cv2.INTER_AREA)
@@ -83,6 +83,33 @@ def pixelize(crops, colours=24):
         canvas[oy: oy + h, ox: ox + w] = np.where(m, idx, -1)
         out[k] = canvas
     return out, pal.clip(0, 255).astype(np.uint8)
+
+
+HALO_ZONE = {"serena-p1": 0.34, "serena-p2": 0.34, "serena-p3": 0.34, "child-p1": 0.3, "child-p2": 0.3}   # child-p3's halo zone is all tendril
+
+
+def crisp(name, ix, pal):
+    """The pixel artist's pass the source never had: the halo as clean light lines (the muddy shadow seen through the
+    ring goes, the lines keep a 1 px dark edge), and a dark rim where a light colour meets the outside, so the figure
+    reads sharp on any background. The silhouette does not grow."""
+    luma = pal.astype(np.float32) @ np.array([0.299, 0.587, 0.114], np.float32)
+    L = np.where(ix >= 0, luma[np.maximum(ix, 0)], -1)
+    ys = np.nonzero((ix >= 0).any(1))[0]
+    top, bottom = ys.min(), ys.max()
+    out = ix.copy()
+    zone = np.zeros_like(ix, bool)
+    if name in HALO_ZONE:
+        zone[top: top + int((bottom - top) * HALO_ZONE[name])] = True
+        # the shadow seen through the ring is a thick dark mass; the ring and its spokes are 1-2 px lines
+        dark = (zone & (ix >= 0) & (L < 72)).astype(np.uint8)
+        thick = cv2.dilate(cv2.erode(dark, np.ones((3, 3), np.uint8)), np.ones((3, 3), np.uint8)) > 0
+        bright = cv2.dilate((L > 140).astype(np.uint8), np.ones((3, 3), np.uint8)) > 0
+        out[thick & ~bright] = -1
+    solid = (out >= 0).astype(np.uint8)
+    edge = (solid > 0) & (cv2.erode(solid, np.array([[0, 1, 0], [1, 1, 1], [0, 1, 0]], np.uint8)) == 0)
+    L2 = np.where(out >= 0, luma[np.maximum(out, 0)], -1)
+    out[edge & (L2 > 90) & ~zone] = 0                            # darkest colour of the boss's palette; thin halo lines keep theirs
+    return out
 
 
 # ---------------------------------------------------------------- animation (moves pixels only)
@@ -229,7 +256,7 @@ def main():
     for boss, names in BOSSES.items():
         ixs, pal = pixelize({n: load(n) for n in names})
         for n in names:
-            ix = ixs[n]
+            ix = crisp(n, ixs[n], pal)
             write_sheet(a.out, n + "-idle", list(idle(ix, pal)), pal, 10, True)
             for motion in MOTIONS:
                 extra = {"release": 4 / 12, **({"hold": list(CHANNEL_HOLD)} if motion == "channel" else {})}

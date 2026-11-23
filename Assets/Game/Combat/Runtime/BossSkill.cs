@@ -97,6 +97,8 @@ namespace SolarDark.Combat
         public bool followCaster;
         [Tooltip("Parent the instance to the target so it tracks them (marks, curses).")]
         public bool followTarget;
+        [Tooltip("With followTarget: stop following after this many seconds and stay there (a mark that locks on). 0 = follow throughout.")]
+        public float followFor;
         [Tooltip("Stop a looping effect (and its hit area) after this long. 0 = the sheet's own length.")]
         public float loopDuration;
         public int sortingOrder = 20;

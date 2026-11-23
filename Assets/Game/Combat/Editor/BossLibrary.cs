@@ -122,30 +122,25 @@ namespace SolarDark.Combat.Editor
                     hit = Circle(3.2f, 0, 0, 1.55f, 22, active: 0.1f, knockback: 9, hitStop: 0.15f, shake: 0.3f),   // the circle erupts
                 });
 
+            // a sun of judgment follows the target, stops when its bolt is placed and stays over the spot until the bolt
+            // lands out of it (the smite's own 0.54 s), so the bolt always falls from where the sun is
             var judgment = Skill(B, "serena.judgment", "심판의 빛", 0.5f, 0.8f, 9f, 1.2f, 0, 99,
-                "A star of judgment hangs over the target and follows them, then a bolt of light drops on where they are.",
-                new SkillCue
-                {
-                    label = "mark", sheet = S("serena-judgment-mark"), anchor = CueAnchor.TargetLive, offset = new Vector2(0, 4.2f), loopDuration = 1.1f, followTarget = true, sortingOrder = 30,
-                    hit = new SkillHit(),
-                },
+                "A star of judgment hangs over the target and follows them, then a bolt of light drops from it on where they are.",
+                Sun(1.1f),
                 new SkillCue
                 {
                     label = "smite", time = 1.1f, sheet = S("serena-judgment"), anchor = CueAnchor.TargetLive,
                     hit = Circle(1.5f, 0, 1f, 0.54f, 22, knockback: 6, hitStop: 0.15f, shake: 0.25f),
                 });
 
+            // three suns, one per bolt: each locks in turn and its bolt drops from it
             var judgmentTriple = Skill(B, "serena.judgment-triple", "심판의 빛 (연속)", 0.5f, 1.0f, 12f, 1f, 0, 99,
-                "Phase 3: three judgments in a row, each locked where the target stood.",
+                "Phase 3: three judgments in a row, each sun locking where the target stood.",
+                Sun(0.6f), Sun(1.3f), Sun(2.0f),
                 new SkillCue
                 {
-                    label = "smite", sheet = S("serena-judgment"), anchor = CueAnchor.TargetLive, count = 3, interval = 0.7f,
+                    label = "smite", time = 0.6f, sheet = S("serena-judgment"), anchor = CueAnchor.TargetLive, count = 3, interval = 0.7f,
                     hit = Circle(1.5f, 0, 1f, 0.54f, 18, knockback: 5, hitStop: 0.12f, shake: 0.2f),
-                },
-                new SkillCue
-                {
-                    label = "mark", sheet = S("serena-judgment-mark"), anchor = CueAnchor.TargetLive, offset = new Vector2(0, 4.2f), loopDuration = 2.2f, followTarget = true, sortingOrder = 30,
-                    hit = new SkillHit(),
                 });
 
             var awaken = Skill(B, "serena.phase-shift", "정화 — 각성", 0.2f, 0.8f, 0, 0, 0, 99,
@@ -386,6 +381,14 @@ namespace SolarDark.Combat.Editor
             if (s == null) Debug.LogWarning($"Solar and Dark: missing body sheet {path}. Run python3 tools/sprites/make.py, then Tools > pixelfx > Reimport All Sheets.");
             return s;
         }
+
+        /// <summary>The judgment sun over the target: follows them until <paramref name="lockAt"/> (when its bolt is placed),
+        /// then holds still until the bolt has landed (0.54 s) and goes.</summary>
+        static SkillCue Sun(float lockAt) => new SkillCue
+        {
+            label = "sun", sheet = S("serena-judgment-mark"), anchor = CueAnchor.TargetLive, offset = new Vector2(0, 4.2f),
+            followTarget = true, followFor = lockAt, loopDuration = lockAt + 0.6f, sortingOrder = 30, hit = new SkillHit(),
+        };
 
         static PixelFxSheet S(string name)
         {

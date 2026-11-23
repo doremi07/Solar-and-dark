@@ -214,6 +214,7 @@ namespace SolarDark.Combat
             root.transform.position = plan.pos;
             root.transform.rotation = Quaternion.Euler(0, 0, plan.angle * Mathf.Rad2Deg);
             if (parent != null) root.transform.SetParent(parent, true);
+            if (cue.followTarget && cue.followFor > 0) root.AddComponent<DetachAfter>().seconds = cue.followFor;
 
             float life = cue.loopDuration > 0 ? cue.loopDuration : (cue.sheet != null ? cue.sheet.data.TotalSeconds : 0);
             if (cue.hit.shape != HitShape.None)
@@ -266,6 +267,20 @@ namespace SolarDark.Combat
                 }
                 yield return null;
             }
+        }
+    }
+
+    /// <summary>Lets go of its parent after a while, staying where it is (a mark that locks on).</summary>
+    public class DetachAfter : MonoBehaviour
+    {
+        public float seconds;
+        float t;
+
+        void Update()
+        {
+            if ((t += Time.deltaTime) < seconds) return;
+            transform.SetParent(null, true);
+            Destroy(this);
         }
     }
 

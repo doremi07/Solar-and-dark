@@ -23,6 +23,7 @@ namespace SolarDark.Combat
         enum Mode { Idle, Cast, Hurt }
         SpriteRenderer sr;
         PixelFxSheet cast;
+        BodyMotion motion;
         float t, speed = 1, holdLeft;
         Mode mode;
 
@@ -37,8 +38,8 @@ namespace SolarDark.Combat
             strike = strikeSheet;
             slam = slamSheet;
             channel = channelSheet;
-            mode = Mode.Idle;
-            t = 0;
+            if (mode == Mode.Cast) cast = Pick(motion);   // mid-attack (a phase change): carry on in the new look
+            else { mode = Mode.Idle; t = 0; }
             Show();
         }
 
@@ -48,8 +49,8 @@ namespace SolarDark.Combat
         /// </summary>
         public void PlayCast(BodyMotion motion, float windup, float hold)
         {
-            cast = motion == BodyMotion.Slam ? slam : motion == BodyMotion.Channel ? channel : strike;
-            if (cast == null) cast = strike;
+            this.motion = motion;
+            cast = Pick(motion);
             if (cast == null) return;
             speed = Mathf.Clamp(castRelease / Mathf.Max(0.05f, windup), 0.35f, 3f);
             holdLeft = motion == BodyMotion.Channel && cast == channel ? Mathf.Max(0, hold) : 0;
@@ -89,6 +90,12 @@ namespace SolarDark.Combat
                 t = 0;
             }
             Show();
+        }
+
+        PixelFxSheet Pick(BodyMotion m)
+        {
+            var s = m == BodyMotion.Slam ? slam : m == BodyMotion.Channel ? channel : strike;
+            return s != null ? s : strike;
         }
 
         PixelFxSheet Current => mode == Mode.Cast ? cast : mode == Mode.Hurt ? hurt : idle;
